@@ -1,0 +1,10238 @@
+1
+00:00:00,000 --> 00:00:00,530
+
+2
+00:00:00,530 --> 00:00:02,960
+The following content is
+provided under a Creative
+
+3
+00:00:02,960 --> 00:00:04,370
+Commons license.
+
+4
+00:00:04,370 --> 00:00:07,410
+Your support will help MIT
+OpenCourseWare continue to
+
+5
+00:00:07,410 --> 00:00:11,060
+offer high quality educational
+resources for free.
+
+6
+00:00:11,060 --> 00:00:13,960
+To make a donation or view
+additional materials from
+
+7
+00:00:13,960 --> 00:00:19,790
+hundreds of MIT courses, visit
+MIT OpenCourseWare at
+
+8
+00:00:19,790 --> 00:00:21,040
+ocw.mit.edu.
+
+9
+00:00:21,040 --> 00:00:24,420
+
+10
+00:00:24,420 --> 00:00:26,860
+PROFESSOR: So we'll start off
+by going over the Quiz Two
+
+11
+00:00:26,860 --> 00:00:28,960
+practice questions.
+
+12
+00:00:28,960 --> 00:00:29,990
+So, (1.1).
+
+13
+00:00:29,990 --> 00:00:32,390
+In Python a subclass could
+override methods of its
+
+14
+00:00:32,390 --> 00:00:33,250
+superclass.
+
+15
+00:00:33,250 --> 00:00:34,900
+What say you all?
+
+16
+00:00:34,900 --> 00:00:36,030
+True?
+
+17
+00:00:36,030 --> 00:00:37,080
+All right.
+
+18
+00:00:37,080 --> 00:00:39,670
+There are some repeat people
+from last night, so they know
+
+19
+00:00:39,670 --> 00:00:41,420
+these already.
+
+20
+00:00:41,420 --> 00:00:43,840
+Standard deviation, coefficient
+of variation are
+
+21
+00:00:43,840 --> 00:00:45,230
+different names for
+the same thing.
+
+22
+00:00:45,230 --> 00:00:46,486
+True or false?
+
+23
+00:00:46,486 --> 00:00:47,460
+AUDIENCE: False.
+
+24
+00:00:47,460 --> 00:00:48,930
+PROFESSOR: False.
+
+25
+00:00:48,930 --> 00:00:52,430
+All right. (1.3.)
+
+26
+00:00:52,430 --> 00:00:53,162
+AUDIENCE: Can you go over
+what the coefficient
+
+27
+00:00:53,162 --> 00:00:55,090
+of variation is?
+
+28
+00:00:55,090 --> 00:00:58,600
+PROFESSOR: So, coefficient
+of variation.
+
+29
+00:00:58,600 --> 00:00:59,850
+It is--
+
+30
+00:00:59,850 --> 00:01:04,430
+
+31
+00:01:04,430 --> 00:01:05,680
+I have to write big
+for the camera.
+
+32
+00:01:05,680 --> 00:01:12,890
+
+33
+00:01:12,890 --> 00:01:15,620
+Is that right?
+
+34
+00:01:15,620 --> 00:01:16,870
+People who haven't
+asked a question.
+
+35
+00:01:16,870 --> 00:01:19,820
+
+36
+00:01:19,820 --> 00:01:22,690
+It's the other way
+around, right?
+
+37
+00:01:22,690 --> 00:01:28,150
+Coefficient of variation is the
+standard deviation divided
+
+38
+00:01:28,150 --> 00:01:30,830
+by the mean.
+
+39
+00:01:30,830 --> 00:01:33,200
+What does this tell you?
+
+40
+00:01:33,200 --> 00:01:36,140
+Like, what sort of information
+does the coefficient of
+
+41
+00:01:36,140 --> 00:01:37,390
+variation tell you?
+
+42
+00:01:37,390 --> 00:01:40,100
+
+43
+00:01:40,100 --> 00:01:41,350
+Anyone?
+
+44
+00:01:41,350 --> 00:01:42,760
+
+45
+00:01:42,760 --> 00:01:47,400
+So, it's another way of telling
+if your distribution
+
+46
+00:01:47,400 --> 00:01:49,590
+is very widely spread.
+
+47
+00:01:49,590 --> 00:01:54,830
+So, what it's getting at is--
+
+48
+00:01:54,830 --> 00:01:56,670
+it's trying to help you
+compare your standard
+
+49
+00:01:56,670 --> 00:01:57,640
+deviation against your mean.
+
+50
+00:01:57,640 --> 00:02:04,780
+Because, let's say that I have a
+distribution and its mean is
+
+51
+00:02:04,780 --> 00:02:06,093
+all the way out at 1.
+
+52
+00:02:06,093 --> 00:02:09,770
+
+53
+00:02:09,770 --> 00:02:13,670
+Let's pick a very
+large number.
+
+54
+00:02:13,670 --> 00:02:16,340
+So it's got a really big
+mean, but say its
+
+55
+00:02:16,340 --> 00:02:19,980
+standard deviation is--
+
+56
+00:02:19,980 --> 00:02:20,660
+I don't know--
+
+57
+00:02:20,660 --> 00:02:21,510
+100.
+
+58
+00:02:21,510 --> 00:02:23,592
+Would you say that that's
+widely spread out?
+
+59
+00:02:23,592 --> 00:02:25,080
+It's pretty tight.
+
+60
+00:02:25,080 --> 00:02:26,430
+If you're taking--
+
+61
+00:02:26,430 --> 00:02:31,110
+if this were like, I don't know,
+an observatory taking
+
+62
+00:02:31,110 --> 00:02:33,680
+measurements of deep space and
+you've got a fluctuation of
+
+63
+00:02:33,680 --> 00:02:35,530
+100 for each standard deviation,
+you'd probably say
+
+64
+00:02:35,530 --> 00:02:36,730
+that was pretty good.
+
+65
+00:02:36,730 --> 00:02:38,450
+And you wouldn't be too
+concerned about it, because
+
+66
+00:02:38,450 --> 00:02:41,700
+you've got a planet out there
+that's billions of light years
+
+67
+00:02:41,700 --> 00:02:44,080
+away or something.
+
+68
+00:02:44,080 --> 00:02:47,490
+So on the other hand, let's
+say that I have another
+
+69
+00:02:47,490 --> 00:02:52,800
+measurement, and its mean is
+somewhere around, say, 50.
+
+70
+00:02:52,800 --> 00:02:56,850
+And its standard deviation
+is 100.
+
+71
+00:02:56,850 --> 00:02:58,100
+So it's a lot fatter.
+
+72
+00:02:58,100 --> 00:03:00,780
+
+73
+00:03:00,780 --> 00:03:04,650
+You would say that this has a
+much wider spread, right?
+
+74
+00:03:04,650 --> 00:03:06,470
+So it's a way of relating
+the standard
+
+75
+00:03:06,470 --> 00:03:07,850
+deviation to the mean.
+
+76
+00:03:07,850 --> 00:03:13,480
+And, rule of thumb is if this
+is less than or equal to 1,
+
+77
+00:03:13,480 --> 00:03:16,740
+we're going to say that it's
+not too widespread, there's
+
+78
+00:03:16,740 --> 00:03:19,220
+not a lot of variation.
+
+79
+00:03:19,220 --> 00:03:22,900
+That's a standard that
+Professor Guttag has.
+
+80
+00:03:22,900 --> 00:03:25,170
+Depending on your purposes
+maybe that's too large or
+
+81
+00:03:25,170 --> 00:03:28,840
+whatever, so but that's what
+coefficient of variation is.
+
+82
+00:03:28,840 --> 00:03:31,247
+Everyone clear on it?
+
+83
+00:03:31,247 --> 00:03:33,243
+AUDIENCE: What's the difference
+between variance
+
+84
+00:03:33,243 --> 00:03:36,740
+and standard deviation?
+
+85
+00:03:36,740 --> 00:03:37,370
+PROFESSOR: The difference
+between variance
+
+86
+00:03:37,370 --> 00:03:39,210
+and standard deviation?
+
+87
+00:03:39,210 --> 00:03:40,955
+Standard deviation is the
+square root of variance.
+
+88
+00:03:40,955 --> 00:03:45,350
+
+89
+00:03:45,350 --> 00:03:47,710
+All right.
+
+90
+00:03:47,710 --> 00:03:51,220
+Unit testing is useful
+for debugging.
+
+91
+00:03:51,220 --> 00:03:52,982
+What does the audience say?
+
+92
+00:03:52,982 --> 00:03:53,464
+AUDIENCE: True.
+
+93
+00:03:53,464 --> 00:03:54,714
+AUDIENCE: True.
+
+94
+00:03:54,714 --> 00:03:57,810
+
+95
+00:03:57,810 --> 00:03:58,160
+PROFESSOR: OK.
+
+96
+00:03:58,160 --> 00:04:00,610
+You know what unit testing
+is, can you define it?
+
+97
+00:04:00,610 --> 00:04:04,315
+AUDIENCE: Well, unit testing is
+when you use other code to
+
+98
+00:04:04,315 --> 00:04:05,830
+test your code.
+
+99
+00:04:05,830 --> 00:04:06,800
+PROFESSOR: Right.
+
+100
+00:04:06,800 --> 00:04:11,030
+So say you've broken your code
+up into nice little functions
+
+101
+00:04:11,030 --> 00:04:12,590
+like a good programmer.
+
+102
+00:04:12,590 --> 00:04:14,700
+And you want to make sure that
+those functions are giving you
+
+103
+00:04:14,700 --> 00:04:16,329
+the right values.
+
+104
+00:04:16,329 --> 00:04:18,070
+What you're doing with unit
+testing is, you're writing a
+
+105
+00:04:18,070 --> 00:04:19,220
+bunch of other code.
+
+106
+00:04:19,220 --> 00:04:21,269
+Or a little bit of code.
+
+107
+00:04:21,269 --> 00:04:23,300
+Sometimes a lot, it depends on
+how thorough you want to be in
+
+108
+00:04:23,300 --> 00:04:24,620
+your testing.
+
+109
+00:04:24,620 --> 00:04:29,970
+And what you have is known
+input and known output.
+
+110
+00:04:29,970 --> 00:04:31,760
+And you're going to feed your
+input to the functions you're
+
+111
+00:04:31,760 --> 00:04:33,500
+testing, and you're going to
+make sure that they give you
+
+112
+00:04:33,500 --> 00:04:35,650
+the output that you're
+expecting.
+
+113
+00:04:35,650 --> 00:04:37,600
+And if they don't give you the
+output that you're expecting,
+
+114
+00:04:37,600 --> 00:04:40,110
+that indicates that there's
+probably a bug.
+
+115
+00:04:40,110 --> 00:04:43,490
+Which also kind of supports the
+idea that unit testing is
+
+116
+00:04:43,490 --> 00:04:45,250
+good for debugging.
+
+117
+00:04:45,250 --> 00:04:49,360
+And if you are very
+conscientious about your code
+
+118
+00:04:49,360 --> 00:04:52,180
+and doing unit testing, you're
+going to run your unit tests
+
+119
+00:04:52,180 --> 00:04:55,850
+every time you either run your
+code or make a change.
+
+120
+00:04:55,850 --> 00:04:58,860
+Because you might have
+inadvertently introduced a bug
+
+121
+00:04:58,860 --> 00:05:00,590
+into the code that
+you're modifying.
+
+122
+00:05:00,590 --> 00:05:04,780
+So it's a way of verifying, it's
+a way of detecting bugs,
+
+123
+00:05:04,780 --> 00:05:07,130
+and also verifying that any
+changes you make in the
+
+124
+00:05:07,130 --> 00:05:11,820
+process of writing more
+functions for your program or
+
+125
+00:05:11,820 --> 00:05:14,260
+modifying functionality in your
+program don't introduce
+
+126
+00:05:14,260 --> 00:05:15,510
+other bugs.
+
+127
+00:05:15,510 --> 00:05:18,430
+
+128
+00:05:18,430 --> 00:05:22,580
+So in Python, functions cannot
+be used as actual parameters.
+
+129
+00:05:22,580 --> 00:05:25,320
+
+130
+00:05:25,320 --> 00:05:25,980
+False.
+
+131
+00:05:25,980 --> 00:05:27,230
+Why?
+
+132
+00:05:27,230 --> 00:05:29,878
+
+133
+00:05:29,878 --> 00:05:31,380
+AUDIENCE: [INAUDIBLE]
+
+134
+00:05:31,380 --> 00:05:35,884
+PROFESSOR: Well, you could just
+rephrase the question.
+
+135
+00:05:35,884 --> 00:05:38,250
+But a better answer
+is that functions
+
+136
+00:05:38,250 --> 00:05:39,680
+are first class citizens.
+
+137
+00:05:39,680 --> 00:05:42,660
+So they are objects in and of
+themselves, and so you can
+
+138
+00:05:42,660 --> 00:05:44,870
+pass them around to a function
+and functions
+
+139
+00:05:44,870 --> 00:05:46,430
+can make use of them.
+
+140
+00:05:46,430 --> 00:05:53,370
+So we might see an example of
+that later on if you want.
+
+141
+00:05:53,370 --> 00:05:54,180
+All right.
+
+142
+00:05:54,180 --> 00:05:54,940
+1.5.
+
+143
+00:05:54,940 --> 00:05:57,990
+Increasing the size of a hash
+table typically increases the
+
+144
+00:05:57,990 --> 00:05:59,960
+amount of time needed to
+locate a variable or
+
+145
+00:05:59,960 --> 00:06:02,810
+value in the table.
+
+146
+00:06:02,810 --> 00:06:04,356
+False.
+
+147
+00:06:04,356 --> 00:06:05,844
+Why?
+
+148
+00:06:05,844 --> 00:06:07,332
+AUDIENCE: It is Constant type.
+
+149
+00:06:07,332 --> 00:06:07,828
+PROFESSOR: Right.
+
+150
+00:06:07,828 --> 00:06:09,316
+The hashing function is
+generally constant.
+
+151
+00:06:09,316 --> 00:06:16,230
+
+152
+00:06:16,230 --> 00:06:17,480
+OK.
+
+153
+00:06:17,480 --> 00:06:21,740
+
+154
+00:06:21,740 --> 00:06:25,960
+So, what does this code print?
+
+155
+00:06:25,960 --> 00:06:27,370
+AUDIENCE: [INAUDIBLE]
+
+156
+00:06:27,370 --> 00:06:29,764
+PROFESSOR: Six?
+
+157
+00:06:29,764 --> 00:06:30,760
+AUDIENCE: 11.
+
+158
+00:06:30,760 --> 00:06:32,010
+PROFESSOR: It's 11.
+
+159
+00:06:32,010 --> 00:06:34,158
+
+160
+00:06:34,158 --> 00:06:35,010
+AUDIENCE: [INAUDIBLE]
+
+161
+00:06:35,010 --> 00:06:39,360
+PROFESSOR: So what is the
+string x actually?
+
+162
+00:06:39,360 --> 00:06:42,386
+
+163
+00:06:42,386 --> 00:06:43,770
+AUDIENCE: Binary?
+
+164
+00:06:43,770 --> 00:06:45,450
+PROFESSOR: It's the binary
+representation of an integer.
+
+165
+00:06:45,450 --> 00:06:47,830
+And all this code is
+doing is, it's just
+
+166
+00:06:47,830 --> 00:06:50,550
+converting it to a decimal.
+
+167
+00:06:50,550 --> 00:06:53,880
+And because I came prepared
+tonight--
+
+168
+00:06:53,880 --> 00:06:56,710
+
+169
+00:06:56,710 --> 00:06:58,992
+sorta kind of--
+
+170
+00:06:58,992 --> 00:07:02,620
+I have the code here.
+
+171
+00:07:02,620 --> 00:07:05,240
+And we can verify it.
+
+172
+00:07:05,240 --> 00:07:08,720
+Any burning questions
+on that problem?
+
+173
+00:07:08,720 --> 00:07:09,970
+Moving on.
+
+174
+00:07:09,970 --> 00:07:18,710
+
+175
+00:07:18,710 --> 00:07:21,650
+What is the expected
+value of g1?
+
+176
+00:07:21,650 --> 00:07:25,565
+
+177
+00:07:25,565 --> 00:07:26,815
+Anyone?
+
+178
+00:07:26,815 --> 00:07:37,445
+
+179
+00:07:37,445 --> 00:07:39,200
+Well, look at what
+the code's doing.
+
+180
+00:07:39,200 --> 00:07:43,470
+
+181
+00:07:43,470 --> 00:07:44,720
+Did someone--
+
+182
+00:07:44,720 --> 00:07:46,740
+
+183
+00:07:46,740 --> 00:07:48,480
+AUDIENCE: What's "gauze,"
+that function?
+
+184
+00:07:48,480 --> 00:07:49,670
+We haven't used that one.
+
+185
+00:07:49,670 --> 00:07:50,380
+PROFESSOR: Gauss is--
+
+186
+00:07:50,380 --> 00:07:51,630
+AUDIENCE: Oh, Gauss.
+
+187
+00:07:51,630 --> 00:07:55,170
+PROFESSOR: --a method on the
+random object that draws a
+
+188
+00:07:55,170 --> 00:07:58,180
+random value from a Gaussian
+distribution
+
+189
+00:07:58,180 --> 00:08:00,120
+that has a mean at--
+
+190
+00:08:00,120 --> 00:08:01,460
+well, in this case, mean--
+
+191
+00:08:01,460 --> 00:08:04,350
+and a standard deviation
+of s-t-d-dev,
+
+192
+00:08:04,350 --> 00:08:06,100
+whatever you put in there.
+
+193
+00:08:06,100 --> 00:08:10,840
+So maybe for this example, if
+I wanted to draw a random
+
+194
+00:08:10,840 --> 00:08:13,510
+value from this distribution,
+which I said had a mean of 50
+
+195
+00:08:13,510 --> 00:08:16,850
+and a standard deviation
+of 100, I would say
+
+196
+00:08:16,850 --> 00:08:25,160
+random.Gauss 50, 100.
+
+197
+00:08:25,160 --> 00:08:30,480
+So, in answering the question
+(3.1), what do people think?
+
+198
+00:08:30,480 --> 00:08:32,360
+What about (3.2)?
+
+199
+00:08:32,360 --> 00:08:34,140
+100,000.
+
+200
+00:08:34,140 --> 00:08:35,970
+So they're both the same.
+
+201
+00:08:35,970 --> 00:08:40,030
+But they both have a different
+standard deviation.
+
+202
+00:08:40,030 --> 00:08:44,650
+So what this is getting
+at is, it's getting
+
+203
+00:08:44,650 --> 00:08:46,965
+you to look at this.
+
+204
+00:08:46,965 --> 00:08:53,030
+
+205
+00:08:53,030 --> 00:08:55,830
+So this code is straight
+from the question.
+
+206
+00:08:55,830 --> 00:09:02,180
+And all I'm going to do is, I'm
+going to plot a histogram
+
+207
+00:09:02,180 --> 00:09:04,140
+of what this function
+produces.
+
+208
+00:09:04,140 --> 00:09:08,950
+And also I'm going to run it a
+number of times and verify
+
+209
+00:09:08,950 --> 00:09:11,500
+that I am getting 100,000
+in general.
+
+210
+00:09:11,500 --> 00:09:19,720
+
+211
+00:09:19,720 --> 00:09:21,030
+Python.
+
+212
+00:09:21,030 --> 00:09:22,850
+There we go.
+
+213
+00:09:22,850 --> 00:09:25,350
+So it's not exactly 100,000,
+but it's close enough.
+
+214
+00:09:25,350 --> 00:09:29,650
+I mean, we're not going
+to be too upset.
+
+215
+00:09:29,650 --> 00:09:35,880
+So this picture here shows the
+actual values that were drawn
+
+216
+00:09:35,880 --> 00:09:40,720
+when I repeated the experiment
+a number of times.
+
+217
+00:09:40,720 --> 00:09:43,680
+So I don't know if you can see
+on the screen but there's this
+
+218
+00:09:43,680 --> 00:09:48,390
+big, really thin, vertical
+line here.
+
+219
+00:09:48,390 --> 00:09:50,070
+Those are the results from
+the Gaussian with
+
+220
+00:09:50,070 --> 00:09:51,960
+a 0 standard deviation.
+
+221
+00:09:51,960 --> 00:09:55,160
+So everything was
+100,000 exactly.
+
+222
+00:09:55,160 --> 00:09:57,920
+And then these red blocks
+here, this is with the
+
+223
+00:09:57,920 --> 00:09:59,170
+standard deviation of 20.
+
+224
+00:09:59,170 --> 00:10:04,830
+
+225
+00:10:04,830 --> 00:10:06,592
+Any questions on this?
+
+226
+00:10:06,592 --> 00:10:07,584
+Yeah?
+
+227
+00:10:07,584 --> 00:10:10,064
+AUDIENCE: What's the difference
+between a normal
+
+228
+00:10:10,064 --> 00:10:12,048
+distribution and a Gaussian
+distribution?
+
+229
+00:10:12,048 --> 00:10:13,040
+PROFESSOR: The name.
+
+230
+00:10:13,040 --> 00:10:15,354
+The question was, what's the
+difference between a normal
+
+231
+00:10:15,354 --> 00:10:16,760
+distribution and a Gaussian
+distribution.
+
+232
+00:10:16,760 --> 00:10:21,472
+And it's just, it's
+a different name.
+
+233
+00:10:21,472 --> 00:10:22,722
+AUDIENCE: [INAUDIBLE]
+
+234
+00:10:22,722 --> 00:10:25,470
+
+235
+00:10:25,470 --> 00:10:26,980
+PROFESSOR: How I
+came across it?
+
+236
+00:10:26,980 --> 00:10:27,475
+AUDIENCE: Yeah.
+
+237
+00:10:27,475 --> 00:10:29,455
+How are we supposed to see
+that in this problem,
+
+238
+00:10:29,455 --> 00:10:31,930
+[UNINTELLIGIBLE]?
+
+239
+00:10:31,930 --> 00:10:38,950
+PROFESSOR: Well, if you look
+at the plots, which I
+
+240
+00:10:38,950 --> 00:10:40,910
+apparently killed--
+
+241
+00:10:40,910 --> 00:10:42,855
+so let me pull them up again--
+
+242
+00:10:42,855 --> 00:10:54,810
+
+243
+00:10:54,810 --> 00:10:55,700
+All right.
+
+244
+00:10:55,700 --> 00:11:03,970
+So the thing that you want
+to know about Gaussian
+
+245
+00:11:03,970 --> 00:11:09,820
+distributions is that, at the
+mean, is the value that's the
+
+246
+00:11:09,820 --> 00:11:11,600
+most probable.
+
+247
+00:11:11,600 --> 00:11:14,150
+So its peak is at the mean.
+
+248
+00:11:14,150 --> 00:11:18,750
+And so if you're taking a
+1000 numbers from this
+
+249
+00:11:18,750 --> 00:11:23,900
+distribution, then if you know
+which number you're expecting
+
+250
+00:11:23,900 --> 00:11:27,720
+to see with the highest
+probability--
+
+251
+00:11:27,720 --> 00:11:30,481
+I'm not sure if this sentence
+is grammatical any more--
+
+252
+00:11:30,481 --> 00:11:30,962
+AUDIENCE: Yeah.
+
+253
+00:11:30,962 --> 00:11:34,329
+So really standard deviation
+doesn't really have anything
+
+254
+00:11:34,329 --> 00:11:34,810
+to do with it.
+
+255
+00:11:34,810 --> 00:11:37,270
+PROFESSOR: What it's going
+to affect is, it's
+
+256
+00:11:37,270 --> 00:11:39,230
+going to tell you that--
+
+257
+00:11:39,230 --> 00:11:43,360
+like, if you have a standard
+deviation of 10 versus 20,
+
+258
+00:11:43,360 --> 00:11:44,750
+it's just going to tell
+you what the spread
+
+259
+00:11:44,750 --> 00:11:45,510
+of the curve is.
+
+260
+00:11:45,510 --> 00:11:46,980
+But it's not going to change
+the expected value.
+
+261
+00:11:46,980 --> 00:11:50,360
+So, why don't I actually
+demonstrate that?
+
+262
+00:11:50,360 --> 00:11:53,340
+Because I'm a fan of visuals
+and not necessarily good at
+
+263
+00:11:53,340 --> 00:11:55,210
+English tonight.
+
+264
+00:11:55,210 --> 00:12:04,100
+
+265
+00:12:04,100 --> 00:12:04,450
+All right.
+
+266
+00:12:04,450 --> 00:12:08,000
+So all I did in the code was,
+I just changed the standard
+
+267
+00:12:08,000 --> 00:12:10,040
+deviation of the first
+distribution to
+
+268
+00:12:10,040 --> 00:12:12,460
+be 10 versus 20.
+
+269
+00:12:12,460 --> 00:12:19,390
+And what you can see from the
+plots are that the value with
+
+270
+00:12:19,390 --> 00:12:26,010
+the highest probability is still
+centered at 100,000.
+
+271
+00:12:26,010 --> 00:12:29,540
+But the first plot, as opposed
+to the first time we ran this
+
+272
+00:12:29,540 --> 00:12:32,070
+with a 0 standard deviation,
+is a little
+
+273
+00:12:32,070 --> 00:12:33,950
+bit more spread out.
+
+274
+00:12:33,950 --> 00:12:37,180
+And the plot with 20, for the
+standard deviation, is even
+
+275
+00:12:37,180 --> 00:12:38,380
+more spread out, than it.
+
+276
+00:12:38,380 --> 00:12:41,610
+But they both have the highest
+probability at 100,000 or
+
+277
+00:12:41,610 --> 00:12:43,586
+centered at 100,000.
+
+278
+00:12:43,586 --> 00:12:49,382
+AUDIENCE: So it's like, if you
+have a mean for g1 of 100, or
+
+279
+00:12:49,382 --> 00:12:53,246
+g2 of 200, then you would
+expect 200,000 for g2?
+
+280
+00:12:53,246 --> 00:12:54,220
+PROFESSOR: Yeah.
+
+281
+00:12:54,220 --> 00:13:01,720
+So if instead you had a mean
+of, say, 200 for the second
+
+282
+00:13:01,720 --> 00:13:07,100
+distribution, versus 100,
+you'd expect them in two
+
+283
+00:13:07,100 --> 00:13:09,000
+completely separate places.
+
+284
+00:13:09,000 --> 00:13:11,950
+And you'd get an expected
+value that's
+
+285
+00:13:11,950 --> 00:13:14,840
+100,000 versus 200,000.
+
+286
+00:13:14,840 --> 00:13:20,770
+So here close to 100,000, close
+to 200,000 and then see
+
+287
+00:13:20,770 --> 00:13:22,020
+what my distribution is.
+
+288
+00:13:22,020 --> 00:13:26,430
+
+289
+00:13:26,430 --> 00:13:26,760
+All right.
+
+290
+00:13:26,760 --> 00:13:28,010
+We good on this?
+
+291
+00:13:28,010 --> 00:13:31,850
+
+292
+00:13:31,850 --> 00:13:33,680
+So moving on.
+
+293
+00:13:33,680 --> 00:13:35,840
+Question (4).
+
+294
+00:13:35,840 --> 00:13:39,525
+What is the probability of the
+final value of num6 being 0?
+
+295
+00:13:39,525 --> 00:13:42,704
+
+296
+00:13:42,704 --> 00:13:45,608
+AUDIENCE: 9/10 to the 10.
+
+297
+00:13:45,608 --> 00:13:47,834
+PROFESSOR: 9 over 10,
+the whole thing to
+
+298
+00:13:47,834 --> 00:13:49,480
+the 10th power, right?
+
+299
+00:13:49,480 --> 00:13:50,460
+OK.
+
+300
+00:13:50,460 --> 00:13:55,155
+So does anyone not see
+why that's the case?
+
+301
+00:13:55,155 --> 00:13:59,530
+
+302
+00:13:59,530 --> 00:14:02,310
+So I'm going to explain
+that anyway.
+
+303
+00:14:02,310 --> 00:14:07,760
+So what this code is doing is,
+for 10 times its drawing an
+
+304
+00:14:07,760 --> 00:14:09,830
+integer from 0 to 9.
+
+305
+00:14:09,830 --> 00:14:11,000
+A random integer.
+
+306
+00:14:11,000 --> 00:14:13,240
+It's a uniform distribution.
+
+307
+00:14:13,240 --> 00:14:15,920
+And it's counting the number
+of times that the integer
+
+308
+00:14:15,920 --> 00:14:19,590
+drawn is 6.
+
+309
+00:14:19,590 --> 00:14:21,550
+And it's incrementing
+a counter.
+
+310
+00:14:21,550 --> 00:14:26,950
+So the question can be rephrased
+as, what's the
+
+311
+00:14:26,950 --> 00:14:33,060
+probability that no 6's were
+drawn 10 times out of a pool
+
+312
+00:14:33,060 --> 00:14:35,940
+of 10 integers?
+
+313
+00:14:35,940 --> 00:14:45,280
+And the way you can figure it
+out is on one pool where, say
+
+314
+00:14:45,280 --> 00:14:47,920
+I had a 10 sided dice.
+
+315
+00:14:47,920 --> 00:14:50,510
+On one roll, what's
+the probability of
+
+316
+00:14:50,510 --> 00:14:51,390
+not getting a 6?
+
+317
+00:14:51,390 --> 00:14:53,530
+It's going to be 9
+over 10, right?
+
+318
+00:14:53,530 --> 00:14:54,820
+And if you do that 10 times.
+
+319
+00:14:54,820 --> 00:14:58,000
+9 over 10 times 9 over 10 times
+9 over 10, that gives
+
+320
+00:14:58,000 --> 00:15:01,785
+you 9 over 10 to
+the 10th power.
+
+321
+00:15:01,785 --> 00:15:10,320
+And because this is a code
+class, we have a
+
+322
+00:15:10,320 --> 00:15:11,210
+demonstration.
+
+323
+00:15:11,210 --> 00:15:14,940
+So here's the answer that
+we hand-jammed or
+
+324
+00:15:14,940 --> 00:15:18,040
+that we just discussed.
+
+325
+00:15:18,040 --> 00:15:22,840
+And now here is a function
+count of 6.
+
+326
+00:15:22,840 --> 00:15:27,690
+And it's the code that you
+see in problem (4).
+
+327
+00:15:27,690 --> 00:15:28,740
+And all I'm going to
+do is, I'm going to
+
+328
+00:15:28,740 --> 00:15:29,970
+run a number of trials.
+
+329
+00:15:29,970 --> 00:15:32,290
+And I'm going to count the
+number of trials that come up
+
+330
+00:15:32,290 --> 00:15:35,490
+0, and increment a
+count numzero's.
+
+331
+00:15:35,490 --> 00:15:38,400
+And then I'm going to say,
+this is what I think the
+
+332
+00:15:38,400 --> 00:15:40,150
+probability of getting a 0 is.
+
+333
+00:15:40,150 --> 00:15:42,760
+And then we'll compare
+the two numbers.
+
+334
+00:15:42,760 --> 00:15:45,040
+OK so that's the probability
+that we count
+
+335
+00:15:45,040 --> 00:15:47,100
+9/10 to the 10th power.
+
+336
+00:15:47,100 --> 00:15:51,410
+And then this is the estimated
+probability that we got from
+
+337
+00:15:51,410 --> 00:15:54,990
+running this function
+100,000 times.
+
+338
+00:15:54,990 --> 00:15:59,462
+So we good on this problem?
+
+339
+00:15:59,462 --> 00:16:00,845
+AUDIENCE: Instead of solving
+it the way that you guys
+
+340
+00:16:00,845 --> 00:16:03,446
+solved it, can you solve
+it by saying that
+
+341
+00:16:03,446 --> 00:16:05,604
+the problem's also--
+
+342
+00:16:05,604 --> 00:16:08,426
+that it's 1 minus the
+probability that 6
+
+343
+00:16:08,426 --> 00:16:09,676
+will always be picked?
+
+344
+00:16:09,676 --> 00:16:11,940
+
+345
+00:16:11,940 --> 00:16:15,630
+PROFESSOR: That you will
+see at least one 6?
+
+346
+00:16:15,630 --> 00:16:20,280
+1 minus the probability that
+you'll see at least one 6?
+
+347
+00:16:20,280 --> 00:16:24,160
+
+348
+00:16:24,160 --> 00:16:27,660
+AUDIENCE: No, never mind.
+
+349
+00:16:27,660 --> 00:16:29,820
+PROFESSOR: You can solve
+it in different ways.
+
+350
+00:16:29,820 --> 00:16:32,520
+It's just this way is--
+
+351
+00:16:32,520 --> 00:16:35,090
+I think, probably, this way of
+thinking about it is probably
+
+352
+00:16:35,090 --> 00:16:37,453
+more intuitive.
+
+353
+00:16:37,453 --> 00:16:39,908
+AUDIENCE: When would you want to
+solve this kind of problem
+
+354
+00:16:39,908 --> 00:16:44,818
+with [INAUDIBLE], instead
+of when it says it's not
+
+355
+00:16:44,818 --> 00:16:47,764
+something, to use 1 minus
+the probability?
+
+356
+00:16:47,764 --> 00:16:49,237
+That it is [UNINTELLIGIBLE]
+
+357
+00:16:49,237 --> 00:16:52,690
+
+358
+00:16:52,690 --> 00:16:54,640
+PROFESSOR: Well, my answer
+would be when it
+
+359
+00:16:54,640 --> 00:16:56,030
+makes sense to you.
+
+360
+00:16:56,030 --> 00:17:00,460
+
+361
+00:17:00,460 --> 00:17:03,170
+Some problems are easier viewed
+in the negative light,
+
+362
+00:17:03,170 --> 00:17:06,349
+which is what you're saying
+as 1 minus whatever.
+
+363
+00:17:06,349 --> 00:17:07,980
+And some problems are
+better solved in a
+
+364
+00:17:07,980 --> 00:17:08,847
+straightforward fashion.
+
+365
+00:17:08,847 --> 00:17:14,105
+So it's whatever tool
+gets the job done.
+
+366
+00:17:14,105 --> 00:17:18,420
+I don't have a general rule
+of thumb for you.
+
+367
+00:17:18,420 --> 00:17:23,301
+Maybe there's a course
+18 person who does.
+
+368
+00:17:23,301 --> 00:17:30,700
+AUDIENCE: So this problem, would
+we possibly be asked,
+
+369
+00:17:30,700 --> 00:17:33,910
+what is the probability that
+it'll end up being 1?
+
+370
+00:17:33,910 --> 00:17:40,355
+Or does it necessarily matter
+which of those 10 came up 6?
+
+371
+00:17:40,355 --> 00:17:42,775
+And how would you show that, if
+we were going to be asked
+
+372
+00:17:42,775 --> 00:17:44,170
+that question?
+
+373
+00:17:44,170 --> 00:17:44,910
+PROFESSOR: Well.
+
+374
+00:17:44,910 --> 00:17:46,890
+One, I haven't seen the quiz.
+
+375
+00:17:46,890 --> 00:17:49,510
+So I can't give you
+a definite.
+
+376
+00:17:49,510 --> 00:17:52,630
+But you could be asked,
+instead of using
+
+377
+00:17:52,630 --> 00:17:55,560
+6, maybe say, 1.
+
+378
+00:17:55,560 --> 00:17:57,488
+Is that going to really
+change anything?
+
+379
+00:17:57,488 --> 00:17:57,976
+AUDIENCE: No.
+
+380
+00:17:57,976 --> 00:18:03,344
+I guess I meant that one
+of those 10 outcomes
+
+381
+00:18:03,344 --> 00:18:05,232
+ends up being a 6.
+
+382
+00:18:05,232 --> 00:18:07,080
+PROFESSOR: Right.
+
+383
+00:18:07,080 --> 00:18:09,910
+AUDIENCE: I can do it if, they
+say the fifth trial is a 6.
+
+384
+00:18:09,910 --> 00:18:12,720
+
+385
+00:18:12,720 --> 00:18:17,000
+But just 1 of those 10 trials
+being a 6, I don't know how to
+
+386
+00:18:17,000 --> 00:18:17,860
+write properly?
+
+387
+00:18:17,860 --> 00:18:21,000
+PROFESSOR: So what's the
+probability that you get 1 of
+
+388
+00:18:21,000 --> 00:18:23,004
+the trials as exactly 6?
+
+389
+00:18:23,004 --> 00:18:25,910
+Or exactly 1 of the trials
+comes up as 6?
+
+390
+00:18:25,910 --> 00:18:27,845
+AUDIENCE: Yeah.
+
+391
+00:18:27,845 --> 00:18:33,600
+PROFESSOR: Well, one way of
+thinking of it is-- so we
+
+392
+00:18:33,600 --> 00:18:34,820
+calculated 9/10.
+
+393
+00:18:34,820 --> 00:18:38,540
+That's the probability that
+6 doesn't come up, right?
+
+394
+00:18:38,540 --> 00:18:41,330
+So what's the probability
+that 6 will come up?
+
+395
+00:18:41,330 --> 00:18:42,340
+1/10.
+
+396
+00:18:42,340 --> 00:18:46,280
+So instead of doing 9/10 to the
+10th power, it would be
+
+397
+00:18:46,280 --> 00:18:50,150
+9/10 to the 9th power
+times 1/10, right?
+
+398
+00:18:50,150 --> 00:18:53,650
+
+399
+00:18:53,650 --> 00:18:54,650
+AUDIENCE: OK, that'll
+account for.
+
+400
+00:18:54,650 --> 00:18:58,330
+Thanks
+
+401
+00:18:58,330 --> 00:19:01,550
+PROFESSOR: And because I'm never
+very comfortable with
+
+402
+00:19:01,550 --> 00:19:07,196
+this stuff, why don't
+we do a simulation?
+
+403
+00:19:07,196 --> 00:19:17,680
+
+404
+00:19:17,680 --> 00:19:19,420
+So this is what we're saying.
+
+405
+00:19:19,420 --> 00:19:21,300
+Exactly one 6 comes up.
+
+406
+00:19:21,300 --> 00:19:26,610
+
+407
+00:19:26,610 --> 00:19:30,220
+And I'm going to
+set this to 1.
+
+408
+00:19:30,220 --> 00:19:32,920
+AUDIENCE: Isn't that saying that
+it's less likely that one
+
+409
+00:19:32,920 --> 00:19:37,684
+6 comes up than zero
+6s come up?
+
+410
+00:19:37,684 --> 00:19:40,325
+Is it?
+
+411
+00:19:40,325 --> 00:19:41,255
+That's true?
+
+412
+00:19:41,255 --> 00:19:42,190
+PROFESSOR: Yeah.
+
+413
+00:19:42,190 --> 00:19:44,280
+Because you're looking
+for exactly--
+
+414
+00:19:44,280 --> 00:19:49,100
+you're looking for a sequence
+of 10 events where exactly 1
+
+415
+00:19:49,100 --> 00:19:50,290
+of those of events is a 6.
+
+416
+00:19:50,290 --> 00:19:54,626
+Which seems more unlikely than,
+say, getting everything
+
+417
+00:19:54,626 --> 00:19:58,450
+that's not a 6.
+
+418
+00:19:58,450 --> 00:20:02,794
+So I want to verify this.
+
+419
+00:20:02,794 --> 00:20:07,190
+AUDIENCE: Why is it 9/10
+to the 9th [INAUDIBLE]
+
+420
+00:20:07,190 --> 00:20:10,600
+PROFESSOR: Because we're
+asking, if I roll this
+
+421
+00:20:10,600 --> 00:20:15,740
+10-sided dice 10 times, what's
+the probability that exactly
+
+422
+00:20:15,740 --> 00:20:19,380
+one of those rolls is going
+to come up with 6?
+
+423
+00:20:19,380 --> 00:20:22,330
+And so what we're asking is,
+what is the probability that I
+
+424
+00:20:22,330 --> 00:20:26,490
+roll the dice 9 times and it
+doesn't come up with 6?
+
+425
+00:20:26,490 --> 00:20:30,210
+And then what's the probability
+that on the
+
+426
+00:20:30,210 --> 00:20:34,060
+remaining roll, that
+it comes up as 6?
+
+427
+00:20:34,060 --> 00:20:36,610
+Which is 1/10.
+
+428
+00:20:36,610 --> 00:20:39,513
+So let's see if I'm
+in the ballpark.
+
+429
+00:20:39,513 --> 00:20:47,710
+
+430
+00:20:47,710 --> 00:20:48,833
+Did I make a mistake?
+
+431
+00:20:48,833 --> 00:20:50,083
+AUDIENCE: [INAUDIBLE]
+
+432
+00:20:50,083 --> 00:20:53,563
+
+433
+00:20:53,563 --> 00:20:56,954
+where if there's ten different
+ways-- so it would be like--
+
+434
+00:20:56,954 --> 00:20:58,443
+PROFESSOR: Oh, yeah.
+
+435
+00:20:58,443 --> 00:21:00,335
+So yeah, you're right.
+
+436
+00:21:00,335 --> 00:21:02,227
+That's why I don't
+like that stuff.
+
+437
+00:21:02,227 --> 00:21:05,070
+
+438
+00:21:05,070 --> 00:21:08,000
+So yeah, it's a little bit more
+complicated than that.
+
+439
+00:21:08,000 --> 00:21:10,449
+AUDIENCE: You only counted
+one case of getting--
+
+440
+00:21:10,449 --> 00:21:11,870
+PROFESSOR: That's right.
+
+441
+00:21:11,870 --> 00:21:14,910
+So in this, I'm only
+counting one case.
+
+442
+00:21:14,910 --> 00:21:18,100
+There's multiple ways that
+exactly one dice
+
+443
+00:21:18,100 --> 00:21:19,946
+could come up 6.
+
+444
+00:21:19,946 --> 00:21:21,365
+So the answer is more
+complicated.
+
+445
+00:21:21,365 --> 00:21:22,961
+AUDIENCE: So would you
+just multiply by 10?
+
+446
+00:21:22,961 --> 00:21:24,211
+Because there's 10
+different places?
+
+447
+00:21:24,211 --> 00:21:27,520
+
+448
+00:21:27,520 --> 00:21:27,850
+PROFESSOR: Yeah.
+
+449
+00:21:27,850 --> 00:21:29,700
+So actually, that's
+what we got, so--
+
+450
+00:21:29,700 --> 00:21:34,050
+
+451
+00:21:34,050 --> 00:21:35,300
+we'll just do this.
+
+452
+00:21:35,300 --> 00:21:40,330
+
+453
+00:21:40,330 --> 00:21:42,335
+Well, of course that's
+going to come up.
+
+454
+00:21:42,335 --> 00:21:45,286
+But the simulation gives us the
+same answer as what we've
+
+455
+00:21:45,286 --> 00:21:47,340
+just come up with discussing.
+
+456
+00:21:47,340 --> 00:21:50,184
+OK, problem solved.
+
+457
+00:21:50,184 --> 00:21:52,658
+Did that work?
+
+458
+00:21:52,658 --> 00:21:53,908
+AUDIENCE: Yeah.
+
+459
+00:21:53,908 --> 00:21:56,080
+
+460
+00:21:56,080 --> 00:21:59,175
+PROFESSOR: Probability
+can be tricky.
+
+461
+00:21:59,175 --> 00:22:03,908
+
+462
+00:22:03,908 --> 00:22:05,630
+AUDIENCE: So essentially,
+you could just take the
+
+463
+00:22:05,630 --> 00:22:08,336
+probability that 9 of
+the rolls aren't 6,
+
+464
+00:22:08,336 --> 00:22:09,320
+and leave it at that?
+
+465
+00:22:09,320 --> 00:22:13,256
+Because you multiply it
+by 10 [INAUDIBLE].
+
+466
+00:22:13,256 --> 00:22:13,748
+PROFESSOR: Yeah.
+
+467
+00:22:13,748 --> 00:22:18,176
+You can also do it that way.
+
+468
+00:22:18,176 --> 00:22:20,190
+So again, there's
+multiple ways to
+
+469
+00:22:20,190 --> 00:22:21,330
+think about the problem.
+
+470
+00:22:21,330 --> 00:22:23,770
+So she was saying, instead
+of multiplying by
+
+471
+00:22:23,770 --> 00:22:26,050
+10, we just say that--
+
+472
+00:22:26,050 --> 00:22:30,300
+we take the probability that we
+have 9 rolls that aren't 6.
+
+473
+00:22:30,300 --> 00:22:33,540
+And that works too.
+
+474
+00:22:33,540 --> 00:22:35,320
+That's what she just
+pointed out.
+
+475
+00:22:35,320 --> 00:22:39,260
+So these parts cancel
+each other out.
+
+476
+00:22:39,260 --> 00:22:42,600
+
+477
+00:22:42,600 --> 00:22:43,430
+It's basically--
+
+478
+00:22:43,430 --> 00:22:45,080
+it is the same thing as this.
+
+479
+00:22:45,080 --> 00:22:47,920
+
+480
+00:22:47,920 --> 00:22:49,170
+Yay.
+
+481
+00:22:49,170 --> 00:22:51,480
+
+482
+00:22:51,480 --> 00:22:51,900
+All right.
+
+483
+00:22:51,900 --> 00:22:53,150
+Are we good on this question?
+
+484
+00:22:53,150 --> 00:22:59,280
+
+485
+00:22:59,280 --> 00:22:59,770
+All right.
+
+486
+00:22:59,770 --> 00:23:00,670
+Problem (5).
+
+487
+00:23:00,670 --> 00:23:03,410
+It was matching plots.
+
+488
+00:23:03,410 --> 00:23:05,480
+So you have three
+functions here.
+
+489
+00:23:05,480 --> 00:23:10,340
+You have a polynomial,
+or two polynomials.
+
+490
+00:23:10,340 --> 00:23:13,460
+One's a cubic, one's
+a quintic.
+
+491
+00:23:13,460 --> 00:23:14,710
+And one's an exponential.
+
+492
+00:23:14,710 --> 00:23:17,840
+
+493
+00:23:17,840 --> 00:23:19,700
+There are a couple ways that
+you could go about
+
+494
+00:23:19,700 --> 00:23:21,030
+solving this one.
+
+495
+00:23:21,030 --> 00:23:23,080
+One is to plug values
+in and kind of match
+
+496
+00:23:23,080 --> 00:23:24,730
+them up with the plots.
+
+497
+00:23:24,730 --> 00:23:29,630
+Another is to look at the
+axis of the plots.
+
+498
+00:23:29,630 --> 00:23:34,380
+So this exponential function
+here, if we were to have it on
+
+499
+00:23:34,380 --> 00:23:37,790
+two linear axes, the x-axis
+and the y-axis for both
+
+500
+00:23:37,790 --> 00:23:41,780
+linear, you'd see the expected
+curve upward sharply.
+
+501
+00:23:41,780 --> 00:23:44,905
+But if you notice, a couple
+of the plots are
+
+502
+00:23:44,905 --> 00:23:47,010
+in a semi-log y-axis.
+
+503
+00:23:47,010 --> 00:23:52,000
+So if you put an exponential
+with a linear x-axis and a
+
+504
+00:23:52,000 --> 00:23:53,910
+logarithmic y-axis, what
+would you expect the
+
+505
+00:23:53,910 --> 00:23:56,290
+plot to look like?
+
+506
+00:23:56,290 --> 00:23:57,810
+It would be a straight
+line, right.
+
+507
+00:23:57,810 --> 00:24:03,050
+So what that tells us is that if
+we look at the bottom plot,
+
+508
+00:24:03,050 --> 00:24:05,170
+we have something with
+a straight line.
+
+509
+00:24:05,170 --> 00:24:09,490
+So, bottom plot is the
+third function.
+
+510
+00:24:09,490 --> 00:24:11,340
+So, exponential.
+
+511
+00:24:11,340 --> 00:24:16,680
+And then for the remaining two
+functions, there are a couple
+
+512
+00:24:16,680 --> 00:24:18,940
+methods that you would use,
+or you could use.
+
+513
+00:24:18,940 --> 00:24:24,170
+One is to plug values in and see
+where the points wind up
+
+514
+00:24:24,170 --> 00:24:26,200
+and compare them
+with the plots.
+
+515
+00:24:26,200 --> 00:24:29,480
+Another way to think about it is
+that one of the plots is on
+
+516
+00:24:29,480 --> 00:24:34,990
+a semi-log and another plot is
+on just both linear axes.
+
+517
+00:24:34,990 --> 00:24:46,290
+And if you plot a polynomial
+that's not exponential on a
+
+518
+00:24:46,290 --> 00:24:48,760
+logarithmic y-axis, what
+would you expect the
+
+519
+00:24:48,760 --> 00:24:50,010
+curve to look like?
+
+520
+00:24:50,010 --> 00:24:52,710
+
+521
+00:24:52,710 --> 00:24:56,340
+It should look somewhat similar
+to a logarithm.
+
+522
+00:24:56,340 --> 00:25:04,720
+So with that in mind,
+you could then start
+
+523
+00:25:04,720 --> 00:25:06,870
+plugging points in.
+
+524
+00:25:06,870 --> 00:25:09,400
+And what you would come up
+with is that the second
+
+525
+00:25:09,400 --> 00:25:12,860
+function is this
+top plot here.
+
+526
+00:25:12,860 --> 00:25:18,878
+And the middle plot here
+is the first function.
+
+527
+00:25:18,878 --> 00:25:22,170
+Is there anyone who's
+lost on that?
+
+528
+00:25:22,170 --> 00:25:23,860
+Uh-oh.
+
+529
+00:25:23,860 --> 00:25:25,110
+AUDIENCE: Wait, why?
+
+530
+00:25:25,110 --> 00:25:30,242
+
+531
+00:25:30,242 --> 00:25:33,714
+So you have two quadratic
+functions, right?
+
+532
+00:25:33,714 --> 00:25:35,698
+One and two are quadratic?
+
+533
+00:25:35,698 --> 00:25:36,690
+PROFESSOR: They're
+polynomials.
+
+534
+00:25:36,690 --> 00:25:38,178
+They're not exponential.
+
+535
+00:25:38,178 --> 00:25:38,674
+AUDIENCE: OK.
+
+536
+00:25:38,674 --> 00:25:40,162
+And then the third one's
+exponential.
+
+537
+00:25:40,162 --> 00:25:45,618
+And the reason why the third
+one's linear is because when
+
+538
+00:25:45,618 --> 00:25:50,000
+you plot an exponential--
+
+539
+00:25:50,000 --> 00:25:52,160
+PROFESSOR: If you plot an
+exponential with a linear
+
+540
+00:25:52,160 --> 00:25:55,847
+x-axis and a logarithmic
+y-axis, it should be a
+
+541
+00:25:55,847 --> 00:25:56,346
+straight line.
+
+542
+00:25:56,346 --> 00:25:56,845
+Right?
+
+543
+00:25:56,845 --> 00:25:58,342
+Or a straightish line.
+
+544
+00:25:58,342 --> 00:26:00,837
+AUDIENCE: Why?
+
+545
+00:26:00,837 --> 00:26:04,829
+PROFESSOR: It's the way
+the math works out.
+
+546
+00:26:04,829 --> 00:26:06,079
+AUDIENCE: [INAUDIBLE]
+
+547
+00:26:06,079 --> 00:26:10,320
+
+548
+00:26:10,320 --> 00:26:13,100
+PROFESSOR: Any other
+questions?
+
+549
+00:26:13,100 --> 00:26:17,850
+All right, we'll move
+onto the next one.
+
+550
+00:26:17,850 --> 00:26:19,345
+What does the following
+code print?
+
+551
+00:26:19,345 --> 00:26:25,702
+
+552
+00:26:25,702 --> 00:26:27,686
+AUDIENCE: 16.
+
+553
+00:26:27,686 --> 00:26:33,660
+And then square root
+of [INAUDIBLE]
+
+554
+00:26:33,660 --> 00:26:36,534
+PROFESSOR: Close.
+
+555
+00:26:36,534 --> 00:26:39,340
+So I don't actually
+have the answer.
+
+556
+00:26:39,340 --> 00:26:41,950
+Well, not written down.
+
+557
+00:26:41,950 --> 00:26:44,572
+But I have the code, so I'm just
+going to run the code.
+
+558
+00:26:44,572 --> 00:26:48,910
+
+559
+00:26:48,910 --> 00:26:50,160
+So you're close.
+
+560
+00:26:50,160 --> 00:26:52,630
+
+561
+00:26:52,630 --> 00:26:54,710
+Shall we spend some time
+stepping through this code,
+
+562
+00:26:54,710 --> 00:26:55,870
+understanding it?
+
+563
+00:26:55,870 --> 00:26:57,160
+All right.
+
+564
+00:26:57,160 --> 00:27:03,820
+So, what question (6) does is,
+it creates a class hierarchy.
+
+565
+00:27:03,820 --> 00:27:07,800
+And at the top of it, it
+has the shape class.
+
+566
+00:27:07,800 --> 00:27:13,130
+Which has just two methods,
+double underbar EQ and double
+
+567
+00:27:13,130 --> 00:27:16,260
+underbar GE.
+
+568
+00:27:16,260 --> 00:27:19,370
+That was just defined as
+equals operator and the
+
+569
+00:27:19,370 --> 00:27:23,590
+greater than or equal
+operator for shapes.
+
+570
+00:27:23,590 --> 00:27:25,760
+In terms of their area.
+
+571
+00:27:25,760 --> 00:27:30,437
+So what this is saying is that
+two shapes are equal if their
+
+572
+00:27:30,437 --> 00:27:38,870
+areas are equal, and a shape S1
+is going to be larger than
+
+573
+00:27:38,870 --> 00:27:42,510
+another shape if its area is
+larger than the other shape.
+
+574
+00:27:42,510 --> 00:27:44,460
+So if I had--
+
+575
+00:27:44,460 --> 00:27:48,400
+
+576
+00:27:48,400 --> 00:27:52,990
+well let's go down and
+we'll get to that.
+
+577
+00:27:52,990 --> 00:27:55,730
+Square, subclass of shape.
+
+578
+00:27:55,730 --> 00:27:57,320
+It is what it says it is.
+
+579
+00:27:57,320 --> 00:27:58,630
+It's a square.
+
+580
+00:27:58,630 --> 00:28:02,470
+And it has a side.
+
+581
+00:28:02,470 --> 00:28:04,810
+And its area is what
+you'd expect it to
+
+582
+00:28:04,810 --> 00:28:07,020
+be, the side squared.
+
+583
+00:28:07,020 --> 00:28:10,590
+And circle is just defined--
+
+584
+00:28:10,590 --> 00:28:15,620
+it just has a radius, and its
+area is what you would
+
+585
+00:28:15,620 --> 00:28:16,870
+expect it to be.
+
+586
+00:28:16,870 --> 00:28:19,120
+
+587
+00:28:19,120 --> 00:28:22,150
+There is a function here, f.
+
+588
+00:28:22,150 --> 00:28:27,020
+And it takes a parameter, l.
+
+589
+00:28:27,020 --> 00:28:28,470
+And I --
+
+590
+00:28:28,470 --> 00:28:31,470
+if you look at the code here and
+you kind of walk through
+
+591
+00:28:31,470 --> 00:28:34,100
+it -- l would have to
+be either a list
+
+592
+00:28:34,100 --> 00:28:39,150
+or a tuple of elements.
+
+593
+00:28:39,150 --> 00:28:41,280
+Doesn't have to necessarily
+be shapes.
+
+594
+00:28:41,280 --> 00:28:46,230
+But this first line is just
+going to return none if the
+
+595
+00:28:46,230 --> 00:28:47,760
+list is empty.
+
+596
+00:28:47,760 --> 00:28:52,840
+And then these next lines are
+going to, one it's going to
+
+597
+00:28:52,840 --> 00:28:56,230
+set the first element equal to
+x, and then iterate through
+
+598
+00:28:56,230 --> 00:28:58,410
+each element in l.
+
+599
+00:28:58,410 --> 00:29:01,880
+And then if the element it's
+looking at is larger than x
+
+600
+00:29:01,880 --> 00:29:04,590
+it's going to set x
+to the element.
+
+601
+00:29:04,590 --> 00:29:08,970
+So what this function is doing
+is finding the largest element
+
+602
+00:29:08,970 --> 00:29:10,220
+in the list.
+
+603
+00:29:10,220 --> 00:29:13,110
+
+604
+00:29:13,110 --> 00:29:14,360
+Everyone follow that?
+
+605
+00:29:14,360 --> 00:29:17,420
+
+606
+00:29:17,420 --> 00:29:22,680
+So, this should be pretty
+straightforward.
+
+607
+00:29:22,680 --> 00:29:24,930
+As should this.
+
+608
+00:29:24,930 --> 00:29:28,190
+This part my trip
+some people up.
+
+609
+00:29:28,190 --> 00:29:32,950
+So, this obviously creates
+an empty list.
+
+610
+00:29:32,950 --> 00:29:38,630
+What this does is, it creates
+a dictionary of class names.
+
+611
+00:29:38,630 --> 00:29:43,460
+And what it's saying is
+that for a key of 0,
+
+612
+00:29:43,460 --> 00:29:44,860
+the class is circle.
+
+613
+00:29:44,860 --> 00:29:48,650
+And for a key of one the
+class is square.
+
+614
+00:29:48,650 --> 00:29:49,900
+Everyone see that?
+
+615
+00:29:49,900 --> 00:29:53,330
+
+616
+00:29:53,330 --> 00:29:56,990
+This loop here iterates
+for 10 times.
+
+617
+00:29:56,990 --> 00:30:01,440
+And it appends 10 elements.
+
+618
+00:30:01,440 --> 00:30:05,110
+And then each of those elements
+are defined by this
+
+619
+00:30:05,110 --> 00:30:06,360
+shapes dictionary.
+
+620
+00:30:06,360 --> 00:30:09,170
+
+621
+00:30:09,170 --> 00:30:15,560
+On each iteration, it's going to
+take the modulus of i, the
+
+622
+00:30:15,560 --> 00:30:18,360
+index, or the number.
+
+623
+00:30:18,360 --> 00:30:23,580
+And if it's a 0, it's going to
+construct whatever class the
+
+624
+00:30:23,580 --> 00:30:25,140
+dictionary of shapes returns.
+
+625
+00:30:25,140 --> 00:30:29,110
+So if it's an even number,
+it's going to be circle.
+
+626
+00:30:29,110 --> 00:30:31,570
+And if it's an odd number
+is going to be a square.
+
+627
+00:30:31,570 --> 00:30:34,370
+
+628
+00:30:34,370 --> 00:30:37,076
+Everyone follow that?
+
+629
+00:30:37,076 --> 00:30:40,700
+Does no-one follow that?
+
+630
+00:30:40,700 --> 00:30:41,710
+OK.
+
+631
+00:30:41,710 --> 00:30:43,855
+Or does anyone not
+follow that?
+
+632
+00:30:43,855 --> 00:30:45,530
+Got my logic messed up.
+
+633
+00:30:45,530 --> 00:30:46,040
+All right.
+
+634
+00:30:46,040 --> 00:30:48,180
+So now what we have here
+is a list of shapes.
+
+635
+00:30:48,180 --> 00:30:50,770
+
+636
+00:30:50,770 --> 00:30:54,890
+And then all this does is it's
+going to print which shape.
+
+637
+00:30:54,890 --> 00:30:58,380
+Is it going to be the fourth
+or the fifth shape?
+
+638
+00:30:58,380 --> 00:30:59,260
+Fifth, right?
+
+639
+00:30:59,260 --> 00:31:00,720
+Because we've started
+indexing it at 0.
+
+640
+00:31:00,720 --> 00:31:05,530
+
+641
+00:31:05,530 --> 00:31:08,090
+So this number is
+obviously even.
+
+642
+00:31:08,090 --> 00:31:13,320
+So this should be a circle
+shape, or a circle class.
+
+643
+00:31:13,320 --> 00:31:14,690
+And what should its radius be?
+
+644
+00:31:14,690 --> 00:31:17,552
+
+645
+00:31:17,552 --> 00:31:18,506
+AUDIENCE: [INAUDIBLE]
+
+646
+00:31:18,506 --> 00:31:19,940
+PROFESSOR: Right.
+
+647
+00:31:19,940 --> 00:31:24,060
+And then this line here is just
+going call the function
+
+648
+00:31:24,060 --> 00:31:26,620
+f, which is going to find
+the larger shape.
+
+649
+00:31:26,620 --> 00:31:31,960
+Which is determined
+by its area.
+
+650
+00:31:31,960 --> 00:31:34,330
+And in this particular instance,
+it's going to be a
+
+651
+00:31:34,330 --> 00:31:35,580
+circle with radius eight.
+
+652
+00:31:35,580 --> 00:31:38,550
+
+653
+00:31:38,550 --> 00:31:41,640
+Once you figure out what f does,
+this is actually not
+
+654
+00:31:41,640 --> 00:31:43,600
+such a hard problem.
+
+655
+00:31:43,600 --> 00:31:46,190
+So the key to understanding this
+one is figuring out what
+
+656
+00:31:46,190 --> 00:31:47,990
+f is actually doing.
+
+657
+00:31:47,990 --> 00:31:52,410
+And you'll probably see a
+problem or two on the exam
+
+658
+00:31:52,410 --> 00:31:58,380
+that's written like this, where
+the function has been
+
+659
+00:31:58,380 --> 00:32:00,610
+obfuscated.
+
+660
+00:32:00,610 --> 00:32:06,710
+So it doesn't have nice
+little variable names.
+
+661
+00:32:06,710 --> 00:32:09,910
+If we were writing this
+for real, it would be
+
+662
+00:32:09,910 --> 00:32:12,370
+something like that.
+
+663
+00:32:12,370 --> 00:32:15,070
+AUDIENCE: Wait, what was
+the radius on L?
+
+664
+00:32:15,070 --> 00:32:16,080
+It was--
+
+665
+00:32:16,080 --> 00:32:17,385
+PROFESSOR: Radius on L?
+
+666
+00:32:17,385 --> 00:32:19,660
+AUDIENCE: Or not radius.
+
+667
+00:32:19,660 --> 00:32:22,390
+Like, L4 was circled.
+
+668
+00:32:22,390 --> 00:32:26,710
+And was that all it was,
+it was just a circle?
+
+669
+00:32:26,710 --> 00:32:28,090
+PROFESSOR: With radius 4.
+
+670
+00:32:28,090 --> 00:32:29,220
+AUDIENCE: With radius 4?
+
+671
+00:32:29,220 --> 00:32:33,060
+OK, that's what I thought.
+
+672
+00:32:33,060 --> 00:32:35,392
+PROFESSOR: All right.
+
+673
+00:32:35,392 --> 00:32:37,842
+AUDIENCE: How many of those
+special underbar functions
+
+674
+00:32:37,842 --> 00:32:39,810
+have we seen?
+
+675
+00:32:39,810 --> 00:32:44,250
+Have we seen anything besides
+edit string and [INAUDIBLE]?
+
+676
+00:32:44,250 --> 00:32:45,520
+PROFESSOR: So, how many
+of the double underbar
+
+677
+00:32:45,520 --> 00:32:47,616
+functions have you seen?
+
+678
+00:32:47,616 --> 00:32:49,390
+That's a good question.
+
+679
+00:32:49,390 --> 00:32:51,780
+You've seen a lot, right?
+
+680
+00:32:51,780 --> 00:32:58,340
+The ones that I would be
+familiar with definitely INIT
+
+681
+00:32:58,340 --> 00:33:04,980
+definitely EQ, GE and
+definitely STR.
+
+682
+00:33:04,980 --> 00:33:11,640
+You might want to be familiar
+with this, LE.
+
+683
+00:33:11,640 --> 00:33:13,050
+So what is LE?
+
+684
+00:33:13,050 --> 00:33:15,620
+What do you think that does?
+
+685
+00:33:15,620 --> 00:33:16,790
+Less than or equal to.
+
+686
+00:33:16,790 --> 00:33:17,460
+Less than.
+
+687
+00:33:17,460 --> 00:33:23,070
+So it's this the opposite
+of GE, right?
+
+688
+00:33:23,070 --> 00:33:29,205
+I think there's also an
+LT, so less than.
+
+689
+00:33:29,205 --> 00:33:30,455
+And GT.
+
+690
+00:33:30,455 --> 00:33:33,450
+
+691
+00:33:33,450 --> 00:33:36,170
+It's fairly logical.
+
+692
+00:33:36,170 --> 00:33:46,330
+And historically you don't need
+to have these memorized.
+
+693
+00:33:46,330 --> 00:33:48,410
+I've never seen a question where
+you've actually had to
+
+694
+00:33:48,410 --> 00:33:54,280
+produce code that uses double
+underbar on the quiz.
+
+695
+00:33:54,280 --> 00:33:56,840
+You just have to understand
+what it's doing
+
+696
+00:33:56,840 --> 00:33:57,610
+if you can see it.
+
+697
+00:33:57,610 --> 00:33:58,860
+Like, in a code reading
+exercise.
+
+698
+00:33:58,860 --> 00:34:01,560
+
+699
+00:34:01,560 --> 00:34:07,260
+And the conventions are fairly
+straightforward to understand.
+
+700
+00:34:07,260 --> 00:34:11,230
+
+701
+00:34:11,230 --> 00:34:12,480
+Can I move on?
+
+702
+00:34:12,480 --> 00:34:14,910
+
+703
+00:34:14,910 --> 00:34:16,395
+AUDIENCE: Can you scroll
+down a little bit?
+
+704
+00:34:16,395 --> 00:34:24,084
+Where it says print L4,
+or I guess print FL.
+
+705
+00:34:24,084 --> 00:34:29,030
+Does it automatically just print
+the string function?
+
+706
+00:34:29,030 --> 00:34:30,110
+PROFESSOR: Yes.
+
+707
+00:34:30,110 --> 00:34:36,794
+So you're asking why
+I don't have this.
+
+708
+00:34:36,794 --> 00:34:38,080
+AUDIENCE: Right.
+
+709
+00:34:38,080 --> 00:34:44,900
+PROFESSOR: So in this flavor
+of Python, and if you don't
+
+710
+00:34:44,900 --> 00:34:50,690
+have an explicit conversion to
+string, Python will look for
+
+711
+00:34:50,690 --> 00:34:54,570
+the underbar STR function
+if it exists.
+
+712
+00:34:54,570 --> 00:34:58,470
+If it doesn't exist then you get
+that weird object at blah,
+
+713
+00:34:58,470 --> 00:35:00,880
+blah, blah.
+
+714
+00:35:00,880 --> 00:35:03,230
+AUDIENCE: Right.
+
+715
+00:35:03,230 --> 00:35:04,900
+PROFESSOR: Any other
+questions?
+
+716
+00:35:04,900 --> 00:35:07,870
+AUDIENCE: What list are
+you reading up on top?
+
+717
+00:35:07,870 --> 00:35:11,830
+
+718
+00:35:11,830 --> 00:35:14,305
+PROFESSOR: Are you confused
+because it's the same name?
+
+719
+00:35:14,305 --> 00:35:14,800
+AUDIENCE: Maybe.
+
+720
+00:35:14,800 --> 00:35:16,285
+I don't know.
+
+721
+00:35:16,285 --> 00:35:18,760
+So the third thing
+that [INAUDIBLE].
+
+722
+00:35:18,760 --> 00:35:22,225
+I understand the second thing,
+circle with radius 4.
+
+723
+00:35:22,225 --> 00:35:26,190
+But how do you get that
+circle of radius 8?
+
+724
+00:35:26,190 --> 00:35:30,925
+PROFESSOR: Well, the way we
+get that is, f of l--
+
+725
+00:35:30,925 --> 00:35:32,089
+f is the function, right?
+
+726
+00:35:32,089 --> 00:35:33,420
+AUDIENCE: Right, and it produces
+the largest element
+
+727
+00:35:33,420 --> 00:35:34,917
+of the list.
+
+728
+00:35:34,917 --> 00:35:39,410
+And the list, L, contains
+0 to 9?
+
+729
+00:35:39,410 --> 00:35:39,490
+PROFESSOR: Yes.
+
+730
+00:35:39,490 --> 00:35:41,709
+So we could actually print
+out what L contains.
+
+731
+00:35:41,709 --> 00:35:43,188
+AUDIENCE: Why isn't it square?
+
+732
+00:35:43,188 --> 00:35:45,653
+Isn't 9 [INAUDIBLE]?
+
+733
+00:35:45,653 --> 00:35:47,625
+PROFESSOR: Why don't we do it?
+
+734
+00:35:47,625 --> 00:36:05,900
+
+735
+00:36:05,900 --> 00:36:06,200
+All right.
+
+736
+00:36:06,200 --> 00:36:07,950
+So all it's going to do is, it's
+going to print out all
+
+737
+00:36:07,950 --> 00:36:11,860
+the shapes in the list
+and their areas.
+
+738
+00:36:11,860 --> 00:36:14,585
+I've got stuff at the top.
+
+739
+00:36:14,585 --> 00:36:24,140
+
+740
+00:36:24,140 --> 00:36:27,950
+So this is the first shape.
+
+741
+00:36:27,950 --> 00:36:34,450
+And then, as we move down the
+list, we have square with side
+
+742
+00:36:34,450 --> 00:36:39,320
+1, circle with radius 2, 3, et
+cetera, et cetera, et cetera.
+
+743
+00:36:39,320 --> 00:36:45,480
+And then, this is the area of
+the circle with radius 8
+
+744
+00:36:45,480 --> 00:36:51,060
+versus the area of a
+square with side 9.
+
+745
+00:36:51,060 --> 00:36:54,920
+
+746
+00:36:54,920 --> 00:37:00,270
+So, and it depends on--
+
+747
+00:37:00,270 --> 00:37:03,710
+the reason why it works this
+way is that this is greater
+
+748
+00:37:03,710 --> 00:37:08,160
+than or equal to operator is
+defined in terms of the area
+
+749
+00:37:08,160 --> 00:37:09,410
+method of the shapes.
+
+750
+00:37:09,410 --> 00:37:12,160
+
+751
+00:37:12,160 --> 00:37:13,879
+Does that--
+
+752
+00:37:13,879 --> 00:37:14,352
+AUDIENCE: So wait.
+
+753
+00:37:14,352 --> 00:37:16,244
+What is this doing then?
+
+754
+00:37:16,244 --> 00:37:19,560
+L is a list of areas?
+
+755
+00:37:19,560 --> 00:37:20,810
+PROFESSOR: No, L is
+a list of shapes.
+
+756
+00:37:20,810 --> 00:37:24,100
+
+757
+00:37:24,100 --> 00:37:27,004
+It's a list of subclasses
+of shapes.
+
+758
+00:37:27,004 --> 00:37:33,452
+
+759
+00:37:33,452 --> 00:37:35,932
+AUDIENCE: So you're feeding
+f this list of shapes.
+
+760
+00:37:35,932 --> 00:37:38,908
+
+761
+00:37:38,908 --> 00:37:42,740
+Oh, and to compare if S and
+L [? into that list ?]
+
+762
+00:37:42,740 --> 00:37:43,736
+is greater.
+
+763
+00:37:43,736 --> 00:37:46,292
+And for equal to x, do you have
+to use the greater than
+
+764
+00:37:46,292 --> 00:37:47,222
+or equal to--
+
+765
+00:37:47,222 --> 00:37:47,620
+PROFESSOR: Operator, right.
+
+766
+00:37:47,620 --> 00:37:51,206
+AUDIENCE: --method, the
+class of shapes
+
+767
+00:37:51,206 --> 00:37:51,704
+which compares areas?
+
+768
+00:37:51,704 --> 00:37:53,696
+PROFESSOR: Mm-hm.
+
+769
+00:37:53,696 --> 00:37:57,040
+Now, I might regret this.
+
+770
+00:37:57,040 --> 00:38:09,110
+
+771
+00:38:09,110 --> 00:38:11,155
+I think this'll work.
+
+772
+00:38:11,155 --> 00:38:11,620
+Yep.
+
+773
+00:38:11,620 --> 00:38:12,870
+It works.
+
+774
+00:38:12,870 --> 00:38:15,560
+
+775
+00:38:15,560 --> 00:38:19,380
+So, you see this weirdness
+I have here?
+
+776
+00:38:19,380 --> 00:38:21,270
+It's showing pretty explicitly
+that I'm
+
+777
+00:38:21,270 --> 00:38:24,950
+calling this a GE operator.
+
+778
+00:38:24,950 --> 00:38:27,180
+It's just so--
+
+779
+00:38:27,180 --> 00:38:30,090
+this is really just shorthand
+for that.
+
+780
+00:38:30,090 --> 00:38:31,430
+Syntactic sugar.
+
+781
+00:38:31,430 --> 00:38:33,290
+It's easier to look at.
+
+782
+00:38:33,290 --> 00:38:36,300
+Easier to understand.
+
+783
+00:38:36,300 --> 00:38:39,580
+And to even drive that
+point further home--
+
+784
+00:38:39,580 --> 00:38:48,870
+
+785
+00:38:48,870 --> 00:38:52,490
+whenever that GE, whenever that
+comparison is done, it's
+
+786
+00:38:52,490 --> 00:38:55,620
+going to print out I'm here.
+
+787
+00:38:55,620 --> 00:38:56,990
+So it is actually getting
+called and not
+
+788
+00:38:56,990 --> 00:38:58,240
+just blowing smoke.
+
+789
+00:38:58,240 --> 00:39:02,570
+
+790
+00:39:02,570 --> 00:39:03,820
+Have we beaten this
+problem to death?
+
+791
+00:39:03,820 --> 00:39:07,470
+
+792
+00:39:07,470 --> 00:39:08,720
+Last problem.
+
+793
+00:39:08,720 --> 00:39:12,140
+
+794
+00:39:12,140 --> 00:39:17,480
+So, I'm actually not a huge
+fan of this problem.
+
+795
+00:39:17,480 --> 00:39:21,340
+But the way I think of it
+is, it's the number
+
+796
+00:39:21,340 --> 00:39:22,930
+guessing game, right?
+
+797
+00:39:22,930 --> 00:39:27,150
+So I say to you, I'm thinking of
+a number between 0 and 100.
+
+798
+00:39:27,150 --> 00:39:29,080
+Or in this case, maxVal.
+
+799
+00:39:29,080 --> 00:39:32,080
+And your job is to guess, as
+quickly as possible, what
+
+800
+00:39:32,080 --> 00:39:33,300
+number I'm thinking of.
+
+801
+00:39:33,300 --> 00:39:36,350
+The only thing I can tell you
+is that you give me a guess
+
+802
+00:39:36,350 --> 00:39:38,800
+and I'll tell you if it's higher
+or lower, or if it is
+
+803
+00:39:38,800 --> 00:39:40,710
+the answer.
+
+804
+00:39:40,710 --> 00:39:43,420
+So if I'm thinking of a
+number between 0 and
+
+805
+00:39:43,420 --> 00:39:47,962
+100, what's the strategy?
+
+806
+00:39:47,962 --> 00:39:49,030
+AUDIENCE: [UNINTELLIGIBLE]
+
+807
+00:39:49,030 --> 00:39:49,942
+PROFESSOR: Binary search.
+
+808
+00:39:49,942 --> 00:39:51,090
+AUDIENCE: Binary search, yeah.
+
+809
+00:39:51,090 --> 00:39:52,130
+PROFESSOR: Binary
+search, right?
+
+810
+00:39:52,130 --> 00:39:54,560
+So you're going to start
+in the middle.
+
+811
+00:39:54,560 --> 00:39:56,530
+You're going to start at 50, and
+you're going to say-- and
+
+812
+00:39:56,530 --> 00:40:00,300
+I'm going to say, well,
+no, the number I'm
+
+813
+00:40:00,300 --> 00:40:01,750
+thinking of is lower.
+
+814
+00:40:01,750 --> 00:40:05,970
+So now you're going to guess
+between 0 and 50, 25.
+
+815
+00:40:05,970 --> 00:40:08,310
+And I'm going to say
+it's higher.
+
+816
+00:40:08,310 --> 00:40:11,562
+Now you're going to guess
+between 25 and 50.
+
+817
+00:40:11,562 --> 00:40:13,950
+I don't know, I didn't actually
+think of a number.
+
+818
+00:40:13,950 --> 00:40:15,750
+But you get the idea, right?
+
+819
+00:40:15,750 --> 00:40:18,785
+So this problem is asking you to
+implement a binary search.
+
+820
+00:40:18,785 --> 00:40:21,850
+
+821
+00:40:21,850 --> 00:40:25,880
+And comp.guess here
+is functioning
+
+822
+00:40:25,880 --> 00:40:30,256
+as me in this problem.
+
+823
+00:40:30,256 --> 00:40:34,670
+It knows a number and you write
+a program that's going
+
+824
+00:40:34,670 --> 00:40:38,730
+to guess it, which
+is find.number.
+
+825
+00:40:38,730 --> 00:40:45,200
+So, there are multiple ways
+to do this problem.
+
+826
+00:40:45,200 --> 00:40:48,560
+Here is my solution.
+
+827
+00:40:48,560 --> 00:40:53,070
+
+828
+00:40:53,070 --> 00:40:55,930
+This is just an implementation
+of comp guess.
+
+829
+00:40:55,930 --> 00:40:59,070
+At the beginning, set a maximum
+value of 100,000.
+
+830
+00:40:59,070 --> 00:41:01,620
+And I'm going to guess the magic
+number, or I'm going to
+
+831
+00:41:01,620 --> 00:41:05,028
+choose a random number
+from between-- yeah?
+
+832
+00:41:05,028 --> 00:41:07,754
+AUDIENCE: When you say binary
+search, is that the same thing
+
+833
+00:41:07,754 --> 00:41:10,320
+as bisection search?
+
+834
+00:41:10,320 --> 00:41:10,810
+PROFESSOR: It's the same idea.
+
+835
+00:41:10,810 --> 00:41:14,020
+But the way that I differentiate
+binary search
+
+836
+00:41:14,020 --> 00:41:16,610
+from bisection search is that
+you do a binary search on a
+
+837
+00:41:16,610 --> 00:41:20,620
+finite list of elements,
+of sorted elements.
+
+838
+00:41:20,620 --> 00:41:26,600
+So I might have a list of names
+in alphabetical order,
+
+839
+00:41:26,600 --> 00:41:29,500
+or a list of numbers
+in ascending order.
+
+840
+00:41:29,500 --> 00:41:33,150
+And I would do a binary
+search on that list.
+
+841
+00:41:33,150 --> 00:41:37,490
+With bisection search, it's not
+necessarily a finite list
+
+842
+00:41:37,490 --> 00:41:40,830
+of numbers or elements
+that I'm looking at.
+
+843
+00:41:40,830 --> 00:41:44,580
+It's, I know that the answer
+exists within a lower and an
+
+844
+00:41:44,580 --> 00:41:50,230
+upper bound, and I'm going to
+divide that search space in
+
+845
+00:41:50,230 --> 00:41:54,410
+half successively or iteratively
+to find that
+
+846
+00:41:54,410 --> 00:41:55,950
+actual value.
+
+847
+00:41:55,950 --> 00:41:58,790
+But it's not necessarily a
+finite list of elements
+
+848
+00:41:58,790 --> 00:42:00,040
+between those bounds.
+
+849
+00:42:00,040 --> 00:42:02,330
+
+850
+00:42:02,330 --> 00:42:03,880
+That's good?
+
+851
+00:42:03,880 --> 00:42:06,080
+AUDIENCE: Yes.
+
+852
+00:42:06,080 --> 00:42:08,410
+PROFESSOR: So this is
+one implementation.
+
+853
+00:42:08,410 --> 00:42:13,890
+You can do it any
+number of ways.
+
+854
+00:42:13,890 --> 00:42:19,060
+This numSteps thing, you
+wouldn't need to have.
+
+855
+00:42:19,060 --> 00:42:23,170
+It's just for me to illustrate
+some stuff.
+
+856
+00:42:23,170 --> 00:42:25,240
+So I'm going to start
+at 0, and I'm
+
+857
+00:42:25,240 --> 00:42:27,190
+going to start at maxVal.
+
+858
+00:42:27,190 --> 00:42:28,970
+And then I'm going to
+keep iterating.
+
+859
+00:42:28,970 --> 00:42:32,200
+While I don't have,
+or while I haven't
+
+860
+00:42:32,200 --> 00:42:34,710
+reached the answer, basically.
+
+861
+00:42:34,710 --> 00:42:38,880
+So, I'm going to make my
+guess in the middle.
+
+862
+00:42:38,880 --> 00:42:48,330
+And then if comp.guess tells me
+that it's higher, or that
+
+863
+00:42:48,330 --> 00:42:51,270
+my guess is too low, basically,
+then I'm going to
+
+864
+00:42:51,270 --> 00:42:54,890
+set my upper--
+
+865
+00:42:54,890 --> 00:42:58,120
+sorry, if my guess is too high,
+then I'm going to set my
+
+866
+00:42:58,120 --> 00:42:59,950
+upper bound to my guess.
+
+867
+00:42:59,950 --> 00:43:02,110
+And then I'm going to search
+in the middle from there.
+
+868
+00:43:02,110 --> 00:43:04,940
+And then if it tells me that my
+guess is too high, then I'm
+
+869
+00:43:04,940 --> 00:43:08,400
+going to search in
+the upper region.
+
+870
+00:43:08,400 --> 00:43:11,510
+Otherwise, that means I've
+made the correct
+
+871
+00:43:11,510 --> 00:43:15,810
+guess and I'm done.
+
+872
+00:43:15,810 --> 00:43:23,480
+So, very simple.
+
+873
+00:43:23,480 --> 00:43:27,610
+
+874
+00:43:27,610 --> 00:43:31,640
+The key part of this problem
+that tells you that you should
+
+875
+00:43:31,640 --> 00:43:34,370
+use binary search, though, is
+that it stipulates you need to
+
+876
+00:43:34,370 --> 00:43:37,440
+have a log maxVal algorithm.
+
+877
+00:43:37,440 --> 00:43:42,410
+And binary search is
+a log N algorithm.
+
+878
+00:43:42,410 --> 00:43:47,180
+I mean, you could do find number
+in a linear search, but
+
+879
+00:43:47,180 --> 00:43:48,430
+it would be fairly
+inefficient.
+
+880
+00:43:48,430 --> 00:43:51,350
+
+881
+00:43:51,350 --> 00:43:52,600
+All right?
+
+882
+00:43:52,600 --> 00:43:54,937
+
+883
+00:43:54,937 --> 00:43:56,843
+AUDIENCE: [INAUDIBLE] just guess
+one number, then go--
+
+884
+00:43:56,843 --> 00:43:58,040
+PROFESSOR: Yeah, start at 0--
+
+885
+00:43:58,040 --> 00:43:59,120
+AUDIENCE: [UNINTELLIGIBLE]
+guess 1, you guess
+
+886
+00:43:59,120 --> 00:44:00,834
+2, then guess 3.
+
+887
+00:44:00,834 --> 00:44:02,300
+PROFESSOR: Yep.
+
+888
+00:44:02,300 --> 00:44:04,404
+So you just keep incrementing
+by one.
+
+889
+00:44:04,404 --> 00:44:10,212
+
+890
+00:44:10,212 --> 00:44:14,568
+AUDIENCE: If it didn't specify,
+oh, it should run log
+
+891
+00:44:14,568 --> 00:44:17,472
+[UNINTELLIGIBLE], would it be
+OK if we had used the word
+
+892
+00:44:17,472 --> 00:44:18,860
+[UNINTELLIGIBLE]?
+
+893
+00:44:18,860 --> 00:44:20,940
+PROFESSOR: If it didn't specify
+the complexity, then
+
+894
+00:44:20,940 --> 00:44:23,990
+yeah, you could use whatever
+search you deemed appropriate.
+
+895
+00:44:23,990 --> 00:44:27,410
+But because it said it
+needs to be log N --
+
+896
+00:44:27,410 --> 00:44:28,380
+AUDIENCE: Yeah, yeah.
+
+897
+00:44:28,380 --> 00:44:31,290
+OK.
+
+898
+00:44:31,290 --> 00:44:33,230
+AUDIENCE: [INAUDIBLE]
+
+899
+00:44:33,230 --> 00:44:34,685
+PROFESSOR: What's that?
+
+900
+00:44:34,685 --> 00:44:36,625
+AUDIENCE: Are you going
+to [UNINTELLIGIBLE]?
+
+901
+00:44:36,625 --> 00:44:40,100
+
+902
+00:44:40,100 --> 00:44:41,350
+PROFESSOR: Not in this
+particular case.
+
+903
+00:44:41,350 --> 00:44:45,000
+
+904
+00:44:45,000 --> 00:44:47,940
+Because we're dealing with
+integers anyway.
+
+905
+00:44:47,940 --> 00:44:53,197
+So all these operations
+are going to
+
+906
+00:44:53,197 --> 00:44:55,804
+result in integer results.
+
+907
+00:44:55,804 --> 00:44:57,147
+AUDIENCE: Are you going to ever
+be able to get to the
+
+908
+00:44:57,147 --> 00:44:59,130
+highest number?
+
+909
+00:44:59,130 --> 00:45:02,850
+PROFESSOR: So if it were,
+like, 99,000?
+
+910
+00:45:02,850 --> 00:45:05,820
+Is that what you're asking?
+
+911
+00:45:05,820 --> 00:45:07,800
+AUDIENCE: If the number
+were maxVal.
+
+912
+00:45:07,800 --> 00:45:09,780
+PROFESSOR: Well, we'll see.
+
+913
+00:45:09,780 --> 00:45:11,072
+I might have it wrong in my
+
+914
+00:45:11,072 --> 00:45:12,633
+implementation, always possible.
+
+915
+00:45:12,633 --> 00:45:16,561
+If I do, I'd probably take
+one point off me.
+
+916
+00:45:16,561 --> 00:45:27,880
+
+917
+00:45:27,880 --> 00:45:30,300
+Yeah, so I have a bug.
+
+918
+00:45:30,300 --> 00:45:33,380
+So I am actually--
+
+919
+00:45:33,380 --> 00:45:37,060
+AUDIENCE: When it divides, it
+rounds it down [INAUDIBLE].
+
+920
+00:45:37,060 --> 00:45:37,360
+PROFESSOR: Yeah.
+
+921
+00:45:37,360 --> 00:45:38,980
+So I have a bug.
+
+922
+00:45:38,980 --> 00:45:44,300
+And I'm not going to try and
+fix it right now, but yeah.
+
+923
+00:45:44,300 --> 00:45:46,800
+If I were grading this and this
+were my solution, I'd
+
+924
+00:45:46,800 --> 00:45:49,330
+dock me a point or two.
+
+925
+00:45:49,330 --> 00:45:52,590
+AUDIENCE: What's your error?
+
+926
+00:45:52,590 --> 00:45:58,300
+PROFESSOR: My error is that
+because of this the way that I
+
+927
+00:45:58,300 --> 00:46:05,000
+get my guess here, I'm never
+going to get to max val.
+
+928
+00:46:05,000 --> 00:46:09,246
+If the computer chose maxVal as
+its guess, then I'd never
+
+929
+00:46:09,246 --> 00:46:10,496
+get to that.
+
+930
+00:46:10,496 --> 00:46:14,190
+
+931
+00:46:14,190 --> 00:46:17,936
+So yeah, you caught me.
+
+932
+00:46:17,936 --> 00:46:20,870
+AUDIENCE: A friend of mine
+looked at this and was like,
+
+933
+00:46:20,870 --> 00:46:24,782
+oh, you should define another
+function to solve it.
+
+934
+00:46:24,782 --> 00:46:26,444
+Is that kind of thing actually
+allowed on the
+
+935
+00:46:26,444 --> 00:46:29,690
+exam at all, or no?
+
+936
+00:46:29,690 --> 00:46:31,370
+PROFESSOR: Well, why did your
+friend think you need to find
+
+937
+00:46:31,370 --> 00:46:33,370
+another function?
+
+938
+00:46:33,370 --> 00:46:35,870
+AUDIENCE: I'm not
+exactly sure.
+
+939
+00:46:35,870 --> 00:46:40,370
+It was supposed to be
+[UNINTELLIGIBLE]
+
+940
+00:46:40,370 --> 00:46:44,870
+PROFESSOR: Did they say define
+a recursive function?
+
+941
+00:46:44,870 --> 00:46:46,360
+AUDIENCE: I think that's what
+I was trying to do.
+
+942
+00:46:46,360 --> 00:46:47,662
+PROFESSOR: So I'm solving
+it iteratively.
+
+943
+00:46:47,662 --> 00:46:50,400
+You really can write a
+recursive function.
+
+944
+00:46:50,400 --> 00:46:54,030
+And in this case, because
+we've given you the
+
+945
+00:46:54,030 --> 00:46:57,320
+specification for find number,
+you'd probably write something
+
+946
+00:46:57,320 --> 00:47:00,632
+like find number helper, and
+have whatever additional
+
+947
+00:47:00,632 --> 00:47:03,203
+parameters you needed in order
+to support the recursion.
+
+948
+00:47:03,203 --> 00:47:05,668
+AUDIENCE: So you can
+do that or no?
+
+949
+00:47:05,668 --> 00:47:06,161
+PROFESSOR: Yeah.
+
+950
+00:47:06,161 --> 00:47:06,654
+We'd be fine with that.
+
+951
+00:47:06,654 --> 00:47:11,091
+The point is that you write a
+function that runs in log
+
+952
+00:47:11,091 --> 00:47:12,341
+maxVal time.
+
+953
+00:47:12,341 --> 00:47:15,035
+
+954
+00:47:15,035 --> 00:47:17,623
+AUDIENCE: Because at the top it
+says that the magic number
+
+955
+00:47:17,623 --> 00:47:21,937
+is in range maxVal, doesn't
+that mean that the number
+
+956
+00:47:21,937 --> 00:47:25,881
+would not ever be maxVal?
+
+957
+00:47:25,881 --> 00:47:27,853
+PROFESSOR: Let me see.
+
+958
+00:47:27,853 --> 00:47:29,332
+Actually, yeah.
+
+959
+00:47:29,332 --> 00:47:32,783
+Because it would be 0 to 999--
+
+960
+00:47:32,783 --> 00:47:35,750
+or 999,999.
+
+961
+00:47:35,750 --> 00:47:40,070
+Well, I'm not sure
+if this actually
+
+962
+00:47:40,070 --> 00:47:41,513
+constitutes a bug or not.
+
+963
+00:47:41,513 --> 00:47:43,437
+So I'd have to do
+unit testing.
+
+964
+00:47:43,437 --> 00:47:46,804
+I don't have any test cases.
+
+965
+00:47:46,804 --> 00:47:49,520
+Which is, again, back
+to unit testing.
+
+966
+00:47:49,520 --> 00:47:52,460
+
+967
+00:47:52,460 --> 00:47:54,420
+You have a question or--?
+
+968
+00:47:54,420 --> 00:47:54,910
+AUDIENCE: Yeah.
+
+969
+00:47:54,910 --> 00:48:00,480
+Could you do this by saying
+your guess equals choose a
+
+970
+00:48:00,480 --> 00:48:01,956
+random number between
+high and low?
+
+971
+00:48:01,956 --> 00:48:05,400
+
+972
+00:48:05,400 --> 00:48:07,700
+PROFESSOR: You could.
+
+973
+00:48:07,700 --> 00:48:09,492
+But it would have--
+
+974
+00:48:09,492 --> 00:48:16,857
+the analyzing complexity would
+be problematic, I would think.
+
+975
+00:48:16,857 --> 00:48:20,416
+Doing it this way, by guessing
+right in the middle, you know
+
+976
+00:48:20,416 --> 00:48:25,590
+it's going to be log
+maxVal complexity.
+
+977
+00:48:25,590 --> 00:48:27,810
+If you were to choose a random
+number between low and high,
+
+978
+00:48:27,810 --> 00:48:31,390
+I'm not sure what that would
+do to the complexity.
+
+979
+00:48:31,390 --> 00:48:33,220
+It would make the analysis a
+little bit more intricate.
+
+980
+00:48:33,220 --> 00:48:37,964
+
+981
+00:48:37,964 --> 00:48:43,780
+And if this were the actual quiz
+and you put that as your
+
+982
+00:48:43,780 --> 00:48:44,927
+answer we'd probably take
+a fair number of
+
+983
+00:48:44,927 --> 00:48:46,177
+points off for it.
+
+984
+00:48:46,177 --> 00:48:50,530
+
+985
+00:48:50,530 --> 00:48:52,064
+There are people who
+do study algorithms
+
+986
+00:48:52,064 --> 00:48:53,052
+that do that, though.
+
+987
+00:48:53,052 --> 00:48:56,016
+They use random numbers in
+order to [UNINTELLIGIBLE]
+
+988
+00:48:56,016 --> 00:48:57,266
+the values.
+
+989
+00:48:57,266 --> 00:48:59,980
+
+990
+00:48:59,980 --> 00:49:04,100
+So we're done with the quiz.
+
+991
+00:49:04,100 --> 00:49:06,260
+And now we've got a list
+of topics to go over.
+
+992
+00:49:06,260 --> 00:49:09,380
+
+993
+00:49:09,380 --> 00:49:14,060
+So, let's start at the top.
+
+994
+00:49:14,060 --> 00:49:16,980
+The first subject that was
+listed-- so all you got the
+
+995
+00:49:16,980 --> 00:49:20,450
+list of quiz topics for the
+quiz, I'm assuming?
+
+996
+00:49:20,450 --> 00:49:23,560
+Did all of you look at it?
+
+997
+00:49:23,560 --> 00:49:25,290
+The first topic is algorithms.
+
+998
+00:49:25,290 --> 00:49:28,380
+And I have big-O notation,
+exhaustive enumeration, guess
+
+999
+00:49:28,380 --> 00:49:30,060
+and check, successive
+approximation, divide and
+
+1000
+00:49:30,060 --> 00:49:33,360
+conquer, binary search, merge
+sort, hashing, orders of
+
+1001
+00:49:33,360 --> 00:49:35,860
+growth, and amortized
+analysis.
+
+1002
+00:49:35,860 --> 00:49:39,270
+So, first come, first serve.
+
+1003
+00:49:39,270 --> 00:49:41,057
+What do people want to see?
+
+1004
+00:49:41,057 --> 00:49:42,011
+AUDIENCE: Hashing.
+
+1005
+00:49:42,011 --> 00:49:42,965
+AUDIENCE: Yeah.
+
+1006
+00:49:42,965 --> 00:49:45,830
+Hashing and amortized
+analysis.
+
+1007
+00:49:45,830 --> 00:49:47,730
+PROFESSOR: Hashing and
+amortized analysis.
+
+1008
+00:49:47,730 --> 00:49:50,400
+OK.
+
+1009
+00:49:50,400 --> 00:49:52,610
+So why don't I start with
+hashing, because
+
+1010
+00:49:52,610 --> 00:49:53,940
+that's pretty easy.
+
+1011
+00:49:53,940 --> 00:50:00,620
+The idea behind hashing is that
+you have a function, and
+
+1012
+00:50:00,620 --> 00:50:03,360
+it's going to take some input.
+
+1013
+00:50:03,360 --> 00:50:08,000
+And it's going to compute
+an address of some sort.
+
+1014
+00:50:08,000 --> 00:50:13,690
+And let's imagine that I have
+a data structure that has a
+
+1015
+00:50:13,690 --> 00:50:17,950
+number of buckets arranged
+one after the other.
+
+1016
+00:50:17,950 --> 00:50:23,700
+
+1017
+00:50:23,700 --> 00:50:31,770
+What hashing does is, it says I
+have this input s, or a key,
+
+1018
+00:50:31,770 --> 00:50:33,190
+if you will.
+
+1019
+00:50:33,190 --> 00:50:36,030
+And I'm going to compute
+an address like a
+
+1020
+00:50:36,030 --> 00:50:37,540
+number of some sort.
+
+1021
+00:50:37,540 --> 00:50:39,830
+And it's going to, say,
+wind up here.
+
+1022
+00:50:39,830 --> 00:50:42,540
+
+1023
+00:50:42,540 --> 00:50:46,430
+And this relates to Python
+because this is how
+
+1024
+00:50:46,430 --> 00:50:48,280
+dictionaries are implemented.
+
+1025
+00:50:48,280 --> 00:50:51,890
+So this s here is going to be
+the key that you give the
+
+1026
+00:50:51,890 --> 00:50:53,320
+dictionary.
+
+1027
+00:50:53,320 --> 00:50:57,530
+And then it'll compute a
+location for this bucket where
+
+1028
+00:50:57,530 --> 00:50:58,780
+it's going to put the value.
+
+1029
+00:50:58,780 --> 00:51:03,740
+
+1030
+00:51:03,740 --> 00:51:08,080
+So, the idea--
+
+1031
+00:51:08,080 --> 00:51:12,890
+what makes these hashing
+functions valuable, especially
+
+1032
+00:51:12,890 --> 00:51:16,060
+with respect to dictionaries, is
+that you can check for the
+
+1033
+00:51:16,060 --> 00:51:20,270
+presence of a key or a value
+in constant time.
+
+1034
+00:51:20,270 --> 00:51:24,590
+Because the hashing function
+is more or less constant.
+
+1035
+00:51:24,590 --> 00:51:27,680
+And once you have an address
+into the data structure, it's
+
+1036
+00:51:27,680 --> 00:51:30,590
+very easy to compute the
+location where you're going to
+
+1037
+00:51:30,590 --> 00:51:32,530
+put something.
+
+1038
+00:51:32,530 --> 00:51:37,160
+So, I'm not sure--
+
+1039
+00:51:37,160 --> 00:51:41,860
+does that kind of help you?
+
+1040
+00:51:41,860 --> 00:51:47,520
+You don't need to know hashing
+in great detail.
+
+1041
+00:51:47,520 --> 00:51:51,290
+You're not going to need to know
+the hashing function for
+
+1042
+00:51:51,290 --> 00:51:54,560
+like a string, or the hashing
+function for a tuple or
+
+1043
+00:51:54,560 --> 00:51:55,910
+something like that.
+
+1044
+00:51:55,910 --> 00:52:01,130
+The main points that you need to
+get from hashing is that it
+
+1045
+00:52:01,130 --> 00:52:03,820
+computes an address into
+this data structure.
+
+1046
+00:52:03,820 --> 00:52:06,620
+It's a constant time thing.
+
+1047
+00:52:06,620 --> 00:52:10,120
+And that's about it, actually.
+
+1048
+00:52:10,120 --> 00:52:12,990
+If you have those two
+concepts down--
+
+1049
+00:52:12,990 --> 00:52:15,510
+well, also, three that that's
+how dictionaries are
+
+1050
+00:52:15,510 --> 00:52:16,620
+implemented--
+
+1051
+00:52:16,620 --> 00:52:21,860
+if you have those in your mind
+for hashing, you'll be good.
+
+1052
+00:52:21,860 --> 00:52:24,630
+Anyone have any other questions
+for hashing?
+
+1053
+00:52:24,630 --> 00:52:27,250
+AUDIENCE: So we never have to
+like write a hashing function.
+
+1054
+00:52:27,250 --> 00:52:28,500
+It's more like [INAUDIBLE]
+
+1055
+00:52:28,500 --> 00:52:31,198
+
+1056
+00:52:31,198 --> 00:52:32,770
+PROFESSOR: This is so that you
+know what it is, and when you
+
+1057
+00:52:32,770 --> 00:52:35,750
+see it in the future, if you see
+it in the future, you're
+
+1058
+00:52:35,750 --> 00:52:37,240
+not totally lost.
+
+1059
+00:52:37,240 --> 00:52:40,720
+You have an idea of
+what it's doing.
+
+1060
+00:52:40,720 --> 00:52:45,550
+You can define your own hash
+functions, but we're not going
+
+1061
+00:52:45,550 --> 00:52:47,250
+to require that of you
+in this course.
+
+1062
+00:52:47,250 --> 00:52:53,940
+
+1063
+00:52:53,940 --> 00:52:56,800
+So that's hashing, basically.
+
+1064
+00:52:56,800 --> 00:52:59,620
+And all you need to
+know for the quiz.
+
+1065
+00:52:59,620 --> 00:53:08,010
+So for amortized analysis, the
+idea behind amortized analysis
+
+1066
+00:53:08,010 --> 00:53:11,140
+is that you have--
+
+1067
+00:53:11,140 --> 00:53:14,770
+maybe you have a known sequence
+of operations.
+
+1068
+00:53:14,770 --> 00:53:21,320
+And you're trying to find what
+the worst case runtime for
+
+1069
+00:53:21,320 --> 00:53:23,330
+that sequence of
+operations is.
+
+1070
+00:53:23,330 --> 00:53:26,740
+And you might have a bunch of
+operations that are really,
+
+1071
+00:53:26,740 --> 00:53:29,840
+really low cost, or
+low complexity.
+
+1072
+00:53:29,840 --> 00:53:31,870
+And one really expensive one.
+
+1073
+00:53:31,870 --> 00:53:39,140
+And for our purposes, we're
+trying to find this--
+
+1074
+00:53:39,140 --> 00:53:42,420
+find which of these operations
+is the dominating factor for
+
+1075
+00:53:42,420 --> 00:53:43,330
+the complexity.
+
+1076
+00:53:43,330 --> 00:53:48,330
+So the example I would use is,
+let's say that I have the task
+
+1077
+00:53:48,330 --> 00:53:55,490
+of searching for an element
+in a big list of elements.
+
+1078
+00:53:55,490 --> 00:53:59,240
+So we know two basic search
+algorithms for this, right?
+
+1079
+00:53:59,240 --> 00:54:02,990
+We know a linear search, where
+we go one at a time through
+
+1080
+00:54:02,990 --> 00:54:04,080
+each of the elements.
+
+1081
+00:54:04,080 --> 00:54:07,855
+And what's the complexity
+of that?
+
+1082
+00:54:07,855 --> 00:54:08,850
+AUDIENCE: [INAUDIBLE]
+
+1083
+00:54:08,850 --> 00:54:09,355
+PROFESSOR: What's that?
+
+1084
+00:54:09,355 --> 00:54:11,650
+AUDIENCE: Just the length
+of [INAUDIBLE].
+
+1085
+00:54:11,650 --> 00:54:13,310
+PROFESSOR: It's going to be
+linear in terms of the number
+
+1086
+00:54:13,310 --> 00:54:15,010
+of elements in the list.
+
+1087
+00:54:15,010 --> 00:54:19,370
+We also know binary search.
+
+1088
+00:54:19,370 --> 00:54:22,160
+What's the complexity
+of binary search?
+
+1089
+00:54:22,160 --> 00:54:22,990
+AUDIENCE: Log N.
+
+1090
+00:54:22,990 --> 00:54:25,750
+PROFESSOR: Log N. Now, there's
+a problem with binary search.
+
+1091
+00:54:25,750 --> 00:54:27,580
+It has a requirement.
+
+1092
+00:54:27,580 --> 00:54:32,290
+Will binary search work on a
+list that is not sorted?
+
+1093
+00:54:32,290 --> 00:54:33,650
+No.
+
+1094
+00:54:33,650 --> 00:54:35,380
+You require it to be sorted.
+
+1095
+00:54:35,380 --> 00:54:41,610
+So, we've talked about
+sorting in class.
+
+1096
+00:54:41,610 --> 00:54:42,860
+He covered it during
+the lecture.
+
+1097
+00:54:42,860 --> 00:54:46,520
+
+1098
+00:54:46,520 --> 00:54:54,510
+For basic sorting that we've
+seen, the lower bound, the
+
+1099
+00:54:54,510 --> 00:54:58,100
+complexity of the sorting
+algorithms is N log N. So
+
+1100
+00:54:58,100 --> 00:55:00,880
+merge sort will be an
+N log N algorithm.
+
+1101
+00:55:00,880 --> 00:55:04,540
+So, when--
+
+1102
+00:55:04,540 --> 00:55:10,360
+let's say that we just need
+to do one search, right?
+
+1103
+00:55:10,360 --> 00:55:16,590
+Do I really want to
+use binary search?
+
+1104
+00:55:16,590 --> 00:55:17,940
+Why?
+
+1105
+00:55:17,940 --> 00:55:19,800
+AUDIENCE: [INAUDIBLE]
+
+1106
+00:55:19,800 --> 00:55:22,995
+PROFESSOR: Because I have
+to sort it first.
+
+1107
+00:55:22,995 --> 00:55:28,470
+And if I just do--
+
+1108
+00:55:28,470 --> 00:55:44,060
+if I do I have to sort
+and then search, and
+
+1109
+00:55:44,060 --> 00:55:45,310
+this is going to be--
+
+1110
+00:55:45,310 --> 00:55:54,040
+
+1111
+00:55:54,040 --> 00:56:04,250
+whereas if I do a linear search,
+I just have search.
+
+1112
+00:56:04,250 --> 00:56:11,460
+
+1113
+00:56:11,460 --> 00:56:17,720
+And for just a single search,
+for binary search, this is
+
+1114
+00:56:17,720 --> 00:56:19,740
+going to dominate
+my complexity.
+
+1115
+00:56:19,740 --> 00:56:21,795
+But, let's say that I'm going
+to do a million searches.
+
+1116
+00:56:21,795 --> 00:56:25,400
+
+1117
+00:56:25,400 --> 00:56:29,660
+Now, it might behoove me to
+actually sort this first.
+
+1118
+00:56:29,660 --> 00:56:33,980
+Because I only have to
+sort the list once.
+
+1119
+00:56:33,980 --> 00:56:36,850
+And then I can do as many
+searches as I want.
+
+1120
+00:56:36,850 --> 00:56:42,490
+So, in the grand scheme of
+things, if I'm doing a million
+
+1121
+00:56:42,490 --> 00:56:48,140
+searches, then linear search
+is a really poor choice.
+
+1122
+00:56:48,140 --> 00:56:52,550
+And binary search would
+be my best option.
+
+1123
+00:56:52,550 --> 00:56:55,520
+And this is about as deep
+as we want to go
+
+1124
+00:56:55,520 --> 00:56:56,960
+with amortized analysis.
+
+1125
+00:56:56,960 --> 00:57:01,090
+It's this idea that there's a
+certain point at which one
+
+1126
+00:57:01,090 --> 00:57:03,170
+algorithm becomes more important
+than another
+
+1127
+00:57:03,170 --> 00:57:06,920
+algorithm, because the
+composition of its operations
+
+1128
+00:57:06,920 --> 00:57:10,330
+kind of determines, it changes
+as you increase the number of
+
+1129
+00:57:10,330 --> 00:57:12,340
+elements you're working with
+the number of times you're
+
+1130
+00:57:12,340 --> 00:57:13,590
+going to do the operation.
+
+1131
+00:57:13,590 --> 00:57:17,220
+
+1132
+00:57:17,220 --> 00:57:18,530
+That's kind of what you
+need to understand
+
+1133
+00:57:18,530 --> 00:57:20,530
+for amortized analysis.
+
+1134
+00:57:20,530 --> 00:57:26,180
+And it can be used in other
+types of analyses, but we're
+
+1135
+00:57:26,180 --> 00:57:27,580
+not going to get into that.
+
+1136
+00:57:27,580 --> 00:57:34,270
+
+1137
+00:57:34,270 --> 00:57:35,800
+All right.
+
+1138
+00:57:35,800 --> 00:57:39,930
+What other topics do we want
+to go over for algorithms?
+
+1139
+00:57:39,930 --> 00:57:45,950
+We've got big-O notation,
+exhaustive enumeration, divide
+
+1140
+00:57:45,950 --> 00:57:46,530
+and conquer.
+
+1141
+00:57:46,530 --> 00:57:48,544
+Successive approximation,
+merge sort,
+
+1142
+00:57:48,544 --> 00:57:50,480
+and orders of growth.
+
+1143
+00:57:50,480 --> 00:57:54,352
+
+1144
+00:57:54,352 --> 00:57:56,290
+AUDIENCE: Can we go
+over merge sort?
+
+1145
+00:57:56,290 --> 00:57:58,752
+PROFESSOR: You want to
+go over merge sort?
+
+1146
+00:57:58,752 --> 00:58:00,630
+OK.
+
+1147
+00:58:00,630 --> 00:58:02,640
+So-- and today actually,
+I have my code.
+
+1148
+00:58:02,640 --> 00:58:06,640
+
+1149
+00:58:06,640 --> 00:58:11,700
+So merge sort is a divide
+and conquer algorithm.
+
+1150
+00:58:11,700 --> 00:58:17,500
+And the idea is that
+I am going to
+
+1151
+00:58:17,500 --> 00:58:19,450
+take a list of elements.
+
+1152
+00:58:19,450 --> 00:58:22,840
+
+1153
+00:58:22,840 --> 00:58:31,750
+And I'm going to divide
+the list in half.
+
+1154
+00:58:31,750 --> 00:58:34,120
+So I'm going to get a left list
+and a right list, and
+
+1155
+00:58:34,120 --> 00:58:36,070
+they're unsorted.
+
+1156
+00:58:36,070 --> 00:58:37,590
+And then I'm going to call
+merge.sort on them.
+
+1157
+00:58:37,590 --> 00:58:40,290
+
+1158
+00:58:40,290 --> 00:58:45,110
+And I'm going to keep
+recursively calling merge sort
+
+1159
+00:58:45,110 --> 00:58:49,360
+until I have one element or
+no elements in the list.
+
+1160
+00:58:49,360 --> 00:58:51,065
+And then I'm going to
+return the list.
+
+1161
+00:58:51,065 --> 00:58:53,800
+
+1162
+00:58:53,800 --> 00:58:58,850
+After I do a merge sort on the
+left and right halves, I'm
+
+1163
+00:58:58,850 --> 00:59:01,940
+going to merge them.
+
+1164
+00:59:01,940 --> 00:59:06,760
+And the merge operation is just
+going to start at the
+
+1165
+00:59:06,760 --> 00:59:10,690
+beginning of the left and right
+halves of the list, and
+
+1166
+00:59:10,690 --> 00:59:13,890
+it's going to append the
+smaller element at the
+
+1167
+00:59:13,890 --> 00:59:17,180
+beginning of each of the lists
+to result until it gets to the
+
+1168
+00:59:17,180 --> 00:59:18,520
+end of the lists.
+
+1169
+00:59:18,520 --> 00:59:24,650
+So I'll try a blackboard
+demonstration in a second.
+
+1170
+00:59:24,650 --> 00:59:26,670
+Or explanation in a second.
+
+1171
+00:59:26,670 --> 00:59:35,810
+So, this before parameter,
+all this is doing is it's
+
+1172
+00:59:35,810 --> 00:59:39,420
+determining the order
+of the elements.
+
+1173
+00:59:39,420 --> 00:59:45,600
+So it's saying that left should
+come before right.
+
+1174
+00:59:45,600 --> 00:59:48,590
+It'll return true if left should
+come before right, and
+
+1175
+00:59:48,590 --> 00:59:51,300
+false if right should
+come before left.
+
+1176
+00:59:51,300 --> 00:59:54,100
+
+1177
+00:59:54,100 --> 01:00:04,910
+So, intuitively, because I don't
+think that was a very
+
+1178
+01:00:04,910 --> 01:00:06,850
+good explanation,
+let's say that I
+
+1179
+01:00:06,850 --> 01:00:08,100
+have a list of elements.
+
+1180
+01:00:08,100 --> 01:00:16,740
+
+1181
+01:00:16,740 --> 01:00:17,990
+And they're unsorted.
+
+1182
+01:00:17,990 --> 01:00:28,360
+
+1183
+01:00:28,360 --> 01:00:28,690
+All right.
+
+1184
+01:00:28,690 --> 01:00:31,580
+So it's an unsorted
+list of elements.
+
+1185
+01:00:31,580 --> 01:00:35,880
+When merge.sort first starts,
+it's going to divide this list
+
+1186
+01:00:35,880 --> 01:00:37,700
+into left and right halves.
+
+1187
+01:00:37,700 --> 01:00:39,780
+So basically it's going to
+take the middle here.
+
+1188
+01:00:39,780 --> 01:00:42,820
+
+1189
+01:00:42,820 --> 01:00:53,360
+And then it's going to call
+itself, on this left half and
+
+1190
+01:00:53,360 --> 01:00:54,610
+then on this right half.
+
+1191
+01:00:54,610 --> 01:01:01,760
+
+1192
+01:01:01,760 --> 01:01:03,060
+And it's going to
+keep doing this.
+
+1193
+01:01:03,060 --> 01:01:08,120
+It's going to divide this
+half into say --
+
+1194
+01:01:08,120 --> 01:01:09,370
+5, 2, 1.
+
+1195
+01:01:09,370 --> 01:01:30,380
+
+1196
+01:01:30,380 --> 01:01:32,800
+Now, when it gets to these
+little single elements, it's
+
+1197
+01:01:32,800 --> 01:01:34,050
+going to do something
+interesting.
+
+1198
+01:01:34,050 --> 01:01:40,460
+
+1199
+01:01:40,460 --> 01:01:42,420
+It's going to merge these two.
+
+1200
+01:01:42,420 --> 01:01:45,560
+So when it gets down to these
+single elements, it's just
+
+1201
+01:01:45,560 --> 01:01:50,050
+going to return the list as
+is, it's not going to do
+
+1202
+01:01:50,050 --> 01:01:51,310
+anything to them.
+
+1203
+01:01:51,310 --> 01:02:10,110
+And then the code after
+this, division, is
+
+1204
+01:02:10,110 --> 01:02:11,040
+going to merge them.
+
+1205
+01:02:11,040 --> 01:02:13,560
+And the way it merges them is,
+it's going to start at the
+
+1206
+01:02:13,560 --> 01:02:15,430
+beginning of these two lists.
+
+1207
+01:02:15,430 --> 01:02:19,390
+And it's going to say, is this
+element larger or smaller than
+
+1208
+01:02:19,390 --> 01:02:20,100
+this element?
+
+1209
+01:02:20,100 --> 01:02:22,990
+Or is it going to come
+before this element?
+
+1210
+01:02:22,990 --> 01:02:25,270
+And it's going to construct
+a merged list.
+
+1211
+01:02:25,270 --> 01:02:28,420
+
+1212
+01:02:28,420 --> 01:02:32,220
+And then return that
+as its result.
+
+1213
+01:02:32,220 --> 01:02:34,370
+So this is going to come down.
+
+1214
+01:02:34,370 --> 01:02:37,850
+So now at this point it's
+popping back up the stack.
+
+1215
+01:02:37,850 --> 01:02:39,170
+It's going to return this.
+
+1216
+01:02:39,170 --> 01:02:41,920
+It's going to merge
+these two lists.
+
+1217
+01:02:41,920 --> 01:02:44,570
+Starts at the beginning
+of both lists.
+
+1218
+01:02:44,570 --> 01:02:47,780
+One comes before two.
+
+1219
+01:02:47,780 --> 01:02:50,540
+And then this list is done,
+so now it only has
+
+1220
+01:02:50,540 --> 01:02:51,790
+this list to do.
+
+1221
+01:02:51,790 --> 01:02:55,170
+
+1222
+01:02:55,170 --> 01:02:59,120
+After each merge step, these
+lists are going to be sorted.
+
+1223
+01:02:59,120 --> 01:03:02,240
+So now where are we at?
+
+1224
+01:03:02,240 --> 01:03:04,932
+So now let's do this guy.
+
+1225
+01:03:04,932 --> 01:03:07,160
+So this guy gets merged
+into 6 and 9.
+
+1226
+01:03:07,160 --> 01:03:10,550
+
+1227
+01:03:10,550 --> 01:03:12,620
+And then this guy, I
+didn't divide up.
+
+1228
+01:03:12,620 --> 01:03:14,820
+So, bad on me.
+
+1229
+01:03:14,820 --> 01:03:40,770
+
+1230
+01:03:40,770 --> 01:03:43,995
+So we're going to merge those
+two single element lists.
+
+1231
+01:03:43,995 --> 01:03:52,220
+
+1232
+01:03:52,220 --> 01:03:54,565
+Now these get merged.
+
+1233
+01:03:54,565 --> 01:04:12,420
+
+1234
+01:04:12,420 --> 01:04:14,810
+So these guys are going
+to get merged.
+
+1235
+01:04:14,810 --> 01:04:18,170
+So, this is going to become, I
+think my tree got messed up a
+
+1236
+01:04:18,170 --> 01:04:19,420
+little bit.
+
+1237
+01:04:19,420 --> 01:04:25,780
+
+1238
+01:04:25,780 --> 01:04:28,210
+Now we're going to merge
+these lists.
+
+1239
+01:04:28,210 --> 01:04:30,200
+So we're going to start
+at the beginning.
+
+1240
+01:04:30,200 --> 01:04:31,830
+1 comes before 3.
+
+1241
+01:04:31,830 --> 01:04:33,860
+First element is 1.
+
+1242
+01:04:33,860 --> 01:04:35,110
+2 comes before 3.
+
+1243
+01:04:35,110 --> 01:04:37,780
+
+1244
+01:04:37,780 --> 01:04:39,050
+Now we're here in this list.
+
+1245
+01:04:39,050 --> 01:04:40,800
+We're still at the beginning
+of this list.
+
+1246
+01:04:40,800 --> 01:04:42,050
+3 comes before 5.
+
+1247
+01:04:42,050 --> 01:04:44,692
+
+1248
+01:04:44,692 --> 01:04:46,120
+5 comes before 7.
+
+1249
+01:04:46,120 --> 01:04:49,330
+
+1250
+01:04:49,330 --> 01:04:50,700
+And we're here.
+
+1251
+01:04:50,700 --> 01:04:53,610
+6 comes before 7.
+
+1252
+01:04:53,610 --> 01:04:55,350
+Then we have 7.
+
+1253
+01:04:55,350 --> 01:04:59,240
+And then 9 comes before 10.
+
+1254
+01:04:59,240 --> 01:05:00,590
+Now we're done with this list.
+
+1255
+01:05:00,590 --> 01:05:03,910
+So now we have 10, 13.
+
+1256
+01:05:03,910 --> 01:05:09,060
+And at the end of the last
+merge the list is sorted.
+
+1257
+01:05:09,060 --> 01:05:14,288
+So, I'm not sure how
+clear that was.
+
+1258
+01:05:14,288 --> 01:05:16,276
+AUDIENCE: What happens if
+there's [UNINTELLIGIBLE] to
+
+1259
+01:05:16,276 --> 01:05:16,780
+begin with?
+
+1260
+01:05:16,780 --> 01:05:19,928
+Like all of your split equally
+into [UNINTELLIGIBLE]?
+
+1261
+01:05:19,928 --> 01:05:21,904
+What if there's one more
+element at the top,
+
+1262
+01:05:21,904 --> 01:05:23,386
+[UNINTELLIGIBLE]?
+
+1263
+01:05:23,386 --> 01:05:25,370
+Do you know what I mean, like,
+there'd be one left over?
+
+1264
+01:05:25,370 --> 01:05:26,993
+PROFESSOR: What do you mean?
+
+1265
+01:05:26,993 --> 01:05:32,400
+So there's an odd number of
+elements in the list?
+
+1266
+01:05:32,400 --> 01:05:35,650
+So you would just get
+an uneven split.
+
+1267
+01:05:35,650 --> 01:05:38,130
+So your left sub-list might
+have 6 elements.
+
+1268
+01:05:38,130 --> 01:05:40,200
+Say you have 11 elements
+in the list.
+
+1269
+01:05:40,200 --> 01:05:43,220
+Left element would have 6,
+or left list would have 6
+
+1270
+01:05:43,220 --> 01:05:45,130
+elements and then the right
+list would have 5.
+
+1271
+01:05:45,130 --> 01:05:46,028
+AUDIENCE: [UNINTELLIGIBLE]
+then that would
+
+1272
+01:05:46,028 --> 01:05:48,070
+split with 3 and 2.
+
+1273
+01:05:48,070 --> 01:05:50,683
+And then the 2 would split to
+1 and 1, the 3 would split
+
+1274
+01:05:50,683 --> 01:05:53,558
+into 1 and 2, and then the
+2 would split again?
+
+1275
+01:05:53,558 --> 01:05:56,400
+PROFESSOR: And then the 1 would
+actually make a call,
+
+1276
+01:05:56,400 --> 01:05:58,556
+but it would be an empty list.
+
+1277
+01:05:58,556 --> 01:06:02,280
+It would split, but one of them
+would be an empty list.
+
+1278
+01:06:02,280 --> 01:06:02,770
+AUDIENCE: Oh.
+
+1279
+01:06:02,770 --> 01:06:07,180
+So and then it would
+just get--
+
+1280
+01:06:07,180 --> 01:06:08,190
+PROFESSOR: And that's kind of
+what happened with my tree.
+
+1281
+01:06:08,190 --> 01:06:09,480
+I didn't go all the way
+down on some of the
+
+1282
+01:06:09,480 --> 01:06:10,900
+branches of my tree.
+
+1283
+01:06:10,900 --> 01:06:14,850
+
+1284
+01:06:14,850 --> 01:06:16,920
+I mean, the main idea behind
+merge.sort is that you split
+
+1285
+01:06:16,920 --> 01:06:20,350
+the list in half, whatever
+size it this.
+
+1286
+01:06:20,350 --> 01:06:24,560
+And then you merge sort
+those separate halves.
+
+1287
+01:06:24,560 --> 01:06:26,650
+And merge sort is going to do
+the same thing with those
+
+1288
+01:06:26,650 --> 01:06:26,810
+separate halves.
+
+1289
+01:06:26,810 --> 01:06:28,610
+It's going to split
+them in half.
+
+1290
+01:06:28,610 --> 01:06:31,380
+And sort those halves until it
+gets to the smallest case,
+
+1291
+01:06:31,380 --> 01:06:34,000
+which is an empty list or
+just a single element.
+
+1292
+01:06:34,000 --> 01:06:36,840
+And then it's just going to
+start merging these lists.
+
+1293
+01:06:36,840 --> 01:06:38,253
+AUDIENCE: Right, I was just
+wondering what happened
+
+1294
+01:06:38,253 --> 01:06:40,140
+[UNINTELLIGIBLE]
+
+1295
+01:06:40,140 --> 01:06:43,138
+PROFESSOR: Yeah, you'd split it
+into 2 and 1, and then that
+
+1296
+01:06:43,138 --> 01:06:44,910
+merge sort would be
+like 1 and 1.
+
+1297
+01:06:44,910 --> 01:06:49,596
+And then this 1 would split it
+into a list of 1 and nothing.
+
+1298
+01:06:49,596 --> 01:06:50,548
+That's all.
+
+1299
+01:06:50,548 --> 01:06:52,452
+And then the merge between
+that's obvious, right?
+
+1300
+01:06:52,452 --> 01:06:56,270
+
+1301
+01:06:56,270 --> 01:07:00,104
+AUDIENCE: So in the merge sort
+lecture notes, at one point,
+
+1302
+01:07:00,104 --> 01:07:02,000
+lambda is used.
+
+1303
+01:07:02,000 --> 01:07:04,370
+Can you explain a bit
+how this works?
+
+1304
+01:07:04,370 --> 01:07:06,180
+PROFESSOR: Does he actually
+use a lambda?
+
+1305
+01:07:06,180 --> 01:07:06,510
+AUDIENCE: Yeah.
+
+1306
+01:07:06,510 --> 01:07:08,502
+Why is it useful?
+
+1307
+01:07:08,502 --> 01:07:12,486
+I guess [UNINTELLIGIBLE].
+
+1308
+01:07:12,486 --> 01:07:12,984
+PROFESSOR: Ah.
+
+1309
+01:07:12,984 --> 01:07:15,990
+He used lambda.
+
+1310
+01:07:15,990 --> 01:07:20,050
+OK, Python has these functions
+called lambda functions.
+
+1311
+01:07:20,050 --> 01:07:25,570
+And what they are essentially
+are like one-liner bits of
+
+1312
+01:07:25,570 --> 01:07:27,710
+code that return a value.
+
+1313
+01:07:27,710 --> 01:07:30,160
+So let's see.
+
+1314
+01:07:30,160 --> 01:07:40,980
+
+1315
+01:07:40,980 --> 01:07:42,230
+I can't believe he
+used lambda.
+
+1316
+01:07:42,230 --> 01:07:47,450
+
+1317
+01:07:47,450 --> 01:07:50,730
+I'm trying to think of where
+I would actually use them.
+
+1318
+01:07:50,730 --> 01:07:51,760
+Like, an example.
+
+1319
+01:07:51,760 --> 01:07:54,710
+And I don't have one off
+the top of my head.
+
+1320
+01:07:54,710 --> 01:07:59,050
+You're not going to see
+a lambda on the quiz.
+
+1321
+01:07:59,050 --> 01:08:02,350
+The syntax is not
+too difficult.
+
+1322
+01:08:02,350 --> 01:08:08,840
+It's basically, so,
+like lambda x.
+
+1323
+01:08:08,840 --> 01:08:11,700
+And then it's going to return,
+like, x-squared.
+
+1324
+01:08:11,700 --> 01:08:13,620
+This is going to create
+a function.
+
+1325
+01:08:13,620 --> 01:08:22,069
+And it can be something like, I
+assign this lambda function
+
+1326
+01:08:22,069 --> 01:08:25,250
+to a variable square.
+
+1327
+01:08:25,250 --> 01:08:29,470
+And I'm going to pull
+up a separate--
+
+1328
+01:08:29,470 --> 01:08:31,770
+So I'm creating a
+function square.
+
+1329
+01:08:31,770 --> 01:08:45,660
+But instead of writing something
+like this, I write
+
+1330
+01:08:45,660 --> 01:08:47,970
+it as this.
+
+1331
+01:08:47,970 --> 01:08:49,220
+And ...
+
+1332
+01:08:49,220 --> 01:08:55,432
+
+1333
+01:08:55,432 --> 01:08:57,859
+AUDIENCE: [INAUDIBLE]
+
+1334
+01:08:57,859 --> 01:08:59,452
+PROFESSOR: What's that?
+
+1335
+01:08:59,452 --> 01:09:02,398
+AUDIENCE: Do you have to save it
+before it lets you run it?
+
+1336
+01:09:02,398 --> 01:09:02,889
+PROFESSOR: Yeah.
+
+1337
+01:09:02,889 --> 01:09:03,871
+That's, again, what I'm doing.
+
+1338
+01:09:03,871 --> 01:09:06,817
+I'm just trying to think
+of a witty name.
+
+1339
+01:09:06,817 --> 01:09:13,691
+
+1340
+01:09:13,691 --> 01:09:16,444
+I'm actually stunned that he
+whipped lambda out in lecture.
+
+1341
+01:09:16,444 --> 01:09:19,359
+
+1342
+01:09:19,359 --> 01:09:22,720
+So really it's a
+way of defining
+
+1343
+01:09:22,720 --> 01:09:25,200
+these one-liner functions.
+
+1344
+01:09:25,200 --> 01:09:31,250
+Python's lambda functions are
+kind of broken, at least in
+
+1345
+01:09:31,250 --> 01:09:35,420
+the 2.5, 2.6, 2.7,
+2.x versions.
+
+1346
+01:09:35,420 --> 01:09:39,560
+3.0, 3.x versions of Python, I
+think, actually do away with
+
+1347
+01:09:39,560 --> 01:09:44,229
+lambda because they
+were broken.
+
+1348
+01:09:44,229 --> 01:09:46,180
+You find lambda functions in
+a lot of other programming
+
+1349
+01:09:46,180 --> 01:09:47,680
+languages like Lisp or Scheme.
+
+1350
+01:09:47,680 --> 01:09:51,220
+
+1351
+01:09:51,220 --> 01:09:56,630
+And you're never going to
+see this on a quiz.
+
+1352
+01:09:56,630 --> 01:09:58,040
+But if you want to learn
+more about them you
+
+1353
+01:09:58,040 --> 01:09:59,290
+can look it up online.
+
+1354
+01:09:59,290 --> 01:10:03,020
+
+1355
+01:10:03,020 --> 01:10:05,182
+AUDIENCE: While you're running
+the function, what is the
+
+1356
+01:10:05,182 --> 01:10:07,748
+[INAUDIBLE]
+
+1357
+01:10:07,748 --> 01:10:10,153
+The same thing?
+
+1358
+01:10:10,153 --> 01:10:11,115
+Oh, OK.
+
+1359
+01:10:11,115 --> 01:10:12,570
+PROFESSOR: Yeah.
+
+1360
+01:10:12,570 --> 01:10:15,835
+I had it there as an
+illustration that the
+
+1361
+01:10:15,835 --> 01:10:21,220
+functions are-- they're
+functionally equivalent.
+
+1362
+01:10:21,220 --> 01:10:27,290
+And it actually serves to
+illustrate another point, that
+
+1363
+01:10:27,290 --> 01:10:31,810
+functions are objects and you
+can sign them and pass them
+
+1364
+01:10:31,810 --> 01:10:33,010
+around and stuff.
+
+1365
+01:10:33,010 --> 01:10:37,460
+But lambda functions on their
+own, you're not going to need
+
+1366
+01:10:37,460 --> 01:10:44,885
+to know that piece of linguistic
+Python, Pythonese.
+
+1367
+01:10:44,885 --> 01:10:45,875
+Bad sentence.
+
+1368
+01:10:45,875 --> 01:10:48,350
+You're not going to
+need to know it.
+
+1369
+01:10:48,350 --> 01:10:50,330
+Does that work?
+
+1370
+01:10:50,330 --> 01:10:51,580
+OK.
+
+1371
+01:10:51,580 --> 01:10:54,290
+
+1372
+01:10:54,290 --> 01:10:57,383
+I'm going to have to ask him
+about that, because I can't
+
+1373
+01:10:57,383 --> 01:10:59,982
+believe he used lambda
+in lecture.
+
+1374
+01:10:59,982 --> 01:11:03,770
+
+1375
+01:11:03,770 --> 01:11:05,885
+AUDIENCE: In one of the
+lecture notes, he used
+
+1376
+01:11:05,885 --> 01:11:08,470
+something called x-range.
+
+1377
+01:11:08,470 --> 01:11:08,940
+PROFESSOR: x-range.
+
+1378
+01:11:08,940 --> 01:11:10,570
+AUDIENCE: What does that do?
+
+1379
+01:11:10,570 --> 01:11:13,520
+PROFESSOR: Did he talk about
+generator objects or iterate?
+
+1380
+01:11:13,520 --> 01:11:14,715
+Or yield?
+
+1381
+01:11:14,715 --> 01:11:18,040
+You haven't seen those?
+
+1382
+01:11:18,040 --> 01:11:19,290
+OK.
+
+1383
+01:11:19,290 --> 01:11:23,410
+
+1384
+01:11:23,410 --> 01:11:30,720
+So what you're asking is,
+something like that.
+
+1385
+01:11:30,720 --> 01:11:31,970
+He used something like that.
+
+1386
+01:11:31,970 --> 01:11:34,590
+
+1387
+01:11:34,590 --> 01:11:38,830
+The difference between range
+and x-range is that range
+
+1388
+01:11:38,830 --> 01:11:43,480
+returns a list of integers,
+and x-range returns in
+
+1389
+01:11:43,480 --> 01:11:44,730
+generator object.
+
+1390
+01:11:44,730 --> 01:11:47,460
+
+1391
+01:11:47,460 --> 01:11:51,150
+And I know that really meant
+a whole lot to you.
+
+1392
+01:11:51,150 --> 01:11:53,625
+So let's say that I assign ...
+
+1393
+01:11:53,625 --> 01:11:56,470
+
+1394
+01:11:56,470 --> 01:11:57,720
+AUDIENCE: [INAUDIBLE]
+
+1395
+01:11:57,720 --> 01:11:59,956
+
+1396
+01:11:59,956 --> 01:12:02,960
+PROFESSOR: Yeah. that's what
+I'm going to show.
+
+1397
+01:12:02,960 --> 01:12:07,490
+So if I do print list of
+integers, or list of numbers,
+
+1398
+01:12:07,490 --> 01:12:09,170
+it's actually going to print
+the list of numbers.
+
+1399
+01:12:09,170 --> 01:12:13,650
+
+1400
+01:12:13,650 --> 01:12:14,950
+Someone fall back there?
+
+1401
+01:12:14,950 --> 01:12:19,260
+
+1402
+01:12:19,260 --> 01:12:21,850
+So it's actually going
+to print that list.
+
+1403
+01:12:21,850 --> 01:12:23,810
+Now, if I do something like--
+
+1404
+01:12:23,810 --> 01:12:36,270
+
+1405
+01:12:36,270 --> 01:12:37,970
+pretty sure this is not
+going to print the...
+
+1406
+01:12:37,970 --> 01:12:40,740
+
+1407
+01:12:40,740 --> 01:12:44,880
+The reason is that if you look
+at the type of the object
+
+1408
+01:12:44,880 --> 01:12:54,550
+that's returned, it's--
+
+1409
+01:12:54,550 --> 01:12:56,970
+well, x-range doesn't really
+help much either.
+
+1410
+01:12:56,970 --> 01:12:59,840
+
+1411
+01:12:59,840 --> 01:13:01,280
+Why does he do this to me?
+
+1412
+01:13:01,280 --> 01:13:06,690
+
+1413
+01:13:06,690 --> 01:13:09,820
+It's a way of-- so let's say
+that you have a list of a
+
+1414
+01:13:09,820 --> 01:13:13,550
+billion elements, or numbers,
+or things that you need to
+
+1415
+01:13:13,550 --> 01:13:16,930
+iterate over in a for loop.
+
+1416
+01:13:16,930 --> 01:13:19,300
+It's probably not a good idea
+to bring all of those into
+
+1417
+01:13:19,300 --> 01:13:21,110
+memory at once.
+
+1418
+01:13:21,110 --> 01:13:26,020
+So, or to necessarily keep
+them all around.
+
+1419
+01:13:26,020 --> 01:13:27,130
+You want--
+
+1420
+01:13:27,130 --> 01:13:29,690
+that's where things like
+x-range come in.
+
+1421
+01:13:29,690 --> 01:13:35,251
+So, let's do this.
+
+1422
+01:13:35,251 --> 01:13:40,121
+AUDIENCE: [INAUDIBLE] for i
+in x-range 10 [INAUDIBLE]
+
+1423
+01:13:40,121 --> 01:13:40,608
+PROFESSOR: Yeah.
+
+1424
+01:13:40,608 --> 01:13:55,050
+So if I do this, it's going
+to be the same as if
+
+1425
+01:13:55,050 --> 01:13:56,300
+I were to do this.
+
+1426
+01:13:56,300 --> 01:14:05,600
+
+1427
+01:14:05,600 --> 01:14:07,880
+It's going to have the same
+functional effect, but the
+
+1428
+01:14:07,880 --> 01:14:12,410
+difference comes in-- let's
+say that I were to do
+
+1429
+01:14:12,410 --> 01:14:13,660
+something like this.
+
+1430
+01:14:13,660 --> 01:14:19,790
+
+1431
+01:14:19,790 --> 01:14:21,500
+Lot of numbers, right?
+
+1432
+01:14:21,500 --> 01:14:23,230
+I'm hoping Python crashes
+on this, because
+
+1433
+01:14:23,230 --> 01:14:25,430
+this is my whole point.
+
+1434
+01:14:25,430 --> 01:14:28,630
+Yeah, so there's
+too many items.
+
+1435
+01:14:28,630 --> 01:14:31,280
+But let's see if I do
+it with x-range.
+
+1436
+01:14:31,280 --> 01:14:39,000
+
+1437
+01:14:39,000 --> 01:14:40,655
+I should probably comment
+this out.
+
+1438
+01:14:40,655 --> 01:14:49,940
+
+1439
+01:14:49,940 --> 01:14:53,058
+I chose a really too large
+number, didn't I?
+
+1440
+01:14:53,058 --> 01:15:06,260
+
+1441
+01:15:06,260 --> 01:15:08,190
+I'm going to find a number
+that has too many list
+
+1442
+01:15:08,190 --> 01:15:12,570
+elements, but Python can still
+feel comfortable constructing
+
+1443
+01:15:12,570 --> 01:15:16,350
+an x-range out of...
+
+1444
+01:15:16,350 --> 01:15:17,730
+The point is that there's
+a certain
+
+1445
+01:15:17,730 --> 01:15:20,180
+point, a certain number.
+
+1446
+01:15:20,180 --> 01:15:25,870
+
+1447
+01:15:25,870 --> 01:15:27,810
+I don't know if it's going
+to do that comfortably.
+
+1448
+01:15:27,810 --> 01:15:38,200
+
+1449
+01:15:38,200 --> 01:15:40,890
+So you see this little delay
+that's occurring?
+
+1450
+01:15:40,890 --> 01:15:43,410
+Actually, this kind
+of a long delay?
+
+1451
+01:15:43,410 --> 01:15:45,910
+It's actually hanging up
+on this range command.
+
+1452
+01:15:45,910 --> 01:15:49,220
+Because it's actually
+constructing this list object
+
+1453
+01:15:49,220 --> 01:15:51,840
+with all these integers in it.
+
+1454
+01:15:51,840 --> 01:15:55,295
+So, let's say I do this.
+
+1455
+01:15:55,295 --> 01:16:01,040
+
+1456
+01:16:01,040 --> 01:16:03,290
+Are you going to need to know
+the exact difference?
+
+1457
+01:16:03,290 --> 01:16:05,420
+No.
+
+1458
+01:16:05,420 --> 01:16:06,570
+Is there a difference?
+
+1459
+01:16:06,570 --> 01:16:08,790
+Yes.
+
+1460
+01:16:08,790 --> 01:16:11,120
+Am I prepared to explain
+it exactly, right now?
+
+1461
+01:16:11,120 --> 01:16:13,510
+Not really.
+
+1462
+01:16:13,510 --> 01:16:17,750
+Previous iterations of this
+class have covered the yield
+
+1463
+01:16:17,750 --> 01:16:22,750
+statement in Python, which
+allows you to create functions
+
+1464
+01:16:22,750 --> 01:16:27,320
+that create generator
+objects that...
+
+1465
+01:16:27,320 --> 01:16:28,391
+You did yield?
+
+1466
+01:16:28,391 --> 01:16:31,337
+AUDIENCE: [INAUDIBLE]
+
+1467
+01:16:31,337 --> 01:16:35,770
+PROFESSOR: All right, then you
+should know about this.
+
+1468
+01:16:35,770 --> 01:16:39,010
+So range is going to give
+you a list of integers.
+
+1469
+01:16:39,010 --> 01:16:41,700
+x-range is going to give you a
+generator object that uses
+
+1470
+01:16:41,700 --> 01:16:43,930
+yields to produce
+these integers.
+
+1471
+01:16:43,930 --> 01:16:50,205
+So let me see if can
+rescue my machine.
+
+1472
+01:16:50,205 --> 01:16:53,490
+
+1473
+01:16:53,490 --> 01:16:54,740
+All right.
+
+1474
+01:16:54,740 --> 01:17:25,330
+
+1475
+01:17:25,330 --> 01:17:29,700
+So, he covered something
+like that with yield?
+
+1476
+01:17:29,700 --> 01:17:35,710
+So if I were to, say,
+do i in my x-range--
+
+1477
+01:17:35,710 --> 01:17:42,240
+
+1478
+01:17:42,240 --> 01:17:43,490
+back to where I was.
+
+1479
+01:17:43,490 --> 01:17:47,030
+
+1480
+01:17:47,030 --> 01:17:52,030
+My x-range does the exact same
+thing that x-range does.
+
+1481
+01:17:52,030 --> 01:18:09,050
+Now, as I said before, if I do
+a list, or if I do range,
+
+1482
+01:18:09,050 --> 01:18:10,660
+that's going to be
+a list, right?
+
+1483
+01:18:10,660 --> 01:18:12,010
+If I assign this to ...
+
+1484
+01:18:12,010 --> 01:18:27,240
+
+1485
+01:18:27,240 --> 01:18:28,920
+see that?
+
+1486
+01:18:28,920 --> 01:18:30,605
+That's what the yield statement
+does for you.
+
+1487
+01:18:30,605 --> 01:18:35,300
+It produces that generator and
+that's how x-range functions.
+
+1488
+01:18:35,300 --> 01:18:40,580
+So, basically it allows you to
+do some interesting things.
+
+1489
+01:18:40,580 --> 01:18:42,435
+Like, in this case, it's not too
+interesting because it's
+
+1490
+01:18:42,435 --> 01:18:47,620
+just returning one integer
+after the other.
+
+1491
+01:18:47,620 --> 01:18:49,445
+But let's say that
+I wanted to do --
+
+1492
+01:18:49,445 --> 01:18:53,330
+
+1493
+01:18:53,330 --> 01:18:54,580
+def my_squares.
+
+1494
+01:18:54,580 --> 01:19:16,920
+
+1495
+01:19:16,920 --> 01:19:21,680
+All that's going to do is return
+these squares of all
+
+1496
+01:19:21,680 --> 01:19:38,240
+the numbers between 0 and max N.
+So if I were to do this, it
+
+1497
+01:19:38,240 --> 01:19:39,970
+should print out all
+the squares--
+
+1498
+01:19:39,970 --> 01:19:42,810
+or the square root of all the
+numbers between 0 and 9.
+
+1499
+01:19:42,810 --> 01:19:46,380
+
+1500
+01:19:46,380 --> 01:19:49,390
+Make sense?
+
+1501
+01:19:49,390 --> 01:19:51,860
+So that's what yield gets you.
+
+1502
+01:19:51,860 --> 01:19:55,200
+Those are generator objects.
+
+1503
+01:19:55,200 --> 01:19:56,720
+And that's how x-range works.
+
+1504
+01:19:56,720 --> 01:19:57,990
+That's how it's different
+than range.
+
+1505
+01:19:57,990 --> 01:20:02,020
+
+1506
+01:20:02,020 --> 01:20:05,780
+Does that make sense
+to everyone?
+
+1507
+01:20:05,780 --> 01:20:05,870
+OK.
+
+1508
+01:20:05,870 --> 01:20:08,398
+I don't need to beat that
+to death any longer?
+
+1509
+01:20:08,398 --> 01:20:11,180
+
+1510
+01:20:11,180 --> 01:20:13,390
+I was not expecting
+that question.
+
+1511
+01:20:13,390 --> 01:20:14,460
+OK.
+
+1512
+01:20:14,460 --> 01:20:17,265
+What should we go over next?
+
+1513
+01:20:17,265 --> 01:20:19,195
+Is everyone comfortable
+with orders of growth?
+
+1514
+01:20:19,195 --> 01:20:24,820
+
+1515
+01:20:24,820 --> 01:20:25,390
+All right.
+
+1516
+01:20:25,390 --> 01:20:29,150
+The next major topic area I
+have is linguistic issues.
+
+1517
+01:20:29,150 --> 01:20:32,250
+So, this covers stuff like
+exceptions, polymorphism,
+
+1518
+01:20:32,250 --> 01:20:34,370
+classes and objects.
+
+1519
+01:20:34,370 --> 01:20:37,330
+So people want to
+go over classes?
+
+1520
+01:20:37,330 --> 01:20:38,030
+Objects?
+
+1521
+01:20:38,030 --> 01:20:38,490
+Polymorphism?
+
+1522
+01:20:38,490 --> 01:20:40,450
+OK.
+
+1523
+01:20:40,450 --> 01:20:42,410
+AUDIENCE: What's polymorphism?
+
+1524
+01:20:42,410 --> 01:20:44,860
+PROFESSOR: Yeah, we'll
+get to that.
+
+1525
+01:20:44,860 --> 01:20:49,780
+
+1526
+01:20:49,780 --> 01:20:52,467
+So before my computer
+crashed--
+
+1527
+01:20:52,467 --> 01:20:56,380
+
+1528
+01:20:56,380 --> 01:20:57,880
+all right.
+
+1529
+01:20:57,880 --> 01:21:03,200
+So here are some class
+definitions.
+
+1530
+01:21:03,200 --> 01:21:08,220
+So I have a shape object, and
+I've defined two methods, area
+
+1531
+01:21:08,220 --> 01:21:10,570
+and perimeter.
+
+1532
+01:21:10,570 --> 01:21:13,790
+They currently do nothing
+except for raise not
+
+1533
+01:21:13,790 --> 01:21:15,810
+implemented errors.
+
+1534
+01:21:15,810 --> 01:21:17,480
+And now I have to find
+a class hierarchy.
+
+1535
+01:21:17,480 --> 01:21:21,610
+I have a rectangle class that
+inherits from shape.
+
+1536
+01:21:21,610 --> 01:21:24,440
+So shape is a superclass
+of rectangle.
+
+1537
+01:21:24,440 --> 01:21:27,250
+Rectangle is a subclass
+of shape.
+
+1538
+01:21:27,250 --> 01:21:29,920
+This also says--
+
+1539
+01:21:29,920 --> 01:21:33,370
+well, let me ask the question,
+is shape a rectangle?
+
+1540
+01:21:33,370 --> 01:21:39,130
+
+1541
+01:21:39,130 --> 01:21:42,680
+It's not rhetorical.
+
+1542
+01:21:42,680 --> 01:21:43,360
+AUDIENCE: [INAUDIBLE]
+
+1543
+01:21:43,360 --> 01:21:44,543
+PROFESSOR: Not necessarily.
+
+1544
+01:21:44,543 --> 01:21:46,808
+Is rectangle a shape?
+
+1545
+01:21:46,808 --> 01:21:47,261
+AUDIENCE: Yes.
+
+1546
+01:21:47,261 --> 01:21:48,620
+PROFESSOR: OK.
+
+1547
+01:21:48,620 --> 01:21:49,310
+It's an easy question.
+
+1548
+01:21:49,310 --> 01:21:52,500
+It's not a trick question.
+
+1549
+01:21:52,500 --> 01:21:55,020
+In the rectangle class,
+I have an INIT method.
+
+1550
+01:21:55,020 --> 01:21:57,740
+It just takes the length
+and the width.
+
+1551
+01:21:57,740 --> 01:21:59,880
+So computing the area
+is really easy.
+
+1552
+01:21:59,880 --> 01:22:03,810
+And then computing the perimeter
+is also very easy.
+
+1553
+01:22:03,810 --> 01:22:07,280
+And now I have a string
+representation which is just
+
+1554
+01:22:07,280 --> 01:22:10,300
+rectangle with the
+length and width.
+
+1555
+01:22:10,300 --> 01:22:15,570
+Ellipse inherits from shape
+and it has one radius--
+
+1556
+01:22:15,570 --> 01:22:22,960
+or one, the long axis
+and the short axis.
+
+1557
+01:22:22,960 --> 01:22:27,290
+And computing the area for
+that is pretty easy.
+
+1558
+01:22:27,290 --> 01:22:29,860
+Computing the perimeter, on the
+other hand, I had to look
+
+1559
+01:22:29,860 --> 01:22:30,780
+it up online.
+
+1560
+01:22:30,780 --> 01:22:34,510
+So if you're interested in the
+formula I used go take a look
+
+1561
+01:22:34,510 --> 01:22:36,695
+at this website.
+
+1562
+01:22:36,695 --> 01:22:42,050
+
+1563
+01:22:42,050 --> 01:22:43,870
+Again, I have a string method.
+
+1564
+01:22:43,870 --> 01:22:48,030
+And then now we have a square
+which inherits from rectangle.
+
+1565
+01:22:48,030 --> 01:22:51,690
+Because square is just a special
+case of a rectangle.
+
+1566
+01:22:51,690 --> 01:22:54,270
+And so I'm going to reuse it.
+
+1567
+01:22:54,270 --> 01:23:00,210
+I'm just going to make both
+lengths the same.
+
+1568
+01:23:00,210 --> 01:23:03,470
+That make sense to everyone?
+
+1569
+01:23:03,470 --> 01:23:05,880
+And I don't need to override the
+area and perimeter because
+
+1570
+01:23:05,880 --> 01:23:07,315
+they're pretty easy
+to understand.
+
+1571
+01:23:07,315 --> 01:23:10,710
+Or they're the same.
+
+1572
+01:23:10,710 --> 01:23:11,850
+And then circle.
+
+1573
+01:23:11,850 --> 01:23:13,870
+It just inherits from ellipse,
+and same thing.
+
+1574
+01:23:13,870 --> 01:23:16,655
+I'm just going to reuse the
+stuff that I have in ellipse.
+
+1575
+01:23:16,655 --> 01:23:21,750
+
+1576
+01:23:21,750 --> 01:23:24,060
+All right.
+
+1577
+01:23:24,060 --> 01:23:26,350
+I've defined a bag
+of shapes here.
+
+1578
+01:23:26,350 --> 01:23:28,690
+Circles, squares, rectangles.
+
+1579
+01:23:28,690 --> 01:23:29,805
+Rectangles.
+
+1580
+01:23:29,805 --> 01:23:32,560
+Lots of stuff.
+
+1581
+01:23:32,560 --> 01:23:36,170
+Now, to answer your question,
+what polymorphism allows me to
+
+1582
+01:23:36,170 --> 01:23:44,870
+do is, it allows me to treat
+subclasses that share a
+
+1583
+01:23:44,870 --> 01:23:49,460
+particular superclass, or a
+parent class, the same.
+
+1584
+01:23:49,460 --> 01:23:56,100
+So I've defined an area method
+on the shape class.
+
+1585
+01:23:56,100 --> 01:23:59,350
+And all of my subclasses,
+rectangle, ellipse, circle and
+
+1586
+01:23:59,350 --> 01:24:03,640
+square, inherit from
+this superclass.
+
+1587
+01:24:03,640 --> 01:24:06,420
+And some of them override area,
+some of them don't.
+
+1588
+01:24:06,420 --> 01:24:09,750
+It doesn't really
+matter to me.
+
+1589
+01:24:09,750 --> 01:24:13,360
+What matters to me is that if I
+have a bag of these shapes,
+
+1590
+01:24:13,360 --> 01:24:16,030
+I know that I have
+an area method.
+
+1591
+01:24:16,030 --> 01:24:20,530
+And I don't need to know the
+particular or the type of the
+
+1592
+01:24:20,530 --> 01:24:25,740
+object that I'm calling
+the area method on.
+
+1593
+01:24:25,740 --> 01:24:27,300
+Right?
+
+1594
+01:24:27,300 --> 01:24:29,810
+Python is going to take
+care of that for me.
+
+1595
+01:24:29,810 --> 01:24:34,200
+I can just iterate through this
+bag of shapes, call the
+
+1596
+01:24:34,200 --> 01:24:36,490
+area method, and I can get
+a sum of the areas.
+
+1597
+01:24:36,490 --> 01:24:39,320
+
+1598
+01:24:39,320 --> 01:24:41,700
+That's what polymorphism gives
+to me, is it allows me to
+
+1599
+01:24:41,700 --> 01:24:44,820
+treat objects uniformly.
+
+1600
+01:24:44,820 --> 01:24:49,060
+It allows the objects to change
+their behavior based on
+
+1601
+01:24:49,060 --> 01:24:51,510
+the particular type of object
+that I'm using.
+
+1602
+01:24:51,510 --> 01:24:54,700
+But I don't need to know
+the particular details.
+
+1603
+01:24:54,700 --> 01:24:56,420
+So it's pretty powerful.
+
+1604
+01:24:56,420 --> 01:25:01,490
+So it's like, if I were to
+create a racing game and I
+
+1605
+01:25:01,490 --> 01:25:04,940
+wanted to drive a car, I could
+have different models of car.
+
+1606
+01:25:04,940 --> 01:25:09,850
+But my game engine wouldn't need
+to know to drive method
+
+1607
+01:25:09,850 --> 01:25:10,680
+to call for.
+
+1608
+01:25:10,680 --> 01:25:16,320
+Like, a Ford car versus a
+Chevrolet, all that stuff.
+
+1609
+01:25:16,320 --> 01:25:20,810
+
+1610
+01:25:20,810 --> 01:25:22,400
+That kind of answer
+your question?
+
+1611
+01:25:22,400 --> 01:25:23,650
+AUDIENCE: Yeah.
+
+1612
+01:25:23,650 --> 01:25:26,181
+
+1613
+01:25:26,181 --> 01:25:32,690
+AUDIENCE: So if there's not an
+area function that overrides
+
+1614
+01:25:32,690 --> 01:25:35,490
+it, what is it going to sum
+if it just raises a
+
+1615
+01:25:35,490 --> 01:25:36,740
+non-implemented error?
+
+1616
+01:25:36,740 --> 01:25:39,770
+
+1617
+01:25:39,770 --> 01:25:41,570
+Yeah, if you haven't
+redefined.
+
+1618
+01:25:41,570 --> 01:25:46,190
+PROFESSOR: In this example, I'm
+using all what are known
+
+1619
+01:25:46,190 --> 01:25:47,072
+as concrete classes.
+
+1620
+01:25:47,072 --> 01:25:49,350
+So they're not abstract.
+
+1621
+01:25:49,350 --> 01:25:53,220
+They all have implementations
+of area.
+
+1622
+01:25:53,220 --> 01:25:57,710
+But if I were to say, for some
+reason I decided that I wanted
+
+1623
+01:25:57,710 --> 01:26:00,765
+to make something amorphous.
+
+1624
+01:26:00,765 --> 01:26:04,080
+
+1625
+01:26:04,080 --> 01:26:05,800
+This should raise
+an error, right?
+
+1626
+01:26:05,800 --> 01:26:08,560
+
+1627
+01:26:08,560 --> 01:26:10,146
+Unless I have invalid syntax.
+
+1628
+01:26:10,146 --> 01:26:18,660
+
+1629
+01:26:18,660 --> 01:26:19,910
+So when it gets to
+there, yeah.
+
+1630
+01:26:19,910 --> 01:26:25,326
+
+1631
+01:26:25,326 --> 01:26:26,764
+Any other questions?
+
+1632
+01:26:26,764 --> 01:26:29,184
+AUDIENCE: So what's the
+difference between inheritance
+
+1633
+01:26:29,184 --> 01:26:30,434
+and [UNINTELLIGIBLE]?
+
+1634
+01:26:30,434 --> 01:26:33,540
+
+1635
+01:26:33,540 --> 01:26:34,950
+PROFESSOR: They're related.
+
+1636
+01:26:34,950 --> 01:26:41,040
+But what inheritance means is
+that if I say that rectangle
+
+1637
+01:26:41,040 --> 01:26:44,720
+inherits from shape, that
+means it gets all of its
+
+1638
+01:26:44,720 --> 01:26:48,520
+methods and attributes.
+
+1639
+01:26:48,520 --> 01:26:52,820
+But it's not necessarily
+polymorphic in that case.
+
+1640
+01:26:52,820 --> 01:26:58,490
+It's just, it's like saying a
+rectangle is a shape so it has
+
+1641
+01:26:58,490 --> 01:27:02,420
+all these characteristics of
+a shape and then some.
+
+1642
+01:27:02,420 --> 01:27:06,200
+The polymorphism comes in when I
+override the area method and
+
+1643
+01:27:06,200 --> 01:27:09,870
+then I can treat all shapes,
+whether they're rectangles,
+
+1644
+01:27:09,870 --> 01:27:14,375
+squares, circles, uniformly
+with the area method.
+
+1645
+01:27:14,375 --> 01:27:19,180
+
+1646
+01:27:19,180 --> 01:27:20,500
+You might--
+
+1647
+01:27:20,500 --> 01:27:24,470
+I'm trying to think of an
+example where it would be.
+
+1648
+01:27:24,470 --> 01:27:31,330
+So let's say that I didn't do
+this in a class or entered a
+
+1649
+01:27:31,330 --> 01:27:32,760
+way or using classes.
+
+1650
+01:27:32,760 --> 01:27:46,970
+And so I had a really naive
+implementation that said,
+
+1651
+01:27:46,970 --> 01:27:48,950
+let's represent them
+as dictionaries.
+
+1652
+01:27:48,950 --> 01:28:19,660
+
+1653
+01:28:19,660 --> 01:28:21,810
+So I have two really stupid
+functions here.
+
+1654
+01:28:21,810 --> 01:28:25,050
+And they say they make a circle
+and they make a square.
+
+1655
+01:28:25,050 --> 01:28:27,810
+And so really all it's doing
+is representing these as
+
+1656
+01:28:27,810 --> 01:28:28,730
+dictionaries.
+
+1657
+01:28:28,730 --> 01:28:31,510
+And the key is side
+and radius.
+
+1658
+01:28:31,510 --> 01:28:34,880
+Now, let's say that I want to
+have my list of shapes.
+
+1659
+01:28:34,880 --> 01:28:39,310
+
+1660
+01:28:39,310 --> 01:28:40,490
+I make a square.
+
+1661
+01:28:40,490 --> 01:28:41,740
+I'm going to make a circle.
+
+1662
+01:28:41,740 --> 01:28:46,830
+
+1663
+01:28:46,830 --> 01:28:49,060
+Another square.
+
+1664
+01:28:49,060 --> 01:28:51,980
+OK, so now I've got a bag or
+shapes or a list of shapes.
+
+1665
+01:28:51,980 --> 01:28:52,870
+What's that?
+
+1666
+01:28:52,870 --> 01:28:56,181
+AUDIENCE: Can you [INAUDIBLE]?
+
+1667
+01:28:56,181 --> 01:28:57,600
+PROFESSOR: Spending too
+much time on that one.
+
+1668
+01:28:57,600 --> 01:29:01,400
+
+1669
+01:29:01,400 --> 01:29:02,190
+All right.
+
+1670
+01:29:02,190 --> 01:29:04,280
+So if I were to take
+a look at this.
+
+1671
+01:29:04,280 --> 01:29:16,770
+
+1672
+01:29:16,770 --> 01:29:18,500
+It's going to print out a
+bunch of dictionaries.
+
+1673
+01:29:18,500 --> 01:29:24,090
+Now, the question is, what if I
+wanted to compute the areas
+
+1674
+01:29:24,090 --> 01:29:25,340
+of these data types?
+
+1675
+01:29:25,340 --> 01:29:28,820
+
+1676
+01:29:28,820 --> 01:29:33,780
+Using polymorphism, I can just
+call dot area on each shape.
+
+1677
+01:29:33,780 --> 01:29:37,180
+But if I wanted to do the same
+thing with this code, I would
+
+1678
+01:29:37,180 --> 01:29:45,606
+have to have square area
+s, return, d, side.
+
+1679
+01:29:45,606 --> 01:29:52,620
+
+1680
+01:29:52,620 --> 01:30:03,080
+And then def circle, area,
+c, return, 3.14.
+
+1681
+01:30:03,080 --> 01:30:05,320
+9 times c--
+
+1682
+01:30:05,320 --> 01:30:10,460
+
+1683
+01:30:10,460 --> 01:30:11,920
+I'm already getting
+tripped up.
+
+1684
+01:30:11,920 --> 01:30:17,310
+
+1685
+01:30:17,310 --> 01:30:21,830
+So even this is not so bad,
+because if I do something like
+
+1686
+01:30:21,830 --> 01:30:27,190
+this, I can still get
+the areas, right?
+
+1687
+01:30:27,190 --> 01:30:39,505
+
+1688
+01:30:39,505 --> 01:30:42,600
+And I can do this because I know
+what's in those positions
+
+1689
+01:30:42,600 --> 01:30:43,920
+in the list.
+
+1690
+01:30:43,920 --> 01:30:45,314
+So.
+
+1691
+01:30:45,314 --> 01:30:47,202
+AUDIENCE: You forgot to close
+your parentheses.
+
+1692
+01:30:47,202 --> 01:30:48,452
+PROFESSOR: Oh.
+
+1693
+01:30:48,452 --> 01:30:52,880
+
+1694
+01:30:52,880 --> 01:30:53,390
+OK.
+
+1695
+01:30:53,390 --> 01:30:54,970
+So it's going to work.
+
+1696
+01:30:54,970 --> 01:30:58,465
+But now, if I want to print out
+all the areas of all the
+
+1697
+01:30:58,465 --> 01:31:02,760
+shapes in this loop here, how
+am I going to do that?
+
+1698
+01:31:02,760 --> 01:31:10,776
+Because I can't just call square
+area of s, because what
+
+1699
+01:31:10,776 --> 01:31:17,280
+if s is a circle It's going to
+give me an error, right?
+
+1700
+01:31:17,280 --> 01:31:25,050
+I could get around this by
+saying, if radius in s, then I
+
+1701
+01:31:25,050 --> 01:31:26,300
+know it's a circle, right?
+
+1702
+01:31:26,300 --> 01:31:34,170
+
+1703
+01:31:34,170 --> 01:31:36,885
+Or, side in s.
+
+1704
+01:31:36,885 --> 01:31:41,000
+
+1705
+01:31:41,000 --> 01:31:45,660
+But you see how the code is
+getting kind of ugly now?
+
+1706
+01:31:45,660 --> 01:31:50,550
+I have to know details about
+how these different objects
+
+1707
+01:31:50,550 --> 01:31:53,650
+are implemented, how square and
+circle are implemented in
+
+1708
+01:31:53,650 --> 01:31:54,990
+the dictionary.
+
+1709
+01:31:54,990 --> 01:31:58,590
+I have to know what type
+they are before I
+
+1710
+01:31:58,590 --> 01:32:00,900
+compute their area.
+
+1711
+01:32:00,900 --> 01:32:06,540
+And I can do it, but
+it's kind of ugly.
+
+1712
+01:32:06,540 --> 01:32:15,190
+Whereas if I invest a little
+bit of time in a class
+
+1713
+01:32:15,190 --> 01:32:19,690
+hierarchy, I can do this
+much more easily.
+
+1714
+01:32:19,690 --> 01:32:21,240
+Much more cleanly.
+
+1715
+01:32:21,240 --> 01:32:27,520
+It's a way of abstracting
+from the problem.
+
+1716
+01:32:27,520 --> 01:32:28,870
+You don't have to worry
+about the details of
+
+1717
+01:32:28,870 --> 01:32:31,760
+the individual shapes.
+
+1718
+01:32:31,760 --> 01:32:34,060
+Did I kill that?
+
+1719
+01:32:34,060 --> 01:32:35,150
+And beat it into the ground.
+
+1720
+01:32:35,150 --> 01:32:36,641
+AUDIENCE: Just for
+clarification.
+
+1721
+01:32:36,641 --> 01:32:39,623
+So the point of polymorphism
+is just like inheritance,
+
+1722
+01:32:39,623 --> 01:32:42,680
+essentially, kind
+of boiled down?
+
+1723
+01:32:42,680 --> 01:32:45,368
+PROFESSOR: The point of
+polymorphism is that if you
+
+1724
+01:32:45,368 --> 01:32:49,220
+have a class hierarchy of
+objects, you don't need to
+
+1725
+01:32:49,220 --> 01:32:54,460
+know the details of the objects,
+of what specific type
+
+1726
+01:32:54,460 --> 01:32:55,080
+an object is.
+
+1727
+01:32:55,080 --> 01:32:57,610
+As long as you know that
+in the case of--
+
+1728
+01:32:57,610 --> 01:32:59,649
+AUDIENCE: So long as there
+exists a method
+
+1729
+01:32:59,649 --> 01:33:00,510
+that you want to use.
+
+1730
+01:33:00,510 --> 01:33:00,988
+PROFESSOR: Right.
+
+1731
+01:33:00,988 --> 01:33:02,900
+AUDIENCE: Where it inherits
+from that class,
+
+1732
+01:33:02,900 --> 01:33:04,334
+you could use it.
+
+1733
+01:33:04,334 --> 01:33:05,290
+PROFESSOR: Yeah.
+
+1734
+01:33:05,290 --> 01:33:10,135
+So in this particular example,
+shape has an area method.
+
+1735
+01:33:10,135 --> 01:33:15,150
+And I have a bunch of concrete
+subclasses of shape that have
+
+1736
+01:33:15,150 --> 01:33:16,620
+all overridden the
+area method.
+
+1737
+01:33:16,620 --> 01:33:19,090
+And they do it in
+different ways.
+
+1738
+01:33:19,090 --> 01:33:22,110
+You compute the area differently
+for a rectangle
+
+1739
+01:33:22,110 --> 01:33:23,790
+versus an ellipse.
+
+1740
+01:33:23,790 --> 01:33:26,820
+I don't have to worry about
+which particular shape it is.
+
+1741
+01:33:26,820 --> 01:33:30,520
+I just call the area method, and
+I don't have to do all the
+
+1742
+01:33:30,520 --> 01:33:33,070
+checking that I do here.
+
+1743
+01:33:33,070 --> 01:33:37,590
+Where I look at, is this a
+circle, is this a square.
+
+1744
+01:33:37,590 --> 01:33:39,286
+I don't know, so I'm not
+going to compute that.
+
+1745
+01:33:39,286 --> 01:33:41,726
+AUDIENCE: How do you
+avoid the checking?
+
+1746
+01:33:41,726 --> 01:33:43,190
+[INAUDIBLE]
+
+1747
+01:33:43,190 --> 01:33:45,060
+PROFESSOR: So--
+
+1748
+01:33:45,060 --> 01:33:46,310
+AUDIENCE: [INAUDIBLE]
+
+1749
+01:33:46,310 --> 01:33:50,020
+
+1750
+01:33:50,020 --> 01:33:50,310
+PROFESSOR: See?
+
+1751
+01:33:50,310 --> 01:33:51,762
+AUDIENCE: Oh, OK, Great.
+
+1752
+01:33:51,762 --> 01:33:54,666
+Yeah.
+
+1753
+01:33:54,666 --> 01:33:57,570
+PROFESSOR: [INAUDIBLE]
+
+1754
+01:33:57,570 --> 01:33:59,030
+Anyone lost?
+
+1755
+01:33:59,030 --> 01:34:02,560
+Any other questions?
+
+1756
+01:34:02,560 --> 01:34:06,660
+So that actually touched
+on a couple of topics.
+
+1757
+01:34:06,660 --> 01:34:10,630
+So we saw exceptions here.
+
+1758
+01:34:10,630 --> 01:34:12,480
+Is there anyone who wants
+to see anything else on
+
+1759
+01:34:12,480 --> 01:34:14,256
+exceptions?
+
+1760
+01:34:14,256 --> 01:34:15,750
+AUDIENCE: What's the difference
+
+1761
+01:34:15,750 --> 01:34:17,820
+between pass and continue?
+
+1762
+01:34:17,820 --> 01:34:19,820
+PROFESSOR: Pass and continue?
+
+1763
+01:34:19,820 --> 01:34:21,070
+OK.
+
+1764
+01:34:21,070 --> 01:34:25,290
+
+1765
+01:34:25,290 --> 01:34:29,717
+So the question is what's
+the difference
+
+1766
+01:34:29,717 --> 01:34:30,420
+between pass and continue.
+
+1767
+01:34:30,420 --> 01:34:34,370
+So when you have pass, this is
+basically a null command.
+
+1768
+01:34:34,370 --> 01:34:35,710
+It's a do nothing command.
+
+1769
+01:34:35,710 --> 01:34:38,220
+I can actually run this
+code right now.
+
+1770
+01:34:38,220 --> 01:34:42,240
+And it will do absolutely
+nothing useful.
+
+1771
+01:34:42,240 --> 01:34:43,490
+But it also won't complain.
+
+1772
+01:34:43,490 --> 01:34:49,190
+
+1773
+01:34:49,190 --> 01:34:51,180
+It's a placeholder.
+
+1774
+01:34:51,180 --> 01:34:52,340
+Sometimes--
+
+1775
+01:34:52,340 --> 01:34:54,510
+so a lot of times you'll
+see in your code
+
+1776
+01:34:54,510 --> 01:34:57,040
+something like this.
+
+1777
+01:34:57,040 --> 01:35:02,320
+Let's x equals 150.
+
+1778
+01:35:02,320 --> 01:35:14,165
+If x mod 2 equals 0, pass else,
+do something useful.
+
+1779
+01:35:14,165 --> 01:35:17,580
+
+1780
+01:35:17,580 --> 01:35:20,750
+So we see this a lot
+in your p-sets.
+
+1781
+01:35:20,750 --> 01:35:22,100
+It's not a slam on
+you or anything.
+
+1782
+01:35:22,100 --> 01:35:24,025
+But you could simplify
+this by saying--
+
+1783
+01:35:24,025 --> 01:35:32,880
+
+1784
+01:35:32,880 --> 01:35:34,950
+but the way that you
+conceptualize a problem forced
+
+1785
+01:35:34,950 --> 01:35:37,950
+you to have this if statement.
+
+1786
+01:35:37,950 --> 01:35:40,000
+And then you didn't have
+anything useful to put in
+
+1787
+01:35:40,000 --> 01:35:42,580
+here, so you had to put
+a pass in order to
+
+1788
+01:35:42,580 --> 01:35:45,260
+make Python not complain.
+
+1789
+01:35:45,260 --> 01:35:52,500
+So, let's be a little less
+flip and more concrete.
+
+1790
+01:35:52,500 --> 01:35:53,885
+It's getting late, I'm
+getting punchy.
+
+1791
+01:35:53,885 --> 01:35:59,060
+
+1792
+01:35:59,060 --> 01:35:59,370
+All right.
+
+1793
+01:35:59,370 --> 01:36:03,100
+So if I were to run this now,
+it's not going to print
+
+1794
+01:36:03,100 --> 01:36:04,630
+anything because it hit
+the pass command.
+
+1795
+01:36:04,630 --> 01:36:07,390
+
+1796
+01:36:07,390 --> 01:36:10,140
+Now let's make this on.
+
+1797
+01:36:10,140 --> 01:36:12,400
+So if we've verified that this
+code works and that I'm not
+
+1798
+01:36:12,400 --> 01:36:13,510
+blowing smoke.
+
+1799
+01:36:13,510 --> 01:36:19,000
+Now, let's take out the pass.
+
+1800
+01:36:19,000 --> 01:36:20,490
+Python's going to complain.
+
+1801
+01:36:20,490 --> 01:36:22,160
+Why?
+
+1802
+01:36:22,160 --> 01:36:26,900
+Because after this if
+line, here it's
+
+1803
+01:36:26,900 --> 01:36:28,500
+expecting a block of code.
+
+1804
+01:36:28,500 --> 01:36:31,790
+But there's nothing there.
+
+1805
+01:36:31,790 --> 01:36:34,490
+The pass keyword give you
+a do nothing command.
+
+1806
+01:36:34,490 --> 01:36:38,650
+It says, I don't really have
+anything to say here, but you
+
+1807
+01:36:38,650 --> 01:36:40,480
+want me to put something
+here so I'm going to
+
+1808
+01:36:40,480 --> 01:36:41,650
+put something here.
+
+1809
+01:36:41,650 --> 01:36:44,870
+But it doesn't do anything.
+
+1810
+01:36:44,870 --> 01:36:48,770
+So that's pass.
+
+1811
+01:36:48,770 --> 01:36:53,160
+so It's a placeholder,
+is the basic answer.
+
+1812
+01:36:53,160 --> 01:36:54,870
+Now, continue is different.
+
+1813
+01:36:54,870 --> 01:36:57,660
+Because continue actually has
+a function that is useful.
+
+1814
+01:36:57,660 --> 01:37:01,740
+
+1815
+01:37:01,740 --> 01:37:04,860
+Let's say that I'm not too
+familiar with the range
+
+1816
+01:37:04,860 --> 01:37:07,700
+command, and I don't know that
+I can specify a step.
+
+1817
+01:37:07,700 --> 01:37:11,550
+And I want to print out
+all the odd integers.
+
+1818
+01:37:11,550 --> 01:37:15,960
+And I also am going to restrict
+myself and say that I
+
+1819
+01:37:15,960 --> 01:37:22,140
+can't use an else or something
+of that nature.
+
+1820
+01:37:22,140 --> 01:37:23,460
+So I'm going to handicap
+myself.
+
+1821
+01:37:23,460 --> 01:37:29,620
+
+1822
+01:37:29,620 --> 01:37:31,290
+This x-range --
+
+1823
+01:37:31,290 --> 01:37:34,240
+is x-range cool?
+
+1824
+01:37:34,240 --> 01:37:35,980
+So.
+
+1825
+01:37:35,980 --> 01:37:37,390
+I only want to print
+out odd numbers.
+
+1826
+01:37:37,390 --> 01:37:51,860
+
+1827
+01:37:51,860 --> 01:37:53,160
+Or we can do it like this.
+
+1828
+01:37:53,160 --> 01:37:55,600
+Either/or, it doesn't matter.
+
+1829
+01:37:55,600 --> 01:37:58,696
+So, comment this.
+
+1830
+01:37:58,696 --> 01:38:03,430
+What continue does is it, if
+you're within a loop, as we
+
+1831
+01:38:03,430 --> 01:38:07,060
+are here with this for loop,
+tells Python if it sees a
+
+1832
+01:38:07,060 --> 01:38:10,400
+continue statement, do not
+continue beyond this point
+
+1833
+01:38:10,400 --> 01:38:12,400
+within the block of the loop.
+
+1834
+01:38:12,400 --> 01:38:16,420
+Go instead and perform the next
+iteration of this loop.
+
+1835
+01:38:16,420 --> 01:38:19,320
+Go to the top of this loop.
+
+1836
+01:38:19,320 --> 01:38:24,020
+So, what this code should do,
+I'm hoping, in case I don't--
+
+1837
+01:38:24,020 --> 01:38:26,230
+I might have a bug--
+
+1838
+01:38:26,230 --> 01:38:27,635
+it should print out
+the odd integers.
+
+1839
+01:38:27,635 --> 01:38:32,900
+
+1840
+01:38:32,900 --> 01:38:38,290
+So what's happening is that when
+the integer is even, it's
+
+1841
+01:38:38,290 --> 01:38:41,660
+hitting this continue
+statement.
+
+1842
+01:38:41,660 --> 01:38:44,850
+And this is telling Python, go
+back up to the top of this for
+
+1843
+01:38:44,850 --> 01:38:48,538
+loop and do the next
+iteration.
+
+1844
+01:38:48,538 --> 01:38:53,478
+AUDIENCE: If you were to
+have [UNINTELLIGIBLE]?
+
+1845
+01:38:53,478 --> 01:38:55,454
+PROFESSOR: So if I
+just had pass?
+
+1846
+01:38:55,454 --> 01:38:57,430
+It'll print all the integers.
+
+1847
+01:38:57,430 --> 01:39:00,888
+
+1848
+01:39:00,888 --> 01:39:02,138
+That work?
+
+1849
+01:39:02,138 --> 01:39:05,334
+
+1850
+01:39:05,334 --> 01:39:06,816
+Anyone confused?
+
+1851
+01:39:06,816 --> 01:39:09,944
+AUDIENCE: You could also have
+your code if not that
+
+1852
+01:39:09,944 --> 01:39:12,250
+[UNINTELLIGIBLE].
+
+1853
+01:39:12,250 --> 01:39:13,500
+PROFESSOR: Yeah, but
+[INAUDIBLE].
+
+1854
+01:39:13,500 --> 01:39:18,425
+
+1855
+01:39:18,425 --> 01:39:21,820
+There are some schools of
+thought that say that continue
+
+1856
+01:39:21,820 --> 01:39:24,630
+is something that disturbs
+the flow of code
+
+1857
+01:39:24,630 --> 01:39:28,960
+and should be avoided.
+
+1858
+01:39:28,960 --> 01:39:30,140
+I don't subscribe to that.
+
+1859
+01:39:30,140 --> 01:39:34,890
+I think that if it makes your
+code clearer, then use it.
+
+1860
+01:39:34,890 --> 01:39:37,480
+Which is to say that, yeah, you
+can rewrite a lot of your
+
+1861
+01:39:37,480 --> 01:39:39,090
+code to not use continue.
+
+1862
+01:39:39,090 --> 01:39:41,120
+OK, do we need to
+go over anything
+
+1863
+01:39:41,120 --> 01:39:42,630
+with linguistic issues?
+
+1864
+01:39:42,630 --> 01:39:45,282
+Are we good on classes?
+
+1865
+01:39:45,282 --> 01:39:48,440
+AUDIENCE: Can we go over
+exceptions, please?
+
+1866
+01:39:48,440 --> 01:39:50,810
+PROFESSOR: So there is a
+question on exceptions.
+
+1867
+01:39:50,810 --> 01:39:55,420
+So exceptions are another
+way of flow control.
+
+1868
+01:39:55,420 --> 01:39:59,610
+And if I can pull up my source
+file, I have an example of
+
+1869
+01:39:59,610 --> 01:40:00,860
+handling exceptions.
+
+1870
+01:40:00,860 --> 01:40:05,860
+
+1871
+01:40:05,860 --> 01:40:07,276
+There we go.
+
+1872
+01:40:07,276 --> 01:40:10,000
+
+1873
+01:40:10,000 --> 01:40:12,780
+Exceptions give you
+a way of handling
+
+1874
+01:40:12,780 --> 01:40:15,250
+certain errors that occur.
+
+1875
+01:40:15,250 --> 01:40:19,570
+So, the easiest one to come
+up with is division by 0.
+
+1876
+01:40:19,570 --> 01:40:23,400
+So normally, if you would
+do a division by 0 --
+
+1877
+01:40:23,400 --> 01:40:31,910
+
+1878
+01:40:31,910 --> 01:40:34,660
+so I'm going trying
+to divide 10 by 0.
+
+1879
+01:40:34,660 --> 01:40:40,180
+The universe won't end, but
+Python will be very unhappy.
+
+1880
+01:40:40,180 --> 01:40:43,570
+In programs that are more
+complex that the ones that
+
+1881
+01:40:43,570 --> 01:40:47,750
+we've been writing, division
+by 0 happens but you don't
+
+1882
+01:40:47,750 --> 01:40:50,610
+necessarily want the program
+to crash, right?
+
+1883
+01:40:50,610 --> 01:40:53,460
+You want to be able to handle
+that error in a
+
+1884
+01:40:53,460 --> 01:40:55,210
+semi-graceful way.
+
+1885
+01:40:55,210 --> 01:41:00,920
+And in this particular example,
+with a division by 0,
+
+1886
+01:41:00,920 --> 01:41:03,090
+we can do that with
+exceptions.
+
+1887
+01:41:03,090 --> 01:41:07,490
+So let's say that instead of the
+program crashing I want to
+
+1888
+01:41:07,490 --> 01:41:10,990
+print out a nicer error message
+rather than everything
+
+1889
+01:41:10,990 --> 01:41:12,060
+in big red.
+
+1890
+01:41:12,060 --> 01:41:14,645
+I say, well, you divided by 0
+so maybe you should change
+
+1891
+01:41:14,645 --> 01:41:15,895
+your numbers.
+
+1892
+01:41:15,895 --> 01:41:18,020
+
+1893
+01:41:18,020 --> 01:41:23,030
+The way I capture, or catch this
+exception, is I have a
+
+1894
+01:41:23,030 --> 01:41:27,080
+tribe keyword, a colon,
+and then I have
+
+1895
+01:41:27,080 --> 01:41:28,380
+this block of code.
+
+1896
+01:41:28,380 --> 01:41:31,800
+This is the code that could
+potentially raise an exception
+
+1897
+01:41:31,800 --> 01:41:34,030
+where the error might occur.
+
+1898
+01:41:34,030 --> 01:41:38,990
+This code could be-- in this
+case, it's just straight up
+
+1899
+01:41:38,990 --> 01:41:41,100
+assignment and division.
+
+1900
+01:41:41,100 --> 01:41:44,140
+It could be a function that
+raises the exception.
+
+1901
+01:41:44,140 --> 01:41:45,270
+It doesn't matter.
+
+1902
+01:41:45,270 --> 01:41:47,760
+The point is that there's an
+exception that might occur.
+
+1903
+01:41:47,760 --> 01:41:51,850
+If an exception occurs, then
+Python is going to look past
+
+1904
+01:41:51,850 --> 01:41:56,780
+this block of code here at
+these except statements.
+
+1905
+01:41:56,780 --> 01:41:59,300
+And it's going to look at the
+type of exception it has.
+
+1906
+01:41:59,300 --> 01:42:03,680
+In this case it's a by 0
+division error, and it's going
+
+1907
+01:42:03,680 --> 01:42:06,880
+to match the exception against
+whatever type this is.
+
+1908
+01:42:06,880 --> 01:42:10,870
+And you can put inside here
+whatever code you want in
+
+1909
+01:42:10,870 --> 01:42:12,980
+order to handle this
+exception.
+
+1910
+01:42:12,980 --> 01:42:17,160
+So in this case I'm just
+printing divided by 0.
+
+1911
+01:42:17,160 --> 01:42:21,450
+I could be rude and
+I could say--
+
+1912
+01:42:21,450 --> 01:42:28,610
+
+1913
+01:42:28,610 --> 01:42:31,410
+see, can't even spell.
+
+1914
+01:42:31,410 --> 01:42:34,180
+So I can handle this exception
+however I want.
+
+1915
+01:42:34,180 --> 01:42:37,990
+But the program's not
+going to crash.
+
+1916
+01:42:37,990 --> 01:42:40,910
+And this program's actually not
+going to really convince
+
+1917
+01:42:40,910 --> 01:42:46,060
+you of that, but you see that--
+the first thing you see
+
+1918
+01:42:46,060 --> 01:42:49,320
+here is that there's no big red
+blaring message that says
+
+1919
+01:42:49,320 --> 01:42:50,480
+you have an exception.
+
+1920
+01:42:50,480 --> 01:42:53,080
+It's all code that
+I've written.
+
+1921
+01:42:53,080 --> 01:42:55,030
+And I could even be
+silent about it.
+
+1922
+01:42:55,030 --> 01:42:56,530
+I could say, I'm not going
+to say anything.
+
+1923
+01:42:56,530 --> 01:42:57,780
+I'm just going to
+fail silently.
+
+1924
+01:42:57,780 --> 01:43:01,550
+
+1925
+01:43:01,550 --> 01:43:03,520
+Tell me it's all good.
+
+1926
+01:43:03,520 --> 01:43:04,810
+It's not going to tell
+me I divided by 0.
+
+1927
+01:43:04,810 --> 01:43:08,100
+
+1928
+01:43:08,100 --> 01:43:10,610
+It can come in handy if I
+like have an input loop.
+
+1929
+01:43:10,610 --> 01:43:14,540
+So let's say I'm going to do a
+little bit more, be a little
+
+1930
+01:43:14,540 --> 01:43:17,900
+bit more creative and do--
+
+1931
+01:43:17,900 --> 01:43:20,444
+oh.
+
+1932
+01:43:20,444 --> 01:43:22,165
+AUDIENCE: [INAUDIBLE]
+
+1933
+01:43:22,165 --> 01:43:24,511
+How does it [INAUDIBLE]?
+
+1934
+01:43:24,511 --> 01:43:27,710
+PROFESSOR: That's an internal
+Python thing.
+
+1935
+01:43:27,710 --> 01:43:32,760
+So if you want to learn about
+all the wonderful exceptions
+
+1936
+01:43:32,760 --> 01:43:36,806
+that Python provides you in its
+class library, you can go
+
+1937
+01:43:36,806 --> 01:43:39,821
+to the Python documentation.
+
+1938
+01:43:39,821 --> 01:43:44,155
+Or you can even do
+a Google search.
+
+1939
+01:43:44,155 --> 01:43:53,184
+
+1940
+01:43:53,184 --> 01:43:56,887
+Of course, Chrome is being very
+slow, and the network's
+
+1941
+01:43:56,887 --> 01:43:57,550
+probably down.
+
+1942
+01:43:57,550 --> 01:43:58,800
+So built-in exceptions.
+
+1943
+01:43:58,800 --> 01:44:01,110
+
+1944
+01:44:01,110 --> 01:44:03,482
+So these are all the exceptions
+that Python has.
+
+1945
+01:44:03,482 --> 01:44:07,590
+
+1946
+01:44:07,590 --> 01:44:09,520
+And you can use these too.
+
+1947
+01:44:09,520 --> 01:44:14,790
+Let's say that, let me get back
+to my contrived example.
+
+1948
+01:44:14,790 --> 01:44:18,140
+I want to create a
+loop that says--
+
+1949
+01:44:18,140 --> 01:44:48,920
+
+1950
+01:44:48,920 --> 01:44:55,470
+let's say that I want to catch,
+I don't want to divide
+
+1951
+01:44:55,470 --> 01:44:56,880
+even numbers for some reason.
+
+1952
+01:44:56,880 --> 01:45:05,600
+
+1953
+01:45:05,600 --> 01:45:06,740
+What do we have here?
+
+1954
+01:45:06,740 --> 01:45:08,680
+What can we find?
+
+1955
+01:45:08,680 --> 01:45:09,930
+I think there's a value error.
+
+1956
+01:45:09,930 --> 01:45:14,030
+
+1957
+01:45:14,030 --> 01:45:16,380
+There we go.
+
+1958
+01:45:16,380 --> 01:45:18,145
+So let's say that I'm going
+to raise a value error.
+
+1959
+01:45:18,145 --> 01:45:23,590
+
+1960
+01:45:23,590 --> 01:45:33,010
+And I am actually going
+to do this this way.
+
+1961
+01:45:33,010 --> 01:45:51,410
+
+1962
+01:45:51,410 --> 01:45:53,595
+So I've created a function
+that's not going to allow me
+
+1963
+01:45:53,595 --> 01:45:56,260
+to input even numbers.
+
+1964
+01:45:56,260 --> 01:45:59,260
+It's going to raise a value
+error if I enter in a 2 or a 4
+
+1965
+01:45:59,260 --> 01:46:00,090
+or whatever.
+
+1966
+01:46:00,090 --> 01:46:03,420
+But, if I do enter in an odd
+number it is just going to
+
+1967
+01:46:03,420 --> 01:46:04,820
+return that number to me.
+
+1968
+01:46:04,820 --> 01:46:06,890
+So I'm going to use
+that function now.
+
+1969
+01:46:06,890 --> 01:46:14,930
+
+1970
+01:46:14,930 --> 01:46:22,320
+And I'm just going to do the
+silly thing and divide, do a
+
+1971
+01:46:22,320 --> 01:46:25,200
+division, and print it out.
+
+1972
+01:46:25,200 --> 01:46:28,750
+So if I comment out this code
+up here and I comment this
+
+1973
+01:46:28,750 --> 01:46:33,800
+out, and I run this, so--
+
+1974
+01:46:33,800 --> 01:46:36,750
+let's do 3.
+
+1975
+01:46:36,750 --> 01:46:38,000
+That's interesting.
+
+1976
+01:46:38,000 --> 01:46:43,090
+
+1977
+01:46:43,090 --> 01:46:45,849
+Apparently Python is a little
+constipated right now.
+
+1978
+01:46:45,849 --> 01:46:50,740
+
+1979
+01:46:50,740 --> 01:46:54,030
+We edit this during the summer,
+so we can take that
+
+1980
+01:46:54,030 --> 01:46:55,280
+out, I think.
+
+1981
+01:46:55,280 --> 01:46:58,670
+
+1982
+01:46:58,670 --> 01:46:59,060
+All right.
+
+1983
+01:46:59,060 --> 01:47:00,750
+So it does what we
+expected it to.
+
+1984
+01:47:00,750 --> 01:47:03,120
+It's going to keep on prompting
+us for numbers and
+
+1985
+01:47:03,120 --> 01:47:06,580
+it's going to divide them for
+us and give us the answers.
+
+1986
+01:47:06,580 --> 01:47:09,390
+So we've got a really dumb
+calculator here.
+
+1987
+01:47:09,390 --> 01:47:12,430
+Except when I try to do even
+numbers, because my calculator
+
+1988
+01:47:12,430 --> 01:47:14,590
+is really, really dumb.
+
+1989
+01:47:14,590 --> 01:47:16,810
+So it's going to raise
+a value error.
+
+1990
+01:47:16,810 --> 01:47:20,470
+And it raises the value error
+in this function here.
+
+1991
+01:47:20,470 --> 01:47:22,930
+I can handle this, though,
+because I know how.
+
+1992
+01:47:22,930 --> 01:47:27,000
+
+1993
+01:47:27,000 --> 01:47:31,070
+So what should I type here?
+
+1994
+01:47:31,070 --> 01:47:32,320
+OK.
+
+1995
+01:47:32,320 --> 01:47:35,226
+
+1996
+01:47:35,226 --> 01:47:37,178
+AUDIENCE: If you wanted to
+specifically catch that error.
+
+1997
+01:47:37,178 --> 01:47:38,886
+But you could just leave
+it as except, and it
+
+1998
+01:47:38,886 --> 01:47:39,618
+would catch any error?
+
+1999
+01:47:39,618 --> 01:47:41,570
+PROFESSOR: Yes.
+
+2000
+01:47:41,570 --> 01:47:42,546
+[INAUDIBLE].
+
+2001
+01:47:42,546 --> 01:47:44,010
+AUDIENCE: So if any error
+were to be thrown, then
+
+2002
+01:47:44,010 --> 01:47:44,498
+[INAUDIBLE].
+
+2003
+01:47:44,498 --> 01:47:47,914
+But if you wanted specifically
+to say, OK, the value error
+
+2004
+01:47:47,914 --> 01:47:50,360
+[UNINTELLIGIBLE].
+
+2005
+01:47:50,360 --> 01:47:51,830
+PROFESSOR: Right.
+
+2006
+01:47:51,830 --> 01:47:55,900
+So what she was saying is
+that I could do this.
+
+2007
+01:47:55,900 --> 01:47:58,396
+I don't have to specify what
+error I'm expecting.
+
+2008
+01:47:58,396 --> 01:47:59,794
+I could say--
+
+2009
+01:47:59,794 --> 01:48:03,990
+
+2010
+01:48:03,990 --> 01:48:05,450
+But it's not going
+to give me any
+
+2011
+01:48:05,450 --> 01:48:07,030
+detail about what happened.
+
+2012
+01:48:07,030 --> 01:48:10,120
+
+2013
+01:48:10,120 --> 01:48:16,190
+And what I'm going to do is,
+I'm going to say that if I
+
+2014
+01:48:16,190 --> 01:48:19,170
+have an exception then I'm
+just going to repeat my
+
+2015
+01:48:19,170 --> 01:48:21,820
+getting of the numbers.
+
+2016
+01:48:21,820 --> 01:48:26,570
+So, let's say that I do this.
+
+2017
+01:48:26,570 --> 01:48:30,300
+Something happened, not
+really specific.
+
+2018
+01:48:30,300 --> 01:48:33,140
+Nothing happened?
+
+2019
+01:48:33,140 --> 01:48:35,556
+OK, I divided all right.
+
+2020
+01:48:35,556 --> 01:48:37,510
+AUDIENCE: What if you put
+in [UNINTELLIGIBLE]?
+
+2021
+01:48:37,510 --> 01:48:38,357
+PROFESSOR: What's that?
+
+2022
+01:48:38,357 --> 01:48:39,351
+AUDIENCE: [INAUDIBLE]
+
+2023
+01:48:39,351 --> 01:48:42,830
+Would it also come back in
+case something happened?
+
+2024
+01:48:42,830 --> 01:48:43,028
+PROFESSOR: Yeah.
+
+2025
+01:48:43,028 --> 01:48:45,315
+That's a good question.
+
+2026
+01:48:45,315 --> 01:48:48,794
+Something happened, but
+we don't know what.
+
+2027
+01:48:48,794 --> 01:48:51,590
+We know we have a bug, because
+an exception was thrwn.
+
+2028
+01:48:51,590 --> 01:48:52,510
+But we don't know what it is.
+
+2029
+01:48:52,510 --> 01:48:53,003
+AUDIENCE: Because it's
+never going to crash.
+
+2030
+01:48:53,003 --> 01:48:53,496
+PROFESSOR: Yeah.
+
+2031
+01:48:53,496 --> 01:48:55,468
+It's never going to crash.
+
+2032
+01:48:55,468 --> 01:48:59,905
+AUDIENCE: So a useful example
+of when to use this, would
+
+2033
+01:48:59,905 --> 01:49:07,793
+that be like [INAUDIBLE], and
+you have the list to choose
+
+2034
+01:49:07,793 --> 01:49:09,765
+from the letters [INAUDIBLE]
+it would
+
+2035
+01:49:09,765 --> 01:49:11,737
+remove each of the guesses?
+
+2036
+01:49:11,737 --> 01:49:13,955
+If you accidentally guess
+something that
+
+2037
+01:49:13,955 --> 01:49:14,695
+you've already guessed?
+
+2038
+01:49:14,695 --> 01:49:16,568
+PROFESSOR: Yeah, you can raise
+an exception to say, already
+
+2039
+01:49:16,568 --> 01:49:17,160
+guessed this.
+
+2040
+01:49:17,160 --> 01:49:19,132
+AUDIENCE: As opposed to the
+program, that first one I ran,
+
+2041
+01:49:19,132 --> 01:49:21,843
+I accidentally did the same
+letter again, and the whole
+
+2042
+01:49:21,843 --> 01:49:22,583
+program just crashed.
+
+2043
+01:49:22,583 --> 01:49:23,569
+PROFESSOR: Yep.
+
+2044
+01:49:23,569 --> 01:49:26,034
+AUDIENCE: So you can raise an
+exception for whoever's
+
+2045
+01:49:26,034 --> 01:49:27,050
+[INAUDIBLE].
+
+2046
+01:49:27,050 --> 01:49:27,520
+PROFESSOR: Yeah.
+
+2047
+01:49:27,520 --> 01:49:30,840
+You can catch any errors
+that were raised.
+
+2048
+01:49:30,840 --> 01:49:32,740
+So we've got a couple
+of exceptions
+
+2049
+01:49:32,740 --> 01:49:33,056
+that are raised here.
+
+2050
+01:49:33,056 --> 01:49:35,590
+And actually this program
+can crash.
+
+2051
+01:49:35,590 --> 01:49:36,315
+Oh, wait.
+
+2052
+01:49:36,315 --> 01:49:37,097
+No, it can't.
+
+2053
+01:49:37,097 --> 01:49:37,864
+Because [INAUDIBLE].
+
+2054
+01:49:37,864 --> 01:49:39,620
+It thinks [INAUDIBLE].
+
+2055
+01:49:39,620 --> 01:49:41,680
+Silly Python.
+
+2056
+01:49:41,680 --> 01:49:47,320
+So it's not going
+to crash at all.
+
+2057
+01:49:47,320 --> 01:49:49,950
+We did a really good
+job, right?
+
+2058
+01:49:49,950 --> 01:49:52,630
+So now we want to get a little
+bit more specific so I'm going
+
+2059
+01:49:52,630 --> 01:49:54,710
+to catch a value error.
+
+2060
+01:49:54,710 --> 01:49:59,220
+So I'm only going to handle this
+one type of exception.
+
+2061
+01:49:59,220 --> 01:50:00,390
+Because--
+
+2062
+01:50:00,390 --> 01:50:03,860
+so it still works.
+
+2063
+01:50:03,860 --> 01:50:05,200
+A, something happened.
+
+2064
+01:50:05,200 --> 01:50:10,450
+But now we know that it's
+because I did something silly.
+
+2065
+01:50:10,450 --> 01:50:14,970
+And, now I can break the program
+because this keyboard
+
+2066
+01:50:14,970 --> 01:50:16,880
+interrupt, that's actually
+an exception.
+
+2067
+01:50:16,880 --> 01:50:20,060
+When you hit Control-C,
+it's going to break
+
+2068
+01:50:20,060 --> 01:50:20,630
+you out of the program.
+
+2069
+01:50:20,630 --> 01:50:22,210
+But because we're catching
+that exception
+
+2070
+01:50:22,210 --> 01:50:23,462
+it just kept going.
+
+2071
+01:50:23,462 --> 01:50:24,938
+AUDIENCE: [INAUDIBLE]
+
+2072
+01:50:24,938 --> 01:50:27,398
+make an exception [INAUDIBLE].
+
+2073
+01:50:27,398 --> 01:50:28,874
+PROFESSOR: Yes.
+
+2074
+01:50:28,874 --> 01:50:30,124
+AUDIENCE: [INAUDIBLE]
+
+2075
+01:50:30,124 --> 01:50:35,762
+
+2076
+01:50:35,762 --> 01:50:37,012
+AUDIENCE: [INAUDIBLE]
+
+2077
+01:50:37,012 --> 01:50:45,110
+
+2078
+01:50:45,110 --> 01:50:46,586
+AUDIENCE: Wait, what?
+
+2079
+01:50:46,586 --> 01:50:48,600
+[INTERPOSING VOICES]
+
+2080
+01:50:48,600 --> 01:50:52,705
+PROFESSOR: I'm quoting the
+girls over there, so.
+
+2081
+01:50:52,705 --> 01:50:53,955
+AUDIENCE: Are you?
+
+2082
+01:50:53,955 --> 01:50:57,655
+
+2083
+01:50:57,655 --> 01:50:59,640
+PROFESSOR: Uh-oh.
+
+2084
+01:50:59,640 --> 01:51:01,630
+So something happened.
+
+2085
+01:51:01,630 --> 01:51:03,540
+Oh, wow.
+
+2086
+01:51:03,540 --> 01:51:05,865
+How did that happen?
+
+2087
+01:51:05,865 --> 01:51:08,190
+Oh, I know how that happened.
+
+2088
+01:51:08,190 --> 01:51:09,440
+What am I missing here?
+
+2089
+01:51:09,440 --> 01:51:12,010
+
+2090
+01:51:12,010 --> 01:51:14,134
+So I caught the keyboard
+interrupt, right?
+
+2091
+01:51:14,134 --> 01:51:17,100
+
+2092
+01:51:17,100 --> 01:51:18,250
+I didn't go to the
+top of the loop.
+
+2093
+01:51:18,250 --> 01:51:21,470
+So what happened is, it tried
+to execute this, but num2
+
+2094
+01:51:21,470 --> 01:51:23,530
+hadn't been defined.
+
+2095
+01:51:23,530 --> 01:51:27,255
+So we're going to kick
+me back up to the
+
+2096
+01:51:27,255 --> 01:51:28,505
+top of the loop here.
+
+2097
+01:51:28,505 --> 01:51:31,375
+
+2098
+01:51:31,375 --> 01:51:32,830
+AUDIENCE: Oh.
+
+2099
+01:51:32,830 --> 01:51:34,770
+It's a clingy program.
+
+2100
+01:51:34,770 --> 01:51:38,180
+[LAUGHTER]
+
+2101
+01:51:38,180 --> 01:51:39,050
+PROFESSOR: Yes.
+
+2102
+01:51:39,050 --> 01:51:40,300
+It is a clingy program.
+
+2103
+01:51:40,300 --> 01:51:42,980
+
+2104
+01:51:42,980 --> 01:51:43,310
+Anyway.
+
+2105
+01:51:43,310 --> 01:51:47,890
+So, does everyone get the idea
+of what the exceptions are?
+
+2106
+01:51:47,890 --> 01:51:52,704
+So I don't have to
+go any more?
+
+2107
+01:51:52,704 --> 01:51:54,870
+AUDIENCE: In this except up
+there, there's always
+
+2108
+01:51:54,870 --> 01:51:55,760
+[INAUDIBLE]?
+
+2109
+01:51:55,760 --> 01:51:56,750
+PROFESSOR: Yeah.
+
+2110
+01:51:56,750 --> 01:51:58,520
+AUDIENCE: But what does
+this [INAUDIBLE]?
+
+2111
+01:51:58,520 --> 01:52:01,985
+PROFESSOR: So When you get an
+exception, when an exception
+
+2112
+01:52:01,985 --> 01:52:04,951
+is raised, it's actually
+an object.
+
+2113
+01:52:04,951 --> 01:52:07,350
+So there's an object that's
+associated with it.
+
+2114
+01:52:07,350 --> 01:52:10,170
+And in a lot of cases you
+really don't have to be
+
+2115
+01:52:10,170 --> 01:52:12,180
+concerned about it, but
+sometimes you want some
+
+2116
+01:52:12,180 --> 01:52:13,160
+additional information.
+
+2117
+01:52:13,160 --> 01:52:19,190
+So these are not very
+interesting exceptions, but
+
+2118
+01:52:19,190 --> 01:52:23,750
+some exceptions might have some
+additional diagnostic
+
+2119
+01:52:23,750 --> 01:52:24,370
+information.
+
+2120
+01:52:24,370 --> 01:52:28,060
+So if you were, say, logging
+the run of your program.
+
+2121
+01:52:28,060 --> 01:52:31,530
+And you wanted to diagnose any
+exceptions that you caught?
+
+2122
+01:52:31,530 --> 01:52:34,080
+Like, say, you got a generic
+exception or you got something
+
+2123
+01:52:34,080 --> 01:52:36,680
+that was kind of odd that
+weren't expecting, you could
+
+2124
+01:52:36,680 --> 01:52:38,210
+print out additional
+information.
+
+2125
+01:52:38,210 --> 01:52:41,440
+And so E is the name
+of that object.
+
+2126
+01:52:41,440 --> 01:52:48,540
+So, I can do this.
+
+2127
+01:52:48,540 --> 01:52:55,180
+
+2128
+01:52:55,180 --> 01:52:56,430
+Well.
+
+2129
+01:52:56,430 --> 01:53:00,810
+
+2130
+01:53:00,810 --> 01:53:02,060
+This is because --
+
+2131
+01:53:02,060 --> 01:53:10,870
+
+2132
+01:53:10,870 --> 01:53:15,180
+if you give it a primer like
+that, it's going to put that
+
+2133
+01:53:15,180 --> 01:53:17,180
+message into the exception.
+
+2134
+01:53:17,180 --> 01:53:20,870
+So now I can retrieve it when
+the exception is raised.
+
+2135
+01:53:20,870 --> 01:53:23,750
+So if I'm raising the exception,
+I can provide
+
+2136
+01:53:23,750 --> 01:53:25,590
+additional information.
+
+2137
+01:53:25,590 --> 01:53:30,470
+So that's the message that I've
+put into the exception
+
+2138
+01:53:30,470 --> 01:53:31,720
+when I raised it.
+
+2139
+01:53:31,720 --> 01:53:33,890
+
+2140
+01:53:33,890 --> 01:53:35,050
+Does that make sense?
+
+2141
+01:53:35,050 --> 01:53:38,190
+AUDIENCE: Well, how is that
+different-- so is it the same
+
+2142
+01:53:38,190 --> 01:53:41,190
+thing as saying print,
+[INAUDIBLE]?
+
+2143
+01:53:41,190 --> 01:53:41,950
+PROFESSOR: Yeah.
+
+2144
+01:53:41,950 --> 01:53:48,550
+So this is a really [INAUDIBLE]
+example.
+
+2145
+01:53:48,550 --> 01:53:51,490
+So this is just going to
+print out whatever
+
+2146
+01:53:51,490 --> 01:53:52,830
+message I passed in.
+
+2147
+01:53:52,830 --> 01:53:56,430
+So when I say this and point to
+my screen, I really meant
+
+2148
+01:53:56,430 --> 01:53:59,230
+this and highlighted this.
+
+2149
+01:53:59,230 --> 01:54:02,580
+So, this line is going to print
+out this message that I
+
+2150
+01:54:02,580 --> 01:54:05,760
+passed in when I raised
+the exception.
+
+2151
+01:54:05,760 --> 01:54:09,160
+Because what I'm actually doing
+is, I'm creating a value
+
+2152
+01:54:09,160 --> 01:54:15,220
+error object that has this
+message associated with it.
+
+2153
+01:54:15,220 --> 01:54:19,090
+And that's what gets passed up
+this exception chain until I
+
+2154
+01:54:19,090 --> 01:54:21,740
+finally handle it. here.
+
+2155
+01:54:21,740 --> 01:54:25,552
+And E holds the reference to
+that value error object.
+
+2156
+01:54:25,552 --> 01:54:28,055
+AUDIENCE: So E is
+an actual value?
+
+2157
+01:54:28,055 --> 01:54:28,480
+PROFESSOR: Yeah.
+
+2158
+01:54:28,480 --> 01:54:29,730
+So if I do something
+like this--
+
+2159
+01:54:29,730 --> 01:54:36,438
+
+2160
+01:54:36,438 --> 01:54:40,140
+and I print out the type--
+you can see that?
+
+2161
+01:54:40,140 --> 01:54:42,096
+It's pretty neat.
+
+2162
+01:54:42,096 --> 01:54:45,407
+But did that answer
+your question?
+
+2163
+01:54:45,407 --> 01:54:46,657
+AUDIENCE: [INAUDIBLE]
+
+2164
+01:54:46,657 --> 01:54:51,740
+
+2165
+01:54:51,740 --> 01:54:52,670
+PROFESSOR: Could
+it be anything?
+
+2166
+01:54:52,670 --> 01:54:57,210
+So let's think of something
+like this.
+
+2167
+01:54:57,210 --> 01:55:02,540
+
+2168
+01:55:02,540 --> 01:55:03,790
+Like a list.
+
+2169
+01:55:03,790 --> 01:55:10,610
+
+2170
+01:55:10,610 --> 01:55:11,101
+AUDIENCE: No.
+
+2171
+01:55:11,101 --> 01:55:16,763
+I meant in your accept value
+error dash E. Could you put
+
+2172
+01:55:16,763 --> 01:55:20,948
+any variable there, or
+does it have to be E?
+
+2173
+01:55:20,948 --> 01:55:21,876
+PROFESSOR: Oh, any name?
+
+2174
+01:55:21,876 --> 01:55:23,270
+AUDIENCE: Yeah.
+
+2175
+01:55:23,270 --> 01:55:25,392
+PROFESSOR: I've always used E.
+That's kind of a convention.
+
+2176
+01:55:25,392 --> 01:55:27,822
+But I think you'd be
+fine doing that.
+
+2177
+01:55:27,822 --> 01:55:31,230
+
+2178
+01:55:31,230 --> 01:55:34,550
+E is the convention that
+I use, but some
+
+2179
+01:55:34,550 --> 01:55:35,320
+people don't like that.
+
+2180
+01:55:35,320 --> 01:55:36,700
+They're like, you should
+name it something
+
+2181
+01:55:36,700 --> 01:55:37,670
+a little bit better.
+
+2182
+01:55:37,670 --> 01:55:40,783
+But honestly, why bother?
+
+2183
+01:55:40,783 --> 01:55:43,490
+
+2184
+01:55:43,490 --> 01:55:43,650
+Ok.
+
+2185
+01:55:43,650 --> 01:55:45,150
+Are we good with exceptions?
+
+2186
+01:55:45,150 --> 01:55:47,570
+That answer your question?
+
+2187
+01:55:47,570 --> 01:55:48,820
+Any other questions
+on exceptions?
+
+2188
+01:55:48,820 --> 01:55:50,960
+
+2189
+01:55:50,960 --> 01:55:55,298
+AUDIENCE: Is there a built-in
+amount of errors you can have?
+
+2190
+01:55:55,298 --> 01:55:57,515
+Like value errors,
+[UNINTELLIGIBLE], can you make
+
+2191
+01:55:57,515 --> 01:55:58,680
+up your own?
+
+2192
+01:55:58,680 --> 01:56:01,030
+PROFESSOR: Can you make up
+your own exceptions?
+
+2193
+01:56:01,030 --> 01:56:01,370
+Yes.
+
+2194
+01:56:01,370 --> 01:56:02,568
+You can do that.
+
+2195
+01:56:02,568 --> 01:56:03,972
+You can say--
+
+2196
+01:56:03,972 --> 01:56:11,320
+
+2197
+01:56:11,320 --> 01:56:12,570
+but--
+
+2198
+01:56:12,570 --> 01:56:14,630
+
+2199
+01:56:14,630 --> 01:56:15,880
+and--
+
+2200
+01:56:15,880 --> 01:56:21,670
+
+2201
+01:56:21,670 --> 01:56:24,770
+I think this is going to work.
+
+2202
+01:56:24,770 --> 01:56:26,560
+It's been while since I've
+defined my own exceptions.
+
+2203
+01:56:26,560 --> 01:56:43,450
+
+2204
+01:56:43,450 --> 01:56:46,250
+So and again, I can handle it.
+
+2205
+01:56:46,250 --> 01:56:50,800
+
+2206
+01:56:50,800 --> 01:56:53,410
+So if you ever work on big
+systems, a lot of times
+
+2207
+01:56:53,410 --> 01:56:56,270
+they'll have their own exception
+hierarchies that
+
+2208
+01:56:56,270 --> 01:56:59,060
+define all sorts of exceptions
+for the specific application
+
+2209
+01:56:59,060 --> 01:57:01,550
+you're working on.
+
+2210
+01:57:01,550 --> 01:57:05,680
+Python's built in exceptions
+are pretty rich, so--
+
+2211
+01:57:05,680 --> 01:57:10,480
+
+2212
+01:57:10,480 --> 01:57:13,970
+there we go.
+
+2213
+01:57:13,970 --> 01:57:15,220
+AUDIENCE: [INAUDIBLE]
+
+2214
+01:57:15,220 --> 01:57:18,550
+
+2215
+01:57:18,550 --> 01:57:20,370
+PROFESSOR: I don't
+think you do.
+
+2216
+01:57:20,370 --> 01:57:23,410
+It's convention.
+
+2217
+01:57:23,410 --> 01:57:25,355
+I could probably do
+this, I think.
+
+2218
+01:57:25,355 --> 01:57:29,720
+
+2219
+01:57:29,720 --> 01:57:31,175
+Oh, wait.
+
+2220
+01:57:31,175 --> 01:57:35,060
+
+2221
+01:57:35,060 --> 01:57:35,920
+The only difference--
+
+2222
+01:57:35,920 --> 01:57:38,500
+or the only problem
+is, is that now--
+
+2223
+01:57:38,500 --> 01:57:42,910
+see I expect my exception to
+have a message attribute.
+
+2224
+01:57:42,910 --> 01:57:43,740
+And I don't have anything
+on this.
+
+2225
+01:57:43,740 --> 01:57:44,990
+So I have to do this.
+
+2226
+01:57:44,990 --> 01:57:47,580
+
+2227
+01:57:47,580 --> 01:57:49,200
+Or something similar, right?
+
+2228
+01:57:49,200 --> 01:57:51,510
+I have to define message
+on this.
+
+2229
+01:57:51,510 --> 01:57:52,850
+And I think this'll work.
+
+2230
+01:57:52,850 --> 01:57:58,430
+
+2231
+01:57:58,430 --> 01:58:00,130
+Well, actually, it does
+guard against it.
+
+2232
+01:58:00,130 --> 01:58:04,030
+So yes, you do have to inherit
+from exception.
+
+2233
+01:58:04,030 --> 01:58:05,620
+It's one of the few
+things that Python
+
+2234
+01:58:05,620 --> 01:58:09,420
+seems to guard against.
+
+2235
+01:58:09,420 --> 01:58:16,518
+So, does that answer
+your question?
+
+2236
+01:58:16,518 --> 01:58:21,630
+
+2237
+01:58:21,630 --> 01:58:25,140
+So we're getting kind of late.
+
+2238
+01:58:25,140 --> 01:58:29,120
+The only other topics that we
+have are the simulations and
+
+2239
+01:58:29,120 --> 01:58:34,700
+the distributions and
+that's about it.
+
+2240
+01:58:34,700 --> 01:58:40,190
+So, are there any questions
+on Monte Carlo methods?
+
+2241
+01:58:40,190 --> 01:58:44,350
+We've kind of done those
+to death, right?
+
+2242
+01:58:44,350 --> 01:58:47,094
+Real quick, someone humor me,
+what is a Monte Carlo method?
+
+2243
+01:58:47,094 --> 01:58:51,046
+
+2244
+01:58:51,046 --> 01:58:56,480
+AUDIENCE: An algorithm that
+uses random sampling for
+
+2245
+01:58:56,480 --> 01:59:01,420
+trials to [INAUDIBLE].
+
+2246
+01:59:01,420 --> 01:59:01,914
+PROFESSOR: Right.
+
+2247
+01:59:01,914 --> 01:59:02,902
+So, it's--
+
+2248
+01:59:02,902 --> 01:59:04,878
+what's that?
+
+2249
+01:59:04,878 --> 01:59:06,128
+AUDIENCE: [INAUDIBLE]
+
+2250
+01:59:06,128 --> 01:59:10,900
+
+2251
+01:59:10,900 --> 01:59:14,180
+PROFESSOR: It computes some
+value or solution to a problem
+
+2252
+01:59:14,180 --> 01:59:17,780
+using a random process
+and repeated trials.
+
+2253
+01:59:17,780 --> 01:59:19,030
+So--
+
+2254
+01:59:19,030 --> 01:59:20,780
+
+2255
+01:59:20,780 --> 01:59:23,454
+AUDIENCE: Is it almost
+brute force?
+
+2256
+01:59:23,454 --> 01:59:24,980
+PROFESSOR: No, it's not what
+we call brute force.
+
+2257
+01:59:24,980 --> 01:59:29,890
+I mean, it's like we computed
+pi by throwing a dart at a
+
+2258
+01:59:29,890 --> 01:59:31,900
+chalkboard or something
+like that.
+
+2259
+01:59:31,900 --> 01:59:35,430
+And it landed in a square, and
+we used some sort of analysis
+
+2260
+01:59:35,430 --> 01:59:38,870
+to figure out what pi was based
+on that throwing a dart
+
+2261
+01:59:38,870 --> 01:59:41,610
+at a board a million times.
+
+2262
+01:59:41,610 --> 01:59:44,610
+So that's what a Monte
+Carlo method is.
+
+2263
+01:59:44,610 --> 01:59:48,430
+Anything that uses random stuff
+to compute a value.
+
+2264
+01:59:48,430 --> 01:59:51,100
+A random simulation.
+
+2265
+01:59:51,100 --> 01:59:52,350
+Where'd my chalk go?
+
+2266
+01:59:52,350 --> 01:59:56,890
+
+2267
+01:59:56,890 --> 02:00:00,720
+And we actually a couple of
+Monte Carlo methods when I
+
+2268
+02:00:00,720 --> 02:00:02,450
+showed the solutions
+for problems (3)
+
+2269
+02:00:02,450 --> 02:00:04,310
+and (4) on the quiz.
+
+2270
+02:00:04,310 --> 02:00:06,960
+I used a random number generator
+in order to figure
+
+2271
+02:00:06,960 --> 02:00:09,180
+out the probabilities
+of not rolling a 6
+
+2272
+02:00:09,180 --> 02:00:10,730
+and all that stuff.
+
+2273
+02:00:10,730 --> 02:00:14,170
+And I used the Monte Carlo
+method to show me that I was
+
+2274
+02:00:14,170 --> 02:00:17,530
+wrong on my initial answer for
+rolling exactly one 6.
+
+2275
+02:00:17,530 --> 02:00:25,160
+
+2276
+02:00:25,160 --> 02:00:28,070
+So, is everyone comfortable with
+coefficient of variation?
+
+2277
+02:00:28,070 --> 02:00:33,210
+Because I did that
+first, initially.
+
+2278
+02:00:33,210 --> 02:00:36,480
+Confidence intervals
+and levels?
+
+2279
+02:00:36,480 --> 02:00:37,730
+Does anyone have any
+questions on that?
+
+2280
+02:00:37,730 --> 02:00:40,910
+
+2281
+02:00:40,910 --> 02:00:42,640
+AUDIENCE: What is a confidence
+interval?
+
+2282
+02:00:42,640 --> 02:00:45,770
+PROFESSOR: What is a confidence
+interval and a
+
+2283
+02:00:45,770 --> 02:00:47,570
+confidence level?
+
+2284
+02:00:47,570 --> 02:00:47,906
+OK.
+
+2285
+02:00:47,906 --> 02:00:54,950
+So, let's say I do
+a political poll.
+
+2286
+02:00:54,950 --> 02:01:09,920
+
+2287
+02:01:09,920 --> 02:01:13,400
+Let's say I do a political poll
+and I sample 1,000 people
+
+2288
+02:01:13,400 --> 02:01:14,480
+in the population.
+
+2289
+02:01:14,480 --> 02:01:24,280
+And I say 46% of them will
+vote for Candidate X. My
+
+2290
+02:01:24,280 --> 02:01:29,070
+margin of error is plus
+or minus 4, and my
+
+2291
+02:01:29,070 --> 02:01:35,755
+confidence is 95.
+
+2292
+02:01:35,755 --> 02:01:39,010
+
+2293
+02:01:39,010 --> 02:01:47,880
+What this is saying is that if
+I conduct this poll, the same
+
+2294
+02:01:47,880 --> 02:01:51,940
+poll, sampling 1,000
+random people at a
+
+2295
+02:01:51,940 --> 02:01:56,240
+time, over 100 trials--
+
+2296
+02:01:56,240 --> 02:01:59,410
+so I do 100 polls--
+
+2297
+02:01:59,410 --> 02:02:03,840
+what I'm saying is that 95 out
+of 100 of those times, my
+
+2298
+02:02:03,840 --> 02:02:08,120
+level of support for Candidate
+X will be between
+
+2299
+02:02:08,120 --> 02:02:15,280
+42% and 50%, right?
+
+2300
+02:02:15,280 --> 02:02:17,490
+Basically what you
+need to know for
+
+2301
+02:02:17,490 --> 02:02:19,820
+confidence levels and intervals.
+
+2302
+02:02:19,820 --> 02:02:22,260
+The other thing that you need to
+know for confidence levels
+
+2303
+02:02:22,260 --> 02:02:33,610
+and intervals is that if you
+have a normal distribution,
+
+2304
+02:02:33,610 --> 02:02:44,300
+with a standard deviation
+sigma, then 1 standard
+
+2305
+02:02:44,300 --> 02:02:47,720
+deviation from the mean
+is going to have--
+
+2306
+02:02:47,720 --> 02:02:50,095
+is that 66 or 67?
+
+2307
+02:02:50,095 --> 02:02:53,320
+
+2308
+02:02:53,320 --> 02:02:55,260
+Is it 68?
+
+2309
+02:02:55,260 --> 02:02:56,250
+I wrote it down, 68.
+
+2310
+02:02:56,250 --> 02:02:57,500
+Thank you.
+
+2311
+02:02:57,500 --> 02:03:01,440
+
+2312
+02:03:01,440 --> 02:03:07,050
+And then 2 standard deviations
+is going to be 95.
+
+2313
+02:03:07,050 --> 02:03:13,960
+And then 3 standard deviations
+is going to be what, 97?
+
+2314
+02:03:13,960 --> 02:03:15,800
+Or is it 99.7?
+
+2315
+02:03:15,800 --> 02:03:20,220
+99.7.
+
+2316
+02:03:20,220 --> 02:03:25,125
+So, but you need to just know
+that for normal distributions.
+
+2317
+02:03:25,125 --> 02:03:27,870
+
+2318
+02:03:27,870 --> 02:03:40,450
+So if this is one standard
+deviation, it's saying that 68
+
+2319
+02:03:40,450 --> 02:03:43,800
+of the sample points are going
+to be within 1 standard
+
+2320
+02:03:43,800 --> 02:03:45,710
+deviation of this mean.
+
+2321
+02:03:45,710 --> 02:03:50,810
+And then if you have 2 sigma,
+then that means 95 are going
+
+2322
+02:03:50,810 --> 02:03:54,430
+to be within 2 sigma
+of the mean.
+
+2323
+02:03:54,430 --> 02:03:59,190
+And then if you have 3 sigma,
+then 99.7 are going to be
+
+2324
+02:03:59,190 --> 02:04:04,470
+within 3 standard deviations
+of the mean.
+
+2325
+02:04:04,470 --> 02:04:11,730
+So I think that's all you
+really need to know for
+
+2326
+02:04:11,730 --> 02:04:15,890
+confidence intervals and levels,
+and also for normal
+
+2327
+02:04:15,890 --> 02:04:17,140
+distributions.
+
+2328
+02:04:17,140 --> 02:04:23,710
+
+2329
+02:04:23,710 --> 02:04:30,390
+So we're actually kind of at the
+end of the review session.
+
+2330
+02:04:30,390 --> 02:04:32,190
+So does anyone have
+any questions
+
+2331
+02:04:32,190 --> 02:04:33,440
+that I haven't answered?
+
+2332
+02:04:33,440 --> 02:04:36,390
+
+2333
+02:04:36,390 --> 02:04:38,190
+No?
+
+2334
+02:04:38,190 --> 02:04:39,390
+All right.
+
+2335
+02:04:39,390 --> 02:04:40,640
+I'm done.
+
+2336
+02:04:40,640 --> 02:04:44,420

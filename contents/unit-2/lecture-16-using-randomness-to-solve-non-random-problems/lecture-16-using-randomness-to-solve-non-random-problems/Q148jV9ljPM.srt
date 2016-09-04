@@ -1,0 +1,3849 @@
+1
+00:00:00,000 --> 00:00:01,040
+
+2
+00:00:01,040 --> 00:00:03,460
+The following content is
+provided under a Creative
+
+3
+00:00:03,460 --> 00:00:04,870
+Commons license.
+
+4
+00:00:04,870 --> 00:00:07,910
+Your support will help MIT
+OpenCourseWare continue to
+
+5
+00:00:07,910 --> 00:00:11,560
+offer high-quality educational
+resources for free.
+
+6
+00:00:11,560 --> 00:00:14,460
+To make a donation or view
+additional materials from
+
+7
+00:00:14,460 --> 00:00:20,290
+hundreds of MIT courses, visit
+MIT OpenCourseWare at
+
+8
+00:00:20,290 --> 00:00:21,540
+ocw.mit.edu.
+
+9
+00:00:21,540 --> 00:00:24,628
+
+10
+00:00:24,628 --> 00:00:27,830
+PROFESSOR: He ended up last
+Thursday's lectures talking
+
+11
+00:00:27,830 --> 00:00:30,570
+about Gaussian distributions.
+
+12
+00:00:30,570 --> 00:00:32,710
+As he said, one of the
+interesting things about a
+
+13
+00:00:32,710 --> 00:00:36,650
+Gaussian is it can be fully
+characterized by its mean and
+
+14
+00:00:36,650 --> 00:00:39,070
+its standard deviation.
+
+15
+00:00:39,070 --> 00:00:43,920
+And this concept of being
+able to take a curve and
+
+16
+00:00:43,920 --> 00:00:47,590
+characterize it with a small
+number of parameters is
+
+17
+00:00:47,590 --> 00:00:52,580
+something we'll continue to see
+as a very important way of
+
+18
+00:00:52,580 --> 00:00:56,200
+looking at modeling
+physical systems.
+
+19
+00:00:56,200 --> 00:00:58,570
+And in fact, that is
+the part of the
+
+20
+00:00:58,570 --> 00:01:00,290
+term that we've entered.
+
+21
+00:01:00,290 --> 00:01:03,880
+And it's a part of the term
+we'll spend a lot of time on.
+
+22
+00:01:03,880 --> 00:01:08,270
+And the whole issue is, how do
+we construct computational
+
+23
+00:01:08,270 --> 00:01:14,665
+models that will help us
+understand the real world?
+
+24
+00:01:14,665 --> 00:01:20,210
+
+25
+00:01:20,210 --> 00:01:26,370
+When we can, we love to model
+distributions as Gaussians, or
+
+26
+00:01:26,370 --> 00:01:30,120
+normal, because they're so
+nicely characterized.
+
+27
+00:01:30,120 --> 00:01:33,280
+We have nice rules of thumb that
+tell us how close things
+
+28
+00:01:33,280 --> 00:01:35,850
+lie to the mean, et cetera.
+
+29
+00:01:35,850 --> 00:01:39,860
+However, it's important to
+understand that if something
+
+30
+00:01:39,860 --> 00:01:43,590
+is not actually normally
+distributed and we pretend it
+
+31
+00:01:43,590 --> 00:01:49,190
+is, we can get very misleading
+results out of our model.
+
+32
+00:01:49,190 --> 00:01:51,330
+So let's think about the
+fact that not all
+
+33
+00:01:51,330 --> 00:01:53,410
+distributions are normal.
+
+34
+00:01:53,410 --> 00:01:57,130
+So consider rolling
+a single die.
+
+35
+00:01:57,130 --> 00:02:01,070
+Each of the 6 outcomes
+is equally probable.
+
+36
+00:02:01,070 --> 00:02:05,290
+So we would not expect to see a
+peak, say, at 3 or 4, and a
+
+37
+00:02:05,290 --> 00:02:07,166
+trough at 1.
+
+38
+00:02:07,166 --> 00:02:10,385
+A 3 or a 4 is the same
+probability as 1.
+
+39
+00:02:10,385 --> 00:02:13,470
+
+40
+00:02:13,470 --> 00:02:17,210
+Similarly, if one thinks about
+the Massachusetts state
+
+41
+00:02:17,210 --> 00:02:22,140
+lottery, or any fair lottery,
+the probability of each number
+
+42
+00:02:22,140 --> 00:02:26,250
+coming up is the same.
+
+43
+00:02:26,250 --> 00:02:28,080
+So it would be a flat line.
+
+44
+00:02:28,080 --> 00:02:32,280
+If you had a million numbers,
+the probability of each number
+
+45
+00:02:32,280 --> 00:02:33,990
+is 1 over a million.
+
+46
+00:02:33,990 --> 00:02:36,480
+And so if you plotted the
+probability of each number,
+
+47
+00:02:36,480 --> 00:02:39,410
+again, you'd get a flat line.
+
+48
+00:02:39,410 --> 00:02:42,200
+Such distributions are
+called uniform.
+
+49
+00:02:42,200 --> 00:02:49,170
+
+50
+00:02:49,170 --> 00:02:52,800
+Each result is equally
+probable.
+
+51
+00:02:52,800 --> 00:03:01,630
+
+52
+00:03:01,630 --> 00:03:06,100
+We can fully characterize a
+uniform distribution with a
+
+53
+00:03:06,100 --> 00:03:10,100
+single parameter, its range.
+
+54
+00:03:10,100 --> 00:03:13,470
+If I tell you it ranges over 1
+to a million, that's all you
+
+55
+00:03:13,470 --> 00:03:17,120
+need to know to know what the
+distribution looks like.
+
+56
+00:03:17,120 --> 00:03:21,760
+So they're even simpler than
+normal distributions.
+
+57
+00:03:21,760 --> 00:03:27,030
+Uniform distributions occur
+quite often in games devised
+
+58
+00:03:27,030 --> 00:03:33,040
+by humans, but almost
+never in nature.
+
+59
+00:03:33,040 --> 00:03:36,770
+And typically they're
+not very useful for
+
+60
+00:03:36,770 --> 00:03:40,250
+modeling complex systems.
+
+61
+00:03:40,250 --> 00:03:42,970
+We have to work hard to invent
+something that's normal.
+
+62
+00:03:42,970 --> 00:03:45,260
+Most things are not naturally
+that way.
+
+63
+00:03:45,260 --> 00:03:49,310
+
+64
+00:03:49,310 --> 00:03:51,360
+I'm sorry, to invent things
+that are uniform.
+
+65
+00:03:51,360 --> 00:03:55,750
+Normal, as we saw last time,
+occurs all the time in nature.
+
+66
+00:03:55,750 --> 00:04:02,240
+The other thing that occurs
+quite frequently are
+
+67
+00:04:02,240 --> 00:04:03,516
+exponential distributions.
+
+68
+00:04:03,516 --> 00:04:15,150
+
+69
+00:04:15,150 --> 00:04:18,209
+They're used in a lot
+of different ways.
+
+70
+00:04:18,209 --> 00:04:21,640
+For example, people who are
+trying to plan things like
+
+71
+00:04:21,640 --> 00:04:26,730
+highway systems use exponential
+distributions to
+
+72
+00:04:26,730 --> 00:04:31,210
+model inter-arrival times, how
+much time there is between
+
+73
+00:04:31,210 --> 00:04:35,110
+each car, say, entering
+the Mass Turnpike.
+
+74
+00:04:35,110 --> 00:04:38,070
+We'll see many other
+examples of them.
+
+75
+00:04:38,070 --> 00:04:42,250
+The key thing about them is
+they have the property of
+
+76
+00:04:42,250 --> 00:04:43,500
+being memoryless.
+
+77
+00:04:43,500 --> 00:04:50,080
+
+78
+00:04:50,080 --> 00:04:54,800
+They are in fact the only
+continuous distributions that
+
+79
+00:04:54,800 --> 00:04:56,620
+are memoryless.
+
+80
+00:04:56,620 --> 00:04:59,880
+So let's look at an example
+with which some of you are
+
+81
+00:04:59,880 --> 00:05:03,740
+more familiar than you want to
+be, the concentration of a
+
+82
+00:05:03,740 --> 00:05:06,440
+drug in the human body.
+
+83
+00:05:06,440 --> 00:05:08,960
+For those who are watching on
+OpenCourseWare, it's not
+
+84
+00:05:08,960 --> 00:05:10,960
+because all the students
+are drug users.
+
+85
+00:05:10,960 --> 00:05:14,510
+It's because they're working on
+a problem set that involves
+
+86
+00:05:14,510 --> 00:05:16,150
+modeling drugs in
+the human body.
+
+87
+00:05:16,150 --> 00:05:21,770
+
+88
+00:05:21,770 --> 00:05:25,010
+I don't know how many of you
+are drug users, all right?
+
+89
+00:05:25,010 --> 00:05:29,550
+Assume that at each time step,
+each molecule has a
+
+90
+00:05:29,550 --> 00:05:34,840
+probability p of being
+cleared by the body.
+
+91
+00:05:34,840 --> 00:05:39,930
+The system is memoryless in the
+sense that at each step,
+
+92
+00:05:39,930 --> 00:05:43,410
+the probability of a particular
+molecule being
+
+93
+00:05:43,410 --> 00:05:46,310
+cleared is independent
+of what happened at
+
+94
+00:05:46,310 --> 00:05:49,080
+the previous steps.
+
+95
+00:05:49,080 --> 00:05:54,790
+So the fact that a molecule
+didn't get cleared at time t
+
+96
+00:05:54,790 --> 00:05:58,610
+has no impact on whether
+or not it will be
+
+97
+00:05:58,610 --> 00:06:00,810
+cleared at time t1.
+
+98
+00:06:00,810 --> 00:06:06,230
+The probability doesn't go up
+as it doesn't get cleared.
+
+99
+00:06:06,230 --> 00:06:08,260
+So it's independent of
+the previous steps.
+
+100
+00:06:08,260 --> 00:06:11,280
+
+101
+00:06:11,280 --> 00:06:19,580
+So at time t equals 1, what's
+the probability of the
+
+102
+00:06:19,580 --> 00:06:24,180
+molecule still being
+in the human body?
+
+103
+00:06:24,180 --> 00:06:28,150
+If the probability of being
+cleared at each step is p,
+
+104
+00:06:28,150 --> 00:06:32,110
+it's 1 minus p, right?
+
+105
+00:06:32,110 --> 00:06:35,610
+So if the probability of being
+cleared was 0.5 at each time
+
+106
+00:06:35,610 --> 00:06:39,220
+step, the time that it still
+exists after the first time
+
+107
+00:06:39,220 --> 00:06:42,120
+step is 1 minus 0.5--
+
+108
+00:06:42,120 --> 00:06:45,410
+i.e., 0.5.
+
+109
+00:06:45,410 --> 00:06:48,270
+So what's the probability of
+it still being in the human
+
+110
+00:06:48,270 --> 00:06:50,900
+body at time t equals 2?
+
+111
+00:06:50,900 --> 00:06:53,850
+
+112
+00:06:53,850 --> 00:06:57,180
+Well, it wasn't cleared
+at time 1.
+
+113
+00:06:57,180 --> 00:06:59,710
+
+114
+00:06:59,710 --> 00:07:03,320
+Since it's memoryless, whether
+or not it's cleared at time 2
+
+115
+00:07:03,320 --> 00:07:05,900
+is also 1/p.
+
+116
+00:07:05,900 --> 00:07:10,770
+And so it existing still after
+two steps is going to be 1
+
+117
+00:07:10,770 --> 00:07:13,480
+minus p squared.
+
+118
+00:07:13,480 --> 00:07:16,880
+We saw that with independent
+probabilities.
+
+119
+00:07:16,880 --> 00:07:19,400
+And the nice thing about working
+with exponential
+
+120
+00:07:19,400 --> 00:07:22,500
+distributions is we know that
+the probabilities are
+
+121
+00:07:22,500 --> 00:07:24,870
+independent.
+
+122
+00:07:24,870 --> 00:07:29,920
+More generally, its still being
+in the body at time t is
+
+123
+00:07:29,920 --> 00:07:33,080
+going to be 1 minus
+p to the t.
+
+124
+00:07:33,080 --> 00:07:35,870
+
+125
+00:07:35,870 --> 00:07:40,840
+So we have a nice closed-form
+solution that will give us the
+
+126
+00:07:40,840 --> 00:07:48,000
+probability of each molecule
+surviving until time t.
+
+127
+00:07:48,000 --> 00:07:49,740
+All right?
+
+128
+00:07:49,740 --> 00:07:53,020
+So now let's look at the
+question of, suppose that at
+
+129
+00:07:53,020 --> 00:08:01,050
+time t equals 0, there
+are m0 molecules.
+
+130
+00:08:01,050 --> 00:08:04,060
+Now we can ask, how many
+molecules are there likely to
+
+131
+00:08:04,060 --> 00:08:07,420
+be at any time t?
+
+132
+00:08:07,420 --> 00:08:10,180
+Well, let's write a little
+program to look at that.
+
+133
+00:08:10,180 --> 00:08:19,730
+
+134
+00:08:19,730 --> 00:08:21,425
+So that's this program, clear.
+
+135
+00:08:21,425 --> 00:08:24,210
+
+136
+00:08:24,210 --> 00:08:28,350
+We'll start with n, the number
+of molecules, the probability
+
+137
+00:08:28,350 --> 00:08:32,169
+of clearing it at each step,
+and the number of steps.
+
+138
+00:08:32,169 --> 00:08:34,240
+And we'll keep track of
+the num remaining.
+
+139
+00:08:34,240 --> 00:08:39,140
+So at the beginning, we have
+n molecules remaining.
+
+140
+00:08:39,140 --> 00:08:45,890
+And then for t in range steps,
+we're just going to multiply
+
+141
+00:08:45,890 --> 00:08:49,540
+n, the number we started with,
+times the probability of each
+
+142
+00:08:49,540 --> 00:08:52,200
+molecule still existing.
+
+143
+00:08:52,200 --> 00:08:54,890
+And then we'll plot it.
+
+144
+00:08:54,890 --> 00:08:56,370
+Does that make sense?
+
+145
+00:08:56,370 --> 00:08:59,980
+So this is a tiny bit of code
+that basically implements that
+
+146
+00:08:59,980 --> 00:09:03,880
+formula over on the board.
+
+147
+00:09:03,880 --> 00:09:05,130
+Let's run it.
+
+148
+00:09:05,130 --> 00:09:10,540
+
+149
+00:09:10,540 --> 00:09:13,190
+And we'll run it starting with
+a 1,000 molecules, a
+
+150
+00:09:13,190 --> 00:09:17,190
+probability of each being
+cleared of 0.01, and we'll
+
+151
+00:09:17,190 --> 00:09:18,705
+look at 500 time steps.
+
+152
+00:09:18,705 --> 00:09:25,440
+
+153
+00:09:25,440 --> 00:09:26,450
+All right.
+
+154
+00:09:26,450 --> 00:09:28,990
+This is kind of interesting.
+
+155
+00:09:28,990 --> 00:09:31,700
+We're getting a straight line.
+
+156
+00:09:31,700 --> 00:09:34,640
+That doesn't look like an
+exponential, does it?
+
+157
+00:09:34,640 --> 00:09:35,620
+Or does it?
+
+158
+00:09:35,620 --> 00:09:39,870
+Why do we have a straight
+line here?
+
+159
+00:09:39,870 --> 00:09:42,300
+Somebody?
+
+160
+00:09:42,300 --> 00:09:45,880
+Because I used a semilog axis.
+
+161
+00:09:45,880 --> 00:09:48,535
+So let's look at it
+now without that.
+
+162
+00:09:48,535 --> 00:09:53,650
+
+163
+00:09:53,650 --> 00:09:56,070
+We now see something that
+really does look like
+
+164
+00:09:56,070 --> 00:09:59,420
+exponential decay.
+
+165
+00:09:59,420 --> 00:10:03,090
+It drops very quickly in the
+beginning, and then it
+
+166
+00:10:03,090 --> 00:10:05,210
+asymptotes towards 0.
+
+167
+00:10:05,210 --> 00:10:08,720
+But of course it never
+quite gets there in
+
+168
+00:10:08,720 --> 00:10:10,640
+a continuous model.
+
+169
+00:10:10,640 --> 00:10:14,560
+If we had a discrete model, we
+would eventually have to get
+
+170
+00:10:14,560 --> 00:10:16,960
+to 0, because that last molecule
+would either get
+
+171
+00:10:16,960 --> 00:10:18,370
+cleared or not.
+
+172
+00:10:18,370 --> 00:10:20,510
+But in a continuous world--
+
+173
+00:10:20,510 --> 00:10:23,910
+which is in this case probably
+not a good model, or not a
+
+174
+00:10:23,910 --> 00:10:27,240
+perfect model I should say,
+because it allows us to have a
+
+175
+00:10:27,240 --> 00:10:30,770
+quarter of a molecule there,
+which we kind of know is
+
+176
+00:10:30,770 --> 00:10:35,110
+physiologically nonsense,
+biochemically nonsense.
+
+177
+00:10:35,110 --> 00:10:39,460
+But you can see we get this
+exponential decay.
+
+178
+00:10:39,460 --> 00:10:45,012
+But as we saw previously, if
+we plot an exponential on a
+
+179
+00:10:45,012 --> 00:10:49,230
+log axis, as the math
+would tell us, we
+
+180
+00:10:49,230 --> 00:10:51,570
+get a straight line.
+
+181
+00:10:51,570 --> 00:10:54,880
+And that, in fact, is a very
+simple and nice way to see
+
+182
+00:10:54,880 --> 00:10:57,790
+whether you have an exponential
+distribution.
+
+183
+00:10:57,790 --> 00:11:00,080
+Put it on a log axis, see
+if it's straight.
+
+184
+00:11:00,080 --> 00:11:04,640
+
+185
+00:11:04,640 --> 00:11:08,530
+It's a good trick, and
+one we use a lot.
+
+186
+00:11:08,530 --> 00:11:09,780
+OK.
+
+187
+00:11:09,780 --> 00:11:11,650
+
+188
+00:11:11,650 --> 00:11:18,430
+So there, I took the physical
+model I described and derived,
+
+189
+00:11:18,430 --> 00:11:22,070
+through a little bit of math,
+what the result should be, and
+
+190
+00:11:22,070 --> 00:11:26,420
+implemented some code
+to give us a plot of
+
+191
+00:11:26,420 --> 00:11:28,230
+what that told us.
+
+192
+00:11:28,230 --> 00:11:30,590
+Let's look at a different
+way of doing it.
+
+193
+00:11:30,590 --> 00:11:39,730
+
+194
+00:11:39,730 --> 00:11:44,120
+I could've instead written a
+Monte Carlo simulation to do
+
+195
+00:11:44,120 --> 00:11:46,950
+the same kind of thing.
+
+196
+00:11:46,950 --> 00:11:51,460
+So here, instead of working out
+the probabilities, I just
+
+197
+00:11:51,460 --> 00:11:56,540
+tried to write some code that
+exactly mimicked the physical
+
+198
+00:11:56,540 --> 00:12:00,370
+process that I was
+talking about.
+
+199
+00:12:00,370 --> 00:12:03,320
+So instead of knowing that I
+could just look at 1 minus p
+
+200
+00:12:03,320 --> 00:12:09,125
+to the t, at each step, I
+cleared some molecules.
+
+201
+00:12:09,125 --> 00:12:15,830
+
+202
+00:12:15,830 --> 00:12:18,310
+I just used random.random.
+
+203
+00:12:18,310 --> 00:12:20,290
+If I came out with something
+less than the clear
+
+204
+00:12:20,290 --> 00:12:23,930
+probability, I got rid
+of that molecule.
+
+205
+00:12:23,930 --> 00:12:26,730
+And I did that for each
+molecule, deciding whether or
+
+206
+00:12:26,730 --> 00:12:29,900
+not it should be cleared.
+
+207
+00:12:29,900 --> 00:12:33,990
+For molecule m in range, looking
+at all the remaining
+
+208
+00:12:33,990 --> 00:12:38,610
+molecules, I either clear
+one or I don't.
+
+209
+00:12:38,610 --> 00:12:42,280
+And then I can plot that.
+
+210
+00:12:42,280 --> 00:12:50,610
+So let's look what happens if
+I compare the two results.
+
+211
+00:12:50,610 --> 00:12:54,470
+So I'm going to do the original
+analytical model of
+
+212
+00:12:54,470 --> 00:12:59,780
+clear, and then the simulation
+model of clearing, and see
+
+213
+00:12:59,780 --> 00:13:01,030
+what I get.
+
+214
+00:13:01,030 --> 00:13:09,690
+
+215
+00:13:09,690 --> 00:13:14,170
+Well, much to my relief, I get
+kind of the same curve.
+
+216
+00:13:14,170 --> 00:13:16,310
+Not exactly.
+
+217
+00:13:16,310 --> 00:13:19,210
+You'll notice that the blue
+curve, the analytical model,
+
+218
+00:13:19,210 --> 00:13:24,470
+is a beautiful smooth curve,
+whereas the red curve has got
+
+219
+00:13:24,470 --> 00:13:26,430
+a little bit of jaggies.
+
+220
+00:13:26,430 --> 00:13:28,920
+It's clearly very similar
+to the blue
+
+221
+00:13:28,920 --> 00:13:30,170
+curve, but not identical.
+
+222
+00:13:30,170 --> 00:13:33,168
+
+223
+00:13:33,168 --> 00:13:34,680
+It doesn't surprise me.
+
+224
+00:13:34,680 --> 00:13:36,245
+There is some randomness
+in there.
+
+225
+00:13:36,245 --> 00:13:39,510
+
+226
+00:13:39,510 --> 00:13:41,850
+And in fact, I could have gotten
+unlucky and gotten
+
+227
+00:13:41,850 --> 00:13:44,390
+something that didn't look
+like the blue curve.
+
+228
+00:13:44,390 --> 00:13:48,640
+But given the sample size, that
+would have been quite
+
+229
+00:13:48,640 --> 00:13:49,890
+surprising.
+
+230
+00:13:49,890 --> 00:13:57,830
+
+231
+00:13:57,830 --> 00:14:02,450
+Which of these two models
+do you like better?
+
+232
+00:14:02,450 --> 00:14:03,630
+So we've got two models.
+
+233
+00:14:03,630 --> 00:14:15,330
+We've got one I'll call the
+analytic model, and one I'll
+
+234
+00:14:15,330 --> 00:14:16,870
+call the simulation model.
+
+235
+00:14:16,870 --> 00:14:25,170
+
+236
+00:14:25,170 --> 00:14:28,005
+Both show exponential decay.
+
+237
+00:14:28,005 --> 00:14:38,000
+
+238
+00:14:38,000 --> 00:14:41,300
+That is to say the number
+of molecules declines
+
+239
+00:14:41,300 --> 00:14:44,820
+exponentially, quite quickly.
+
+240
+00:14:44,820 --> 00:14:48,230
+But they're not quite
+identical.
+
+241
+00:14:48,230 --> 00:14:50,955
+So which would we prefer?
+
+242
+00:14:50,955 --> 00:14:53,170
+Or which would you prefer?
+
+243
+00:14:53,170 --> 00:14:57,050
+There is no right
+answer for this.
+
+244
+00:14:57,050 --> 00:14:59,100
+Just for fun, I'll
+ask for a poll.
+
+245
+00:14:59,100 --> 00:15:02,270
+Who prefers the analytical
+model?
+
+246
+00:15:02,270 --> 00:15:05,780
+Who prefer the simulation?
+
+247
+00:15:05,780 --> 00:15:07,050
+All right.
+
+248
+00:15:07,050 --> 00:15:09,240
+Somebody who prefers the
+analytical, tell me why.
+
+249
+00:15:09,240 --> 00:15:12,000
+
+250
+00:15:12,000 --> 00:15:13,770
+AUDIENCE: It looks
+a lot nicer.
+
+251
+00:15:13,770 --> 00:15:15,265
+PROFESSOR: Well, all right.
+
+252
+00:15:15,265 --> 00:15:16,800
+It looks a lot nicer.
+
+253
+00:15:16,800 --> 00:15:19,530
+
+254
+00:15:19,530 --> 00:15:23,240
+That's kind of human
+nature, to prefer
+
+255
+00:15:23,240 --> 00:15:25,170
+something that looks prettier.
+
+256
+00:15:25,170 --> 00:15:29,290
+On the other hand, what we're
+really interested in is the
+
+257
+00:15:29,290 --> 00:15:37,520
+question of not aesthetics,
+but fidelity to the actual
+
+258
+00:15:37,520 --> 00:15:38,770
+physical situation.
+
+259
+00:15:38,770 --> 00:15:41,510
+
+260
+00:15:41,510 --> 00:15:43,630
+A straight line might
+look even nicer, but
+
+261
+00:15:43,630 --> 00:15:44,880
+it wouldn't be accurate.
+
+262
+00:15:44,880 --> 00:15:47,440
+
+263
+00:15:47,440 --> 00:15:50,840
+So when we think about
+evaluating a model, what we
+
+264
+00:15:50,840 --> 00:15:56,440
+really should be asking, I
+think, are two questions.
+
+265
+00:15:56,440 --> 00:15:57,690
+One is fidelity.
+
+266
+00:15:57,690 --> 00:16:03,190
+
+267
+00:16:03,190 --> 00:16:07,792
+And another way to think about
+that is credibility.
+
+268
+00:16:07,792 --> 00:16:11,640
+
+269
+00:16:11,640 --> 00:16:15,460
+Typically, we're creating a
+model because we don't know
+
+270
+00:16:15,460 --> 00:16:17,460
+the actual answer.
+
+271
+00:16:17,460 --> 00:16:19,890
+And we're trying to see what
+might actually happen if we,
+
+272
+00:16:19,890 --> 00:16:22,940
+say, ran a physical
+experiment.
+
+273
+00:16:22,940 --> 00:16:26,540
+And so we have to ask the
+question of, do we believe the
+
+274
+00:16:26,540 --> 00:16:28,310
+results the model
+are giving us.
+
+275
+00:16:28,310 --> 00:16:30,830
+
+276
+00:16:30,830 --> 00:16:34,990
+And so that sort of boils down
+to not a question of
+
+277
+00:16:34,990 --> 00:16:38,500
+mathematics, but a question
+of reasoning.
+
+278
+00:16:38,500 --> 00:16:40,610
+Can we look at the model
+and convince
+
+279
+00:16:40,610 --> 00:16:42,045
+ourselves that it is accurate?
+
+280
+00:16:42,045 --> 00:16:45,850
+
+281
+00:16:45,850 --> 00:16:47,890
+And the other question
+is utility.
+
+282
+00:16:47,890 --> 00:16:54,850
+
+283
+00:16:54,850 --> 00:17:05,210
+And I can think about that as,
+in some sense, what questions
+
+284
+00:17:05,210 --> 00:17:06,699
+are answerable with the model?
+
+285
+00:17:06,699 --> 00:17:13,329
+
+286
+00:17:13,329 --> 00:17:17,619
+So the first one is pretty much
+a question of personal
+
+287
+00:17:17,619 --> 00:17:19,970
+preference.
+
+288
+00:17:19,970 --> 00:17:23,660
+And for this particular
+simulation, which is pretty
+
+289
+00:17:23,660 --> 00:17:28,200
+simple, or this particular
+model, it's hard to argue that
+
+290
+00:17:28,200 --> 00:17:32,300
+one is more believable
+than the other.
+
+291
+00:17:32,300 --> 00:17:35,770
+I might argue the second is more
+believable, because it's
+
+292
+00:17:35,770 --> 00:17:38,950
+a direct implementation of
+the physical system.
+
+293
+00:17:38,950 --> 00:17:42,360
+I didn't rely on my
+math being right.
+
+294
+00:17:42,360 --> 00:17:46,550
+But the math is pretty
+simple here.
+
+295
+00:17:46,550 --> 00:17:51,150
+What's, I think, more apparent
+is in this case there is some
+
+296
+00:17:51,150 --> 00:17:56,450
+additional utility offered
+by the simulation model.
+
+297
+00:17:56,450 --> 00:18:01,270
+And it's often true of that,
+simulation models, that we can
+
+298
+00:18:01,270 --> 00:18:07,550
+ask what-if questions, because
+we can easily change the model
+
+299
+00:18:07,550 --> 00:18:11,770
+to be slightly different in ways
+that is usually harder
+
+300
+00:18:11,770 --> 00:18:13,020
+for an analytic model.
+
+301
+00:18:13,020 --> 00:18:15,590
+
+302
+00:18:15,590 --> 00:18:21,820
+For example, suppose these
+drug molecules had this
+
+303
+00:18:21,820 --> 00:18:26,170
+peculiar property that every
+100 time steps, they could
+
+304
+00:18:26,170 --> 00:18:27,930
+clone themselves.
+
+305
+00:18:27,930 --> 00:18:30,705
+And so every molecule that was
+there became two molecules.
+
+306
+00:18:30,705 --> 00:18:33,640
+
+307
+00:18:33,640 --> 00:18:35,100
+Unlikely for the drug.
+
+308
+00:18:35,100 --> 00:18:38,490
+Not so unlikely for, say, a
+bacterium or a virus, as
+
+309
+00:18:38,490 --> 00:18:40,540
+you've seen.
+
+310
+00:18:40,540 --> 00:18:43,380
+Well, a little hard to figure
+out how to do the
+
+311
+00:18:43,380 --> 00:18:48,200
+probabilities in the case that
+that happens, because we'll no
+
+312
+00:18:48,200 --> 00:18:52,580
+longer get this beautiful,
+simple exponential decay.
+
+313
+00:18:52,580 --> 00:18:56,040
+But quite easy to think about
+how we would change the
+
+314
+00:18:56,040 --> 00:18:59,680
+simulation model, which is
+what I have done here.
+
+315
+00:18:59,680 --> 00:19:04,600
+
+316
+00:19:04,600 --> 00:19:13,040
+So I said here, if time is not
+equal to 0 and time is evenly
+
+317
+00:19:13,040 --> 00:19:18,580
+divisible by 100, then I'm
+just going to double the
+
+318
+00:19:18,580 --> 00:19:19,830
+number of molecules.
+
+319
+00:19:19,830 --> 00:19:22,510
+
+320
+00:19:22,510 --> 00:19:25,460
+Every living molecule
+will clone itself.
+
+321
+00:19:25,460 --> 00:19:26,870
+And now we'll see what we get.
+
+322
+00:19:26,870 --> 00:19:34,600
+
+323
+00:19:34,600 --> 00:19:37,780
+Well, we get this rather
+peculiar-looking sawtooth
+
+324
+00:19:37,780 --> 00:19:40,250
+distribution.
+
+325
+00:19:40,250 --> 00:19:46,200
+We still have, overall,
+an exponential decay.
+
+326
+00:19:46,200 --> 00:19:48,910
+But we see every once in
+while it jumps up, and
+
+327
+00:19:48,910 --> 00:19:50,970
+then it comes down.
+
+328
+00:19:50,970 --> 00:19:54,520
+It's not so easy to write a
+simple closed-form formula
+
+329
+00:19:54,520 --> 00:19:59,590
+that describes this, but very
+easy to produce a simulation
+
+330
+00:19:59,590 --> 00:20:02,660
+model that gives you
+some insight to
+
+331
+00:20:02,660 --> 00:20:05,580
+what's happening here.
+
+332
+00:20:05,580 --> 00:20:07,920
+And that's, I think, one of
+the great attractions of
+
+333
+00:20:07,920 --> 00:20:11,880
+simulation modeling, is we get
+to do this sort of thing.
+
+334
+00:20:11,880 --> 00:20:17,730
+
+335
+00:20:17,730 --> 00:20:23,710
+Many, many physical systems
+exhibit exponential decay or
+
+336
+00:20:23,710 --> 00:20:25,840
+exponential growth.
+
+337
+00:20:25,840 --> 00:20:30,370
+For example, people in Japan
+now are very interested in
+
+338
+00:20:30,370 --> 00:20:33,770
+half-life of various radioactive
+particles.
+
+339
+00:20:33,770 --> 00:20:36,740
+And when we talk about
+half-life, we mean that there
+
+340
+00:20:36,740 --> 00:20:40,050
+is exponential decay
+in radioactivity.
+
+341
+00:20:40,050 --> 00:20:41,830
+That's what half-life is.
+
+342
+00:20:41,830 --> 00:20:44,685
+So people are looking at what
+is the half-life of iodine,
+
+343
+00:20:44,685 --> 00:20:49,370
+say, versus other radioactive
+particles.
+
+344
+00:20:49,370 --> 00:20:53,170
+We also see exponential
+growth a lot.
+
+345
+00:20:53,170 --> 00:20:56,560
+I used to have a swimming pool
+which I had to maintain, and I
+
+346
+00:20:56,560 --> 00:21:00,110
+realized if I let the algae
+get out of control in the
+
+347
+00:21:00,110 --> 00:21:04,250
+pool, it went from having very
+little algae to having a lot
+
+348
+00:21:04,250 --> 00:21:08,220
+of algae very quickly,
+because the algae
+
+349
+00:21:08,220 --> 00:21:10,790
+doubles every period.
+
+350
+00:21:10,790 --> 00:21:14,640
+And so all of a sudden,
+it takes off.
+
+351
+00:21:14,640 --> 00:21:17,170
+So exponential growth is--
+
+352
+00:21:17,170 --> 00:21:19,970
+exponential decay are
+important things.
+
+353
+00:21:19,970 --> 00:21:23,250
+We see them all the time.
+
+354
+00:21:23,250 --> 00:21:27,090
+People use the word very
+carelessly when they mean
+
+355
+00:21:27,090 --> 00:21:27,730
+quick growth.
+
+356
+00:21:27,730 --> 00:21:29,210
+They say exponential.
+
+357
+00:21:29,210 --> 00:21:33,530
+But of course, it has a
+very specific meaning.
+
+358
+00:21:33,530 --> 00:21:34,450
+OK.
+
+359
+00:21:34,450 --> 00:21:38,650
+We've now, for the moment at
+least, finished our short
+
+360
+00:21:38,650 --> 00:21:42,760
+venture into probability
+and distributions.
+
+361
+00:21:42,760 --> 00:21:47,230
+We'll come back to it a little
+bit when we talk about how to
+
+362
+00:21:47,230 --> 00:21:49,120
+lie with statistics.
+
+363
+00:21:49,120 --> 00:21:55,130
+But before we do that, before
+we leave probability for a
+
+364
+00:21:55,130 --> 00:21:58,950
+while, just for fun, I want to
+pose to you one of these
+
+365
+00:21:58,950 --> 00:22:03,540
+probability problems that
+hurts people's heads.
+
+366
+00:22:03,540 --> 00:22:06,360
+It's a very popular one.
+
+367
+00:22:06,360 --> 00:22:07,560
+How many people here
+have heard of
+
+368
+00:22:07,560 --> 00:22:10,080
+the Monty Hall problem?
+
+369
+00:22:10,080 --> 00:22:11,470
+OK, a lot of you.
+
+370
+00:22:11,470 --> 00:22:14,670
+So as we play the game, those
+of you who know the answer,
+
+371
+00:22:14,670 --> 00:22:20,230
+I'll ask your forbearance
+not to blurt it out.
+
+372
+00:22:20,230 --> 00:22:23,870
+So it's a wonderful problem.
+
+373
+00:22:23,870 --> 00:22:27,425
+It's so exciting that people
+have written books about it.
+
+374
+00:22:27,425 --> 00:22:30,590
+
+375
+00:22:30,590 --> 00:22:32,400
+So here's how it works.
+
+376
+00:22:32,400 --> 00:22:36,300
+This is from a game show called,
+I think, Let's Make a
+
+377
+00:22:36,300 --> 00:22:40,280
+Deal, with the host, Monty
+Hall, who did it forever.
+
+378
+00:22:40,280 --> 00:22:44,000
+So the way it works is you
+start with three doors.
+
+379
+00:22:44,000 --> 00:22:47,340
+Behind one of the doors
+is a great prize--
+
+380
+00:22:47,340 --> 00:22:49,640
+for example, an automobile.
+
+381
+00:22:49,640 --> 00:22:52,140
+Behind each of the other
+doors is a booby
+
+382
+00:22:52,140 --> 00:22:55,840
+prize, typically a goat.
+
+383
+00:22:55,840 --> 00:22:58,580
+I don't know why people don't
+like goats, but apparently
+
+384
+00:22:58,580 --> 00:23:00,250
+they don't.
+
+385
+00:23:00,250 --> 00:23:03,900
+So the way it works is Monty
+invites someone from the
+
+386
+00:23:03,900 --> 00:23:08,850
+audience, chosen on the basis of
+their outlandish costumes.
+
+387
+00:23:08,850 --> 00:23:11,760
+And they come down and they're
+told what wonderful prize is
+
+388
+00:23:11,760 --> 00:23:14,300
+behind one of the doors.
+
+389
+00:23:14,300 --> 00:23:18,390
+And then they're asked
+to choose a door.
+
+390
+00:23:18,390 --> 00:23:21,470
+So the person might choose a
+door and say, I'll choose door
+
+391
+00:23:21,470 --> 00:23:22,720
+number one.
+
+392
+00:23:22,720 --> 00:23:24,950
+
+393
+00:23:24,950 --> 00:23:28,760
+Monty then opens one of
+the other two doors.
+
+394
+00:23:28,760 --> 00:23:31,230
+He knows which doors have
+the goats and which
+
+395
+00:23:31,230 --> 00:23:32,580
+door has the car.
+
+396
+00:23:32,580 --> 00:23:35,570
+He opens a door with the goat.
+
+397
+00:23:35,570 --> 00:23:39,070
+So now there are
+two doors left.
+
+398
+00:23:39,070 --> 00:23:42,680
+And he asks the contestant,
+do you want to switch.
+
+399
+00:23:42,680 --> 00:23:44,780
+Do you want to stick with door
+one or would you like to
+
+400
+00:23:44,780 --> 00:23:47,400
+switch to door two?
+
+401
+00:23:47,400 --> 00:23:53,810
+And the Monty Hall problem
+is, what should she do?
+
+402
+00:23:53,810 --> 00:23:56,440
+And the audience will always
+shout out advice.
+
+403
+00:23:56,440 --> 00:23:58,210
+So I do have a simulation
+of that.
+
+404
+00:23:58,210 --> 00:23:59,320
+I'd like to run.
+
+405
+00:23:59,320 --> 00:24:03,320
+I need three people to volunteer
+to be doors.
+
+406
+00:24:03,320 --> 00:24:05,140
+Come on, three doors.
+
+407
+00:24:05,140 --> 00:24:05,920
+It's not so hard.
+
+408
+00:24:05,920 --> 00:24:07,470
+Come on down.
+
+409
+00:24:07,470 --> 00:24:10,240
+And I need one person to
+volunteer to be the contest.
+
+410
+00:24:10,240 --> 00:24:14,680
+Is anybody in a costume here?
+
+411
+00:24:14,680 --> 00:24:15,690
+I don't know.
+
+412
+00:24:15,690 --> 00:24:18,330
+Mitch is kind of in one, but--
+
+413
+00:24:18,330 --> 00:24:18,770
+all right.
+
+414
+00:24:18,770 --> 00:24:20,530
+These are the contestants.
+
+415
+00:24:20,530 --> 00:24:22,820
+All right, you're
+door number (2).
+
+416
+00:24:22,820 --> 00:24:24,060
+You're door number (1).
+
+417
+00:24:24,060 --> 00:24:26,290
+You are door number (3).
+
+418
+00:24:26,290 --> 00:24:29,040
+A contestant please.
+
+419
+00:24:29,040 --> 00:24:30,260
+There's $1 in one of these.
+
+420
+00:24:30,260 --> 00:24:32,040
+You can actually win
+something of value.
+
+421
+00:24:32,040 --> 00:24:34,365
+All right, we have a contestant
+coming down.
+
+422
+00:24:34,365 --> 00:24:37,920
+Oh, all right, we have two
+contestants coming down.
+
+423
+00:24:37,920 --> 00:24:39,180
+All right.
+
+424
+00:24:39,180 --> 00:24:40,430
+The aisle wins.
+
+425
+00:24:40,430 --> 00:24:42,830
+
+426
+00:24:42,830 --> 00:24:44,140
+All right, choose a door.
+
+427
+00:24:44,140 --> 00:24:52,050
+
+428
+00:24:52,050 --> 00:24:53,600
+You choose door number (2).
+
+429
+00:24:53,600 --> 00:24:56,450
+All right, let us open
+door number (1).
+
+430
+00:24:56,450 --> 00:25:00,780
+And let's see what's
+in door number (1).
+
+431
+00:25:00,780 --> 00:25:02,870
+Show it to the class.
+
+432
+00:25:02,870 --> 00:25:05,330
+It is a goat.
+
+433
+00:25:05,330 --> 00:25:06,690
+Now you have a choice.
+
+434
+00:25:06,690 --> 00:25:10,150
+You can stick with your original
+decision, or you can
+
+435
+00:25:10,150 --> 00:25:13,380
+switch to door number (3).
+
+436
+00:25:13,380 --> 00:25:15,152
+Suggestions?
+
+437
+00:25:15,152 --> 00:25:16,096
+AUDIENCE: Switch.
+
+438
+00:25:16,096 --> 00:25:16,570
+AUDIENCE: Switch.
+
+439
+00:25:16,570 --> 00:25:16,910
+AUDIENCE: Switch.
+
+440
+00:25:16,910 --> 00:25:17,250
+AUDIENCE: Switch.
+
+441
+00:25:17,250 --> 00:25:17,590
+AUDIENCE: Lower one.
+
+442
+00:25:17,590 --> 00:25:18,270
+AUDIENCE: Don't switch it.
+
+443
+00:25:18,270 --> 00:25:20,605
+AUDIENCE: Switch.
+
+444
+00:25:20,605 --> 00:25:22,006
+PROFESSOR: All right.
+
+445
+00:25:22,006 --> 00:25:25,330
+She is going to stick with
+door number (2).
+
+446
+00:25:25,330 --> 00:25:27,225
+Let us open door number (2).
+
+447
+00:25:27,225 --> 00:25:35,040
+
+448
+00:25:35,040 --> 00:25:36,130
+She wins $1.
+
+449
+00:25:36,130 --> 00:25:38,320
+It is yours.
+
+450
+00:25:38,320 --> 00:25:40,800
+Don't spend it all at once.
+
+451
+00:25:40,800 --> 00:25:42,440
+Thank you, everybody.
+
+452
+00:25:42,440 --> 00:25:46,490
+All right, now, was she
+lucky or was she
+
+453
+00:25:46,490 --> 00:25:49,270
+smart, is the question?
+
+454
+00:25:49,270 --> 00:25:50,520
+Does it matter?
+
+455
+00:25:50,520 --> 00:25:53,020
+
+456
+00:25:53,020 --> 00:25:55,760
+This was a subject of enormous
+debate in the
+
+457
+00:25:55,760 --> 00:25:57,960
+mathematical community.
+
+458
+00:25:57,960 --> 00:26:03,550
+In 1991, Parade magazine
+published a correct solution
+
+459
+00:26:03,550 --> 00:26:08,040
+to the problem, and
+approximately 10,000 readers,
+
+460
+00:26:08,040 --> 00:26:13,050
+including a 1,000 with PhDs in
+mathematics, wrote to Parade
+
+461
+00:26:13,050 --> 00:26:16,730
+telling them they had published
+the wrong solution.
+
+462
+00:26:16,730 --> 00:26:19,640
+And the debate roiled on.
+
+463
+00:26:19,640 --> 00:26:23,040
+So who thinks she was lucky
+and who thinks it actually
+
+464
+00:26:23,040 --> 00:26:25,500
+matters whether you switch?
+
+465
+00:26:25,500 --> 00:26:28,610
+Who thinks it matters, those
+who don't know the problem?
+
+466
+00:26:28,610 --> 00:26:31,130
+Who thinks it doesn't matter?
+
+467
+00:26:31,130 --> 00:26:32,240
+All right.
+
+468
+00:26:32,240 --> 00:26:35,760
+The doesn't-matters win
+by a small margin.
+
+469
+00:26:35,760 --> 00:26:39,010
+And in fact, that's what the
+readers of Parade thought.
+
+470
+00:26:39,010 --> 00:26:40,810
+But they were wrong.
+
+471
+00:26:40,810 --> 00:26:44,660
+It matters a lot whether
+you switch.
+
+472
+00:26:44,660 --> 00:26:48,000
+Let's do the analysis first,
+analytically, and then we'll
+
+473
+00:26:48,000 --> 00:26:50,220
+do a simulation.
+
+474
+00:26:50,220 --> 00:26:52,180
+So the player makes a choice.
+
+475
+00:26:52,180 --> 00:26:54,350
+And this is some interesting
+ways to think about
+
+476
+00:26:54,350 --> 00:26:56,030
+probability.
+
+477
+00:26:56,030 --> 00:27:01,800
+And with the probability of 1/3,
+the player has chosen the
+
+478
+00:27:01,800 --> 00:27:03,050
+correct door.
+
+479
+00:27:03,050 --> 00:27:06,080
+
+480
+00:27:06,080 --> 00:27:08,200
+All right?
+
+481
+00:27:08,200 --> 00:27:16,970
+Now that means that with a
+probability of 2 out of 3, the
+
+482
+00:27:16,970 --> 00:27:21,510
+car lies behind one of
+the other two doors.
+
+483
+00:27:21,510 --> 00:27:23,710
+Now here's the key step.
+
+484
+00:27:23,710 --> 00:27:27,560
+Monty opens a door that
+he knows does
+
+485
+00:27:27,560 --> 00:27:30,880
+not contain the prize.
+
+486
+00:27:30,880 --> 00:27:41,950
+The key thing to notice here is
+the choice of doors is not
+
+487
+00:27:41,950 --> 00:27:56,910
+independent of the choice of the
+player, because Monty will
+
+488
+00:27:56,910 --> 00:28:00,635
+never choose the door that the
+player has initially picked.
+
+489
+00:28:00,635 --> 00:28:06,100
+
+490
+00:28:06,100 --> 00:28:13,790
+Now since the probability of the
+prize being behind the two
+
+491
+00:28:13,790 --> 00:28:22,320
+remaining doors is 2 out of 3,
+the probability of the prize
+
+492
+00:28:22,320 --> 00:28:27,590
+being behind one of the doors
+that he did not open
+
+493
+00:28:27,590 --> 00:28:28,840
+is 2 out of 3 --
+
+494
+00:28:28,840 --> 00:28:31,710
+
+495
+00:28:31,710 --> 00:28:34,400
+in fact, behind the
+other door.
+
+496
+00:28:34,400 --> 00:28:37,560
+In fact, you were
+extraordinarily lucky to win
+
+497
+00:28:37,560 --> 00:28:42,930
+the dollar, because switching
+doubles the odds of winning.
+
+498
+00:28:42,930 --> 00:28:46,890
+
+499
+00:28:46,890 --> 00:28:51,510
+Because remember, your odds of
+winning were 1 out of 3 when
+
+500
+00:28:51,510 --> 00:28:53,360
+you first chose the door.
+
+501
+00:28:53,360 --> 00:28:56,020
+That left two doors.
+
+502
+00:28:56,020 --> 00:28:59,070
+The probability of the car being
+behind one of those two
+
+503
+00:28:59,070 --> 00:29:01,850
+doors was 2/3.
+
+504
+00:29:01,850 --> 00:29:06,440
+Monty opened the one that
+didn't contain the car,
+
+505
+00:29:06,440 --> 00:29:08,870
+because he knew it
+contained a goat.
+
+506
+00:29:08,870 --> 00:29:12,050
+So that must mean the
+probability of the car being
+
+507
+00:29:12,050 --> 00:29:15,620
+behind the remaining
+door is 2 out of 3.
+
+508
+00:29:15,620 --> 00:29:19,710
+So you double your
+odds of winning.
+
+509
+00:29:19,710 --> 00:29:23,570
+The logic is kind of clear.
+
+510
+00:29:23,570 --> 00:29:26,730
+It didn't stop people from
+aggressively debating it for
+
+511
+00:29:26,730 --> 00:29:29,040
+the longest of times.
+
+512
+00:29:29,040 --> 00:29:32,540
+And I kind of didn't
+believe it myself.
+
+513
+00:29:32,540 --> 00:29:37,250
+So I did what I usually do,
+is I wrote some code.
+
+514
+00:29:37,250 --> 00:29:41,900
+And let's look at two
+pieces of code here.
+
+515
+00:29:41,900 --> 00:29:45,460
+And again, the theme here is
+how we can use simulation
+
+516
+00:29:45,460 --> 00:29:50,040
+models to understand slightly
+complex, or more than slightly
+
+517
+00:29:50,040 --> 00:29:54,390
+complex, situations.
+
+518
+00:29:54,390 --> 00:29:58,860
+So here's the way
+the game works.
+
+519
+00:29:58,860 --> 00:30:03,980
+So I've got a simple simulation
+that counts the
+
+520
+00:30:03,980 --> 00:30:05,230
+number of wins.
+
+521
+00:30:05,230 --> 00:30:07,440
+
+522
+00:30:07,440 --> 00:30:15,570
+And the way it's done is, for
+t in range number of trials,
+
+523
+00:30:15,570 --> 00:30:18,740
+the contestant picks 1,
+2, or 3 at random.
+
+524
+00:30:18,740 --> 00:30:20,775
+I've tried to mimic
+exactly the game.
+
+525
+00:30:20,775 --> 00:30:24,270
+
+526
+00:30:24,270 --> 00:30:27,000
+So the car is behind
+one of the doors.
+
+527
+00:30:27,000 --> 00:30:29,340
+The contestant guesses a door.
+
+528
+00:30:29,340 --> 00:30:33,280
+And then there's this
+'choose' function to
+
+529
+00:30:33,280 --> 00:30:35,760
+open one of the two.
+
+530
+00:30:35,760 --> 00:30:39,410
+And we're going to have
+2 ways of choosing
+
+531
+00:30:39,410 --> 00:30:42,970
+which door gets opened.
+
+532
+00:30:42,970 --> 00:30:44,980
+So the Monty Hall way--
+
+533
+00:30:44,980 --> 00:30:47,070
+Monty chooses.
+
+534
+00:30:47,070 --> 00:30:51,690
+He takes the guessed door and
+the prize door, and he opens
+
+535
+00:30:51,690 --> 00:30:58,300
+the non-guess that contains
+the goat.
+
+536
+00:30:58,300 --> 00:31:02,180
+So if (1) is the guessed door,
+and (1) is not the guessed
+
+537
+00:31:02,180 --> 00:31:06,590
+door and it's not the prize
+door, then he opens (1).
+
+538
+00:31:06,590 --> 00:31:07,670
+Same thing for (2).
+
+539
+00:31:07,670 --> 00:31:12,430
+And if (1) or (2) is not the
+choice, he opens (3).
+
+540
+00:31:12,430 --> 00:31:18,140
+As opposed to the random choose
+function, which just
+
+541
+00:31:18,140 --> 00:31:23,430
+chooses at random between the
+doors that weren't guessed.
+
+542
+00:31:23,430 --> 00:31:27,220
+So it might open the car, at
+which point the contest is
+
+543
+00:31:27,220 --> 00:31:28,850
+told, sorry, you lose,
+you don't even
+
+544
+00:31:28,850 --> 00:31:30,100
+have a choice anymore.
+
+545
+00:31:30,100 --> 00:31:33,840
+
+546
+00:31:33,840 --> 00:31:40,890
+We're then going to run the
+simulation with Monty choosing
+
+547
+00:31:40,890 --> 00:31:45,530
+and random choice, and
+see what we get.
+
+548
+00:31:45,530 --> 00:31:48,070
+So you've got the code on
+the handout to do this.
+
+549
+00:31:48,070 --> 00:31:50,280
+I'm not going to go
+over the details.
+
+550
+00:31:50,280 --> 00:31:54,360
+The thing to notice about it is
+it's yet another example of
+
+551
+00:31:54,360 --> 00:31:58,790
+how we can use PyLab to do
+some interesting plots.
+
+552
+00:31:58,790 --> 00:32:01,750
+This time I'm going to print a
+pie chart, just to show that
+
+553
+00:32:01,750 --> 00:32:03,000
+we can do those.
+
+554
+00:32:03,000 --> 00:32:06,170
+
+555
+00:32:06,170 --> 00:32:08,600
+And let's see what happens.
+
+556
+00:32:08,600 --> 00:32:10,390
+So people understand
+what's going on?
+
+557
+00:32:10,390 --> 00:32:14,330
+That I've got these two
+functions, montyChoose and
+
+558
+00:32:14,330 --> 00:32:15,790
+randomChoose.
+
+559
+00:32:15,790 --> 00:32:19,160
+I'm using those functions as
+parameters, a very convenient
+
+560
+00:32:19,160 --> 00:32:22,180
+thing, and running the
+simulation each way.
+
+561
+00:32:22,180 --> 00:32:25,220
+
+562
+00:32:25,220 --> 00:32:26,525
+And let's see what happens.
+
+563
+00:32:26,525 --> 00:32:31,070
+
+564
+00:32:31,070 --> 00:32:33,120
+All right.
+
+565
+00:32:33,120 --> 00:32:39,210
+So what we see here is, when I
+run montyChoose, sure enough,
+
+566
+00:32:39,210 --> 00:32:43,380
+it comes out to about 2/3 of
+the time, you win if you
+
+567
+00:32:43,380 --> 00:32:47,290
+change, and only 1/3 of the
+time if you don't, pretty
+
+568
+00:32:47,290 --> 00:32:50,100
+close to what the
+math predicts.
+
+569
+00:32:50,100 --> 00:32:53,660
+In fact, sort of astonishingly
+close.
+
+570
+00:32:53,660 --> 00:32:58,170
+On the other hand, if Monte
+had been just choosing at
+
+571
+00:32:58,170 --> 00:33:02,110
+random, then we see it really
+doesn't matter whether you
+
+572
+00:33:02,110 --> 00:33:03,360
+switch or not.
+
+573
+00:33:03,360 --> 00:33:05,800
+
+574
+00:33:05,800 --> 00:33:10,220
+So again, from a probability
+point of view, we see how
+
+575
+00:33:10,220 --> 00:33:14,150
+subtle these things can be based
+upon whether decisions
+
+576
+00:33:14,150 --> 00:33:18,930
+are independent of previous
+decisions, or not independent.
+
+577
+00:33:18,930 --> 00:33:23,430
+And we also see, in some sense,
+that we can write a
+
+578
+00:33:23,430 --> 00:33:28,200
+very small piece of code that
+actually provides a simulation
+
+579
+00:33:28,200 --> 00:33:32,480
+of a real, in this case, game,
+and we can have, I think, a
+
+580
+00:33:32,480 --> 00:33:33,490
+lot of confidence.
+
+581
+00:33:33,490 --> 00:33:36,760
+We can look at the code and say,
+is it really the way the
+
+582
+00:33:36,760 --> 00:33:38,270
+game is described?
+
+583
+00:33:38,270 --> 00:33:39,250
+Yes.
+
+584
+00:33:39,250 --> 00:33:42,800
+And then we get nice results
+that tell us what to do.
+
+585
+00:33:42,800 --> 00:33:46,400
+And in this case it tells us
+that, if Monty is choosing
+
+586
+00:33:46,400 --> 00:33:50,420
+based upon what he knows,
+then by all
+
+587
+00:33:50,420 --> 00:33:52,480
+means, you should switch.
+
+588
+00:33:52,480 --> 00:33:57,260
+And I'm sorry that it didn't
+work out that way when we
+
+589
+00:33:57,260 --> 00:34:00,560
+played the game, but that's
+the way probabilities are,
+
+590
+00:34:00,560 --> 00:34:04,080
+that you didn't switch
+and you lucked out.
+
+591
+00:34:04,080 --> 00:34:05,970
+So now you're a rich lady.
+
+592
+00:34:05,970 --> 00:34:08,260
+All right.
+
+593
+00:34:08,260 --> 00:34:12,989
+So that's one thing we can do.
+
+594
+00:34:12,989 --> 00:34:15,650
+One more thing I want to talk
+about, before we leave the
+
+595
+00:34:15,650 --> 00:34:17,336
+subject of Monte Carlo
+simulations--
+
+596
+00:34:17,336 --> 00:34:20,130
+
+597
+00:34:20,130 --> 00:34:25,020
+it's pretty clear that these
+kind of simulations are very
+
+598
+00:34:25,020 --> 00:34:31,000
+useful for tackling problems
+in which predictive
+
+599
+00:34:31,000 --> 00:34:32,829
+non-determinism plays a role.
+
+600
+00:34:32,829 --> 00:34:35,639
+
+601
+00:34:35,639 --> 00:34:38,929
+And at first blush, you might
+think that, OK, that's the
+
+602
+00:34:38,929 --> 00:34:42,630
+only time we should use a Monte
+Carlo simulation, when
+
+603
+00:34:42,630 --> 00:34:45,969
+there's some inherent randomness
+in the problem, and
+
+604
+00:34:45,969 --> 00:34:50,880
+therefore it's hard to model
+analytically, and therefore
+
+605
+00:34:50,880 --> 00:34:54,610
+we'll use randomness
+in the code.
+
+606
+00:34:54,610 --> 00:34:58,630
+Interestingly enough,
+particularly in recent years,
+
+607
+00:34:58,630 --> 00:35:04,100
+but for quite a while, people
+have understood the notion of
+
+608
+00:35:04,100 --> 00:35:08,910
+using randomized algorithms
+to solve problems in which
+
+609
+00:35:08,910 --> 00:35:11,085
+randomness plays no role.
+
+610
+00:35:11,085 --> 00:35:13,980
+
+611
+00:35:13,980 --> 00:35:17,610
+And that's a little surprising,
+but an incredibly
+
+612
+00:35:17,610 --> 00:35:22,160
+useful concept to put in your
+bag of tricks, the ability to
+
+613
+00:35:22,160 --> 00:35:27,120
+use randomization to solve
+problems that are not random.
+
+614
+00:35:27,120 --> 00:35:29,930
+So let me talk about
+an example.
+
+615
+00:35:29,930 --> 00:35:32,410
+Consider the concept of pi.
+
+616
+00:35:32,410 --> 00:35:37,080
+
+617
+00:35:37,080 --> 00:35:40,230
+Pi has been around
+for a long time.
+
+618
+00:35:40,230 --> 00:35:42,250
+For thousands of years,
+people have known
+
+619
+00:35:42,250 --> 00:35:44,720
+that there's a constant--
+
+620
+00:35:44,720 --> 00:35:48,800
+called pi since about
+the 18th century--
+
+621
+00:35:48,800 --> 00:35:52,710
+associated with circles, such
+that the circumference of a
+
+622
+00:35:52,710 --> 00:35:55,020
+circle is always going
+to be equal to
+
+623
+00:35:55,020 --> 00:35:57,300
+pi times the diameter.
+
+624
+00:35:57,300 --> 00:35:59,690
+The area of a circle is
+always going to be pi
+
+625
+00:35:59,690 --> 00:36:01,630
+r-squared, et cetera.
+
+626
+00:36:01,630 --> 00:36:05,540
+So for thousands of years,
+people knew that there was
+
+627
+00:36:05,540 --> 00:36:07,990
+such a constant.
+
+628
+00:36:07,990 --> 00:36:10,560
+They just didn't know
+what it was.
+
+629
+00:36:10,560 --> 00:36:14,130
+And there's a long and beautiful
+history of people
+
+630
+00:36:14,130 --> 00:36:18,330
+attempting to estimate pi.
+
+631
+00:36:18,330 --> 00:36:21,860
+About the earliest estimate
+I've found is from the
+
+632
+00:36:21,860 --> 00:36:28,630
+Egyptians, in something called
+the Rhind Papyrus, from 1650
+
+633
+00:36:28,630 --> 00:36:31,150
+BC, or thereabouts.
+
+634
+00:36:31,150 --> 00:36:36,120
+And it estimated pi
+to be 4 times--
+
+635
+00:36:36,120 --> 00:36:38,030
+let me get this right--
+
+636
+00:36:38,030 --> 00:36:49,530
+8/9 squared, which is
+3.16, more or less.
+
+637
+00:36:49,530 --> 00:36:52,660
+That was pretty good.
+
+638
+00:36:52,660 --> 00:36:57,970
+About a 1,000 years later,
+an estimate of pi
+
+639
+00:36:57,970 --> 00:36:59,220
+appears in the Bible.
+
+640
+00:36:59,220 --> 00:37:03,350
+
+641
+00:37:03,350 --> 00:37:05,640
+Or at least, it's implied by the
+Bible in a description of
+
+642
+00:37:05,640 --> 00:37:08,650
+one of Solomon's construction
+projects.
+
+643
+00:37:08,650 --> 00:37:12,730
+It says, "And he made a molten
+sea, 10 cubits from the one
+
+644
+00:37:12,730 --> 00:37:14,020
+brim to the other.
+
+645
+00:37:14,020 --> 00:37:19,040
+It was round all about, and his
+height was five cubits.
+
+646
+00:37:19,040 --> 00:37:25,150
+And a line of 30 cubits did
+compass it round about."
+
+647
+00:37:25,150 --> 00:37:30,700
+So you can take that and solve
+for pi, because you've given
+
+648
+00:37:30,700 --> 00:37:34,770
+the circumference, and other
+details, the diameter.
+
+649
+00:37:34,770 --> 00:37:36,550
+You can solve for pi.
+
+650
+00:37:36,550 --> 00:37:40,055
+And you see, if you do that, pi
+comes out to be exactly 3.
+
+651
+00:37:40,055 --> 00:37:43,310
+
+652
+00:37:43,310 --> 00:37:45,910
+Not quite as accurate
+as the Egyptians
+
+653
+00:37:45,910 --> 00:37:48,470
+had 1,000 years earlier.
+
+654
+00:37:48,470 --> 00:37:50,940
+Now perhaps the Bible
+is wrong.
+
+655
+00:37:50,940 --> 00:37:54,000
+I don't want to offend
+anybody.
+
+656
+00:37:54,000 --> 00:37:57,830
+Or perhaps the molten sea wasn't
+perfectly circular.
+
+657
+00:37:57,830 --> 00:38:01,100
+Or maybe the circumference was
+measured from the wall outside
+
+658
+00:38:01,100 --> 00:38:03,160
+and the diameter from
+the inside.
+
+659
+00:38:03,160 --> 00:38:08,050
+Or maybe it was just that was a
+good enough number to use in
+
+660
+00:38:08,050 --> 00:38:10,730
+construction, because a cubit
+was something like the length
+
+661
+00:38:10,730 --> 00:38:12,010
+of your forearm.
+
+662
+00:38:12,010 --> 00:38:14,690
+Different people have different
+length forearms, and
+
+663
+00:38:14,690 --> 00:38:17,010
+there was no reason to try
+and be more precise.
+
+664
+00:38:17,010 --> 00:38:18,260
+Who knows?
+
+665
+00:38:18,260 --> 00:38:20,310
+
+666
+00:38:20,310 --> 00:38:23,300
+The best estimate of pi in
+ancient times was from
+
+667
+00:38:23,300 --> 00:38:25,816
+Archimedes of Syracuse.
+
+668
+00:38:25,816 --> 00:38:28,320
+
+669
+00:38:28,320 --> 00:38:35,560
+And he did something quite
+amazing for around 200 BC.
+
+670
+00:38:35,560 --> 00:38:37,120
+He didn't give the
+value of pi.
+
+671
+00:38:37,120 --> 00:38:39,460
+He said, I don't know what the
+value is, but I can give you
+
+672
+00:38:39,460 --> 00:38:42,000
+an upper bound and
+a lower bound.
+
+673
+00:38:42,000 --> 00:38:46,310
+And he did this by carefully
+constructing a polygon with a
+
+674
+00:38:46,310 --> 00:38:49,880
+huge number of tiny little
+straight lines that would
+
+675
+00:38:49,880 --> 00:38:54,370
+approximate a circle, and then
+actually measuring things.
+
+676
+00:38:54,370 --> 00:38:59,310
+So he built a polygon with 96
+sides, and concluded that pi
+
+677
+00:38:59,310 --> 00:39:12,670
+was somewhere between 223
+divided by 71, and 22/7.
+
+678
+00:39:12,670 --> 00:39:17,690
+
+679
+00:39:17,690 --> 00:39:20,240
+Very sophisticated at the time,
+to be giving upper and
+
+680
+00:39:20,240 --> 00:39:23,180
+lower bounds.
+
+681
+00:39:23,180 --> 00:39:26,150
+If we look at what the middle
+of that is, it's actually
+
+682
+00:39:26,150 --> 00:39:27,170
+amazingly good.
+
+683
+00:39:27,170 --> 00:39:32,780
+It's 3.1418.
+
+684
+00:39:32,780 --> 00:39:34,880
+Not bad.
+
+685
+00:39:34,880 --> 00:39:36,170
+All right.
+
+686
+00:39:36,170 --> 00:39:38,113
+What does this have to do with
+Monte Carlo simulations?
+
+687
+00:39:38,113 --> 00:39:42,730
+
+688
+00:39:42,730 --> 00:39:46,160
+Many years later--
+
+689
+00:39:46,160 --> 00:39:53,070
+in fact, in the 1700s, two
+French mathematicians invented
+
+690
+00:39:53,070 --> 00:39:55,430
+another way of computing pi.
+
+691
+00:39:55,430 --> 00:39:58,090
+Buffon and Laplace.
+
+692
+00:39:58,090 --> 00:39:59,870
+Actually Buffon first
+proposed it.
+
+693
+00:39:59,870 --> 00:40:01,300
+He got it wrong.
+
+694
+00:40:01,300 --> 00:40:03,420
+Laplace corrected it.
+
+695
+00:40:03,420 --> 00:40:09,680
+And they said, we can find pi
+using a stochastic simulation.
+
+696
+00:40:09,680 --> 00:40:11,440
+They didn't use those words,
+but that's what
+
+697
+00:40:11,440 --> 00:40:13,720
+they basically described.
+
+698
+00:40:13,720 --> 00:40:16,330
+And they talked about it in
+terms of needle-dropping.
+
+699
+00:40:16,330 --> 00:40:18,900
+
+700
+00:40:18,900 --> 00:40:28,970
+So think about having a square,
+and inscribing in the
+
+701
+00:40:28,970 --> 00:40:30,830
+square a circle.
+
+702
+00:40:30,830 --> 00:40:35,520
+And you'll excuse my lack
+of artistic ability.
+
+703
+00:40:35,520 --> 00:40:39,800
+So they put one of those
+on the floor.
+
+704
+00:40:39,800 --> 00:40:42,770
+And then they dropped needles,
+which would get carried around
+
+705
+00:40:42,770 --> 00:40:46,910
+by the wind and land in
+some random place.
+
+706
+00:40:46,910 --> 00:40:51,530
+And they counted the number of
+needles that landed in the
+
+707
+00:40:51,530 --> 00:40:57,650
+circle, and the number of
+needles that landed in the
+
+708
+00:40:57,650 --> 00:41:00,060
+square but not in the circle.
+
+709
+00:41:00,060 --> 00:41:03,270
+
+710
+00:41:03,270 --> 00:41:05,820
+And then they did
+a little math.
+
+711
+00:41:05,820 --> 00:41:09,730
+Let's assume for the sake of
+argument here that the radius
+
+712
+00:41:09,730 --> 00:41:11,970
+of the circle is 1.
+
+713
+00:41:11,970 --> 00:41:18,100
+
+714
+00:41:18,100 --> 00:41:25,730
+They observed the following
+equation must hold, that the
+
+715
+00:41:25,730 --> 00:41:36,220
+needles in the circle over the
+needles in the square should
+
+716
+00:41:36,220 --> 00:41:43,750
+be equal to the area of the
+circle divided by the area of
+
+717
+00:41:43,750 --> 00:41:45,000
+the square.
+
+718
+00:41:45,000 --> 00:41:46,830
+
+719
+00:41:46,830 --> 00:41:50,650
+It seems logical, if they're
+landing at random, that they
+
+720
+00:41:50,650 --> 00:41:58,610
+would get distributed
+proportional to the area.
+
+721
+00:41:58,610 --> 00:42:04,750
+And then they solved for pi,
+knowing that the area of the
+
+722
+00:42:04,750 --> 00:42:06,473
+circle is pi r-squared.
+
+723
+00:42:06,473 --> 00:42:09,080
+
+724
+00:42:09,080 --> 00:42:10,890
+They could then say that pi--
+
+725
+00:42:10,890 --> 00:42:14,580
+
+726
+00:42:14,580 --> 00:42:18,440
+in fact, in this case, since we
+know the radius is 1, and 1
+
+727
+00:42:18,440 --> 00:42:23,350
+squared is 1, that tells us that
+the area of the circle
+
+728
+00:42:23,350 --> 00:42:26,410
+should be pi, right?
+
+729
+00:42:26,410 --> 00:42:28,420
+Pi times 1.
+
+730
+00:42:28,420 --> 00:42:34,810
+So they said pi is equal to the
+area of the circle, which
+
+731
+00:42:34,810 --> 00:42:46,670
+is equal to the area of the
+square times the needles in
+
+732
+00:42:46,670 --> 00:42:52,015
+the circle, divided by the
+needles in the square.
+
+733
+00:42:52,015 --> 00:43:02,300
+
+734
+00:43:02,300 --> 00:43:04,320
+So they had that formula.
+
+735
+00:43:04,320 --> 00:43:07,970
+Unfortunately they couldn't drop
+enough needles to get a
+
+736
+00:43:07,970 --> 00:43:09,690
+very good estimate.
+
+737
+00:43:09,690 --> 00:43:11,800
+So they described
+how to do it.
+
+738
+00:43:11,800 --> 00:43:13,860
+But this was an experiment.
+
+739
+00:43:13,860 --> 00:43:16,880
+They did the math, they
+had a nice formula.
+
+740
+00:43:16,880 --> 00:43:19,170
+They did not have an
+experimental apparatus that
+
+741
+00:43:19,170 --> 00:43:21,870
+would actually let them drop
+enough needles to get a very
+
+742
+00:43:21,870 --> 00:43:23,390
+good estimate.
+
+743
+00:43:23,390 --> 00:43:25,270
+It would take a lot
+of patience.
+
+744
+00:43:25,270 --> 00:43:27,620
+And maybe they wouldn't
+land at random.
+
+745
+00:43:27,620 --> 00:43:28,980
+Who knows what.
+
+746
+00:43:28,980 --> 00:43:33,290
+Fortunately, today, we have a
+much easier way to do that.
+
+747
+00:43:33,290 --> 00:43:40,420
+
+748
+00:43:40,420 --> 00:43:43,486
+So we can write some code that
+does the simulation.
+
+749
+00:43:43,486 --> 00:43:49,220
+
+750
+00:43:49,220 --> 00:43:50,860
+We're going to have
+a way to throw the
+
+751
+00:43:50,860 --> 00:43:53,640
+needles or drop the needles.
+
+752
+00:43:53,640 --> 00:43:57,080
+And then what we're going to
+do is we're going to have a
+
+753
+00:43:57,080 --> 00:44:00,100
+simulation that we're going
+to run, that's going to--
+
+754
+00:44:00,100 --> 00:44:02,220
+I don't know how many
+needles to drop.
+
+755
+00:44:02,220 --> 00:44:06,360
+I'm going to keep dropping
+needles until I get a small
+
+756
+00:44:06,360 --> 00:44:12,890
+enough standard deviation that I
+can be confident that I have
+
+757
+00:44:12,890 --> 00:44:16,200
+a bound on pi with some
+confidence interval.
+
+758
+00:44:16,200 --> 00:44:20,700
+In fact, I'm going to use 5%
+here, and use that rule of
+
+759
+00:44:20,700 --> 00:44:23,320
+thumb that Mitch talked about
+last time, about standard
+
+760
+00:44:23,320 --> 00:44:24,770
+deviations.
+
+761
+00:44:24,770 --> 00:44:27,010
+And I say, all right, I'm going
+to keep running the
+
+762
+00:44:27,010 --> 00:44:30,090
+experiment until the standard
+deviation of
+
+763
+00:44:30,090 --> 00:44:33,260
+trials is 5% or less.
+
+764
+00:44:33,260 --> 00:44:36,330
+
+765
+00:44:36,330 --> 00:44:39,820
+Two standard deviations is small
+enough that I get my
+
+766
+00:44:39,820 --> 00:44:42,320
+answer within some precision.
+
+767
+00:44:42,320 --> 00:44:47,450
+I'm going to ask here for
+a precision of 0.01.
+
+768
+00:44:47,450 --> 00:44:51,100
+And so therefore my standard
+deviation should be that
+
+769
+00:44:51,100 --> 00:44:55,070
+precision divided by 4, because
+I'm looking for 2
+
+770
+00:44:55,070 --> 00:44:58,800
+standard deviations on either
+side of the mean, which is why
+
+771
+00:44:58,800 --> 00:45:01,880
+I'm dividing by 4
+and not by 2.
+
+772
+00:45:01,880 --> 00:45:04,800
+So I divide by 4 and
+I see what I get.
+
+773
+00:45:04,800 --> 00:45:08,090
+
+774
+00:45:08,090 --> 00:45:09,530
+So let's run it.
+
+775
+00:45:09,530 --> 00:45:13,460
+And this will take a
+little bit of time.
+
+776
+00:45:13,460 --> 00:45:18,950
+It will take no time if I don't
+uncomment the code to
+
+777
+00:45:18,950 --> 00:45:20,200
+actually run the experiment.
+
+778
+00:45:20,200 --> 00:45:23,910
+
+779
+00:45:23,910 --> 00:45:25,160
+Estimate pi.
+
+780
+00:45:25,160 --> 00:45:29,430
+
+781
+00:45:29,430 --> 00:45:30,680
+And we'll get some estimates.
+
+782
+00:45:30,680 --> 00:45:36,970
+
+783
+00:45:36,970 --> 00:45:41,510
+So what we can see here is that
+my estimates change as I
+
+784
+00:45:41,510 --> 00:45:43,990
+run experiments.
+
+785
+00:45:43,990 --> 00:45:46,860
+Every time I run this-- or not
+every time, I often get a
+
+786
+00:45:46,860 --> 00:45:49,130
+different number of
+needles I need.
+
+787
+00:45:49,130 --> 00:45:54,440
+But you can see that my first
+estimate is not very good.
+
+788
+00:45:54,440 --> 00:45:58,290
+My estimates do get
+better, though not
+
+789
+00:45:58,290 --> 00:46:00,190
+monotonically better.
+
+790
+00:46:00,190 --> 00:46:03,290
+But what does get monotonically
+better is the
+
+791
+00:46:03,290 --> 00:46:08,250
+standard deviation gets smaller
+and smaller, which is
+
+792
+00:46:08,250 --> 00:46:10,400
+what you would expect.
+
+793
+00:46:10,400 --> 00:46:15,210
+So there's no guarantee that by
+running a bigger trial, I
+
+794
+00:46:15,210 --> 00:46:17,390
+get a more accurate result.
+
+795
+00:46:17,390 --> 00:46:19,990
+What there is a guarantee
+is that I can have more
+
+796
+00:46:19,990 --> 00:46:22,410
+confidence in my result.
+
+797
+00:46:22,410 --> 00:46:25,560
+I could have gotten lucky and
+run a small number of needles
+
+798
+00:46:25,560 --> 00:46:28,610
+and gotten it exactly
+right by chance.
+
+799
+00:46:28,610 --> 00:46:33,190
+But I would have been wrong to
+assume it was right, because
+
+800
+00:46:33,190 --> 00:46:34,830
+let's pretend we didn't
+know what the value
+
+801
+00:46:34,830 --> 00:46:37,800
+of pi was, a priori.
+
+802
+00:46:37,800 --> 00:46:41,410
+But what I can say here is since
+my standard deviation is
+
+803
+00:46:41,410 --> 00:46:47,330
+now 0.002, and if we look at
+it, we'll see that these
+
+804
+00:46:47,330 --> 00:46:50,840
+things are normally distributed,
+I can be pretty
+
+805
+00:46:50,840 --> 00:46:59,950
+sure that the true value of pi
+is 3.1407 et cetera, plus or
+
+806
+00:46:59,950 --> 00:47:08,110
+minus 0.00023, et cetera,
+with a 95% confidence.
+
+807
+00:47:08,110 --> 00:47:10,570
+So this is using the stuff
+that you saw in the last
+
+808
+00:47:10,570 --> 00:47:15,170
+lecture to now combine that
+statistical background with
+
+809
+00:47:15,170 --> 00:47:17,960
+this simulation to compute
+a pretty darn
+
+810
+00:47:17,960 --> 00:47:19,840
+good estimate of pi.
+
+811
+00:47:19,840 --> 00:47:23,140
+And if I ran more needles, if I
+wanted to get more precise,
+
+812
+00:47:23,140 --> 00:47:27,230
+I can get as precise as I want
+to be, as many digits of
+
+813
+00:47:27,230 --> 00:47:30,210
+precision as I want.
+
+814
+00:47:30,210 --> 00:47:34,050
+So again, what we see here is
+that we've been able to solve
+
+815
+00:47:34,050 --> 00:47:37,500
+a problem that had nothing
+to do with randomness.
+
+816
+00:47:37,500 --> 00:47:40,320
+The value of pi is not
+a random number.
+
+817
+00:47:40,320 --> 00:47:43,502
+And yet we used randomness
+to solve it.
+
+818
+00:47:43,502 --> 00:47:45,730
+A very common technique.
+
+819
+00:47:45,730 --> 00:47:51,050
+And we use some very simple
+statistics to know whether or
+
+820
+00:47:51,050 --> 00:47:53,980
+not we should believe
+our solution.
+
+821
+00:47:53,980 --> 00:47:55,740
+And so those are the
+two lessons I
+
+822
+00:47:55,740 --> 00:47:58,120
+want you to take home.
+
+823
+00:47:58,120 --> 00:48:02,360
+Now if you look at your handout,
+you'll see that at
+
+824
+00:48:02,360 --> 00:48:07,700
+the bottom, I've used the same
+technique to do integration.
+
+825
+00:48:07,700 --> 00:48:10,490
+
+826
+00:48:10,490 --> 00:48:13,650
+If you think about what
+integration means, when you
+
+827
+00:48:13,650 --> 00:48:17,510
+ask, what is the integral of
+some formula, what you learned
+
+828
+00:48:17,510 --> 00:48:20,520
+when you first looked at
+calculus was that that was the
+
+829
+00:48:20,520 --> 00:48:23,490
+area under some curve, right?
+
+830
+00:48:23,490 --> 00:48:26,040
+That's what the integral is.
+
+831
+00:48:26,040 --> 00:48:29,130
+And you learned all sorts of
+complicated mathematics to
+
+832
+00:48:29,130 --> 00:48:31,750
+solve complicated integrals.
+
+833
+00:48:31,750 --> 00:48:35,700
+Well, you can pose an
+integration problem exactly
+
+834
+00:48:35,700 --> 00:48:38,480
+analogous to this.
+
+835
+00:48:38,480 --> 00:48:40,000
+You draw your curve.
+
+836
+00:48:40,000 --> 00:48:41,280
+You drops some needles.
+
+837
+00:48:41,280 --> 00:48:44,030
+You count how many fall under
+the curve, how many don't fall
+
+838
+00:48:44,030 --> 00:48:47,790
+under the curve in
+some larger area.
+
+839
+00:48:47,790 --> 00:48:50,860
+And you can solve
+the integration.
+
+840
+00:48:50,860 --> 00:48:54,160
+And that's exactly what I've
+done here, where f is the
+
+841
+00:48:54,160 --> 00:48:56,280
+function being integrated.
+
+842
+00:48:56,280 --> 00:48:58,550
+I won't go through
+the details.
+
+843
+00:48:58,550 --> 00:49:04,160
+Now in fact, this kind of
+simulation is not a good way
+
+844
+00:49:04,160 --> 00:49:06,230
+to solve single integrals.
+
+845
+00:49:06,230 --> 00:49:10,100
+It's much better to use
+something like Simpson's rule,
+
+846
+00:49:10,100 --> 00:49:12,750
+whatever that is.
+
+847
+00:49:12,750 --> 00:49:16,310
+But in fact, it is frequently
+used in practice for more
+
+848
+00:49:16,310 --> 00:49:19,870
+complicated things, a double or
+triple integration, where
+
+849
+00:49:19,870 --> 00:49:22,580
+the mathematics gets
+fairly complicated.
+
+850
+00:49:22,580 --> 00:49:25,950
+People will often solve those
+problems using a Monte Carlo
+
+851
+00:49:25,950 --> 00:49:27,390
+simulation.
+
+852
+00:49:27,390 --> 00:49:30,110
+It's a practical method
+for tackling it.
+
+853
+00:49:30,110 --> 00:49:33,980
+And again, in your handout,
+you'll see a very simple piece
+
+854
+00:49:33,980 --> 00:49:37,000
+of code that does a
+double integral.
+
+855
+00:49:37,000 --> 00:49:37,820
+All right.
+
+856
+00:49:37,820 --> 00:49:39,070
+That's all for today.
+
+857
+00:49:39,070 --> 00:49:43,423

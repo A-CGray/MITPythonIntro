@@ -1,0 +1,23 @@
+# 6.00 Problem Set 4
+#
+# Question 2 Pseudo Code
+
+def find_best_shift(wordlist, text):
+	# First we need to identify the individual words in the text, fortunately the is_word function provided already
+	strips the input of any punctuation marks and spaces so all we need to do is split the input text at each space,
+	string.split() does this nicely
+
+	initialise best_shift = 0
+	initialise real_words = 0
+
+	for shift in range(27): # For each possible shift size
+	    initialise real_words_tmp = 0
+	    words = "decoded_text".split() # Create a list of all the words in the shifted text
+	    for each word in words:
+	        if is_word(word):
+	            real_words_tmp += 1
+        if real_words_tmp > real_words
+            best_shift = shift
+            real_words = real_words_tmp
+    return best_shift
+

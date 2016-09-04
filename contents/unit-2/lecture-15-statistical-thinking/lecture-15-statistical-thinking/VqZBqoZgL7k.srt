@@ -1,0 +1,3659 @@
+1
+00:00:00,000 --> 00:00:00,040
+
+2
+00:00:00,040 --> 00:00:02,460
+The following content is
+provided under a Creative
+
+3
+00:00:02,460 --> 00:00:03,870
+Commons license.
+
+4
+00:00:03,870 --> 00:00:06,910
+Your support will help MIT
+OpenCourseWare continue to
+
+5
+00:00:06,910 --> 00:00:10,560
+offer high quality educational
+resources for free.
+
+6
+00:00:10,560 --> 00:00:13,460
+To make a donation or view
+additional materials from
+
+7
+00:00:13,460 --> 00:00:19,290
+hundreds of MIT courses, visit
+MIT OpenCourseWare at
+
+8
+00:00:19,290 --> 00:00:20,992
+ocw.mit.edu.
+
+9
+00:00:20,992 --> 00:00:23,760
+PROFESSOR: Good morning.
+
+10
+00:00:23,760 --> 00:00:28,140
+This is the second of two
+lectures that I'm retaping in
+
+11
+00:00:28,140 --> 00:00:31,510
+the summer because we had
+technical difficulties with
+
+12
+00:00:31,510 --> 00:00:34,890
+the lectures that were taped
+during the academic term.
+
+13
+00:00:34,890 --> 00:00:36,960
+I feel I need to tell you
+this for two reasons.
+
+14
+00:00:36,960 --> 00:00:40,410
+One, as I said before,
+the room is empty.
+
+15
+00:00:40,410 --> 00:00:43,040
+And so when I say something
+hilarious and there's no
+
+16
+00:00:43,040 --> 00:00:47,510
+laughter, it's because
+the room is empty.
+
+17
+00:00:47,510 --> 00:00:51,050
+And if I'm not asking the
+students questions during the
+
+18
+00:00:51,050 --> 00:00:53,210
+lecture, it's because there
+are no students.
+
+19
+00:00:53,210 --> 00:00:55,330
+The other important thing I want
+you to understand is that
+
+20
+00:00:55,330 --> 00:00:58,580
+I do own more than one
+shirt and more
+
+21
+00:00:58,580 --> 00:00:59,710
+than one pair of pants.
+
+22
+00:00:59,710 --> 00:01:02,150
+And the reason I'm dressed
+exactly the way I was for
+
+23
+00:01:02,150 --> 00:01:07,330
+lecture 13 is I gave lecture
+13 five minutes ago, even
+
+24
+00:01:07,330 --> 00:01:09,440
+though this is lecture 15.
+
+25
+00:01:09,440 --> 00:01:11,940
+So again, here I am.
+
+26
+00:01:11,940 --> 00:01:17,550
+And I apologize for the
+uniformity in my clothing.
+
+27
+00:01:17,550 --> 00:01:23,400
+OK, on lecture 14, which came
+between 13 and 15, at the end
+
+28
+00:01:23,400 --> 00:01:28,170
+of it I was talking about
+flipping coins and ended up
+
+29
+00:01:28,170 --> 00:01:34,050
+with the question how can we
+know when it's safe to assume
+
+30
+00:01:34,050 --> 00:01:38,500
+that the average result of some
+finite number of flips is
+
+31
+00:01:38,500 --> 00:01:41,610
+representative of what we would
+get if we flipped the
+
+32
+00:01:41,610 --> 00:01:44,760
+same coin many more times.
+
+33
+00:01:44,760 --> 00:01:48,080
+In principle, an infinite
+number of times.
+
+34
+00:01:48,080 --> 00:01:52,840
+Well, we might flip a coin
+twice, get 1 heads and 1 tails
+
+35
+00:01:52,840 --> 00:01:57,200
+and conclude that the true
+probability of getting a head
+
+36
+00:01:57,200 --> 00:02:00,870
+is exactly 0.5.
+
+37
+00:02:00,870 --> 00:02:01,950
+Turns out--
+
+38
+00:02:01,950 --> 00:02:03,740
+assume I have a fair coin--
+
+39
+00:02:03,740 --> 00:02:07,750
+this would have been the
+right conclusion.
+
+40
+00:02:07,750 --> 00:02:10,400
+Just because we have the right
+answer it doesn't mean our
+
+41
+00:02:10,400 --> 00:02:12,510
+thinking is any good.
+
+42
+00:02:12,510 --> 00:02:14,840
+And in fact, in this case our
+reasoning would have been
+
+43
+00:02:14,840 --> 00:02:19,285
+completely faulty because if
+I flipped it twice and had
+
+44
+00:02:19,285 --> 00:02:22,940
+gotten 2 heads, you might have
+said oh, it's always heads.
+
+45
+00:02:22,940 --> 00:02:26,710
+But we know that wouldn't
+have been right.
+
+46
+00:02:26,710 --> 00:02:29,820
+So the question I want to pose
+at the start of today's
+
+47
+00:02:29,820 --> 00:02:41,500
+lecture is quite simply how
+many samples do we need to
+
+48
+00:02:41,500 --> 00:02:42,750
+believe the answer?
+
+49
+00:02:42,750 --> 00:03:00,330
+
+50
+00:03:00,330 --> 00:03:04,090
+So how many samples do we need
+to look at before we can have
+
+51
+00:03:04,090 --> 00:03:06,445
+confidence in the result.
+
+52
+00:03:06,445 --> 00:03:12,910
+
+53
+00:03:12,910 --> 00:03:18,450
+Fortunately, there's a very
+solid set of mathematics that
+
+54
+00:03:18,450 --> 00:03:23,340
+lets us answer this question
+in a good way.
+
+55
+00:03:23,340 --> 00:03:29,725
+At the root of all of it is
+the notion of variance.
+
+56
+00:03:29,725 --> 00:03:33,710
+
+57
+00:03:33,710 --> 00:03:52,400
+Variance is a measure of how
+much spread there is in the
+
+58
+00:03:52,400 --> 00:03:53,650
+possible outcomes.
+
+59
+00:03:53,650 --> 00:04:06,010
+
+60
+00:04:06,010 --> 00:04:08,840
+Now in order to talk about
+variance, given this
+
+61
+00:04:08,840 --> 00:04:15,970
+definition, we need to have
+different outcomes, which is
+
+62
+00:04:15,970 --> 00:04:21,709
+why we always want to run
+multiple trials rather than
+
+63
+00:04:21,709 --> 00:04:24,850
+say one trial with many flips.
+
+64
+00:04:24,850 --> 00:04:28,170
+In fact, you may have wondered
+why am I not-- if I could end
+
+65
+00:04:28,170 --> 00:04:34,560
+up flipping the coin a million
+times, why would I do multiple
+
+66
+00:04:34,560 --> 00:04:37,300
+trials adding up to a
+million rather than
+
+67
+00:04:37,300 --> 00:04:40,490
+1 trial of a million?
+
+68
+00:04:40,490 --> 00:04:45,320
+And the reason is by having
+multiple trials, each of which
+
+69
+00:04:45,320 --> 00:04:51,800
+give me a different outcome, I
+can then look at how different
+
+70
+00:04:51,800 --> 00:04:55,360
+the outcomes of the different
+trials are and get a measure
+
+71
+00:04:55,360 --> 00:04:57,200
+of variance.
+
+72
+00:04:57,200 --> 00:05:01,360
+If I do 10 trials and I get the
+same answer each time, I
+
+73
+00:05:01,360 --> 00:05:06,110
+can begin to believe that really
+is the correct answer.
+
+74
+00:05:06,110 --> 00:05:11,650
+If I do 10 trials and get 10
+wildly different answers, then
+
+75
+00:05:11,650 --> 00:05:15,110
+I probably shouldn't believe any
+one of those answers, and
+
+76
+00:05:15,110 --> 00:05:17,480
+I probably shouldn't even think
+I can average those
+
+77
+00:05:17,480 --> 00:05:20,810
+answers and believe the mean is
+a real answer because if I
+
+78
+00:05:20,810 --> 00:05:23,150
+run an 11th trial maybe I'll
+get something totally
+
+79
+00:05:23,150 --> 00:05:24,745
+different yet again.
+
+80
+00:05:24,745 --> 00:05:28,090
+
+81
+00:05:28,090 --> 00:05:32,380
+We can formalize this notion
+of variance in a way that
+
+82
+00:05:32,380 --> 00:05:35,320
+should be familiar
+to many of you.
+
+83
+00:05:35,320 --> 00:05:37,825
+And that's the concept of
+a standard deviation.
+
+84
+00:05:37,825 --> 00:05:45,180
+
+85
+00:05:45,180 --> 00:05:48,750
+Something I, in fact, already
+showed you when we looked at
+
+86
+00:05:48,750 --> 00:05:51,015
+the spread of grades on the
+first quiz this semester.
+
+87
+00:05:51,015 --> 00:05:53,610
+
+88
+00:05:53,610 --> 00:06:01,480
+Informally, what the standard
+deviation is measuring is the
+
+89
+00:06:01,480 --> 00:06:04,280
+fraction of values that
+are close to the mean.
+
+90
+00:06:04,280 --> 00:06:19,780
+
+91
+00:06:19,780 --> 00:06:23,340
+If many values are close to
+the mean, the standard
+
+92
+00:06:23,340 --> 00:06:25,980
+deviation is small.
+
+93
+00:06:25,980 --> 00:06:29,380
+If many values are relatively
+far from the mean, the
+
+94
+00:06:29,380 --> 00:06:33,640
+standard deviation is
+relatively large.
+
+95
+00:06:33,640 --> 00:06:37,910
+If all values are the same,
+then the standard
+
+96
+00:06:37,910 --> 00:06:41,200
+deviation is 0.
+
+97
+00:06:41,200 --> 00:06:45,140
+In the real world that
+essentially never happens.
+
+98
+00:06:45,140 --> 00:06:47,130
+We can write a formula
+for this.
+
+99
+00:06:47,130 --> 00:06:51,350
+Fortunately, it's not
+all about words.
+
+100
+00:06:51,350 --> 00:06:56,270
+And we can say the standard
+deviation of x, where x is a
+
+101
+00:06:56,270 --> 00:06:58,440
+set of trials--
+
+102
+00:06:58,440 --> 00:07:02,770
+sigma is usually used
+to talk about that--
+
+103
+00:07:02,770 --> 00:07:09,600
+is equal to the square root of
+1 over the absolute value of
+
+104
+00:07:09,600 --> 00:07:10,720
+the length of x.
+
+105
+00:07:10,720 --> 00:07:21,960
+So that's 1 over the number of
+trials times the summation of
+
+106
+00:07:21,960 --> 00:07:28,730
+the value of each trial, little
+x and big X, of x minus
+
+107
+00:07:28,730 --> 00:07:37,140
+mu squared, where
+mu is the mean.
+
+108
+00:07:37,140 --> 00:07:43,500
+
+109
+00:07:43,500 --> 00:07:48,090
+And as I said, that's the
+cardinality of x.
+
+110
+00:07:48,090 --> 00:07:50,570
+Well, so that's a formula.
+
+111
+00:07:50,570 --> 00:07:53,510
+And those of you are majoring
+in math are
+
+112
+00:07:53,510 --> 00:07:55,080
+going to love that.
+
+113
+00:07:55,080 --> 00:07:58,890
+But for those of you who are
+more computationally oriented,
+
+114
+00:07:58,890 --> 00:08:02,850
+I recommend you just take
+a look at the code.
+
+115
+00:08:02,850 --> 00:08:06,225
+So here's an implementation
+of the standard deviation.
+
+116
+00:08:06,225 --> 00:08:09,660
+
+117
+00:08:09,660 --> 00:08:12,840
+So the standard deviation
+of x is equal--
+
+118
+00:08:12,840 --> 00:08:16,040
+start by getting the mean of x,
+which is by summing x and
+
+119
+00:08:16,040 --> 00:08:19,020
+dividing it by the
+length of x.
+
+120
+00:08:19,020 --> 00:08:21,870
+Then I'm just going to sum all
+the values in x and do the
+
+121
+00:08:21,870 --> 00:08:23,760
+computation.
+
+122
+00:08:23,760 --> 00:08:28,540
+So that code and that formula
+are the same thing.
+
+123
+00:08:28,540 --> 00:08:32,179
+
+124
+00:08:32,179 --> 00:08:34,299
+All right, now we know what
+standard deviation means.
+
+125
+00:08:34,299 --> 00:08:35,770
+What are we going
+to do with it?
+
+126
+00:08:35,770 --> 00:08:39,340
+
+127
+00:08:39,340 --> 00:08:45,210
+We're going to use it to look
+at the relationship between
+
+128
+00:08:45,210 --> 00:08:48,690
+the number of samples we've
+looked at and how much
+
+129
+00:08:48,690 --> 00:08:52,170
+confidence we should
+have in the answer.
+
+130
+00:08:52,170 --> 00:08:56,630
+So we'll do this again looking
+at a bunch of code.
+
+131
+00:08:56,630 --> 00:09:09,410
+So I've got this function flip
+plot, which doesn't quite fit
+
+132
+00:09:09,410 --> 00:09:11,760
+in the screen, but that's OK.
+
+133
+00:09:11,760 --> 00:09:14,750
+It's not very interesting
+in the details.
+
+134
+00:09:14,750 --> 00:09:19,170
+What it does is it runs multiple
+trials of some number
+
+135
+00:09:19,170 --> 00:09:24,750
+of coin flips and plots a bunch
+of values about the
+
+136
+00:09:24,750 --> 00:09:29,450
+relative frequency of heads
+and tails and also the
+
+137
+00:09:29,450 --> 00:09:31,160
+standard deviation of each.
+
+138
+00:09:31,160 --> 00:09:36,400
+
+139
+00:09:36,400 --> 00:09:41,150
+So again nothing very exciting,
+in the code I'm just
+
+140
+00:09:41,150 --> 00:09:44,790
+going to keep track for
+all these trials.
+
+141
+00:09:44,790 --> 00:09:47,710
+The minimum and the
+maximum exponent.
+
+142
+00:09:47,710 --> 00:09:51,770
+I'm using that so I can run
+a lot of trials quickly.
+
+143
+00:09:51,770 --> 00:09:56,120
+The mean ratios, the
+differences, and the standard
+
+144
+00:09:56,120 --> 00:10:00,900
+deviations for exponent
+in range.
+
+145
+00:10:00,900 --> 00:10:04,800
+Minimum exponent to maximum
+exponent plus 1.
+
+146
+00:10:04,800 --> 00:10:07,520
+I'm going to build an x-axis.
+
+147
+00:10:07,520 --> 00:10:11,050
+So this is going to be
+the number of flips.
+
+148
+00:10:11,050 --> 00:10:13,250
+And then for the number of flips
+I'm going to run a bunch
+
+149
+00:10:13,250 --> 00:10:17,130
+of tests and get the ratios
+of heads to tails and the
+
+150
+00:10:17,130 --> 00:10:20,320
+absolute difference between
+heads and tails.
+
+151
+00:10:20,320 --> 00:10:23,730
+And then, I'm going to do
+a bunch of plotting.
+
+152
+00:10:23,730 --> 00:10:27,360
+And again, what I want you to
+notice is when I'm doing the
+
+153
+00:10:27,360 --> 00:10:29,670
+plotting, I'm going to
+label the axes and
+
+154
+00:10:29,670 --> 00:10:31,640
+put some titles on.
+
+155
+00:10:31,640 --> 00:10:37,550
+And I'm also going to use
+semilog because given that I'm
+
+156
+00:10:37,550 --> 00:10:41,290
+looking at different powers, it
+would compress everything
+
+157
+00:10:41,290 --> 00:10:45,010
+on the left if I would
+just use linear.
+
+158
+00:10:45,010 --> 00:10:45,210
+All right.
+
+159
+00:10:45,210 --> 00:10:46,460
+Let's run it.
+
+160
+00:10:46,460 --> 00:10:49,690
+
+161
+00:10:49,690 --> 00:10:53,280
+Actually, let's comment out the
+code we need to run it.
+
+162
+00:10:53,280 --> 00:10:59,820
+
+163
+00:10:59,820 --> 00:11:08,210
+So I'm going to call flip plot
+with a minimum exponent of 4,
+
+164
+00:11:08,210 --> 00:11:10,960
+a maximum exponent of 20.
+
+165
+00:11:10,960 --> 00:11:11,700
+That's pretty high.
+
+166
+00:11:11,700 --> 00:11:13,990
+And I'm going to
+run 20 trials.
+
+167
+00:11:13,990 --> 00:11:17,990
+This could take a little while
+to run, but not too long.
+
+168
+00:11:17,990 --> 00:11:20,230
+And it'll give us some pretty
+pictures to look at.
+
+169
+00:11:20,230 --> 00:11:23,050
+
+170
+00:11:23,050 --> 00:11:24,780
+Give me a chance to have
+a drink of water.
+
+171
+00:11:24,780 --> 00:11:33,800
+
+172
+00:11:33,800 --> 00:11:36,780
+I know the suspense is killing
+you as to what these plots are
+
+173
+00:11:36,780 --> 00:11:37,860
+going to look like.
+
+174
+00:11:37,860 --> 00:11:39,700
+Here they are.
+
+175
+00:11:39,700 --> 00:11:41,240
+All right.
+
+176
+00:11:41,240 --> 00:11:44,280
+So if we look at plot
+one, that's the
+
+177
+00:11:44,280 --> 00:11:45,755
+ratio of heads to tails.
+
+178
+00:11:45,755 --> 00:11:48,520
+
+179
+00:11:48,520 --> 00:11:53,660
+And as you can see, it bounces
+around in the beginning.
+
+180
+00:11:53,660 --> 00:12:02,560
+When we have a small number of
+flips, the ratio moves a bit.
+
+181
+00:12:02,560 --> 00:12:06,580
+But as I get to a lot of flips
+out here, 10 to the 5th, 10 to
+
+182
+00:12:06,580 --> 00:12:10,470
+the 6th, what we're seeing is
+it begins to stabilize.
+
+183
+00:12:10,470 --> 00:12:13,120
+We don't get much difference.
+
+184
+00:12:13,120 --> 00:12:15,350
+Kind of interesting where
+it's stabilizing.
+
+185
+00:12:15,350 --> 00:12:19,130
+Maybe not where we'd
+expect it.
+
+186
+00:12:19,130 --> 00:12:21,970
+I would have guessed it would
+stabilize a little closer to
+
+187
+00:12:21,970 --> 00:12:26,280
+one than it did as
+I got out here.
+
+188
+00:12:26,280 --> 00:12:28,630
+And maybe I have
+an unfair coin.
+
+189
+00:12:28,630 --> 00:12:30,640
+That's the problem with running
+these experiments in
+
+190
+00:12:30,640 --> 00:12:33,450
+real time that I can't
+necessarily get
+
+191
+00:12:33,450 --> 00:12:36,030
+the answer I want.
+
+192
+00:12:36,030 --> 00:12:38,360
+But for the most part, actually,
+it looks much better
+
+193
+00:12:38,360 --> 00:12:41,100
+on my screen than it does
+on your screen.
+
+194
+00:12:41,100 --> 00:12:42,710
+In fact, in my screen,
+it looks like it's
+
+195
+00:12:42,710 --> 00:12:45,110
+very close to 1.
+
+196
+00:12:45,110 --> 00:12:45,560
+I don't know.
+
+197
+00:12:45,560 --> 00:12:49,340
+I guess there's some
+distortion here.
+
+198
+00:12:49,340 --> 00:12:50,590
+Think 1.
+
+199
+00:12:50,590 --> 00:12:53,740
+
+200
+00:12:53,740 --> 00:13:00,100
+And if we look at the standard
+deviation of the ratio of
+
+201
+00:13:00,100 --> 00:13:07,400
+heads to tails, what we're
+seeing is that's also dropping
+
+202
+00:13:07,400 --> 00:13:13,540
+from somewhere up here around
+10 to the 0 down to 10
+
+203
+00:13:13,540 --> 00:13:14,550
+to the minus 3.
+
+204
+00:13:14,550 --> 00:13:17,820
+And it's dropping pretty
+steadily as I increase the
+
+205
+00:13:17,820 --> 00:13:19,070
+number of trials.
+
+206
+00:13:19,070 --> 00:13:21,200
+
+207
+00:13:21,200 --> 00:13:25,710
+That's really what you would
+hope to see and expect to see
+
+208
+00:13:25,710 --> 00:13:28,860
+that not the number of trials,
+the number of flips.
+
+209
+00:13:28,860 --> 00:13:29,690
+Sorry.
+
+210
+00:13:29,690 --> 00:13:34,790
+As I flip more coins, the
+variance between trials should
+
+211
+00:13:34,790 --> 00:13:40,650
+get smaller because in some
+sense, randomness is playing a
+
+212
+00:13:40,650 --> 00:13:43,310
+less important role.
+
+213
+00:13:43,310 --> 00:13:47,220
+The more random trials you do,
+the more likely you are to get
+
+214
+00:13:47,220 --> 00:13:51,800
+something that's actually
+representative of the truth.
+
+215
+00:13:51,800 --> 00:13:55,330
+And therefore, you would
+expect the standard
+
+216
+00:13:55,330 --> 00:13:57,300
+deviation to drop.
+
+217
+00:13:57,300 --> 00:14:01,550
+
+218
+00:14:01,550 --> 00:14:01,760
+All right.
+
+219
+00:14:01,760 --> 00:14:06,890
+Now, what we're saying here is
+because the standard deviation
+
+220
+00:14:06,890 --> 00:14:12,520
+is dropping, not only are we
+getting something closer to
+
+221
+00:14:12,520 --> 00:14:19,650
+the right answer but perhaps
+more importantly, we have
+
+222
+00:14:19,650 --> 00:14:24,640
+better reason to believe we're
+seeing the right answer.
+
+223
+00:14:24,640 --> 00:14:25,550
+That's very important.
+
+224
+00:14:25,550 --> 00:14:27,440
+That's where I started
+this lecture.
+
+225
+00:14:27,440 --> 00:14:29,420
+It's not good enough
+to get lucky and
+
+226
+00:14:29,420 --> 00:14:31,190
+get the correct answer.
+
+227
+00:14:31,190 --> 00:14:34,850
+You have to have evidence that
+can convince somebody that
+
+228
+00:14:34,850 --> 00:14:37,590
+really is the correct answer.
+
+229
+00:14:37,590 --> 00:14:42,400
+And the evidence here is the
+small standard deviation.
+
+230
+00:14:42,400 --> 00:14:46,120
+Let's look at a couple
+of the other figures.
+
+231
+00:14:46,120 --> 00:14:49,050
+So here's Figure (3).
+
+232
+00:14:49,050 --> 00:14:51,730
+This is the mean of the absolute
+difference between
+
+233
+00:14:51,730 --> 00:14:54,900
+heads and tails.
+
+234
+00:14:54,900 --> 00:14:56,160
+Not too surprisingly--
+
+235
+00:14:56,160 --> 00:14:59,260
+we saw this in the
+last lecture--
+
+236
+00:14:59,260 --> 00:15:04,550
+as I flip more coins, the
+mean difference is
+
+237
+00:15:04,550 --> 00:15:05,800
+going to get bigger.
+
+238
+00:15:05,800 --> 00:15:07,970
+
+239
+00:15:07,970 --> 00:15:08,510
+That's right.
+
+240
+00:15:08,510 --> 00:15:11,150
+We expect the ratio to get
+smaller, but we expected the
+
+241
+00:15:11,150 --> 00:15:13,450
+mean difference to get bigger.
+
+242
+00:15:13,450 --> 00:15:17,030
+On the other hand, let's
+look at Figure (4).
+
+243
+00:15:17,030 --> 00:15:20,710
+
+244
+00:15:20,710 --> 00:15:25,790
+What we're looking here is
+this difference in the
+
+245
+00:15:25,790 --> 00:15:27,040
+standard deviations.
+
+246
+00:15:27,040 --> 00:15:30,060
+
+247
+00:15:30,060 --> 00:15:36,080
+And interestingly, what we're
+seeing is the more coins I
+
+248
+00:15:36,080 --> 00:15:40,560
+flip, the bigger the standard
+deviation is.
+
+249
+00:15:40,560 --> 00:15:45,730
+
+250
+00:15:45,730 --> 00:15:49,520
+Well, this is kind
+of interesting.
+
+251
+00:15:49,520 --> 00:15:52,520
+I look at it, and I sort of said
+that when the standard
+
+252
+00:15:52,520 --> 00:15:57,610
+deviation is small, we think
+that the variance is small.
+
+253
+00:15:57,610 --> 00:16:00,840
+And therefore, the results
+are credible.
+
+254
+00:16:00,840 --> 00:16:03,970
+When the standard deviation
+is large, we think
+
+255
+00:16:03,970 --> 00:16:05,250
+the variance is large.
+
+256
+00:16:05,250 --> 00:16:09,520
+And therefore, the results
+are maybe incredible.
+
+257
+00:16:09,520 --> 00:16:13,590
+Well, I said that a
+little bit wrong.
+
+258
+00:16:13,590 --> 00:16:15,880
+I tried to say it right
+the first time.
+
+259
+00:16:15,880 --> 00:16:19,820
+What I have to ask is not is the
+standard deviation large
+
+260
+00:16:19,820 --> 00:16:25,630
+or small, but is it relatively
+large a relatively small?
+
+261
+00:16:25,630 --> 00:16:26,960
+Relative to what?
+
+262
+00:16:26,960 --> 00:16:29,880
+Relative to the mean.
+
+263
+00:16:29,880 --> 00:16:37,120
+If the mean is a million, and
+the standard deviation is 20,
+
+264
+00:16:37,120 --> 00:16:41,140
+it's a relatively small
+standard deviation.
+
+265
+00:16:41,140 --> 00:16:44,770
+If the mean is 10, and the
+standard deviation is 20, then
+
+266
+00:16:44,770 --> 00:16:46,020
+it's enormous.
+
+267
+00:16:46,020 --> 00:16:47,900
+
+268
+00:16:47,900 --> 00:16:49,320
+So it doesn't make sense.
+
+269
+00:16:49,320 --> 00:16:49,900
+And we saw this.
+
+270
+00:16:49,900 --> 00:16:52,370
+We looked at quizzes.
+
+271
+00:16:52,370 --> 00:16:57,800
+If the mean score on Quiz 1
+were 70 and the standard
+
+272
+00:16:57,800 --> 00:17:00,920
+deviation were 5, we'd
+say OK, it's pretty
+
+273
+00:17:00,920 --> 00:17:04,130
+packed around the mean.
+
+274
+00:17:04,130 --> 00:17:09,700
+If the mean score were 10, which
+maybe is closer to the
+
+275
+00:17:09,700 --> 00:17:14,140
+truth, and the standard
+deviation were 5, then we'd
+
+276
+00:17:14,140 --> 00:17:17,270
+say it's not really packed
+around the mean.
+
+277
+00:17:17,270 --> 00:17:20,540
+So we have to always look at it
+relative or think about it
+
+278
+00:17:20,540 --> 00:17:23,839
+relative to that.
+
+279
+00:17:23,839 --> 00:17:30,630
+Now the good news is we have,
+again, a mathematical formula
+
+280
+00:17:30,630 --> 00:17:31,880
+that lets us do that.
+
+281
+00:17:31,880 --> 00:17:35,770
+
+282
+00:17:35,770 --> 00:17:38,770
+Get rid of all those figures
+for the moment.
+
+283
+00:17:38,770 --> 00:17:41,610
+And that formula is called the
+coefficient of variation.
+
+284
+00:17:41,610 --> 00:18:00,320
+
+285
+00:18:00,320 --> 00:18:04,920
+For reasons I don't fully
+understand, this is
+
+286
+00:18:04,920 --> 00:18:06,210
+typically not used.
+
+287
+00:18:06,210 --> 00:18:08,990
+People always talk about
+the standard deviation.
+
+288
+00:18:08,990 --> 00:18:12,180
+But in many cases, it's the
+coefficient of variation that
+
+289
+00:18:12,180 --> 00:18:15,710
+really is a more
+useful measure.
+
+290
+00:18:15,710 --> 00:18:20,450
+And it's simply the standard
+deviation divided by the mean.
+
+291
+00:18:20,450 --> 00:18:32,500
+
+292
+00:18:32,500 --> 00:18:34,685
+So that let's us talk
+about the relative
+
+293
+00:18:34,685 --> 00:18:36,270
+variance, if you will.
+
+294
+00:18:36,270 --> 00:18:39,440
+
+295
+00:18:39,440 --> 00:18:45,440
+The nice thing about doing
+this is it lets us relate
+
+296
+00:18:45,440 --> 00:18:48,730
+different datasets with
+different means and think
+
+297
+00:18:48,730 --> 00:18:52,930
+about how much they vary
+relative to each other.
+
+298
+00:18:52,930 --> 00:18:56,190
+
+299
+00:18:56,190 --> 00:18:59,510
+So if we think about it--
+
+300
+00:18:59,510 --> 00:19:07,970
+usually we argue in that if
+it's less than 1, we think
+
+301
+00:19:07,970 --> 00:19:09,296
+about that as low variance.
+
+302
+00:19:09,296 --> 00:19:18,060
+
+303
+00:19:18,060 --> 00:19:20,740
+Now there should be some
+warnings that come with the
+
+304
+00:19:20,740 --> 00:19:22,640
+coefficient of variation.
+
+305
+00:19:22,640 --> 00:19:25,120
+And these are some of the
+reasons people don't use it as
+
+306
+00:19:25,120 --> 00:19:28,620
+often because they don't
+want to bother
+
+307
+00:19:28,620 --> 00:19:31,030
+giving the warning labels.
+
+308
+00:19:31,030 --> 00:19:38,040
+If the mean is near 0, small
+changes in the mean are going
+
+309
+00:19:38,040 --> 00:19:42,920
+to lead to large changes in the
+coefficient of variation.
+
+310
+00:19:42,920 --> 00:19:46,620
+They're not necessarily
+very meaningful.
+
+311
+00:19:46,620 --> 00:19:51,880
+So when the mean is near 0, the
+coefficient of variation
+
+312
+00:19:51,880 --> 00:19:53,610
+is something you need
+to think about with
+
+313
+00:19:53,610 --> 00:19:56,730
+several grains of salt.
+
+314
+00:19:56,730 --> 00:19:57,400
+Makes sense.
+
+315
+00:19:57,400 --> 00:20:01,170
+You're dividing by something
+near 0, a small change is
+
+316
+00:20:01,170 --> 00:20:04,410
+going to produce
+something big.
+
+317
+00:20:04,410 --> 00:20:08,606
+Perhaps more importantly,
+or equally importantly--
+
+318
+00:20:08,606 --> 00:20:11,980
+and this is something we're
+going to talk about later--
+
+319
+00:20:11,980 --> 00:20:16,460
+is that unlike the standard
+deviation, the coefficient of
+
+320
+00:20:16,460 --> 00:20:19,400
+variation cannot be used to
+
+321
+00:20:19,400 --> 00:20:20,975
+construct confidence intervals.
+
+322
+00:20:20,975 --> 00:20:30,340
+
+323
+00:20:30,340 --> 00:20:33,880
+I know we haven't talked about
+confidence intervals yet, but
+
+324
+00:20:33,880 --> 00:20:35,130
+we will shortly.
+
+325
+00:20:35,130 --> 00:20:43,980
+
+326
+00:20:43,980 --> 00:20:44,066
+All right.
+
+327
+00:20:44,066 --> 00:20:47,040
+By now, you've got to be
+tremendously bored with
+
+328
+00:20:47,040 --> 00:20:48,560
+flipping coins.
+
+329
+00:20:48,560 --> 00:20:50,830
+Nevertheless, I'm going to ask
+you to look at one more coin
+
+330
+00:20:50,830 --> 00:20:52,290
+flipping simulation.
+
+331
+00:20:52,290 --> 00:20:55,170
+And then, I promise we'll
+change the topic.
+
+332
+00:20:55,170 --> 00:20:59,350
+And this is to show you some
+more aspects of the plotting
+
+333
+00:20:59,350 --> 00:21:00,600
+facilities in PyLab.
+
+334
+00:21:00,600 --> 00:21:11,320
+
+335
+00:21:11,320 --> 00:21:14,140
+So I'm going to just flip
+a bunch of coins, run a
+
+336
+00:21:14,140 --> 00:21:14,890
+simulation.
+
+337
+00:21:14,890 --> 00:21:18,030
+You've seen this a
+zillion times.
+
+338
+00:21:18,030 --> 00:21:19,430
+And then, we'll make
+some plots.
+
+339
+00:21:19,430 --> 00:21:24,720
+
+340
+00:21:24,720 --> 00:21:29,970
+And this is really kind of
+the interesting part.
+
+341
+00:21:29,970 --> 00:21:32,233
+What I want you to notice
+about this--
+
+342
+00:21:32,233 --> 00:21:35,220
+
+343
+00:21:35,220 --> 00:21:38,830
+let's take a look at here.
+
+344
+00:21:38,830 --> 00:21:43,720
+So now we have been
+plotting curves.
+
+345
+00:21:43,720 --> 00:21:45,165
+Here we're going to
+plot a histogram.
+
+346
+00:21:45,165 --> 00:21:47,940
+
+347
+00:21:47,940 --> 00:21:52,720
+So I'm going to give a set of
+values, a set of y values.
+
+348
+00:21:52,720 --> 00:21:56,470
+In this case the fraction
+of heads.
+
+349
+00:21:56,470 --> 00:22:01,310
+And a number of bins in which
+to do the histogram.
+
+350
+00:22:01,310 --> 00:22:04,960
+So let's look a little
+example first here
+
+351
+00:22:04,960 --> 00:22:06,335
+independent of this program.
+
+352
+00:22:06,335 --> 00:22:22,040
+
+353
+00:22:22,040 --> 00:22:22,380
+Oops.
+
+354
+00:22:22,380 --> 00:22:23,630
+Wrong way.
+
+355
+00:22:23,630 --> 00:22:27,540
+
+356
+00:22:27,540 --> 00:22:30,120
+So I'm going to set l, a list,
+equals 1, 2, 3, 3, 3, 4.
+
+357
+00:22:30,120 --> 00:22:32,720
+
+358
+00:22:32,720 --> 00:22:36,070
+And then, I'm just going to plot
+a histogram with 6 bins.
+
+359
+00:22:36,070 --> 00:22:37,320
+And then show it.
+
+360
+00:22:37,320 --> 00:22:43,960
+
+361
+00:22:43,960 --> 00:22:45,710
+I've done something I'm
+not supposed to do.
+
+362
+00:22:45,710 --> 00:22:46,950
+I just know title.
+
+363
+00:22:46,950 --> 00:22:47,600
+There's no x-label.
+
+364
+00:22:47,600 --> 00:22:48,890
+No y-label.
+
+365
+00:22:48,890 --> 00:22:51,420
+That's because this is
+totally meaningless.
+
+366
+00:22:51,420 --> 00:22:54,150
+I just wanted to show you
+how histograms work.
+
+367
+00:22:54,150 --> 00:22:58,010
+And what you'll see here is that
+it's shown that I've got
+
+368
+00:22:58,010 --> 00:23:02,850
+three instances of this
+value, of 3, and one
+
+369
+00:23:02,850 --> 00:23:03,770
+of everything else.
+
+370
+00:23:03,770 --> 00:23:05,390
+And it's just giving me
+essentially a bar
+
+371
+00:23:05,390 --> 00:23:07,480
+chart, if you will.
+
+372
+00:23:07,480 --> 00:23:10,390
+Again many, many plotting
+capabilities
+
+373
+00:23:10,390 --> 00:23:12,820
+you'll see on the website.
+
+374
+00:23:12,820 --> 00:23:14,470
+This is just a simple one.
+
+375
+00:23:14,470 --> 00:23:17,910
+One I like to use and use
+fairly frequently.
+
+376
+00:23:17,910 --> 00:23:20,710
+
+377
+00:23:20,710 --> 00:23:28,130
+Some other things I want to
+show you here is I'm using
+
+378
+00:23:28,130 --> 00:23:31,610
+xlim and ylim.
+
+379
+00:23:31,610 --> 00:23:41,780
+So what we could do here is this
+is setting the limits of
+
+380
+00:23:41,780 --> 00:23:45,740
+the x and y-axis, rather than
+using defaults saying the
+
+381
+00:23:45,740 --> 00:23:48,420
+lowest value should be this
+thing, the variable called
+
+382
+00:23:48,420 --> 00:23:52,650
+xmin, which I've computed
+up here.
+
+383
+00:23:52,650 --> 00:23:56,090
+And the highest ymin.
+
+384
+00:23:56,090 --> 00:23:59,035
+What you'll see if we
+go up a little bit--
+
+385
+00:23:59,035 --> 00:24:12,250
+
+386
+00:24:12,250 --> 00:24:15,670
+so I'm getting the fraction of
+heads1 and computing the mean
+
+387
+00:24:15,670 --> 00:24:18,570
+1, and the standard
+deviation 1.
+
+388
+00:24:18,570 --> 00:24:21,120
+Then I'm going to plot a
+histogram of the way
+
+389
+00:24:21,120 --> 00:24:23,010
+we looked at it.
+
+390
+00:24:23,010 --> 00:24:27,870
+And then what I'm going to do
+is say xmin and xmax is
+
+391
+00:24:27,870 --> 00:24:29,120
+pyLab.xlim.
+
+392
+00:24:29,120 --> 00:24:31,430
+
+393
+00:24:31,430 --> 00:24:37,470
+If you call xlim with no
+arguments, what it will return
+
+394
+00:24:37,470 --> 00:24:42,860
+is the minimum x value and the
+minimum y value of the current
+
+395
+00:24:42,860 --> 00:24:46,660
+plot, the current figure.
+
+396
+00:24:46,660 --> 00:24:52,890
+So now I stored the minimum
+x values and the maximum x
+
+397
+00:24:52,890 --> 00:24:54,590
+values to the current one.
+
+398
+00:24:54,590 --> 00:24:58,000
+And I did the same
+thing for y.
+
+399
+00:24:58,000 --> 00:25:00,480
+And then going to plot
+the figure here.
+
+400
+00:25:00,480 --> 00:25:01,660
+Then I'm going to
+run it again.
+
+401
+00:25:01,660 --> 00:25:05,580
+I'm going to run another
+simulation, getting fracHeads
+
+402
+00:25:05,580 --> 00:25:09,910
+2, mean 2, standard
+deviation 2.
+
+403
+00:25:09,910 --> 00:25:11,620
+Going to plot the histograms.
+
+404
+00:25:11,620 --> 00:25:21,160
+But then I'm going to set, for
+the new one, the x limit of
+
+405
+00:25:21,160 --> 00:25:25,070
+this to the previous ones
+that I saved from
+
+406
+00:25:25,070 --> 00:25:27,050
+the previous figure.
+
+407
+00:25:27,050 --> 00:25:28,940
+Why am I doing that?
+
+408
+00:25:28,940 --> 00:25:33,160
+Because I want to be able to
+compare the two figures.
+
+409
+00:25:33,160 --> 00:25:36,400
+As we'll see when we have our
+lecture on how to lie with
+
+410
+00:25:36,400 --> 00:25:41,340
+data, a great way to fool people
+with figures is to
+
+411
+00:25:41,340 --> 00:25:45,600
+subtly change the range
+of one of the axes.
+
+412
+00:25:45,600 --> 00:25:47,470
+And then you look at things
+and wow, that's really
+
+413
+00:25:47,470 --> 00:25:50,220
+different or they're
+really the same.
+
+414
+00:25:50,220 --> 00:25:53,280
+When in fact, neither
+conclusion is true.
+
+415
+00:25:53,280 --> 00:25:55,590
+It's just that they've been
+normalized to either look the
+
+416
+00:25:55,590 --> 00:25:57,440
+same or look different.
+
+417
+00:25:57,440 --> 00:25:59,410
+So it's kind of cheating.
+
+418
+00:25:59,410 --> 00:26:00,970
+And then we'll do it.
+
+419
+00:26:00,970 --> 00:26:02,800
+So now let's run it and
+see what we get.
+
+420
+00:26:02,800 --> 00:26:08,440
+
+421
+00:26:08,440 --> 00:26:10,580
+I don't need this little
+silly thing first.
+
+422
+00:26:10,580 --> 00:26:18,650
+
+423
+00:26:18,650 --> 00:26:20,300
+Let's see.
+
+424
+00:26:20,300 --> 00:26:22,100
+It's going to take a
+long time, maybe.
+
+425
+00:26:22,100 --> 00:26:33,920
+
+426
+00:26:33,920 --> 00:26:35,120
+That's one way to fill
+up a lecture.
+
+427
+00:26:35,120 --> 00:26:38,380
+Just run simulations that
+take a long time to run.
+
+428
+00:26:38,380 --> 00:26:41,200
+Much easier to prepare
+than actual material.
+
+429
+00:26:41,200 --> 00:26:43,015
+But nevertheless, shouldn't
+take forever.
+
+430
+00:26:43,015 --> 00:26:48,310
+
+431
+00:26:48,310 --> 00:26:49,520
+I may have said this before.
+
+432
+00:26:49,520 --> 00:26:51,130
+I have two computers.
+
+433
+00:26:51,130 --> 00:26:54,010
+I have a fast one that sits at
+my desk that I use to prepare
+
+434
+00:26:54,010 --> 00:26:56,250
+my lectures and a slower
+one that I
+
+435
+00:26:56,250 --> 00:26:58,250
+use to give the lectures.
+
+436
+00:26:58,250 --> 00:27:00,410
+I should probably be testing
+all these things out on the
+
+437
+00:27:00,410 --> 00:27:04,070
+slow computer before
+making you wait.
+
+438
+00:27:04,070 --> 00:27:06,030
+But really, it's going to stop.
+
+439
+00:27:06,030 --> 00:27:07,280
+I promise.
+
+440
+00:27:07,280 --> 00:27:09,840
+
+441
+00:27:09,840 --> 00:27:10,280
+Ah.
+
+442
+00:27:10,280 --> 00:27:11,710
+All right.
+
+443
+00:27:11,710 --> 00:27:14,460
+So we'll look at these.
+
+444
+00:27:14,460 --> 00:27:19,560
+So Figure (1) has got 100,000
+trials of 10 flips each.
+
+445
+00:27:19,560 --> 00:27:24,440
+And Figure (2), 100,000 trials
+of a 1,000 flips each.
+
+446
+00:27:24,440 --> 00:27:26,710
+And let's look at the two
+figures side by side.
+
+447
+00:27:26,710 --> 00:27:34,870
+
+448
+00:27:34,870 --> 00:27:37,830
+Make them a little smaller so
+we can squeeze them both in.
+
+449
+00:27:37,830 --> 00:27:44,050
+
+450
+00:27:44,050 --> 00:27:46,780
+So what have we got here?
+
+451
+00:27:46,780 --> 00:27:50,120
+Notice if we look at these
+two plots, the means
+
+452
+00:27:50,120 --> 00:27:52,760
+are about the same.
+
+453
+00:27:52,760 --> 00:27:56,220
+0.5 and 0.499.
+
+454
+00:27:56,220 --> 00:27:57,470
+Not much difference.
+
+455
+00:27:57,470 --> 00:28:00,190
+
+456
+00:28:00,190 --> 00:28:04,480
+The standard deviations
+are quite different.
+
+457
+00:28:04,480 --> 00:28:07,380
+And again, you would
+expect that.
+
+458
+00:28:07,380 --> 00:28:11,090
+A 100 flips should have a lot
+higher standard deviation than
+
+459
+00:28:11,090 --> 00:28:13,410
+a 1,000 flips.
+
+460
+00:28:13,410 --> 00:28:16,590
+And indeed, it certainly does.
+
+461
+00:28:16,590 --> 00:28:20,600
+0.15 is a lot smaller
+than 0.05.
+
+462
+00:28:20,600 --> 00:28:24,140
+So that tells us
+something good.
+
+463
+00:28:24,140 --> 00:28:27,340
+It says, as we've discussed,
+that these results are more
+
+464
+00:28:27,340 --> 00:28:28,670
+credible than these results.
+
+465
+00:28:28,670 --> 00:28:31,670
+
+466
+00:28:31,670 --> 00:28:33,170
+Not to say that they're
+more accurate
+
+467
+00:28:33,170 --> 00:28:34,100
+because they're not really.
+
+468
+00:28:34,100 --> 00:28:35,480
+But they're more believable.
+
+469
+00:28:35,480 --> 00:28:37,950
+And that's what's important.
+
+470
+00:28:37,950 --> 00:28:45,750
+Notice also the spread of
+outcomes is much tighter here
+
+471
+00:28:45,750 --> 00:28:47,450
+than it is here.
+
+472
+00:28:47,450 --> 00:28:52,670
+Now, that's why I played
+with xlim.
+
+473
+00:28:52,670 --> 00:28:57,890
+If I used the default values, it
+would not have looked much
+
+474
+00:28:57,890 --> 00:29:01,650
+tighter when I put this up on
+the screen because it would
+
+475
+00:29:01,650 --> 00:29:03,510
+have said well, we don't have
+any values out here.
+
+476
+00:29:03,510 --> 00:29:06,130
+I don't need to display
+all of this.
+
+477
+00:29:06,130 --> 00:29:11,610
+And it would have then about the
+same visual width as this.
+
+478
+00:29:11,610 --> 00:29:14,950
+And therefore, potentially very
+deceptive when you just
+
+479
+00:29:14,950 --> 00:29:17,920
+stared at it if you didn't look
+carefully at the units on
+
+480
+00:29:17,920 --> 00:29:19,930
+the x-axis.
+
+481
+00:29:19,930 --> 00:29:23,360
+So what I did is since I knew
+I wanted to show you these
+
+482
+00:29:23,360 --> 00:29:26,740
+things side by side and make the
+point about how tight the
+
+483
+00:29:26,740 --> 00:29:35,340
+distribution is, I made both
+axes run the same length.
+
+484
+00:29:35,340 --> 00:29:37,825
+And therefore, produce
+comparable figures.
+
+485
+00:29:37,825 --> 00:29:42,410
+
+486
+00:29:42,410 --> 00:29:45,850
+I also, by the way, used xlim
+and ylim if you look at the
+
+487
+00:29:45,850 --> 00:29:50,320
+code, which you will have in
+your handout, to put this text
+
+488
+00:29:50,320 --> 00:29:56,170
+box in a place where it
+would be easy to see.
+
+489
+00:29:56,170 --> 00:30:00,410
+You can also use the fault of
+best, which often puts it in
+
+490
+00:30:00,410 --> 00:30:01,800
+the right place.
+
+491
+00:30:01,800 --> 00:30:05,070
+But not always.
+
+492
+00:30:05,070 --> 00:30:12,060
+The distribution of the results
+in both cases is close
+
+493
+00:30:12,060 --> 00:30:14,005
+to something called the
+normal distribution.
+
+494
+00:30:14,005 --> 00:30:23,320
+
+495
+00:30:23,320 --> 00:30:27,770
+And as we talk about things like
+standard deviation or a
+
+496
+00:30:27,770 --> 00:30:32,370
+coefficient of variation, we are
+talking about not just the
+
+497
+00:30:32,370 --> 00:30:35,370
+average value but the
+distribution of values in
+
+498
+00:30:35,370 --> 00:30:38,060
+these trials.
+
+499
+00:30:38,060 --> 00:30:42,360
+The normal distribution, which
+is very common, has some
+
+500
+00:30:42,360 --> 00:30:44,780
+interesting properties.
+
+501
+00:30:44,780 --> 00:30:58,250
+It always peaks at the mean and
+falls off symmetrically.
+
+502
+00:30:58,250 --> 00:31:08,760
+
+503
+00:31:08,760 --> 00:31:15,660
+The shape of the normal
+distribution, so I'm told,
+
+504
+00:31:15,660 --> 00:31:17,920
+looks something like this.
+
+505
+00:31:17,920 --> 00:31:22,990
+And there are people who imagine
+it looks like a bell.
+
+506
+00:31:22,990 --> 00:31:26,020
+And therefore, the normal
+distribution is often also
+
+507
+00:31:26,020 --> 00:31:29,270
+called the bell curve.
+
+508
+00:31:29,270 --> 00:31:30,280
+That's a terrible picture.
+
+509
+00:31:30,280 --> 00:31:31,530
+I'm going to get rid of it.
+
+510
+00:31:31,530 --> 00:31:34,510
+
+511
+00:31:34,510 --> 00:31:39,550
+And indeed, mathematicians
+will always call it this.
+
+512
+00:31:39,550 --> 00:31:43,520
+This is often what people
+use in the non-technical
+
+513
+00:31:43,520 --> 00:31:44,840
+literature.
+
+514
+00:31:44,840 --> 00:31:48,510
+There was, for example, a very
+controversial book called "The
+
+515
+00:31:48,510 --> 00:31:52,300
+Bell Curve," which I don't
+recommend reading.
+
+516
+00:31:52,300 --> 00:31:57,320
+
+517
+00:31:57,320 --> 00:31:57,515
+OK.
+
+518
+00:31:57,515 --> 00:32:03,980
+So this is not a perfect
+normal distribution.
+
+519
+00:32:03,980 --> 00:32:07,030
+
+520
+00:32:07,030 --> 00:32:11,640
+It's not really exactly
+symmetric.
+
+521
+00:32:11,640 --> 00:32:14,480
+We could zoom in on this one
+and see if it's better.
+
+522
+00:32:14,480 --> 00:32:15,790
+In fact, let me make
+that larger.
+
+523
+00:32:15,790 --> 00:32:17,040
+And then we'll zoom in on it.
+
+524
+00:32:17,040 --> 00:32:22,350
+
+525
+00:32:22,350 --> 00:32:24,860
+Now that we're not comparing the
+two, we can just zoom in
+
+526
+00:32:24,860 --> 00:32:26,370
+on the part we care about.
+
+527
+00:32:26,370 --> 00:32:29,200
+
+528
+00:32:29,200 --> 00:32:32,660
+And you can see again it's
+not perfectly symmetric.
+
+529
+00:32:32,660 --> 00:32:36,620
+But it's getting there.
+
+530
+00:32:36,620 --> 00:32:39,190
+And in fact, the trials
+are not very big.
+
+531
+00:32:39,190 --> 00:32:41,350
+Only a 1,000 flips.
+
+532
+00:32:41,350 --> 00:32:48,010
+If I did 100,000 trials of
+a 100,000 flips each, we
+
+533
+00:32:48,010 --> 00:32:49,180
+wouldn't finish the lecture.
+
+534
+00:32:49,180 --> 00:32:50,590
+It'd take too long.
+
+535
+00:32:50,590 --> 00:32:53,300
+But we'd get a very pretty
+looking curve.
+
+536
+00:32:53,300 --> 00:32:56,750
+And in fact, I have done that
+in the quiet of my office.
+
+537
+00:32:56,750 --> 00:32:59,780
+And it works very nicely.
+
+538
+00:32:59,780 --> 00:33:03,230
+And so in fact, we would be
+converging here on the normal
+
+539
+00:33:03,230 --> 00:33:04,480
+distribution.
+
+540
+00:33:04,480 --> 00:33:06,910
+
+541
+00:33:06,910 --> 00:33:11,130
+Normal distributions are
+frequently used in
+
+542
+00:33:11,130 --> 00:33:16,135
+constructing probabilistic
+models for two reasons.
+
+543
+00:33:16,135 --> 00:33:20,010
+
+544
+00:33:20,010 --> 00:33:28,740
+Reason one, is they have nice
+mathematical properties.
+
+545
+00:33:28,740 --> 00:33:31,475
+They're easy to reason about for
+reasons we'll see shortly.
+
+546
+00:33:31,475 --> 00:33:40,550
+
+547
+00:33:40,550 --> 00:33:43,760
+That's not good enough.
+
+548
+00:33:43,760 --> 00:33:46,590
+The curve where every value
+is the same has even nicer
+
+549
+00:33:46,590 --> 00:33:50,370
+mathematical properties
+but isn't very useful.
+
+550
+00:33:50,370 --> 00:33:54,295
+But the nice thing about normal
+distributions is --
+
+551
+00:33:54,295 --> 00:33:58,070
+
+552
+00:33:58,070 --> 00:34:01,145
+many naturally occurring
+instances.
+
+553
+00:34:01,145 --> 00:34:16,340
+
+554
+00:34:16,340 --> 00:34:19,659
+So let's first look at what
+makes them nice mathematically
+
+555
+00:34:19,659 --> 00:34:24,560
+and then let's look at
+where they occur.
+
+556
+00:34:24,560 --> 00:34:30,000
+So the nice thing about them
+mathematically is they can be
+
+557
+00:34:30,000 --> 00:34:46,690
+completely characterized by two
+parameters, the mean and
+
+558
+00:34:46,690 --> 00:34:47,940
+the standard deviation.
+
+559
+00:34:47,940 --> 00:34:53,530
+
+560
+00:34:53,530 --> 00:34:55,380
+Knowing these is the equivalent
+to knowing the
+
+561
+00:34:55,380 --> 00:34:56,630
+entire distribution.
+
+562
+00:34:56,630 --> 00:34:58,950
+
+563
+00:34:58,950 --> 00:35:06,110
+Furthermore, if we have a normal
+distribution, the mean
+
+564
+00:35:06,110 --> 00:35:09,280
+and the standard deviation
+can be used to
+
+565
+00:35:09,280 --> 00:35:10,925
+compute confidence intervals.
+
+566
+00:35:10,925 --> 00:35:23,580
+
+567
+00:35:23,580 --> 00:35:27,280
+So this is a very important
+concept.
+
+568
+00:35:27,280 --> 00:35:33,860
+One that you see all the time in
+the popular press but maybe
+
+569
+00:35:33,860 --> 00:35:37,850
+don't know what it actually
+means when you see it.
+
+570
+00:35:37,850 --> 00:35:42,020
+So instead of estimating
+an unknown parameter--
+
+571
+00:35:42,020 --> 00:35:43,990
+and that's, of course, all we've
+been doing with this
+
+572
+00:35:43,990 --> 00:35:46,080
+whole probability business.
+
+573
+00:35:46,080 --> 00:35:49,280
+So you get some unknown
+parameter like the probability
+
+574
+00:35:49,280 --> 00:35:53,730
+of getting a head or a tail, and
+we've been estimating it
+
+575
+00:35:53,730 --> 00:35:56,420
+using the various techniques.
+
+576
+00:35:56,420 --> 00:35:58,980
+And typically, you've been
+estimating it by a single
+
+577
+00:35:58,980 --> 00:36:04,900
+value, the mean of
+a set of trials.
+
+578
+00:36:04,900 --> 00:36:17,770
+A confidence interval instead
+allows us to estimate the
+
+579
+00:36:17,770 --> 00:36:24,300
+unknown parameter by providing
+a range that is likely to
+
+580
+00:36:24,300 --> 00:36:27,365
+contain the unknown value.
+
+581
+00:36:27,365 --> 00:36:46,940
+
+582
+00:36:46,940 --> 00:36:51,570
+And a confidence that
+the unknown value
+
+583
+00:36:51,570 --> 00:36:53,390
+lies within that range.
+
+584
+00:36:53,390 --> 00:37:04,180
+
+585
+00:37:04,180 --> 00:37:05,815
+It's called the confidence
+level.
+
+586
+00:37:05,815 --> 00:37:21,510
+
+587
+00:37:21,510 --> 00:37:26,400
+So for example, when you look at
+political polls, you might
+
+588
+00:37:26,400 --> 00:37:31,050
+see something that would say the
+candidate is likely to get
+
+589
+00:37:31,050 --> 00:37:35,710
+52% of the vote plus
+or minus 4%.
+
+590
+00:37:35,710 --> 00:37:38,520
+
+591
+00:37:38,520 --> 00:37:41,900
+So what does that mean?
+
+592
+00:37:41,900 --> 00:37:46,740
+Well, if somebody doesn't
+specify the confidence level,
+
+593
+00:37:46,740 --> 00:37:49,310
+they usually mean 5%.
+
+594
+00:37:49,310 --> 00:37:53,040
+
+595
+00:37:53,040 --> 00:37:59,480
+So what this says is that 95%
+percent of the time--
+
+596
+00:37:59,480 --> 00:38:03,460
+95th confidence interval--
+
+597
+00:38:03,460 --> 00:38:09,940
+if the election were actually
+conducted, the candidate would
+
+598
+00:38:09,940 --> 00:38:15,540
+get somewhere between 48%
+and 56% of the vote.
+
+599
+00:38:15,540 --> 00:38:20,350
+So 95% percent of the time, 95%
+percent of the elections,
+
+600
+00:38:20,350 --> 00:38:23,340
+the candidate would
+get between 48%
+
+601
+00:38:23,340 --> 00:38:26,640
+and 56% of the votes.
+
+602
+00:38:26,640 --> 00:38:30,070
+So we have two things, the range
+and our confidence that
+
+603
+00:38:30,070 --> 00:38:31,790
+the value will lie within
+that range.
+
+604
+00:38:31,790 --> 00:38:36,540
+
+605
+00:38:36,540 --> 00:38:39,770
+When they make those
+assumptions, when you see
+
+606
+00:38:39,770 --> 00:38:45,530
+something like that in the
+press, they are assuming that
+
+607
+00:38:45,530 --> 00:38:50,240
+elections are random trials
+that have a normal
+
+608
+00:38:50,240 --> 00:38:51,490
+distribution.
+
+609
+00:38:51,490 --> 00:38:54,020
+
+610
+00:38:54,020 --> 00:38:56,710
+That's an implicit assumption
+in the calculation
+
+611
+00:38:56,710 --> 00:38:57,960
+that tells us this.
+
+612
+00:38:57,960 --> 00:39:02,840
+
+613
+00:39:02,840 --> 00:39:07,960
+The nice thing here is that
+there is something called the
+
+614
+00:39:07,960 --> 00:39:14,686
+empirical rule, which is used
+for normal distributions.
+
+615
+00:39:14,686 --> 00:39:26,080
+
+616
+00:39:26,080 --> 00:39:30,790
+They give us a handy way to
+estimate confidence intervals
+
+617
+00:39:30,790 --> 00:39:32,745
+given the mean and the
+standard deviation.
+
+618
+00:39:32,745 --> 00:39:35,380
+
+619
+00:39:35,380 --> 00:39:39,540
+If we have a true normal
+distribution, then roughly
+
+620
+00:39:39,540 --> 00:39:50,590
+speaking, 68% of the data are
+within the one standard
+
+621
+00:39:50,590 --> 00:39:53,240
+deviation above the mean.
+
+622
+00:39:53,240 --> 00:40:03,430
+
+623
+00:40:03,430 --> 00:40:08,760
+And 95% percent within two
+standard deviations.
+
+624
+00:40:08,760 --> 00:40:15,520
+And almost all, 99.7%, will
+fall within three.
+
+625
+00:40:15,520 --> 00:40:18,580
+
+626
+00:40:18,580 --> 00:40:21,870
+These values are
+approximations.
+
+627
+00:40:21,870 --> 00:40:23,290
+They're not exactly right.
+
+628
+00:40:23,290 --> 00:40:26,170
+It's not exactly 68 and 95.
+
+629
+00:40:26,170 --> 00:40:30,970
+But they're good enough
+for government work.
+
+630
+00:40:30,970 --> 00:40:33,230
+So we can see this here.
+
+631
+00:40:33,230 --> 00:40:35,440
+And this is what people
+use when they
+
+632
+00:40:35,440 --> 00:40:38,950
+think about these things.
+
+633
+00:40:38,950 --> 00:40:40,290
+Now this may raise
+an interesting
+
+634
+00:40:40,290 --> 00:40:42,960
+question in your mind.
+
+635
+00:40:42,960 --> 00:40:45,860
+How do the pollsters
+go about finding
+
+636
+00:40:45,860 --> 00:40:49,160
+the standard deviation?
+
+637
+00:40:49,160 --> 00:40:54,170
+Do they go out and conduct
+a 100 separate polls and
+
+638
+00:40:54,170 --> 00:40:55,260
+then do some math?
+
+639
+00:40:55,260 --> 00:40:57,770
+Sort of what we've been doing.
+
+640
+00:40:57,770 --> 00:40:59,820
+You might hope so, but that's
+not what they do
+
+641
+00:40:59,820 --> 00:41:00,910
+because it's expensive.
+
+642
+00:41:00,910 --> 00:41:03,440
+And nobody wants to do that.
+
+643
+00:41:03,440 --> 00:41:07,390
+So they use another
+trick to estimate
+
+644
+00:41:07,390 --> 00:41:09,630
+the standard deviation.
+
+645
+00:41:09,630 --> 00:41:12,410
+Now, you're beginning to
+understand why these polls
+
+646
+00:41:12,410 --> 00:41:13,660
+aren't always right.
+
+647
+00:41:13,660 --> 00:41:16,660
+
+648
+00:41:16,660 --> 00:41:20,260
+And the trick they use for that
+is something called the
+
+649
+00:41:20,260 --> 00:41:31,600
+standard error, which
+is an estimate of
+
+650
+00:41:31,600 --> 00:41:34,290
+the standard deviation.
+
+651
+00:41:34,290 --> 00:41:39,090
+And you can only do this under
+the assumption that the errors
+
+652
+00:41:39,090 --> 00:41:44,790
+are normally distributed and
+also that the sample
+
+653
+00:41:44,790 --> 00:41:48,430
+population is small.
+
+654
+00:41:48,430 --> 00:41:50,010
+And I mean small, not large.
+
+655
+00:41:50,010 --> 00:41:53,235
+It's small relative to the
+actual population.
+
+656
+00:41:53,235 --> 00:41:56,030
+
+657
+00:41:56,030 --> 00:41:59,110
+So this gets us to one of the
+things we like about the
+
+658
+00:41:59,110 --> 00:42:04,720
+normal distribution that in
+fact, it's often an accurate
+
+659
+00:42:04,720 --> 00:42:06,650
+model of reality.
+
+660
+00:42:06,650 --> 00:42:10,060
+And when people have done polls
+over and over again,
+
+661
+00:42:10,060 --> 00:42:15,210
+they do discover that, indeed,
+the results are typically
+
+662
+00:42:15,210 --> 00:42:16,460
+normally distributed.
+
+663
+00:42:16,460 --> 00:42:19,900
+
+664
+00:42:19,900 --> 00:42:22,260
+So this is not a
+bad assumption.
+
+665
+00:42:22,260 --> 00:42:25,330
+Actually, it's a pretty
+good assumption.
+
+666
+00:42:25,330 --> 00:42:31,830
+So if we have p, which
+is equal to
+
+667
+00:42:31,830 --> 00:42:34,085
+the percentage sample.
+
+668
+00:42:34,085 --> 00:42:38,270
+
+669
+00:42:38,270 --> 00:42:50,090
+And we have n, which is equal to
+the sample size, we can say
+
+670
+00:42:50,090 --> 00:42:55,000
+that the standard error, which
+I'll write SE, is equal to the
+
+671
+00:42:55,000 --> 00:43:01,780
+formula p times 100--
+
+672
+00:43:01,780 --> 00:43:04,130
+because we're dealing
+with percentages--
+
+673
+00:43:04,130 --> 00:43:18,280
+minus p divided by n to
+the 1/2, the square
+
+674
+00:43:18,280 --> 00:43:19,530
+root of all of this.
+
+675
+00:43:19,530 --> 00:43:21,750
+
+676
+00:43:21,750 --> 00:43:29,900
+So if for example, a pollster
+were to sample 1,000 voters,
+
+677
+00:43:29,900 --> 00:43:33,020
+and 46% of them said
+that they'll
+
+678
+00:43:33,020 --> 00:43:36,010
+vote for Abraham Lincoln--
+
+679
+00:43:36,010 --> 00:43:38,250
+we should be so lucky that
+Abraham Lincoln were running
+
+680
+00:43:38,250 --> 00:43:40,040
+for office today--
+
+681
+00:43:40,040 --> 00:43:45,740
+the standard error would
+be roughly 1.58%.
+
+682
+00:43:45,740 --> 00:43:49,970
+We would interpret this to mean
+that in 95% percent of
+
+683
+00:43:49,970 --> 00:43:53,770
+the time, the true percentage
+of votes that Lincoln would
+
+684
+00:43:53,770 --> 00:43:58,420
+get is within two standard
+errors of 46%.
+
+685
+00:43:58,420 --> 00:44:03,820
+
+686
+00:44:03,820 --> 00:44:07,550
+I know that's a lot to
+swallow quickly.
+
+687
+00:44:07,550 --> 00:44:10,220
+So as always, we'll try and
+make sense of it by
+
+688
+00:44:10,220 --> 00:44:11,470
+looking at some code.
+
+689
+00:44:11,470 --> 00:44:16,430
+
+690
+00:44:16,430 --> 00:44:19,200
+By now, you've probably all
+figured out that I'm much more
+
+691
+00:44:19,200 --> 00:44:21,073
+comfortable with code than
+I am with formulas.
+
+692
+00:44:21,073 --> 00:44:28,660
+
+693
+00:44:28,660 --> 00:44:31,930
+So we're going to conduct
+a poll here.
+
+694
+00:44:31,930 --> 00:44:33,640
+Not really, we're going
+to pretend we're
+
+695
+00:44:33,640 --> 00:44:35,950
+conducting a poll.
+
+696
+00:44:35,950 --> 00:44:38,390
+n and p.
+
+697
+00:44:38,390 --> 00:44:39,680
+We'll start with no votes.
+
+698
+00:44:39,680 --> 00:44:46,160
+And for i in range n, if
+random.random is less than p
+
+699
+00:44:46,160 --> 00:44:50,660
+over 100, the number of votes
+will be increased by 1.
+
+700
+00:44:50,660 --> 00:44:53,600
+Otherwise, it will stay where
+it was and will return the
+
+701
+00:44:53,600 --> 00:44:55,610
+number of votes.
+
+702
+00:44:55,610 --> 00:44:57,880
+Nothing very dramatic.
+
+703
+00:44:57,880 --> 00:45:00,970
+And then, we'll test
+the error here.
+
+704
+00:45:00,970 --> 00:45:07,530
+So n equals 1,000, p equals 46,
+the percentage of votes
+
+705
+00:45:07,530 --> 00:45:11,600
+that we think Abraham Lincoln
+is going to get.
+
+706
+00:45:11,600 --> 00:45:14,000
+We'll run 1,000 trials.
+
+707
+00:45:14,000 --> 00:45:15,910
+Results equal that.
+
+708
+00:45:15,910 --> 00:45:19,970
+For t in range number of trials
+results.append, I'll
+
+709
+00:45:19,970 --> 00:45:22,090
+run the poll.
+
+710
+00:45:22,090 --> 00:45:24,210
+And we'll look at the standard
+deviation, and we'll look at
+
+711
+00:45:24,210 --> 00:45:26,180
+the results.
+
+712
+00:45:26,180 --> 00:45:28,220
+And we'll print the fraction
+of votes and
+
+713
+00:45:28,220 --> 00:45:31,580
+the number of polls.
+
+714
+00:45:31,580 --> 00:45:35,365
+All right, let's see what
+we get when we do this.
+
+715
+00:45:35,365 --> 00:45:52,250
+
+716
+00:45:52,250 --> 00:45:57,910
+Well, pretty darn close to
+a normal distribution.
+
+717
+00:45:57,910 --> 00:46:01,130
+
+718
+00:46:01,130 --> 00:46:02,380
+Kind of what we'd expect.
+
+719
+00:46:02,380 --> 00:46:09,320
+
+720
+00:46:09,320 --> 00:46:12,960
+The fraction of votes
+peaks at 46%.
+
+721
+00:46:12,960 --> 00:46:14,620
+Again what we'd expect.
+
+722
+00:46:14,620 --> 00:46:16,910
+But every once in while, it gets
+all the way out here to
+
+723
+00:46:16,910 --> 00:46:20,740
+50 and looks like Abe might
+actually win an election.
+
+724
+00:46:20,740 --> 00:46:22,590
+Highly unlikely in our
+modern society.
+
+725
+00:46:22,590 --> 00:46:25,440
+
+726
+00:46:25,440 --> 00:46:28,910
+And over here, he would
+lose a lot of them.
+
+727
+00:46:28,910 --> 00:46:33,120
+
+728
+00:46:33,120 --> 00:46:34,940
+If we look here, we'll
+see that the standard
+
+729
+00:46:34,940 --> 00:46:43,740
+deviation is 1.6.
+
+730
+00:46:43,740 --> 00:46:47,610
+So it turns out that the
+standard error, which you'll
+
+731
+00:46:47,610 --> 00:46:54,350
+remember we computed using
+that formula to be 1.58--
+
+732
+00:46:54,350 --> 00:46:56,200
+you may not remember it because
+I said it and didn't
+
+733
+00:46:56,200 --> 00:46:57,450
+write it down--
+
+734
+00:46:57,450 --> 00:47:00,250
+
+735
+00:47:00,250 --> 00:47:04,720
+is pretty darn close to 1.6.
+
+736
+00:47:04,720 --> 00:47:08,200
+So remember the standard error
+is an attempt to just use a
+
+737
+00:47:08,200 --> 00:47:11,330
+formula to estimate
+what the standard
+
+738
+00:47:11,330 --> 00:47:14,040
+deviation is going to be.
+
+739
+00:47:14,040 --> 00:47:17,490
+And in fact, we use this
+formula, very simple formula,
+
+740
+00:47:17,490 --> 00:47:19,460
+to guess what it would be.
+
+741
+00:47:19,460 --> 00:47:23,130
+We then ran a simulation and
+actually measured the standard
+
+742
+00:47:23,130 --> 00:47:26,530
+deviation, no longer a guess.
+
+743
+00:47:26,530 --> 00:47:31,310
+And it came out to be 1.6.
+
+744
+00:47:31,310 --> 00:47:35,910
+And I hope that most of you
+would agree that that was a
+
+745
+00:47:35,910 --> 00:47:37,160
+pretty good guess.
+
+746
+00:47:37,160 --> 00:47:39,580
+
+747
+00:47:39,580 --> 00:47:46,090
+And so therefore because, if you
+will, the differences are
+
+748
+00:47:46,090 --> 00:47:49,520
+normally distributed, the
+distribution is normal.
+
+749
+00:47:49,520 --> 00:47:51,850
+It turns out the standard
+error is a very good
+
+750
+00:47:51,850 --> 00:47:56,480
+approximation to the actual
+standard deviation.
+
+751
+00:47:56,480 --> 00:48:01,900
+And that's what pollsters rely
+on and why polls are actually
+
+752
+00:48:01,900 --> 00:48:03,300
+pretty good.
+
+753
+00:48:03,300 --> 00:48:06,820
+So now the next time you read a
+poll, you'll understand the
+
+754
+00:48:06,820 --> 00:48:08,500
+math behind it.
+
+755
+00:48:08,500 --> 00:48:11,410
+In a subsequent lecture, we'll
+talk about some ways they go
+
+756
+00:48:11,410 --> 00:48:16,620
+wrong that have nothing to do
+with getting the math wrong.
+
+757
+00:48:16,620 --> 00:48:21,500
+Now, of course, finding a nice
+tractable mathematical model,
+
+758
+00:48:21,500 --> 00:48:25,380
+the normal distribution, is of
+no use if it provides an
+
+759
+00:48:25,380 --> 00:48:29,730
+inaccurate model of the data
+that you care about.
+
+760
+00:48:29,730 --> 00:48:34,660
+Fortunately, many random
+variables have an
+
+761
+00:48:34,660 --> 00:48:37,790
+approximately normal
+distribution.
+
+762
+00:48:37,790 --> 00:48:42,060
+So if for example, I were doing
+a real lecture and I had
+
+763
+00:48:42,060 --> 00:48:46,350
+100 students in this room, and
+I were to look at the heights
+
+764
+00:48:46,350 --> 00:48:49,860
+of the students, we would find
+that they are roughly normally
+
+765
+00:48:49,860 --> 00:48:51,850
+distributed.
+
+766
+00:48:51,850 --> 00:48:55,240
+Any time you take a population
+of people and you look at it,
+
+767
+00:48:55,240 --> 00:48:57,630
+it's quite striking that you
+do end up getting a normal
+
+768
+00:48:57,630 --> 00:49:00,650
+distribution of the heights.
+
+769
+00:49:00,650 --> 00:49:02,455
+You get a normal distribution
+of the weights.
+
+770
+00:49:02,455 --> 00:49:07,340
+
+771
+00:49:07,340 --> 00:49:10,140
+Same thing will be true if you
+look at plants, all sorts of
+
+772
+00:49:10,140 --> 00:49:11,390
+things like that.
+
+773
+00:49:11,390 --> 00:49:14,290
+
+774
+00:49:14,290 --> 00:49:15,680
+I don't know why this is true.
+
+775
+00:49:15,680 --> 00:49:18,790
+It just is.
+
+776
+00:49:18,790 --> 00:49:21,830
+What I do know is that--
+
+777
+00:49:21,830 --> 00:49:24,010
+and probably this is
+more important--
+
+778
+00:49:24,010 --> 00:49:27,350
+many experimental setups, and
+this is what we're going to be
+
+779
+00:49:27,350 --> 00:49:31,210
+talking about going forward,
+have normally distributed
+
+780
+00:49:31,210 --> 00:49:32,460
+measurement errors.
+
+781
+00:49:32,460 --> 00:49:34,800
+
+782
+00:49:34,800 --> 00:49:39,940
+This assumption was used first
+in the early 1800s by the
+
+783
+00:49:39,940 --> 00:49:43,940
+German mathematician and
+physicist Carl Gauss.
+
+784
+00:49:43,940 --> 00:49:47,340
+You've probably heard of Gauss,
+who assumed a normal
+
+785
+00:49:47,340 --> 00:49:50,970
+distribution of measurement
+errors in his analysis of
+
+786
+00:49:50,970 --> 00:49:54,540
+astronomical data.
+
+787
+00:49:54,540 --> 00:49:58,200
+So he was measuring various
+things in the heavens.
+
+788
+00:49:58,200 --> 00:50:02,640
+He knew his measurements of
+where something was were not
+
+789
+00:50:02,640 --> 00:50:04,670
+100% accurate.
+
+790
+00:50:04,670 --> 00:50:08,710
+And he said, well, I'll bet it's
+equally likely it's to
+
+791
+00:50:08,710 --> 00:50:11,570
+the left of where I think it
+is or the right as where I
+
+792
+00:50:11,570 --> 00:50:14,190
+think it is.
+
+793
+00:50:14,190 --> 00:50:17,880
+And I'll bet the further I get
+from its true value, the less
+
+794
+00:50:17,880 --> 00:50:21,180
+likely I am to guess
+that's where it is.
+
+795
+00:50:21,180 --> 00:50:25,360
+And he invented at that time
+what we now call the normal
+
+796
+00:50:25,360 --> 00:50:26,690
+distribution.
+
+797
+00:50:26,690 --> 00:50:30,520
+Physicists insist today still
+on calling it a Gaussian
+
+798
+00:50:30,520 --> 00:50:32,670
+distribution.
+
+799
+00:50:32,670 --> 00:50:35,930
+And it turned out to be a very
+accurate model of the
+
+800
+00:50:35,930 --> 00:50:39,940
+measurement errors
+he would make.
+
+801
+00:50:39,940 --> 00:50:43,870
+If you guys are in a chemistry
+lab, or a physics lab, or a
+
+802
+00:50:43,870 --> 00:50:47,870
+bio lab, mechanical engineering
+lab, any lab where
+
+803
+00:50:47,870 --> 00:50:52,280
+you're measuring things, it's
+pretty likely that the
+
+804
+00:50:52,280 --> 00:50:55,020
+mistakes you will make will
+be normally distributed.
+
+805
+00:50:55,020 --> 00:50:58,230
+
+806
+00:50:58,230 --> 00:51:01,310
+And it's not just because you
+were sloppy in the lab.
+
+807
+00:51:01,310 --> 00:51:03,320
+Actually, if you were sloppy
+in the lab, they may not be
+
+808
+00:51:03,320 --> 00:51:04,230
+normally distributed.
+
+809
+00:51:04,230 --> 00:51:06,360
+If you're not sloppy in the
+lab, they'll be normally
+
+810
+00:51:06,360 --> 00:51:07,510
+distributed.
+
+811
+00:51:07,510 --> 00:51:09,720
+It's true of almost
+all measurements.
+
+812
+00:51:09,720 --> 00:51:14,980
+And in fact, most of science
+assumes normal distributions
+
+813
+00:51:14,980 --> 00:51:18,360
+of measurement errors in
+reaching conclusions about the
+
+814
+00:51:18,360 --> 00:51:20,470
+validity of their data.
+
+815
+00:51:20,470 --> 00:51:23,800
+And we'll see some examples
+of that as we go forward.
+
+816
+00:51:23,800 --> 00:51:25,180
+Thanks a lot.
+
+817
+00:51:25,180 --> 00:51:26,430
+See you next time.
+
+818
+00:51:26,430 --> 00:51:30,240

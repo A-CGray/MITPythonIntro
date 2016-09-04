@@ -1,0 +1,3611 @@
+1
+00:00:00,000 --> 00:00:00,040
+
+2
+00:00:00,040 --> 00:00:02,490
+The following content is
+provided under a Creative
+
+3
+00:00:02,490 --> 00:00:03,900
+Commons license.
+
+4
+00:00:03,900 --> 00:00:06,940
+Your support will help MIT
+OpenCourseWare continue to
+
+5
+00:00:06,940 --> 00:00:10,580
+offer high quality educational
+resources for free.
+
+6
+00:00:10,580 --> 00:00:13,490
+To make a donation or view
+additional materials from
+
+7
+00:00:13,490 --> 00:00:19,320
+hundreds of MIT courses, visit
+MIT OpenCourseWare at
+
+8
+00:00:19,320 --> 00:00:21,200
+ocw.mit.edu.
+
+9
+00:00:21,200 --> 00:00:27,010
+PROFESSOR: OK so we're
+going to test it.
+
+10
+00:00:27,010 --> 00:00:28,930
+Here's testOne.
+
+11
+00:00:28,930 --> 00:00:32,360
+It just says for name and range
+10, I'm going to build
+
+12
+00:00:32,360 --> 00:00:35,560
+some nodes, put in a few edges,
+and then I'm going to
+
+13
+00:00:35,560 --> 00:00:37,160
+print the graph.
+
+14
+00:00:37,160 --> 00:00:41,940
+And all I really want to show
+you here, is that if we run it
+
+15
+00:00:41,940 --> 00:00:44,665
+for digraph or we run
+it for graph, we'll
+
+16
+00:00:44,665 --> 00:00:45,915
+get something different.
+
+17
+00:00:45,915 --> 00:00:48,560
+
+18
+00:00:48,560 --> 00:00:52,550
+Yes, I'm happy to
+save the source.
+
+19
+00:00:52,550 --> 00:00:59,733
+Oh, and now the syntax.
+
+20
+00:00:59,733 --> 00:01:03,200
+
+21
+00:01:03,200 --> 00:01:05,450
+It was valid last time I looked,
+what have we done
+
+22
+00:01:05,450 --> 00:01:08,450
+wrong here?
+
+23
+00:01:08,450 --> 00:01:10,900
+I edit something badly?
+
+24
+00:01:10,900 --> 00:01:14,350
+Sort of looks valid
+to me, doesn't it?
+
+25
+00:01:14,350 --> 00:01:15,600
+We'll retype it.
+
+26
+00:01:15,600 --> 00:01:18,900
+
+27
+00:01:18,900 --> 00:01:21,520
+Yes, we'll save.
+
+28
+00:01:21,520 --> 00:01:22,960
+Nope.
+
+29
+00:01:22,960 --> 00:01:26,450
+Well, it's one of those
+days, isn't it?
+
+30
+00:01:26,450 --> 00:01:30,950
+All right this is a good
+debugging exercise for us.
+
+31
+00:01:30,950 --> 00:01:32,875
+Let's think about how
+we go and find this.
+
+32
+00:01:32,875 --> 00:01:35,710
+I'm sure you've all had
+this sort of problem.
+
+33
+00:01:35,710 --> 00:01:38,690
+Well the first thing to do is I
+think I'll just comment out
+
+34
+00:01:38,690 --> 00:01:39,940
+all of this.
+
+35
+00:01:39,940 --> 00:01:46,270
+
+36
+00:01:46,270 --> 00:01:47,520
+Let's see if I still
+get an error.
+
+37
+00:01:47,520 --> 00:01:52,130
+
+38
+00:01:52,130 --> 00:01:52,640
+I do.
+
+39
+00:01:52,640 --> 00:01:55,420
+All right, well that suggests
+that, that wasn't the problem,
+
+40
+00:01:55,420 --> 00:01:56,700
+so I can put it back.
+
+41
+00:01:56,700 --> 00:01:59,590
+
+42
+00:01:59,590 --> 00:02:01,855
+Now it shows a problem all
+the way down there.
+
+43
+00:02:01,855 --> 00:02:05,280
+
+44
+00:02:05,280 --> 00:02:07,870
+So let's see what's
+going on here.
+
+45
+00:02:07,870 --> 00:02:11,300
+Or maybe, I'll just skip this,
+but doubtless I'll get in
+
+46
+00:02:11,300 --> 00:02:12,550
+trouble if I do.
+
+47
+00:02:12,550 --> 00:02:18,448
+
+48
+00:02:18,448 --> 00:02:22,440
+So let's see.
+
+49
+00:02:22,440 --> 00:02:25,560
+I must have just made a sloppy
+editing error somewhere this
+
+50
+00:02:25,560 --> 00:02:28,280
+morning in commenting things
+out for the lecture.
+
+51
+00:02:28,280 --> 00:02:36,710
+
+52
+00:02:36,710 --> 00:02:42,180
+Well, I think what we're going
+to do, for the moment, is move
+
+53
+00:02:42,180 --> 00:02:45,260
+on and hope it goes away.
+
+54
+00:02:45,260 --> 00:02:46,940
+Now that seems silly.
+
+55
+00:02:46,940 --> 00:02:50,450
+Sorry about this everybody.
+
+56
+00:02:50,450 --> 00:02:53,470
+People should look with me, and
+someone may see it more
+
+57
+00:02:53,470 --> 00:02:55,432
+quickly than I can.
+
+58
+00:02:55,432 --> 00:02:57,630
+In fact, I'm hoping someone
+sees it more
+
+59
+00:02:57,630 --> 00:02:58,880
+quickly than I can.
+
+60
+00:02:58,880 --> 00:03:27,580
+
+61
+00:03:27,580 --> 00:03:30,761
+We've now got a microphone,
+and the embarrassment of a
+
+62
+00:03:30,761 --> 00:03:32,870
+code with syntax error,
+[UNINTELLIGIBLE].
+
+63
+00:03:32,870 --> 00:03:34,130
+MALE SPEAKER: You've
+got a sign.
+
+64
+00:03:34,130 --> 00:03:36,870
+For some reason it wasn't
+on the schedule, so--
+
+65
+00:03:36,870 --> 00:03:38,140
+PROFESSOR: Well just
+because we've been
+
+66
+00:03:38,140 --> 00:03:39,790
+teaching at 10 o'clock.
+
+67
+00:03:39,790 --> 00:03:40,203
+MALE SPEAKER: Yeah, I know.
+
+68
+00:03:40,203 --> 00:03:41,400
+Yeah.
+
+69
+00:03:41,400 --> 00:03:42,160
+[UNINTELLIGIBLE].
+
+70
+00:03:42,160 --> 00:03:42,620
+PROFESSOR: February.
+
+71
+00:03:42,620 --> 00:03:44,780
+There's no reason to suspect
+that we would teach at 10
+
+72
+00:03:44,780 --> 00:03:45,430
+o'clock today.
+
+73
+00:03:45,430 --> 00:03:45,906
+MALE SPEAKER: I actually
+looked.
+
+74
+00:03:45,906 --> 00:03:47,156
+I double checked.
+
+75
+00:03:47,156 --> 00:03:53,050
+
+76
+00:03:53,050 --> 00:03:54,830
+PROFESSOR: Well this is
+embarrassing, folks.
+
+77
+00:03:54,830 --> 00:03:56,980
+And I wish one of you would
+bail me out by telling me
+
+78
+00:03:56,980 --> 00:03:58,345
+where my syntax error is.
+
+79
+00:03:58,345 --> 00:04:06,900
+
+80
+00:04:06,900 --> 00:04:09,250
+Well random looks OK, right?
+
+81
+00:04:09,250 --> 00:04:10,500
+Node looks OK.
+
+82
+00:04:10,500 --> 00:04:19,230
+
+83
+00:04:19,230 --> 00:04:22,095
+And it gets more complicated.
+
+84
+00:04:22,095 --> 00:04:23,275
+MALE SPEAKER: Hey professor,
+can you turn on the
+
+85
+00:04:23,275 --> 00:04:24,310
+transmitter?
+
+86
+00:04:24,310 --> 00:04:25,173
+PROFESSOR: No.
+
+87
+00:04:25,173 --> 00:04:25,880
+[LAUGHTER]
+
+88
+00:04:25,880 --> 00:04:27,130
+PROFESSOR: OK, I'll turn
+on the transmitter.
+
+89
+00:04:27,130 --> 00:04:29,760
+
+90
+00:04:29,760 --> 00:04:33,150
+But I'm really focused on a
+different problem right now.
+
+91
+00:04:33,150 --> 00:04:40,940
+
+92
+00:04:40,940 --> 00:04:42,190
+Guys help!
+
+93
+00:04:42,190 --> 00:04:44,120
+
+94
+00:04:44,120 --> 00:04:45,370
+Where are my TAs?
+
+95
+00:04:45,370 --> 00:04:53,510
+
+96
+00:04:53,510 --> 00:04:55,620
+Why does it keep doing
+that to me?
+
+97
+00:04:55,620 --> 00:05:00,020
+Maybe there's something just
+funny going on here.
+
+98
+00:05:00,020 --> 00:05:00,420
+Pardon?
+
+99
+00:05:00,420 --> 00:05:02,560
+AUDIENCE: Restart IDLE.
+
+100
+00:05:02,560 --> 00:05:03,300
+PROFESSOR: Restarting IDLE?
+
+101
+00:05:03,300 --> 00:05:06,320
+You think maybe that's
+the issue?
+
+102
+00:05:06,320 --> 00:05:07,570
+We could try that.
+
+103
+00:05:07,570 --> 00:05:32,920
+
+104
+00:05:32,920 --> 00:05:33,950
+Ha!
+
+105
+00:05:33,950 --> 00:05:38,930
+So it looks like IDLE was
+just in some ugly state.
+
+106
+00:05:38,930 --> 00:05:40,180
+Let's hope.
+
+107
+00:05:40,180 --> 00:05:56,880
+
+108
+00:05:56,880 --> 00:05:59,720
+Yes, all right, so I
+didn't have a bug.
+
+109
+00:05:59,720 --> 00:06:01,900
+It was just IDLE had a bug.
+
+110
+00:06:01,900 --> 00:06:03,340
+All right, phew.
+
+111
+00:06:03,340 --> 00:06:05,170
+But we did squander
+ten minutes.
+
+112
+00:06:05,170 --> 00:06:06,200
+Oh well.
+
+113
+00:06:06,200 --> 00:06:09,050
+So we have the graph, and you
+can see when we look at a
+
+114
+00:06:09,050 --> 00:06:12,400
+graph, we have a node from 1
+to 2, an edge from 1 to 2,
+
+115
+00:06:12,400 --> 00:06:15,030
+from 1 to 1, et cetera.
+
+116
+00:06:15,030 --> 00:06:16,890
+And that's the digraph.
+
+117
+00:06:16,890 --> 00:06:20,600
+When we look at the graph, we'll
+see that in fact we have
+
+118
+00:06:20,600 --> 00:06:23,110
+a lot more nodes, because
+everything goes in both
+
+119
+00:06:23,110 --> 00:06:25,110
+directions.
+
+120
+00:06:25,110 --> 00:06:27,900
+But that's what we expected--
+
+121
+00:06:27,900 --> 00:06:29,320
+nothing very interesting.
+
+122
+00:06:29,320 --> 00:06:32,760
+All I want you to do is notice
+the difference here between
+
+123
+00:06:32,760 --> 00:06:35,730
+graphs and digraphs.
+
+124
+00:06:35,730 --> 00:06:42,450
+Now getting to the whole point,
+once we have this
+
+125
+00:06:42,450 --> 00:06:46,230
+mechanism set up to think about
+graphs, we can now think
+
+126
+00:06:46,230 --> 00:06:49,010
+about interesting problems
+and formulate
+
+127
+00:06:49,010 --> 00:06:50,420
+them as graph problems.
+
+128
+00:06:50,420 --> 00:06:53,320
+And I want to list a few of the
+interesting problems, and
+
+129
+00:06:53,320 --> 00:06:56,480
+then we'll look at how to
+solve some of them.
+
+130
+00:06:56,480 --> 00:06:59,820
+So probably the most common
+graph problem that people
+
+131
+00:06:59,820 --> 00:07:01,920
+solve, is called the shortest
+path problem.
+
+132
+00:07:01,920 --> 00:07:05,640
+
+133
+00:07:05,640 --> 00:07:08,590
+We talked about this
+briefly last time.
+
+134
+00:07:08,590 --> 00:07:14,210
+The notion here is for some pair
+of nodes, n1 and n2, we
+
+135
+00:07:14,210 --> 00:07:18,040
+want to find the shortest
+sequence of edges that
+
+136
+00:07:18,040 --> 00:07:19,390
+connects those two nodes.
+
+137
+00:07:19,390 --> 00:07:22,160
+
+138
+00:07:22,160 --> 00:07:22,670
+All right?
+
+139
+00:07:22,670 --> 00:07:25,110
+So that's very straightforward.
+
+140
+00:07:25,110 --> 00:07:38,390
+Then there is the shortest
+weighted path, where instead
+
+141
+00:07:38,390 --> 00:07:42,530
+of trying to find the shortest
+sequence of edges, we want to
+
+142
+00:07:42,530 --> 00:07:46,610
+find the smallest
+total weight.
+
+143
+00:07:46,610 --> 00:07:50,690
+So it may be that we traverse
+a few extra edges, but since
+
+144
+00:07:50,690 --> 00:07:52,700
+they have a shorter
+weights, we end up
+
+145
+00:07:52,700 --> 00:07:53,950
+getting a shorter path.
+
+146
+00:07:53,950 --> 00:07:56,550
+
+147
+00:07:56,550 --> 00:08:01,410
+So we might indirect to
+do the shortest path.
+
+148
+00:08:01,410 --> 00:08:06,100
+This is probably the more
+common problem.
+
+149
+00:08:06,100 --> 00:08:09,360
+So for example, that's the
+problem that Google Maps
+
+150
+00:08:09,360 --> 00:08:16,580
+solves, when you ask it to give
+you driving directions.
+
+151
+00:08:16,580 --> 00:08:19,960
+And you'll notice when you use
+something like Google Maps or
+
+152
+00:08:19,960 --> 00:08:26,990
+MapQuest, you can tell it to
+minimize the time, in which
+
+153
+00:08:26,990 --> 00:08:31,320
+case maybe it will route you
+on a freeway, where you can
+
+154
+00:08:31,320 --> 00:08:33,909
+drive at 80 miles an hour, even
+though you drive a few
+
+155
+00:08:33,909 --> 00:08:35,390
+extra miles.
+
+156
+00:08:35,390 --> 00:08:39,789
+Or you can tell it to minimize
+the distance in which case it
+
+157
+00:08:39,789 --> 00:08:42,350
+may take you on these crummy
+little surface roads where you
+
+158
+00:08:42,350 --> 00:08:46,180
+have to drive slowly, but you'll
+cover fewer miles and
+
+159
+00:08:46,180 --> 00:08:48,410
+use less gas.
+
+160
+00:08:48,410 --> 00:08:52,220
+So you get to tell it which set
+of weights you care about,
+
+161
+00:08:52,220 --> 00:08:54,510
+and then it finds
+you the shortest
+
+162
+00:08:54,510 --> 00:08:57,990
+path, given those weights.
+
+163
+00:08:57,990 --> 00:09:00,430
+We'll come back to this since
+we're going to look at some
+
+164
+00:09:00,430 --> 00:09:02,720
+code to implement it.
+
+165
+00:09:02,720 --> 00:09:06,080
+Another slightly more
+complicated problem to
+
+166
+00:09:06,080 --> 00:09:09,620
+understand is finding cliques.
+
+167
+00:09:09,620 --> 00:09:12,280
+
+168
+00:09:12,280 --> 00:09:17,460
+So to find a clique, we're
+looking to find a set of
+
+169
+00:09:17,460 --> 00:09:34,800
+nodes, such that there exists
+a path connecting
+
+170
+00:09:34,800 --> 00:09:38,210
+each node in the set.
+
+171
+00:09:38,210 --> 00:09:44,730
+
+172
+00:09:44,730 --> 00:09:50,180
+So you can think of this
+as similar to,
+
+173
+00:09:50,180 --> 00:09:52,750
+say a social clique--
+
+174
+00:09:52,750 --> 00:09:55,100
+who your friends are.
+
+175
+00:09:55,100 --> 00:09:59,780
+It's a group of nodes or group
+of people that somehow can get
+
+176
+00:09:59,780 --> 00:10:01,970
+to each other.
+
+177
+00:10:01,970 --> 00:10:04,590
+It's not saying you can't
+get outside the clique.
+
+178
+00:10:04,590 --> 00:10:07,910
+But it is guaranteeing that from
+any member of the clique,
+
+179
+00:10:07,910 --> 00:10:10,235
+you can reach any other
+member of the clique.
+
+180
+00:10:10,235 --> 00:10:18,330
+
+181
+00:10:18,330 --> 00:10:23,610
+And so well, we'll look at some
+examples of where finding
+
+182
+00:10:23,610 --> 00:10:26,260
+a clique is useful.
+
+183
+00:10:26,260 --> 00:10:36,420
+And the final kind of problem
+I want to mention is the
+
+184
+00:10:36,420 --> 00:10:38,250
+minimum cut problem--
+
+185
+00:10:38,250 --> 00:10:41,870
+often abbreviated mincut.
+
+186
+00:10:41,870 --> 00:10:50,300
+So the problem here, is given a
+graph, and given two sets of
+
+187
+00:10:50,300 --> 00:11:11,650
+nodes, you want to find the
+minimum number of edges such
+
+188
+00:11:11,650 --> 00:11:19,780
+that if those edges are removed,
+the two sets are
+
+189
+00:11:19,780 --> 00:11:21,030
+disconnected.
+
+190
+00:11:21,030 --> 00:11:25,020
+
+191
+00:11:25,020 --> 00:11:25,490
+i.e.
+
+192
+00:11:25,490 --> 00:11:28,360
+you can't get from a member
+of one set to a member
+
+193
+00:11:28,360 --> 00:11:29,610
+of the other set.
+
+194
+00:11:29,610 --> 00:11:36,090
+
+195
+00:11:36,090 --> 00:11:39,100
+This is often a question
+that gets asked.
+
+196
+00:11:39,100 --> 00:11:43,760
+For example, imagine that you
+were the government of Syria
+
+197
+00:11:43,760 --> 00:11:45,490
+and you want to ensure
+that nobody can
+
+198
+00:11:45,490 --> 00:11:49,200
+post a video on YouTube.
+
+199
+00:11:49,200 --> 00:11:52,520
+You would take the set of nodes
+in Syria, and you would
+
+200
+00:11:52,520 --> 00:11:57,580
+take the set of nodes probably
+outside Syria, and ask what's
+
+201
+00:11:57,580 --> 00:12:00,910
+the minimum number of
+communication links you'd have
+
+202
+00:12:00,910 --> 00:12:05,230
+to cut to ensure that you can't
+get from a node in Syria
+
+203
+00:12:05,230 --> 00:12:06,480
+to a node outside Syria.
+
+204
+00:12:06,480 --> 00:12:08,960
+
+205
+00:12:08,960 --> 00:12:14,330
+People who do things like plan
+power lines worry about that.
+
+206
+00:12:14,330 --> 00:12:17,590
+They want to say what's the
+minimum number of links such
+
+207
+00:12:17,590 --> 00:12:21,220
+that if they're cut, you can't
+get any electricity from this
+
+208
+00:12:21,220 --> 00:12:24,330
+power plant to say, this city.
+
+209
+00:12:24,330 --> 00:12:28,050
+And they'll typically design
+their network with redundancy
+
+210
+00:12:28,050 --> 00:12:30,685
+in it, so that the mincut
+is not too small.
+
+211
+00:12:30,685 --> 00:12:33,550
+
+212
+00:12:33,550 --> 00:12:37,110
+And so people frequently are
+worried about mincut problems,
+
+213
+00:12:37,110 --> 00:12:41,390
+and trying to see
+what that is.
+
+214
+00:12:41,390 --> 00:12:46,470
+All right, now let's look at
+a couple of examples, in
+
+215
+00:12:46,470 --> 00:12:48,520
+slightly more detail.
+
+216
+00:12:48,520 --> 00:12:56,880
+So what we see here is a
+pictorial representation of a
+
+217
+00:12:56,880 --> 00:12:59,950
+weighted graph generated by
+the Centers for Disease
+
+218
+00:12:59,950 --> 00:13:05,740
+Control, CDC, in Atlanta in 2003
+when they were studying
+
+219
+00:13:05,740 --> 00:13:09,790
+an outbreak of tuberculosis
+in the United States--
+
+220
+00:13:09,790 --> 00:13:13,720
+a virulent and bad infectious
+disease.
+
+221
+00:13:13,720 --> 00:13:18,380
+Each node, and you can see
+these little dots are the
+
+222
+00:13:18,380 --> 00:13:24,480
+nodes, represents a person.
+
+223
+00:13:24,480 --> 00:13:28,940
+And each node is labeled by a
+color, indicating whether the
+
+224
+00:13:28,940 --> 00:13:33,220
+person has active tuberculosis,
+has tested
+
+225
+00:13:33,220 --> 00:13:38,340
+positive for exposure, but
+doesn't have the disease, or
+
+226
+00:13:38,340 --> 00:13:43,530
+tested negative for exposure,
+or not been tested.
+
+227
+00:13:43,530 --> 00:13:47,700
+So you'll remember when we
+looked last time at class
+
+228
+00:13:47,700 --> 00:13:51,110
+node, and asked why did I bother
+creating a class for
+
+229
+00:13:51,110 --> 00:13:54,260
+something so simple, it was
+because I said well maybe we
+
+230
+00:13:54,260 --> 00:13:57,090
+would add extra properties
+to a node.
+
+231
+00:13:57,090 --> 00:14:01,670
+So now in some sense these
+colors would be easy to add.
+
+232
+00:14:01,670 --> 00:14:04,690
+So I could add to class node--
+
+233
+00:14:04,690 --> 00:14:06,930
+well I could attribute
+color, and call it
+
+234
+00:14:06,930 --> 00:14:08,560
+red or blue or green--
+
+235
+00:14:08,560 --> 00:14:12,640
+or more likely an attribute
+saying TB state, which would
+
+236
+00:14:12,640 --> 00:14:16,300
+indicate active not
+active, et cetera.
+
+237
+00:14:16,300 --> 00:14:22,430
+The edges, which you can see
+here, represent connections
+
+238
+00:14:22,430 --> 00:14:24,905
+among pairs of people.
+
+239
+00:14:24,905 --> 00:14:29,400
+
+240
+00:14:29,400 --> 00:14:31,830
+What I didn't bother, you can't
+see on these pictures,
+
+241
+00:14:31,830 --> 00:14:34,980
+is the edges are actually
+weighted.
+
+242
+00:14:34,980 --> 00:14:37,750
+And the weights there
+are about how
+
+243
+00:14:37,750 --> 00:14:40,320
+closely people are connected.
+
+244
+00:14:40,320 --> 00:14:43,240
+And there are really only two
+weights I think they used:
+
+245
+00:14:43,240 --> 00:14:47,790
+close, someone who say lives in
+your house or works in the
+
+246
+00:14:47,790 --> 00:14:51,540
+same office, or casual, a
+neighbor you might have
+
+247
+00:14:51,540 --> 00:14:54,210
+encountered, but you wouldn't
+expect to necessarily
+
+248
+00:14:54,210 --> 00:14:57,110
+see them every day.
+
+249
+00:14:57,110 --> 00:15:00,940
+So I've taken a fairly
+complicated set of information
+
+250
+00:15:00,940 --> 00:15:05,290
+and represented it as a graph.
+
+251
+00:15:05,290 --> 00:15:07,890
+Now what are some of the
+interesting graph theoretic
+
+252
+00:15:07,890 --> 00:15:12,280
+questions we might proceed
+to ask about this?
+
+253
+00:15:12,280 --> 00:15:17,050
+So an important question they
+typically ask when diseases
+
+254
+00:15:17,050 --> 00:15:23,060
+break out unexpectedly is, is
+there an index patient?
+
+255
+00:15:23,060 --> 00:15:26,570
+The index patient is the
+patient who brought the
+
+256
+00:15:26,570 --> 00:15:29,250
+disease into the community--
+
+257
+00:15:29,250 --> 00:15:31,970
+so somebody who visited some
+country, picked up
+
+258
+00:15:31,970 --> 00:15:36,130
+tuberculosis, flew back to their
+neighborhood in the US
+
+259
+00:15:36,130 --> 00:15:38,470
+and started spreading it.
+
+260
+00:15:38,470 --> 00:15:41,160
+
+261
+00:15:41,160 --> 00:15:44,750
+How would we formulate that
+as a graph question?
+
+262
+00:15:44,750 --> 00:15:48,020
+Again, quite simply.
+
+263
+00:15:48,020 --> 00:16:05,630
+We would say does there exist a
+node such that node has TB,
+
+264
+00:16:05,630 --> 00:16:11,230
+or maybe not even that,
+no, let's simplify it.
+
+265
+00:16:11,230 --> 00:16:13,660
+You might say, "or tested
+positive" because maybe you
+
+266
+00:16:13,660 --> 00:16:16,940
+can communicate it without
+having it--
+
+267
+00:16:16,940 --> 00:16:30,840
+has TB and is connected
+to every node with TB.
+
+268
+00:16:30,840 --> 00:16:35,730
+
+269
+00:16:35,730 --> 00:16:37,350
+Now this doesn't guarantee
+that the
+
+270
+00:16:37,350 --> 00:16:39,600
+patient is an index patient.
+
+271
+00:16:39,600 --> 00:16:43,410
+But if there is no such patient,
+no such node, then
+
+272
+00:16:43,410 --> 00:16:46,380
+you know that there's not a
+single source of this disease
+
+273
+00:16:46,380 --> 00:16:47,630
+in the community.
+
+274
+00:16:47,630 --> 00:16:51,460
+
+275
+00:16:51,460 --> 00:16:56,180
+How would we change the graph to
+model it in a more detailed
+
+276
+00:16:56,180 --> 00:16:59,640
+way, and remember this is all
+about modeling, so that we
+
+277
+00:16:59,640 --> 00:17:03,995
+could ask a question
+or more precisely?
+
+278
+00:17:03,995 --> 00:17:06,589
+
+279
+00:17:06,589 --> 00:17:11,240
+Well we'd have to change to a
+more complex coloring scheme,
+
+280
+00:17:11,240 --> 00:17:15,400
+if you will, in which we'd
+include the date of when
+
+281
+00:17:15,400 --> 00:17:20,440
+somebody acquired the disease,
+or tested positive.
+
+282
+00:17:20,440 --> 00:17:22,990
+And then we could ask those
+kinds of questions in a little
+
+283
+00:17:22,990 --> 00:17:24,700
+bit more detail.
+
+284
+00:17:24,700 --> 00:17:29,050
+But again once we've built the
+model, we can then go and ask
+
+285
+00:17:29,050 --> 00:17:32,080
+a lot of interesting
+questions.
+
+286
+00:17:32,080 --> 00:17:34,370
+By the way the answer to
+this question, for
+
+287
+00:17:34,370 --> 00:17:36,830
+this graph, is almost.
+
+288
+00:17:36,830 --> 00:17:42,390
+
+289
+00:17:42,390 --> 00:17:47,920
+There is an index patient that's
+connected to every node
+
+290
+00:17:47,920 --> 00:17:51,285
+in the graph, except for the
+nodes in this black circle.
+
+291
+00:17:51,285 --> 00:17:53,980
+
+292
+00:17:53,980 --> 00:18:00,780
+They are not connected
+to any index patient.
+
+293
+00:18:00,780 --> 00:18:04,690
+So the CDC actually did that
+analysis, and they reached
+
+294
+00:18:04,690 --> 00:18:07,620
+that conclusion that there
+didn't seem to be.
+
+295
+00:18:07,620 --> 00:18:11,550
+And then later, it came to
+light, in fact, that this
+
+296
+00:18:11,550 --> 00:18:13,640
+particular graph is
+missing an edge.
+
+297
+00:18:13,640 --> 00:18:16,210
+
+298
+00:18:16,210 --> 00:18:19,250
+Somebody had moved from
+neighborhood A to neighborhood
+
+299
+00:18:19,250 --> 00:18:22,670
+B, and they had not kept
+track of that.
+
+300
+00:18:22,670 --> 00:18:24,720
+And if they had, they would have
+discovered there was a
+
+301
+00:18:24,720 --> 00:18:27,140
+link that's missing--
+an edge that's
+
+302
+00:18:27,140 --> 00:18:28,830
+missing from this graph--
+
+303
+00:18:28,830 --> 00:18:31,000
+which in fact would've connected
+everybody to the
+
+304
+00:18:31,000 --> 00:18:34,230
+index patient.
+
+305
+00:18:34,230 --> 00:18:35,380
+It was an interesting
+question.
+
+306
+00:18:35,380 --> 00:18:38,600
+They only found that, because
+they were puzzled about this
+
+307
+00:18:38,600 --> 00:18:41,270
+tiny little black circle
+out here, and started
+
+308
+00:18:41,270 --> 00:18:44,290
+investigating all the people
+in the black circle, and
+
+309
+00:18:44,290 --> 00:18:47,260
+discovered that one of
+them had moved from
+
+310
+00:18:47,260 --> 00:18:50,350
+one place to another.
+
+311
+00:18:50,350 --> 00:18:52,570
+What's another question you
+might ask once you've built
+
+312
+00:18:52,570 --> 00:18:54,220
+this model?
+
+313
+00:18:54,220 --> 00:18:58,230
+Well suppose this is the current
+state of the world,
+
+314
+00:18:58,230 --> 00:19:03,340
+and I want to reduce the spread
+of the disease, by
+
+315
+00:19:03,340 --> 00:19:06,950
+vaccinating uninfected people
+so that they don't contract
+
+316
+00:19:06,950 --> 00:19:09,390
+tuberculosis.
+
+317
+00:19:09,390 --> 00:19:13,780
+But I have a minimum, it's
+expensive to do this, I only
+
+318
+00:19:13,780 --> 00:19:15,280
+have so much vaccine.
+
+319
+00:19:15,280 --> 00:19:17,280
+Who should get it?
+
+320
+00:19:17,280 --> 00:19:21,460
+What's the graph theory problem
+that I would solve to
+
+321
+00:19:21,460 --> 00:19:24,540
+address the question of what's
+the best way to allocate my
+
+322
+00:19:24,540 --> 00:19:25,790
+limited supply a vaccine?
+
+323
+00:19:25,790 --> 00:19:29,670
+
+324
+00:19:29,670 --> 00:19:30,820
+Exactly.
+
+325
+00:19:30,820 --> 00:19:34,150
+I, by the way, have much
+better candy now.
+
+326
+00:19:34,150 --> 00:19:39,850
+So I think that's where the
+minimum cut came from.
+
+327
+00:19:39,850 --> 00:19:40,820
+Well, all right.
+
+328
+00:19:40,820 --> 00:19:42,650
+It's better for eating.
+
+329
+00:19:42,650 --> 00:19:43,900
+It's just worse for throwing.
+
+330
+00:19:43,900 --> 00:19:47,030
+
+331
+00:19:47,030 --> 00:19:48,740
+That's easier to throw.
+
+332
+00:19:48,740 --> 00:19:50,920
+All right.
+
+333
+00:19:50,920 --> 00:19:53,610
+It's the minimum cut problem.
+
+334
+00:19:53,610 --> 00:19:59,610
+I take the people who are
+already infected, view them as
+
+335
+00:19:59,610 --> 00:20:01,450
+one set of nodes.
+
+336
+00:20:01,450 --> 00:20:04,040
+I take the people who are not
+infected, and view them as
+
+337
+00:20:04,040 --> 00:20:09,400
+another set of nodes, find the
+edges that I need to cut to
+
+338
+00:20:09,400 --> 00:20:12,400
+separate them, and then
+vaccinated somebody on one
+
+339
+00:20:12,400 --> 00:20:16,550
+side of the edge, so that they
+don't contract the disease.
+
+340
+00:20:16,550 --> 00:20:21,200
+So again a nice, easily
+formalized, problem.
+
+341
+00:20:21,200 --> 00:20:24,590
+All right, so that's
+an example.
+
+342
+00:20:24,590 --> 00:20:27,040
+Let's look at another example.
+
+343
+00:20:27,040 --> 00:20:30,730
+Let's think about the shortest
+path problem here.
+
+344
+00:20:30,730 --> 00:20:34,120
+And we'll do that by thinking
+about social networks.
+
+345
+00:20:34,120 --> 00:20:38,580
+So I suspect that at least a few
+of you have used Facebook,
+
+346
+00:20:38,580 --> 00:20:41,730
+and you have friends--
+
+347
+00:20:41,730 --> 00:20:43,070
+some of you more, than others.
+
+348
+00:20:43,070 --> 00:20:46,760
+
+349
+00:20:46,760 --> 00:20:47,810
+I see people laughing.
+
+350
+00:20:47,810 --> 00:20:50,700
+This is someone who probably has
+two friends, and is said.
+
+351
+00:20:50,700 --> 00:20:55,030
+I don't know, or 1,000
+friends and is happy.
+
+352
+00:20:55,030 --> 00:20:55,630
+Who knows--
+
+353
+00:20:55,630 --> 00:20:56,880
+I don't want to know please.
+
+354
+00:20:56,880 --> 00:20:59,120
+
+355
+00:20:59,120 --> 00:21:00,240
+And I'm not going to
+tell you how many
+
+356
+00:21:00,240 --> 00:21:03,250
+friends I have either.
+
+357
+00:21:03,250 --> 00:21:09,790
+But you might ask the question,
+suppose you wanted
+
+358
+00:21:09,790 --> 00:21:11,750
+to reach Donald Trump --
+
+359
+00:21:11,750 --> 00:21:14,630
+erstwhile Republican, vice
+presidential candidate, or
+
+360
+00:21:14,630 --> 00:21:16,510
+presidential candidate.
+
+361
+00:21:16,510 --> 00:21:20,170
+Say is there a connection from
+you to Donald Trump?
+
+362
+00:21:20,170 --> 00:21:22,140
+Do you have a friend, who has
+a friend, who has a friend,
+
+363
+00:21:22,140 --> 00:21:24,150
+who is a friend with
+Donald Trump?
+
+364
+00:21:24,150 --> 00:21:27,480
+Or for Barack Obama, or
+anyone else you'd ask.
+
+365
+00:21:27,480 --> 00:21:30,600
+Well what's the shortest path?
+
+366
+00:21:30,600 --> 00:21:34,790
+How many friends do you
+have to go through?
+
+367
+00:21:34,790 --> 00:21:39,250
+This is what's called the six
+degrees of separation problem.
+
+368
+00:21:39,250 --> 00:21:43,840
+In the 1990s, the playwright
+John Guare published a play
+
+369
+00:21:43,840 --> 00:21:47,440
+called Six Degrees of
+Separation, under the slightly
+
+370
+00:21:47,440 --> 00:21:50,780
+dubious premise, that everybody
+in the world was
+
+371
+00:21:50,780 --> 00:21:52,580
+connected to everybody
+else in the world
+
+372
+00:21:52,580 --> 00:21:55,120
+with at most six hops.
+
+373
+00:21:55,120 --> 00:21:57,070
+If you took all the people you
+knew, all the people they
+
+374
+00:21:57,070 --> 00:22:00,500
+knew, et cetera, you could reach
+any person in the world
+
+375
+00:22:00,500 --> 00:22:02,100
+in six phone calls--
+
+376
+00:22:02,100 --> 00:22:04,040
+say any person who
+has a phone.
+
+377
+00:22:04,040 --> 00:22:08,630
+I don't know whether that's
+true, but this is the whole
+
+378
+00:22:08,630 --> 00:22:11,910
+notion of a social network.
+
+379
+00:22:11,910 --> 00:22:14,880
+So if we wanted to look at that
+in Facebook, we could
+
+380
+00:22:14,880 --> 00:22:18,700
+either assume that the friend
+relation is symmetric--
+
+381
+00:22:18,700 --> 00:22:22,260
+if I'm your friend, you're
+my friend, which it is.
+
+382
+00:22:22,260 --> 00:22:24,690
+Or you could imagine a different
+model, in which it's
+
+383
+00:22:24,690 --> 00:22:26,090
+asymmetric.
+
+384
+00:22:26,090 --> 00:22:28,670
+If it's symmetric you
+have a graph.
+
+385
+00:22:28,670 --> 00:22:32,590
+If it's asymmetric you have
+a directed graph.
+
+386
+00:22:32,590 --> 00:22:34,950
+And then you just ask
+the question.
+
+387
+00:22:34,950 --> 00:22:37,830
+What's the shortest
+path from you to
+
+388
+00:22:37,830 --> 00:22:40,150
+whomever you care about?
+
+389
+00:22:40,150 --> 00:22:43,280
+And you get that.
+
+390
+00:22:43,280 --> 00:22:46,030
+You could imagine that Facebook
+already knows the
+
+391
+00:22:46,030 --> 00:22:49,540
+answer to that question, but
+just won't tell you.
+
+392
+00:22:49,540 --> 00:22:52,880
+But they'll sell it to somebody
+who has enough money.
+
+393
+00:22:52,880 --> 00:22:58,370
+All right, So how does Facebook
+solve this problem?
+
+394
+00:22:58,370 --> 00:23:01,480
+They have a very simple piece of
+code, which we'll now look
+
+395
+00:23:01,480 --> 00:23:03,300
+at which solves the
+shortest path.
+
+396
+00:23:03,300 --> 00:23:10,310
+
+397
+00:23:10,310 --> 00:23:11,560
+So let's go back.
+
+398
+00:23:11,560 --> 00:23:19,000
+
+399
+00:23:19,000 --> 00:23:21,870
+So here's a recursive
+
+400
+00:23:21,870 --> 00:23:26,640
+implementation of shortest path.
+
+401
+00:23:26,640 --> 00:23:28,365
+Comment this out while I'm
+in the neighborhood.
+
+402
+00:23:28,365 --> 00:23:33,890
+
+403
+00:23:33,890 --> 00:23:39,800
+It takes the graph, a start node
+and end node to print,
+
+404
+00:23:39,800 --> 00:23:42,530
+and this extra argument
+call visited.
+
+405
+00:23:42,530 --> 00:23:45,200
+We'll see why that's
+gets used.
+
+406
+00:23:45,200 --> 00:23:48,970
+And we'll think about
+the algorithm.
+
+407
+00:23:48,970 --> 00:23:52,990
+This particular algorithm is
+what's called a depth first
+
+408
+00:23:52,990 --> 00:23:55,350
+search algorithm.
+
+409
+00:23:55,350 --> 00:23:57,710
+It's a recursive depth
+first search.
+
+410
+00:23:57,710 --> 00:24:13,185
+We've seen these before,
+often abbreviated DFS.
+
+411
+00:24:13,185 --> 00:24:15,730
+
+412
+00:24:15,730 --> 00:24:20,110
+So if you think about having
+a graph of a bunch of nodes
+
+413
+00:24:20,110 --> 00:24:30,140
+connected to one another, just
+for fun we'll say it does
+
+414
+00:24:30,140 --> 00:24:33,230
+something like this.
+
+415
+00:24:33,230 --> 00:24:37,040
+What depth first search does
+is it starts at the source
+
+416
+00:24:37,040 --> 00:24:43,030
+node for the shortest path,
+let's called it this one, it
+
+417
+00:24:43,030 --> 00:24:48,080
+first visits one child, then
+visits all the children of
+
+418
+00:24:48,080 --> 00:24:51,250
+those children.
+
+419
+00:24:51,250 --> 00:24:54,160
+This one has no children.
+
+420
+00:24:54,160 --> 00:24:59,200
+Visits this child, picks one of
+its children, visits all of
+
+421
+00:24:59,200 --> 00:25:01,970
+its children-- let's say it
+had another one here--
+
+422
+00:25:01,970 --> 00:25:06,330
+and goes on until it's done.
+
+423
+00:25:06,330 --> 00:25:12,530
+And then it back tracks, comes
+back and takes the next child.
+
+424
+00:25:12,530 --> 00:25:14,865
+Then we have to be a little bit
+careful about the circle.
+
+425
+00:25:14,865 --> 00:25:17,440
+
+426
+00:25:17,440 --> 00:25:28,060
+So to summarize it, first thing
+we have to say is the
+
+427
+00:25:28,060 --> 00:25:41,060
+recursion ends, when
+start equals end.
+
+428
+00:25:41,060 --> 00:25:47,290
+That is to say I've called it
+and I've asked is there a path
+
+429
+00:25:47,290 --> 00:25:49,770
+from A to A, and the answer
+is yes, there is.
+
+430
+00:25:49,770 --> 00:25:52,150
+I'm already there.
+
+431
+00:25:52,150 --> 00:25:54,940
+Now you could argue, and in some
+formulations the answer
+
+432
+00:25:54,940 --> 00:25:58,590
+is not necessarily, you'd say
+there's only a path if there's
+
+433
+00:25:58,590 --> 00:26:03,370
+an edge from A to A. But I've
+chosen to make the simpler
+
+434
+00:26:03,370 --> 00:26:05,440
+assertion that if you want to
+get to A, and you're already
+
+435
+00:26:05,440 --> 00:26:07,070
+there, you're done.
+
+436
+00:26:07,070 --> 00:26:10,360
+Kind of seems reasonable.
+
+437
+00:26:10,360 --> 00:26:29,060
+So then the recursive part,
+starts by choosing one child
+
+438
+00:26:29,060 --> 00:26:33,080
+of the node you're
+currently at.
+
+439
+00:26:33,080 --> 00:26:38,180
+And it keeps doing that until
+either it reaches a node with
+
+440
+00:26:38,180 --> 00:26:47,280
+no children, or it reaches the
+node you're trying to get to,
+
+441
+00:26:47,280 --> 00:26:51,910
+or, and here's an important
+part, it reaches a node it's
+
+442
+00:26:51,910 --> 00:26:53,980
+already seen.
+
+443
+00:26:53,980 --> 00:26:56,210
+And that's what visited
+is about.
+
+444
+00:26:56,210 --> 00:27:00,100
+Because I want to make sure
+that when I explore this
+
+445
+00:27:00,100 --> 00:27:02,950
+graph, I don't go from here to
+here to here to here to here
+
+446
+00:27:02,950 --> 00:27:06,350
+to here ad nauseum, because
+I'm stuck in
+
+447
+00:27:06,350 --> 00:27:07,600
+what's called a cycle.
+
+448
+00:27:07,600 --> 00:27:14,170
+
+449
+00:27:14,170 --> 00:27:15,490
+You have to avoid the cycles.
+
+450
+00:27:15,490 --> 00:27:22,250
+
+451
+00:27:22,250 --> 00:27:28,110
+Once it's got to a node that has
+no children, if that's not
+
+452
+00:27:28,110 --> 00:27:32,990
+the node it's trying to get to,
+it back tracks and takes
+
+453
+00:27:32,990 --> 00:27:38,885
+the next child of the
+node it was at.
+
+454
+00:27:38,885 --> 00:27:46,840
+
+455
+00:27:46,840 --> 00:27:52,200
+And in that way, it
+systematically explores all
+
+456
+00:27:52,200 --> 00:27:58,800
+possible paths, and along the
+way, it chooses the best one.
+
+457
+00:27:58,800 --> 00:28:00,390
+So we can look at
+the code here.
+
+458
+00:28:00,390 --> 00:28:03,030
+
+459
+00:28:03,030 --> 00:28:05,970
+I've just commented out
+something we'll look at later
+
+460
+00:28:05,970 --> 00:28:08,000
+just as we try and instrument
+it to see
+
+461
+00:28:08,000 --> 00:28:11,380
+how fast it's working.
+
+462
+00:28:11,380 --> 00:28:14,700
+I've got a debugging statement
+just to say whether I'm going
+
+463
+00:28:14,700 --> 00:28:16,865
+to print what I've been
+asked to do, in
+
+464
+00:28:16,865 --> 00:28:18,830
+case it's not working.
+
+465
+00:28:18,830 --> 00:28:21,000
+And then the real work starts.
+
+466
+00:28:21,000 --> 00:28:25,060
+I get the original path is just
+the node we're starting
+
+467
+00:28:25,060 --> 00:28:27,620
+at, if start is end, I stop.
+
+468
+00:28:27,620 --> 00:28:30,450
+
+469
+00:28:30,450 --> 00:28:33,680
+If I get to here, or say
+shortest equals none, I
+
+470
+00:28:33,680 --> 00:28:35,240
+haven't found any paths yet.
+
+471
+00:28:35,240 --> 00:28:38,000
+So there is no shortest path.
+
+472
+00:28:38,000 --> 00:28:44,350
+And then for node in the
+children of start, if I
+
+473
+00:28:44,350 --> 00:28:45,820
+haven't already visited
+the node--
+
+474
+00:28:45,820 --> 00:28:48,170
+this is to avoid cycles--
+
+475
+00:28:48,170 --> 00:28:52,910
+I create a visited list that
+contains whatever used to
+
+476
+00:28:52,910 --> 00:28:56,090
+contain plus the node.
+
+477
+00:28:56,090 --> 00:29:00,080
+Notice that I'm creating a new
+list here, rather than
+
+478
+00:29:00,080 --> 00:29:02,340
+mutating the old list.
+
+479
+00:29:02,340 --> 00:29:05,930
+And that's because when I
+unravel my recursion, and back
+
+480
+00:29:05,930 --> 00:29:10,170
+track to where I was, I don't
+want to have think I visited
+
+481
+00:29:10,170 --> 00:29:13,040
+something I haven't
+visited, right?
+
+482
+00:29:13,040 --> 00:29:16,900
+If I had only one list, and I
+mutated each time, then as I
+
+483
+00:29:16,900 --> 00:29:19,950
+go down the recursion and back
+up the recursion, I'm always
+
+484
+00:29:19,950 --> 00:29:22,880
+dealing with the same list.
+
+485
+00:29:22,880 --> 00:29:26,550
+By getting a new list, I'm
+ensuring that I don't have
+
+486
+00:29:26,550 --> 00:29:29,480
+that problem.
+
+487
+00:29:29,480 --> 00:29:33,270
+Then I say the new path is
+whatever the shortest path is,
+
+488
+00:29:33,270 --> 00:29:37,340
+from the node I'm currently at
+to the desired end node.
+
+489
+00:29:37,340 --> 00:29:40,580
+And I use the current set of
+visited nodes to indicate
+
+490
+00:29:40,580 --> 00:29:43,760
+where I've already been at this
+part of the recursion.
+
+491
+00:29:43,760 --> 00:29:47,550
+
+492
+00:29:47,550 --> 00:29:51,600
+If the new path is none, well
+didn't find one, I continue.
+
+493
+00:29:51,600 --> 00:29:55,060
+Otherwise, I found a path, and
+now I just want to check is it
+
+494
+00:29:55,060 --> 00:30:00,910
+better, or worse, or the same,
+as the previous shortest path.
+
+495
+00:30:00,910 --> 00:30:03,120
+And then I'm done.
+
+496
+00:30:03,120 --> 00:30:05,390
+Very straightforward.
+
+497
+00:30:05,390 --> 00:30:08,690
+The only really tricky part was
+making sure that I kept
+
+498
+00:30:08,690 --> 00:30:14,250
+track of visited properly, and
+didn't get stuck in cycles.
+
+499
+00:30:14,250 --> 00:30:17,720
+OK let's run it.
+
+500
+00:30:17,720 --> 00:30:19,880
+So here's testTwo --
+
+501
+00:30:19,880 --> 00:30:23,310
+builds the same kind of graph
+we've built before.
+
+502
+00:30:23,310 --> 00:30:26,135
+And then it tries to find
+the shortest path.
+
+503
+00:30:26,135 --> 00:30:28,700
+
+504
+00:30:28,700 --> 00:30:33,790
+And I'm going to do it for the
+same input, essentially, the
+
+505
+00:30:33,790 --> 00:30:37,400
+same at edge operations, but
+once when it's a graph and
+
+506
+00:30:37,400 --> 00:30:38,650
+once when it's a digraph.
+
+507
+00:30:38,650 --> 00:30:45,410
+
+508
+00:30:45,410 --> 00:30:47,785
+So you'll notice that it found
+two different answers.
+
+509
+00:30:47,785 --> 00:30:52,050
+
+510
+00:30:52,050 --> 00:30:56,860
+When it was a graph, it could
+get from 0 to 4 in
+
+511
+00:30:56,860 --> 00:30:58,125
+essentially one hop.
+
+512
+00:30:58,125 --> 00:31:02,250
+
+513
+00:31:02,250 --> 00:31:08,690
+But when it was a digraph,
+it took longer.
+
+514
+00:31:08,690 --> 00:31:12,050
+It had to go from 0
+to two to 3 to 4.
+
+515
+00:31:12,050 --> 00:31:13,790
+And that's not surprising,
+because the
+
+516
+00:31:13,790 --> 00:31:15,135
+graph has more edges.
+
+517
+00:31:15,135 --> 00:31:17,890
+
+518
+00:31:17,890 --> 00:31:21,950
+And in fact, what we saw is that
+in the graph there was an
+
+519
+00:31:21,950 --> 00:31:25,020
+edge from 4 to 0, but there
+was no such edge in the
+
+520
+00:31:25,020 --> 00:31:26,990
+directed graph.
+
+521
+00:31:26,990 --> 00:31:28,510
+So again you'll get,
+
+522
+00:31:28,510 --> 00:31:33,560
+unsurprisingly, different answers--
+
+523
+00:31:33,560 --> 00:31:36,440
+but very straightforwardly.
+
+524
+00:31:36,440 --> 00:31:40,000
+Now let's try it on
+a bigger problem.
+
+525
+00:31:40,000 --> 00:31:51,010
+
+526
+00:31:51,010 --> 00:31:53,930
+So I've called this big test.
+
+527
+00:31:53,930 --> 00:31:56,270
+And what this does, is rather
+than my sitting there and
+
+528
+00:31:56,270 --> 00:32:01,080
+typing a bunch of at edge
+commands, it just generates
+
+529
+00:32:01,080 --> 00:32:03,830
+edges at random.
+
+530
+00:32:03,830 --> 00:32:07,580
+So I tell it whether I want it
+to be a graph or digraph, and
+
+531
+00:32:07,580 --> 00:32:10,870
+then I give it the number
+of nodes I want, and
+
+532
+00:32:10,870 --> 00:32:11,760
+the number of edges.
+
+533
+00:32:11,760 --> 00:32:14,570
+And it just generates, at
+random, a graph in this case
+
+534
+00:32:14,570 --> 00:32:19,430
+with 25 nodes and 200 edges.
+
+535
+00:32:19,430 --> 00:32:21,550
+So let's see what
+happens here.
+
+536
+00:32:21,550 --> 00:32:28,670
+
+537
+00:32:28,670 --> 00:32:35,630
+So it's printed out the
+graph, and now we're
+
+538
+00:32:35,630 --> 00:32:38,650
+waiting a little bit.
+
+539
+00:32:38,650 --> 00:32:41,350
+It will eventually
+finish, there.
+
+540
+00:32:41,350 --> 00:32:43,550
+I can get from 0 to 4.
+
+541
+00:32:43,550 --> 00:32:46,520
+It turns out there's a short
+path for this random graph
+
+542
+00:32:46,520 --> 00:32:48,800
+from 0 to 14 to 4.
+
+543
+00:32:48,800 --> 00:32:50,980
+It's not so surprising that
+there's a short path.
+
+544
+00:32:50,980 --> 00:32:55,180
+Why is it not surprising that
+there's a pretty short path?
+
+545
+00:32:55,180 --> 00:32:56,400
+It had a lot of edges, right?
+
+546
+00:32:56,400 --> 00:32:59,140
+I had 200 edges in my graph.
+
+547
+00:32:59,140 --> 00:33:01,125
+So things are pretty
+densely connected.
+
+548
+00:33:01,125 --> 00:33:03,640
+
+549
+00:33:03,640 --> 00:33:05,125
+Why did it take so long?
+
+550
+00:33:05,125 --> 00:33:08,540
+
+551
+00:33:08,540 --> 00:33:14,310
+Well remember what it's doing is
+exploring all the possible
+
+552
+00:33:14,310 --> 00:33:17,560
+paths from 0 to 4,
+in this case.
+
+553
+00:33:17,560 --> 00:33:21,220
+
+554
+00:33:21,220 --> 00:33:23,530
+This is very much like what we
+saw when we looked at the
+
+555
+00:33:23,530 --> 00:33:25,530
+knapsack problem, right?
+
+556
+00:33:25,530 --> 00:33:29,100
+Where, there when we looked at
+the recursive implementation,
+
+557
+00:33:29,100 --> 00:33:32,670
+we saw that well all right,
+generating all possibilities,
+
+558
+00:33:32,670 --> 00:33:35,310
+there were an exponential number
+of possibilities there
+
+559
+00:33:35,310 --> 00:33:37,720
+in the number of items.
+
+560
+00:33:37,720 --> 00:33:42,440
+Here, depending upon the number
+of nodes and the number
+
+561
+00:33:42,440 --> 00:33:46,330
+of edges, it's also large,
+and in fact, exponential.
+
+562
+00:33:46,330 --> 00:33:50,390
+
+563
+00:33:50,390 --> 00:33:56,380
+We could explore a lot of
+different paths, but let's see
+
+564
+00:33:56,380 --> 00:34:00,610
+what's going on when
+we explore those.
+
+565
+00:34:00,610 --> 00:34:04,500
+So what I'm going to
+do now, is go back
+
+566
+00:34:04,500 --> 00:34:05,760
+to our small example.
+
+567
+00:34:05,760 --> 00:34:08,380
+
+568
+00:34:08,380 --> 00:34:13,239
+We'll run testTwo That was the
+small one we looked at.
+
+569
+00:34:13,239 --> 00:34:18,090
+But I'm going to set to print
+onto true, and if you remember
+
+570
+00:34:18,090 --> 00:34:22,920
+what that code did is they told
+us what each recursive
+
+571
+00:34:22,920 --> 00:34:26,274
+call was, what the start node
+was and what the end node was.
+
+572
+00:34:26,274 --> 00:34:31,280
+
+573
+00:34:31,280 --> 00:34:34,429
+So it found the same
+shortest path.
+
+574
+00:34:34,429 --> 00:34:37,090
+That's a good thing, 0 to 4.
+
+575
+00:34:37,090 --> 00:34:39,989
+But how did it do that?
+
+576
+00:34:39,989 --> 00:34:45,730
+Well it first got called with
+the question of starting at 0
+
+577
+00:34:45,730 --> 00:34:48,000
+find me a path to 4.
+
+578
+00:34:48,000 --> 00:34:51,300
+It visited the first child
+of 0, which was 1.
+
+579
+00:34:51,300 --> 00:34:54,239
+It said, all right see if you
+can find a path from 1 to 4.
+
+580
+00:34:54,239 --> 00:34:56,940
+
+581
+00:34:56,940 --> 00:35:01,120
+It then backtracked and sort
+of asked the same question,
+
+582
+00:35:01,120 --> 00:35:03,750
+can I get from 2 to 4?
+
+583
+00:35:03,750 --> 00:35:04,720
+From 0 to 4?
+
+584
+00:35:04,720 --> 00:35:07,130
+And then it said well I can get
+from 0 to 2, let me try 2
+
+585
+00:35:07,130 --> 00:35:13,370
+to 4, 3 to 4, 4 to
+4, that's good.
+
+586
+00:35:13,370 --> 00:35:17,040
+Get to 5 to 4, and then it tried
+to find 4 to 4 again.
+
+587
+00:35:17,040 --> 00:35:19,730
+Here it tried to find
+2 to 4 again.
+
+588
+00:35:19,730 --> 00:35:25,420
+So what you can see, is as I
+do that backtracking, I'm
+
+589
+00:35:25,420 --> 00:35:30,750
+solving the same problem
+multiple times.
+
+590
+00:35:30,750 --> 00:35:32,760
+Why am I doing that?
+
+591
+00:35:32,760 --> 00:35:38,920
+Because there may be multiple
+ways to get to the same node.
+
+592
+00:35:38,920 --> 00:35:47,950
+So if, for example, I looked at
+this graph, what we would
+
+593
+00:35:47,950 --> 00:35:52,882
+see is I would try and let's
+say I want to get to here,
+
+594
+00:35:52,882 --> 00:35:57,050
+just for the sake of argument,
+I'd first say can I get to
+
+595
+00:35:57,050 --> 00:35:58,420
+here from here.
+
+596
+00:35:58,420 --> 00:36:02,520
+I'd try this, then I'd
+solve here to here.
+
+597
+00:36:02,520 --> 00:36:05,830
+And I'd do that.
+
+598
+00:36:05,830 --> 00:36:10,290
+I'd also go from here to here
+to here, and then for the
+
+599
+00:36:10,290 --> 00:36:14,670
+second time, I'd try and solve
+the problem here to here.
+
+600
+00:36:14,670 --> 00:36:16,860
+Now here since it's only
+one connection,
+
+601
+00:36:16,860 --> 00:36:18,620
+it's a short thing.
+
+602
+00:36:18,620 --> 00:36:22,350
+But you can see if I have
+multiple ways to get to the
+
+603
+00:36:22,350 --> 00:36:26,520
+same intermediate node, each
+time I get there I'm going to
+
+604
+00:36:26,520 --> 00:36:30,070
+solve a problem I have
+already solved--
+
+605
+00:36:30,070 --> 00:36:32,570
+how to get from that
+intermediate node to the final
+
+606
+00:36:32,570 --> 00:36:34,490
+destination.
+
+607
+00:36:34,490 --> 00:36:37,310
+So I'm doing work I've
+already done before.
+
+608
+00:36:37,310 --> 00:36:41,390
+
+609
+00:36:41,390 --> 00:36:45,740
+This is obviously troublesome.
+
+610
+00:36:45,740 --> 00:36:47,720
+Nobody likes to solve
+a problem they've
+
+611
+00:36:47,720 --> 00:36:49,290
+already solved before.
+
+612
+00:36:49,290 --> 00:36:50,990
+So what do you think
+the solution is?
+
+613
+00:36:50,990 --> 00:36:53,720
+
+614
+00:36:53,720 --> 00:36:55,500
+How would you solve this
+sort of thing yourself?
+
+615
+00:36:55,500 --> 00:36:58,460
+
+616
+00:36:58,460 --> 00:36:59,710
+What would you do?
+
+617
+00:36:59,710 --> 00:37:03,940
+
+618
+00:37:03,940 --> 00:37:06,320
+Well what you'd--
+yeah, thank you.
+
+619
+00:37:06,320 --> 00:37:07,240
+This guy is hungry.
+
+620
+00:37:07,240 --> 00:37:08,017
+Go ahead.
+
+621
+00:37:08,017 --> 00:37:11,052
+AUDIENCE: Some way of storing
+information that you've
+
+622
+00:37:11,052 --> 00:37:12,220
+already looked at.
+
+623
+00:37:12,220 --> 00:37:14,100
+PROFESSOR: Exactly.
+
+624
+00:37:14,100 --> 00:37:23,330
+What you try and do, is remember
+what you did before,
+
+625
+00:37:23,330 --> 00:37:26,320
+and just look it up.
+
+626
+00:37:26,320 --> 00:37:30,730
+This is a very common
+technique.
+
+627
+00:37:30,730 --> 00:37:32,790
+It's called memoization.
+
+628
+00:37:32,790 --> 00:37:41,350
+
+629
+00:37:41,350 --> 00:37:45,280
+We use this to solve a lot of
+problems where you remember
+
+630
+00:37:45,280 --> 00:37:48,500
+what the answer was, and rather
+than recalculating it,
+
+631
+00:37:48,500 --> 00:37:51,590
+you just look it up.
+
+632
+00:37:51,590 --> 00:37:55,780
+And that can, of course,
+be much faster.
+
+633
+00:37:55,780 --> 00:37:58,140
+So it's a fancy way
+to say we're going
+
+634
+00:37:58,140 --> 00:37:59,390
+to use a table look-up.
+
+635
+00:37:59,390 --> 00:38:03,840
+
+636
+00:38:03,840 --> 00:38:09,750
+This concept of memoization
+is at the heart of a very
+
+637
+00:38:09,750 --> 00:38:13,040
+important programming technique
+called dynamic
+
+638
+00:38:13,040 --> 00:38:14,290
+programming.
+
+639
+00:38:14,290 --> 00:38:22,090
+
+640
+00:38:22,090 --> 00:38:24,870
+In the algorithms class that's
+taught in this room
+
+641
+00:38:24,870 --> 00:38:28,080
+immediately following this
+class, they have spent at
+
+642
+00:38:28,080 --> 00:38:32,120
+least four lectures on the topic
+of dynamic programming.
+
+643
+00:38:32,120 --> 00:38:34,910
+But since you guys are much
+smarter than those guys taking
+
+644
+00:38:34,910 --> 00:38:38,530
+that class, we're going to do
+it in about 20 minutes, in
+
+645
+00:38:38,530 --> 00:38:43,140
+today and a little bit
+in the next lecture.
+
+646
+00:38:43,140 --> 00:38:46,935
+All right, so let's look
+at an example.
+
+647
+00:38:46,935 --> 00:38:50,490
+
+648
+00:38:50,490 --> 00:38:51,660
+We'll look at a solution.
+
+649
+00:38:51,660 --> 00:39:02,420
+So I've taken the recursive
+implementation we had before,
+
+650
+00:39:02,420 --> 00:39:08,880
+and rewritten it just a little
+bit, to call dp, dynamic
+
+651
+00:39:08,880 --> 00:39:13,140
+programming shortest path.
+
+652
+00:39:13,140 --> 00:39:17,500
+And the most important thing
+to notice is I've given yet
+
+653
+00:39:17,500 --> 00:39:22,590
+another argument to the
+function, and that's the memo,
+
+654
+00:39:22,590 --> 00:39:25,360
+which is initially an
+empty dictionary.
+
+655
+00:39:25,360 --> 00:39:28,150
+
+656
+00:39:28,150 --> 00:39:33,440
+The rest of the algorithm
+proceeds as before, except
+
+657
+00:39:33,440 --> 00:39:41,330
+what happens here is when I want
+to get from a path, the
+
+658
+00:39:41,330 --> 00:39:46,170
+first question I ask is I say
+new path is equal to the memo
+
+659
+00:39:46,170 --> 00:39:48,540
+of node to end.
+
+660
+00:39:48,540 --> 00:39:52,320
+So when I get to one of these
+interior nodes, and I want to
+
+661
+00:39:52,320 --> 00:39:55,760
+say what's the shortest path
+from here to here, the first
+
+662
+00:39:55,760 --> 00:39:59,980
+question I ask is do I already
+know the answer?
+
+663
+00:39:59,980 --> 00:40:02,160
+Is it already in my memo?
+
+664
+00:40:02,160 --> 00:40:08,130
+If so, I just look it
+up, and I'm done.
+
+665
+00:40:08,130 --> 00:40:11,220
+I found it, and I proceed
+as before.
+
+666
+00:40:11,220 --> 00:40:17,370
+If it's not in the memo, well
+this look up will fail, and
+
+667
+00:40:17,370 --> 00:40:22,970
+I'll enter the except clause,
+and I'll make a call again.
+
+668
+00:40:22,970 --> 00:40:26,290
+So this is a very conventional
+way of using try, except as a
+
+669
+00:40:26,290 --> 00:40:28,010
+control structure.
+
+670
+00:40:28,010 --> 00:40:31,150
+Failing to find in the memo is
+not an error, it just means I
+
+671
+00:40:31,150 --> 00:40:33,980
+haven't yet stored it away.
+
+672
+00:40:33,980 --> 00:40:36,840
+And as I go, I'll build up the
+memo, and then I'm done.
+
+673
+00:40:36,840 --> 00:40:41,470
+
+674
+00:40:41,470 --> 00:40:45,660
+So it's very simple.
+
+675
+00:40:45,660 --> 00:40:49,380
+So I should ask the question.
+
+676
+00:40:49,380 --> 00:40:52,010
+Does anyone need me to explain
+this again, or does it makes
+
+677
+00:40:52,010 --> 00:40:53,720
+sense what we're doing
+here with a memo?
+
+678
+00:40:53,720 --> 00:40:56,990
+
+679
+00:40:56,990 --> 00:40:59,450
+OK, I'm assuming
+it makes sense.
+
+680
+00:40:59,450 --> 00:41:01,370
+Let's test it.
+
+681
+00:41:01,370 --> 00:41:04,330
+And we'll first do a
+very simple test.
+
+682
+00:41:04,330 --> 00:41:06,560
+We're just going to use
+the same little
+
+683
+00:41:06,560 --> 00:41:09,620
+graph we used before.
+
+684
+00:41:09,620 --> 00:41:13,330
+And I'm going to run shortest
+path, and dp_shortest path,
+
+685
+00:41:13,330 --> 00:41:16,110
+and at least confirm that
+for one search I
+
+686
+00:41:16,110 --> 00:41:18,142
+get the same answer.
+
+687
+00:41:18,142 --> 00:41:21,380
+It's just fire testing it to
+make sure that it's not a
+
+688
+00:41:21,380 --> 00:41:22,630
+complete disaster.
+
+689
+00:41:22,630 --> 00:41:25,380
+
+690
+00:41:25,380 --> 00:41:27,010
+And we do.
+
+691
+00:41:27,010 --> 00:41:30,190
+We get 0234, 0234.
+
+692
+00:41:30,190 --> 00:41:33,210
+So at least for one thing,
+it's the same thing.
+
+693
+00:41:33,210 --> 00:41:36,830
+
+694
+00:41:36,830 --> 00:41:39,500
+Let's see about performance,
+because that's really what we
+
+695
+00:41:39,500 --> 00:41:40,750
+got interested in.
+
+696
+00:41:40,750 --> 00:41:43,090
+
+697
+00:41:43,090 --> 00:41:47,640
+So we'll go back to
+our big test.
+
+698
+00:41:47,640 --> 00:41:50,220
+
+699
+00:41:50,220 --> 00:41:58,720
+And let's go back and for both
+of these, I'm going to
+
+700
+00:41:58,720 --> 00:42:04,980
+uncomment, tracking this global
+variable, just keeping
+
+701
+00:42:04,980 --> 00:42:09,630
+track of the number of calls,
+and we'll see whether we get a
+
+702
+00:42:09,630 --> 00:42:14,970
+substantially different amount
+of recursion, in
+
+703
+00:42:14,970 --> 00:42:16,390
+one versus the other.
+
+704
+00:42:16,390 --> 00:42:38,260
+
+705
+00:42:38,260 --> 00:42:40,150
+So it's built some random
+graph again.
+
+706
+00:42:40,150 --> 00:42:44,620
+
+707
+00:42:44,620 --> 00:42:48,170
+This is the non-dynamic
+programming one, which as we
+
+708
+00:42:48,170 --> 00:42:50,390
+recall, takes a bit longer.
+
+709
+00:42:50,390 --> 00:42:54,090
+
+710
+00:42:54,090 --> 00:42:56,960
+I probably should have said--
+all right, so it's pretty big
+
+711
+00:42:56,960 --> 00:42:58,310
+difference.
+
+712
+00:42:58,310 --> 00:43:01,300
+They found the same
+path, 0, 2,3, 4.
+
+713
+00:43:01,300 --> 00:43:05,630
+But you'll notice the
+straightforward depth first
+
+714
+00:43:05,630 --> 00:43:12,380
+search took over 800,000
+recursive calls, whereas the
+
+715
+00:43:12,380 --> 00:43:17,380
+dynamic programming one took
+only an order of 2000--
+
+716
+00:43:17,380 --> 00:43:18,630
+a huge difference.
+
+717
+00:43:18,630 --> 00:43:23,180
+
+718
+00:43:23,180 --> 00:43:26,340
+If I ran it again, I might see a
+slightly smaller difference.
+
+719
+00:43:26,340 --> 00:43:28,070
+I might even see a considerably
+larger
+
+720
+00:43:28,070 --> 00:43:29,410
+difference.
+
+721
+00:43:29,410 --> 00:43:33,230
+I've run this on some examples
+where the recursive search
+
+722
+00:43:33,230 --> 00:43:37,450
+depth first took a million, and
+got through the dynamic
+
+723
+00:43:37,450 --> 00:43:39,960
+programming in 50, 60.
+
+724
+00:43:39,960 --> 00:43:44,480
+But what you can see is there's
+a huge improvement in
+
+725
+00:43:44,480 --> 00:43:47,370
+going from one to the other.
+
+726
+00:43:47,370 --> 00:43:50,960
+Dynamic programming was invented
+in the 1950s by
+
+727
+00:43:50,960 --> 00:43:52,210
+someone named Richard Bellman.
+
+728
+00:43:52,210 --> 00:43:55,290
+
+729
+00:43:55,290 --> 00:43:58,860
+Many a student has wasted
+a lot of time trying to
+
+730
+00:43:58,860 --> 00:44:02,080
+understand why it's called
+dynamic programming.
+
+731
+00:44:02,080 --> 00:44:05,630
+And you or I could invent
+lots of theories.
+
+732
+00:44:05,630 --> 00:44:08,850
+Relatively recently, I found out
+why it was called dynamic
+
+733
+00:44:08,850 --> 00:44:13,620
+programming, and this is
+a quote from Bellman.
+
+734
+00:44:13,620 --> 00:44:15,860
+"It was an attempt to hide
+what I was doing from
+
+735
+00:44:15,860 --> 00:44:18,160
+government sponsors.
+
+736
+00:44:18,160 --> 00:44:20,640
+The fact that I was really
+doing mathematics was
+
+737
+00:44:20,640 --> 00:44:24,240
+something not even a congressman
+could object to."
+
+738
+00:44:24,240 --> 00:44:27,960
+So he was doing this thing that
+was pretty evil, which
+
+739
+00:44:27,960 --> 00:44:31,510
+was mathematics, which is what
+he thought this was-- the math
+
+740
+00:44:31,510 --> 00:44:33,330
+of dynamic programming.
+
+741
+00:44:33,330 --> 00:44:35,600
+And he just didn't
+want to admit it.
+
+742
+00:44:35,600 --> 00:44:38,340
+So he made up a name out of
+nothing, and it fooled the
+
+743
+00:44:38,340 --> 00:44:40,550
+government, and he
+got to do it.
+
+744
+00:44:40,550 --> 00:44:43,430
+Now why do I teach you
+dynamic programming?
+
+745
+00:44:43,430 --> 00:44:45,690
+And we're going to talk a little
+bit more about it, the
+
+746
+00:44:45,690 --> 00:44:47,730
+next lecture.
+
+747
+00:44:47,730 --> 00:44:52,380
+It's because it is one of the
+most important algorithms that
+
+748
+00:44:52,380 --> 00:44:54,980
+we know today.
+
+749
+00:44:54,980 --> 00:45:01,330
+It's used over and over again
+to provide practical,
+
+750
+00:45:01,330 --> 00:45:07,850
+efficient solutions to
+optimization problems that on
+
+751
+00:45:07,850 --> 00:45:11,470
+their surface appear
+intractable.
+
+752
+00:45:11,470 --> 00:45:13,610
+They appear exponential.
+
+753
+00:45:13,610 --> 00:45:16,120
+It says there is no good
+way to solve it.
+
+754
+00:45:16,120 --> 00:45:21,830
+In fact, if it has certain kinds
+of properties, it will
+
+755
+00:45:21,830 --> 00:45:24,620
+always be amenable to
+solutions by dynamic
+
+756
+00:45:24,620 --> 00:45:28,360
+programming, which will most
+of the time-- and I'll come
+
+757
+00:45:28,360 --> 00:45:30,390
+back to the most of the time--
+
+758
+00:45:30,390 --> 00:45:35,110
+end up taking an exponential
+problem, and solving it really
+
+759
+00:45:35,110 --> 00:45:38,560
+quickly, as we did here.
+
+760
+00:45:38,560 --> 00:45:41,240
+I could have made this graph
+enormous, and dynamic
+
+761
+00:45:41,240 --> 00:45:45,590
+programming would have given us
+a very fast solution to it.
+
+762
+00:45:45,590 --> 00:45:47,600
+So when can we use dynamic
+programming?
+
+763
+00:45:47,600 --> 00:45:50,270
+
+764
+00:45:50,270 --> 00:45:51,543
+Not all the time.
+
+765
+00:45:51,543 --> 00:45:54,420
+
+766
+00:45:54,420 --> 00:46:02,500
+We can use it on problems that
+exhibit two properties.
+
+767
+00:46:02,500 --> 00:46:05,086
+The problem must have optimal
+substructure.
+
+768
+00:46:05,086 --> 00:46:15,070
+
+769
+00:46:15,070 --> 00:46:20,060
+What this means is that you can
+find a globally optimal
+
+770
+00:46:20,060 --> 00:46:25,505
+solution by combining locally
+optimal solutions.
+
+771
+00:46:25,505 --> 00:46:54,400
+
+772
+00:46:54,400 --> 00:46:59,540
+So we can again see that with
+our graph problem, that we can
+
+773
+00:46:59,540 --> 00:47:04,230
+combine the solutions from nodes
+at a distance from the
+
+774
+00:47:04,230 --> 00:47:08,020
+root node to get the solution
+of getting there
+
+775
+00:47:08,020 --> 00:47:09,840
+from the root node.
+
+776
+00:47:09,840 --> 00:47:13,720
+If I know I can get from A to B,
+and I can find the optimal
+
+777
+00:47:13,720 --> 00:47:17,350
+solution from B to C, then I
+can use that to find the
+
+778
+00:47:17,350 --> 00:47:23,020
+optimal solution from A to
+C. So it has optimal
+
+779
+00:47:23,020 --> 00:47:24,270
+substructure.
+
+780
+00:47:24,270 --> 00:47:25,990
+
+781
+00:47:25,990 --> 00:47:32,350
+The other thing it has to have
+is overlapping sub-problems.
+
+782
+00:47:32,350 --> 00:47:34,380
+And that's the thing I
+emphasized earlier--
+
+783
+00:47:34,380 --> 00:47:41,800
+
+784
+00:47:41,800 --> 00:47:46,120
+that finding the optimal
+solution involves finding
+
+785
+00:47:46,120 --> 00:47:51,930
+optimal solution to the same
+sub-problem multiple times.
+
+786
+00:47:51,930 --> 00:47:55,180
+Otherwise, we could build this
+memo, but we'd never
+
+787
+00:47:55,180 --> 00:47:57,790
+successfully look up
+anything in it.
+
+788
+00:47:57,790 --> 00:47:59,910
+And so the algorithm would give
+us the right answer, but
+
+789
+00:47:59,910 --> 00:48:01,160
+we'd get no speedup,.
+
+790
+00:48:01,160 --> 00:48:03,850
+
+791
+00:48:03,850 --> 00:48:07,710
+So it's this property that we
+need to know that we'll get
+
+792
+00:48:07,710 --> 00:48:10,260
+the correct answer--
+
+793
+00:48:10,260 --> 00:48:12,980
+that when we combine the local
+solutions, we'll get the right
+
+794
+00:48:12,980 --> 00:48:14,750
+global solution.
+
+795
+00:48:14,750 --> 00:48:18,570
+It's this property that gives
+us an indication of how much
+
+796
+00:48:18,570 --> 00:48:22,100
+of a speedup we can
+expect to achieve.
+
+797
+00:48:22,100 --> 00:48:25,300
+How many problems will we not
+have to solve, because we can
+
+798
+00:48:25,300 --> 00:48:27,390
+look up the solution?
+
+799
+00:48:27,390 --> 00:48:29,270
+We'll come back to this.
+
+800
+00:48:29,270 --> 00:48:33,260
+And we'll see how it applies to
+another problem that you've
+
+801
+00:48:33,260 --> 00:48:36,590
+already looked at say the
+knapsack problem, to give us a
+
+802
+00:48:36,590 --> 00:48:40,700
+fast solution to that, so that
+if you want a answer, go back
+
+803
+00:48:40,700 --> 00:48:44,360
+to a previous problem set, and
+take the full database of
+
+804
+00:48:44,360 --> 00:48:47,540
+classes, you'll be able to solve
+it quickly using dynamic
+
+805
+00:48:47,540 --> 00:48:48,690
+programming.
+
+806
+00:48:48,690 --> 00:48:50,460
+OK, see you next time.
+
+807
+00:48:50,460 --> 00:48:53,503
