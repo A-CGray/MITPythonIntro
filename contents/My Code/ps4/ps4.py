@@ -384,9 +384,9 @@ def find_best_shifts_rec(wordlist, text, start):
                         # print 'Returning ', [(start, -shift)] + x
                         return [(start, -shift)] + x
                     else:
-                        return []
-            else:
-                print s[start:start+space_loc], " isn't a real word!"
+                        return [] + x
+            # else:
+                # print s[start:start+space_loc], " isn't a real word!"
         elif space_loc == -1: # If no space found in shifted section
             # print 'No space in shifted section'
             if is_word(wordlist, s[start:]): # If the remaining text is a real word
@@ -424,6 +424,12 @@ def decrypt_fable():
      decoded_fable = apply_shifts(fable, shifts)
      return decoded_fable
 
+########################################### TEST #####################################################
+for length in range(1,11):
+    x = random_scrambled(wordlist, length)
+    print 'Decoded "', x, '" to "', apply_shifts(x, find_best_shifts(wordlist, x)), '"'
+# find_best_shifts(wordlist, 'erqn mfkpgu')
+######################################################################################################
 decoded_fable = decrypt_fable()
 text_file = open("Decoded Fable.txt", "w")
 
@@ -432,9 +438,5 @@ text_file.write(decoded_fable)
 text_file.close()
     
 #What is the moral of the story?
-#
-#
-#
-#
-#
+# Don't trust Elon Musk!
 

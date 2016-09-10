@@ -365,9 +365,9 @@ def find_best_shifts_rec(wordlist, text, start):
     ### TODO.
     for shift in range(27):
         real = ''
-        print 'Trying shift of ', shift
+        # print 'Trying shift of ', shift
         s = text[0:start] + apply_shift(text[start:], -shift)
-        print 's =', s
+        # print 's =', s
         words = s[start:].split() # Split the shifted section into "words"
         for word in words:
             if is_word(wordlist,word):
@@ -377,16 +377,16 @@ def find_best_shifts_rec(wordlist, text, start):
                 #print word, " Isn't a real word"
                 real +='n'
         if real.find('n') == -1: # If all words are real
-            print 'Remaining text:', s[start:], ' is real'
-            print 'Returning', [(start, -shift)]
+            # print 'Remaining text:', s[start:], ' is real'
+            # print 'Returning', [(start, -shift)]
             return [(start, -shift)]
         elif real.find('n') > 0 and real.find('y') > -1: # If at least the first word is real but some are not
-            print 'recursively calling function on:', s
+            # print 'recursively calling function on:', s
             x = find_best_shifts_rec(wordlist, s, s.find(words[real.find('n')] )) # Recursively call the function
             # on the
             # remaining ciphertext
             if type(x) is list:
-                print 'Returning ', [(start, -shift)] + x
+                # print 'Returning ', [(start, -shift)] + x
                 return [(start, -shift)] + x
 
 ################################# TEST ##################################
@@ -409,10 +409,10 @@ def decrypt_fable():
      return apply_shifts(get_fable_string(), find_best_shifts(wordlist, get_fable_string()))
 
 ########################################### TEST #####################################################
-# for length in range(1,11):
-#     x = random_scrambled(wordlist, length)
-#     print 'Decoded', x, 'to', apply_shifts(x, find_best_shifts(wordlist, x))
-find_best_shifts(wordlist, 'erqn mfkpgu')
+for length in range(1,11):
+    x = random_scrambled(wordlist, length)
+    print 'Decoded', x, 'to', apply_shifts(x, find_best_shifts(wordlist, x))
+# find_best_shifts(wordlist, 'erqn mfkpgu')
 ######################################################################################################
 # decrypt_fable()
 #What is the moral of the story?
