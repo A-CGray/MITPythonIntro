@@ -14,7 +14,7 @@ shift = 3
 def load_words():
     """
     Returns a list of valid words. Words are strings of lowercase letters.
-    
+
     Depending on the size of the word list, this function may
     take a while to finish.
     """
@@ -52,7 +52,7 @@ def random_word(wordlist):
     """
     Returns a random word.
 
-    wordlist: list of words  
+    wordlist: list of words
     returns: a word from wordlist at random
     """
     return random.choice(wordlist)
@@ -145,7 +145,7 @@ def build_encoder(shift):
     could encrypt the plain text by calling the following commands
     >>> encoder = build_encoder(shift)
     >>> encrypted_text = apply_coder(plain_text, encoder)
-    
+
     The cipher is defined by the shift value. Ignores non-letter characters
     like punctuation and numbers.
 
@@ -176,7 +176,7 @@ def build_decoder(shift):
     >>> encoder = build_encoder(shift)
     >>> encrypted_text = apply_coder(plain_text, encoder)
     >>> decrypted_text = apply_coder(plain_text, decoder)
-    
+
     The cipher is defined by the shift value. Ignores non-letter characters
     like punctuation and numbers.
 
@@ -232,7 +232,7 @@ def apply_shift(text, shift):
     Otherwise, lower case letters should remain lower case, upper case
     letters should remain upper case, and all other punctuation should
     stay as it is.
-    
+
     text: string to apply the shift to
     shift: amount to shift the text
     returns: text after being shifted by specified amount.
@@ -296,11 +296,11 @@ def apply_shifts(text, shifts):
     """
     Applies a sequence of shifts to an input text.
 
-    text: A string to apply the Ceasar shifts to 
+    text: A string to apply the Ceasar shifts to
     shifts: A list of tuples containing the location each shift should
     begin and the shift offset. Each tuple is of the form (location,
     shift) The shifts are layered: each one is applied from its
-    starting position all the way through the end of the string.  
+    starting position all the way through the end of the string.
     returns: text after applying the shifts to the appropriate
     positions
 
@@ -329,7 +329,7 @@ def find_best_shifts(wordlist, text):
     wordlist: list of words
     text: scambled text to try to find the words for
     returns: list of tuples.  each tuple is (position in text, amount of shift)
-    
+
     Examples:
     >>> s = random_scrambled(wordlist, 3)
     >>> s
@@ -363,49 +363,39 @@ def find_best_shifts_rec(wordlist, text, start):
     returns: list of tuples.  each tuple is (position in text, amount of shift)
     """
     ### TODO.
-    shifts = []
-
     for shift in range(27):
-        # print 'Trying shift of ', shift
+        real = ''
+        print 'Trying shift of ', shift
         s = text[0:start] + apply_shift(text[start:], -shift)
-        # print 's =', s
-        space_loc = s[start:].find(' ') # Search for a space in the shifted section and return the location
-        if space_loc != -1: # If there is a space in the shifted section
-            # print 'Space found!'
-            if is_word(wordlist, s[start:start+space_loc]): # If the characters between "start" and the space make a
-                # real word
-                # print s[start:start+space_loc], ' is a real word!'
-                # print 'recursively calling function on:', s
-                x = find_best_shifts_rec(wordlist, s, start+space_loc+1) # Recursively call the function on the
-                # remaining
-                # ciphertext
-                if type(x) is list:
-                    if shift != 0:
-                        # print 'Returning ', [(start, -shift)] + x
-                        return [(start, -shift)] + x
-                    else:
-                        return []
+        print 's =', s
+        words = s[start:].split() # Split the shifted section into "words"
+        for word in words:
+            if is_word(wordlist,word):
+                #print word, ' Is a real word'
+                real +='y'
             else:
-                print s[start:start+space_loc], " isn't a real word!"
-        elif space_loc == -1: # If no space found in shifted section
-            # print 'No space in shifted section'
-            if is_word(wordlist, s[start:]): # If the remaining text is a real word
-                # print 'Remaining text:', s[start:], ' is real word'
-                if shift != 0:
-                    return [(start, -shift)]
-                else:
-                    return []
-
+                #print word, " Isn't a real word"
+                real +='n'
+        if real.find('n') == -1: # If all words are real
+            print 'Remaining text:', s[start:], ' is real'
+            print 'Returning', [(start, -shift)]
+            return [(start, -shift)]
+        elif real.find('n') > 0 and real.find('y') > -1: # If at least the first word is real but some are not
+            print 'recursively calling function on:', s
+            x = find_best_shifts_rec(wordlist, s, s.find(words[real.find('n')] )) # Recursively call the function
+            # on the
+            # remaining ciphertext
+            if type(x) is list:
+                print 'Returning ', [(start, -shift)] + x
+                return [(start, -shift)] + x
 
 ################################# TEST ##################################
-s = apply_shifts("Do Androids Dream of Electric Sheep?", [(0,6), (3, 18), (12, 16)])
-shifts = find_best_shifts(wordlist, s)
-print 'Shifts =', shifts
-print 'applying shifts should give: "Do Androids Dream of Electric Sheep?"'
-print 'Actually gives:', apply_shifts(s, shifts)
+# s = apply_shifts("Do Androids Dream of Electric Sheep?", [(0,6), (3, 18), (12, 16)])
+# shifts = find_best_shifts(wordlist, s)
+# print 'Shifts =', shifts
+# print 'applying shifts should give: "Do Androids Dream of Electric Sheep?"'
+# print 'Actually gives:', apply_shifts(s, shifts)
 #########################################################################
-
-
 
 
 def decrypt_fable():
@@ -415,26 +405,19 @@ def decrypt_fable():
     Once you decrypt the message, be sure to include as a comment
     at the end of this problem set how the fable relates to your
     education at MIT.
-
-    returns: string - fable in plain text
     """
-    ### TODO.
-     fable = get_fable_string()
-     shifts = find_best_shifts(wordlist, fable)
-     decoded_fable = apply_shifts(fable, shifts)
-     return decoded_fable
+     return apply_shifts(get_fable_string(), find_best_shifts(wordlist, get_fable_string()))
 
-decoded_fable = decrypt_fable()
-text_file = open("Decoded Fable.txt", "w")
-
-text_file.write(decoded_fable)
-
-text_file.close()
-    
+########################################### TEST #####################################################
+# for length in range(1,11):
+#     x = random_scrambled(wordlist, length)
+#     print 'Decoded', x, 'to', apply_shifts(x, find_best_shifts(wordlist, x))
+find_best_shifts(wordlist, 'erqn mfkpgu')
+######################################################################################################
+# decrypt_fable()
 #What is the moral of the story?
 #
 #
 #
 #
 #
-

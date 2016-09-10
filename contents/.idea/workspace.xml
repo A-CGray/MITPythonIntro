@@ -20,10 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ps4.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ps4.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/My Code/ps4/ps4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="117">
+              <caret line="397" column="12" selection-start-line="397" selection-start-column="12" selection-end-line="397" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ps4ii.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/My Code/ps4/ps4ii.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
               <caret line="364" column="13" selection-start-line="364" selection-start-column="13" selection-end-line="364" selection-end-column="13" />
               <folding />
             </state>
@@ -32,6 +42,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -39,6 +56,7 @@
         <option value="$PROJECT_DIR$/unit-1/lecture-8-efficiency-and-order-of-growth/lec08.py" />
         <option value="$PROJECT_DIR$/unit-1/lecture-9-memory-and-search-methods/lec09.py" />
         <option value="$PROJECT_DIR$/My Code/ps4/ps4.py" />
+        <option value="$PROJECT_DIR$/My Code/ps4/ps4ii.py" />
       </list>
     </option>
   </component>
@@ -131,24 +149,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
-  <component name="RunManager" selected="Python tests.Doctests in ps4">
-    <configuration default="false" name="lec07" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/unit-1/lecture-7-debugging" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="contents" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/unit-1/lecture-7-debugging/lec07.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Doctests in ps4ii">
     <configuration default="false" name="lec08" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -211,6 +212,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="contents" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My Code/ps4/ps4.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Doctests in ps4ii" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/My Code/ps4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="contents" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/My Code/ps4/ps4ii.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
@@ -367,19 +387,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.lec07" />
-      <item index="1" class="java.lang.String" itemvalue="Python.lec08" />
-      <item index="2" class="java.lang.String" itemvalue="Python.showGrowth" />
-      <item index="3" class="java.lang.String" itemvalue="Python.lec09" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in ps4" />
+      <item index="0" class="java.lang.String" itemvalue="Python.lec08" />
+      <item index="1" class="java.lang.String" itemvalue="Python.showGrowth" />
+      <item index="2" class="java.lang.String" itemvalue="Python.lec09" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in ps4" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in ps4ii" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in ps4" />
-        <item index="1" class="java.lang.String" itemvalue="Python.lec09" />
-        <item index="2" class="java.lang.String" itemvalue="Python.lec08" />
-        <item index="3" class="java.lang.String" itemvalue="Python.showGrowth" />
-        <item index="4" class="java.lang.String" itemvalue="Python.lec07" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in ps4ii" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in ps4" />
+        <item index="2" class="java.lang.String" itemvalue="Python.lec09" />
+        <item index="3" class="java.lang.String" itemvalue="Python.lec08" />
+        <item index="4" class="java.lang.String" itemvalue="Python.showGrowth" />
       </list>
     </recent_temporary>
   </component>
@@ -390,21 +410,45 @@
     <configuration />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctests_in_ps4 - 2016.09.04 at 17h 38m 06s.xml">
+    <history-entry file="Doctests_in_ps4 - 2016.09.04 at 23h 02m 48s.xml">
       <configuration name="Doctests in ps4" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_ps4 - 2016.09.04 at 17h 39m 34s.xml">
+    <history-entry file="Doctests_in_ps4 - 2016.09.04 at 23h 05m 05s.xml">
       <configuration name="Doctests in ps4" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4 - 2016.09.04 at 23h 05m 54s.xml">
+      <configuration name="Doctests in ps4" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4 - 2016.09.04 at 23h 06m 40s.xml">
+      <configuration name="Doctests in ps4" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4 - 2016.09.04 at 23h 07m 01s.xml">
+      <configuration name="Doctests in ps4" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4ii - 2016.09.04 at 23h 02m 45s.xml">
+      <configuration name="Doctests in ps4ii" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4ii - 2016.09.04 at 23h 08m 47s.xml">
+      <configuration name="Doctests in ps4ii" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4ii - 2016.09.04 at 23h 10m 04s.xml">
+      <configuration name="Doctests in ps4ii" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4ii - 2016.09.04 at 23h 37m 07s.xml">
+      <configuration name="Doctests in ps4ii" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Doctests_in_ps4ii - 2016.09.04 at 23h 38m 09s.xml">
+      <configuration name="Doctests in ps4ii" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.110119045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2883959" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4095563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31228667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -502,7 +546,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/My Code/ps4/ps4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="117">
+          <caret line="397" column="12" selection-start-line="397" selection-start-column="12" selection-end-line="397" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My Code/ps4/ps4ii.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
           <caret line="364" column="13" selection-start-line="364" selection-start-column="13" selection-end-line="364" selection-end-column="13" />
           <folding />
         </state>
